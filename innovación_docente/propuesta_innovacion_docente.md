@@ -1,101 +1,109 @@
-# Plan de Innovación Docente y Dinamización de Sesiones EB
+# Plan de Innovación Docente y Sincronización EB-EPD
 ## Asignatura: Políticas Sociolaborales y de Empleo (PSLL) — Curso 2026-27
 **Profesor responsable:** Manuel A. Hidalgo Pérez  
 **Facultad de Derecho — Universidad Pablo de Olavide (UPO)**  
-**Marco de referencia:** Cuaderno NotebookLM *«Estrategias y Dinámicas para un Aprendizaje Significativo y Práctico»* (ID: `b94a743f-30fe-4b04-b7b4-d4da08e06d16`)
+**Marco pedagógico:** Cuaderno NotebookLM *«Estrategias y Dinámicas para un Aprendizaje Significativo y Práctico»* (ID: `b94a743f-30fe-4b04-b7b4-d4da08e06d16`)
 
 ---
 
-## 1. Diagnóstico y Objetivos de la Propuesta
+## 1. Diagnóstico y Principio Rector: La Conexión Indisoluble EB ↔ EPD
 
 ### 1.1 El Punto de Partida
-- **Estructura oficial (Modelo A1):** 31 horas de Enseñanzas Básicas (EB — gran grupo) y 14 horas de Enseñanzas Prácticas y de Desarrollo (EPD — grupos reducidos).
-- **Sistema de evaluación oficial:** 70% prueba de evaluación final (EB) y 30% evaluación continua (EPD).
-- **El reto en las EB:** Dado que la asistencia a las sesiones teóricas (EB) no es legalmente obligatoria por reglamento universitario y que todo el material de lectura (`.docx` y `.pdf`) está disponible en el Aula Virtual, el modelo tradicional de "clase magistral expositiva" favorece el absentismo o la desconexión cognitiva pasiva en el aula.
-- **El impacto de la Inteligencia Artificial:** Pedir trabajos extensos o lecturas pasivas para realizar en casa es ineficaz; los modelos de lenguaje (LLM) resuelven estas tareas en segundos. El aprendizaje, la reflexión y la evaluación formativa deben suceder **de manera sincrónica y vivencial en el aula presencial**.
+- **Estructura oficial del Modelo A1:** 31 horas de Enseñanzas Básicas (EB — gran grupo) y 14 horas de Enseñanzas Prácticas y de Desarrollo (EPD — grupos reducidos).
+- **Sistema de evaluación oficial:** 70% prueba de evaluación final (EB) y 30% evaluación continua (EPD con asistencia obligatoria).
+- **El problema tradicional:** La fractura habitual en la universidad entre teoría y práctica. Si la EB se limita a una clase magistral abstracta y la EPD se convierte en una resolución de casos desconectada, el alumno no encuentra sentido a acudir a las EB y sufre para aplicar los conceptos en las EPD.
+- **El reto de la Inteligencia Artificial:** Cualquier trabajo individual o resumen para casa será resuelto por un LLM en segundos. La reflexión, el aprendizaje profundo y el desarrollo de competencias deben ocurrir **de manera sincrónica y vivencial en el aula (tanto en EB como en EPD)**.
 
-### 1.2 Objetivos Estratégicos
-1. **Crear la "Necesidad de Asistir":** Que el estudiante perciba que acudir a clase le ahorra horas de estudio individual y le otorga ventajas directas y tangibles de cara al examen y a la evaluación continua.
-2. **Curación Inteligente del Temario:** No leer ni recitar en clase lo que el estudiante ya tiene redactado en los apuntes; reservar el tiempo cara a cara para la discusión de dilemas, mecanismos causales y paradojas empíricas.
-3. **Maximizar el Aprendizaje Autónomo:** Activar la lectura previa mediante retos de microaprendizaje (*Fichas de Enigma Previo*) de baja fricción que motiven la consulta de los apuntes antes de entrar al aula.
-4. **Gamificación Interactiva con Micro-Apps *ad hoc*:** Introducir dinámicas de simulación y toma de decisiones en tiempo real a través de aplicaciones web ligeras (ejecutables desde el teléfono móvil mediante código QR).
+### 1.2 El Principio Rector de la Asignatura
+> **«La sesión de EB es el laboratorio conceptual y la caja de herramientas; la sesión de EPD es la mesa de operaciones real».**
+>
+> La EB no enseña teoría por erudición: proporciona exactamente los modelos analíticos, los mecanismos causales y la intuición empírica que el estudiante necesita **para tomar decisiones en su rol de técnico en la EPD y para responder a la pregunta de caso del examen final (el 70%)**.
 
 ---
 
-## 2. El Ciclo de Aprendizaje: La Triada "Antes – Durante – Después"
+## 2. La Arquitectura de las EPD: El Eje Conductor del Semestre
 
-El cuaderno pedagógico propone el modelo del **Ecosistema de Aprendizaje Profundo**, articulado en tres fases interconectadas:
+Según la propuesta de prácticas de la asignatura (`EPD/PSLL_EPD_2026-27_propuesta.docx`), las EPD se articulan en **7 sesiones de 1,5 horas** estructuradas en torno a una **simulación profesional de diseño de políticas de empleo** basada en normativas reales (como el *Programa Emplea-T* de la Junta de Andalucía):
+
+- **Rol del estudiante:** Técnico/a de la Consejería de Empleo de la Junta de Andalucía.
+- **Objetivo profesional:** Diseñar y defender incentivos públicos a la contratación, aprendiendo que *según cómo se defina el incentivo, las consecuencias sobre el mercado laboral son radicalmente distintas*.
+- **Entregable transversal:** Un **Dossier de Política acumulativo** que crece práctica a práctica y constituye el núcleo de la evaluación continua (30%).
+
+### Los Dos Casos de Estudio en EPD (3 sesiones por caso):
+
+| Sesión EPD | Bloque | Foco de la Sesión en EPD | Conexión con los Contenidos de EB |
+| :---: | :--- | :--- | :--- |
+| **EPD 1** | **Introducción** | Marco institucional, rol técnico, reglas del juego y entrega del instrumental gráfico. | Conexión con Tema 1 (Marco institucional y flujos). |
+| **EPD 2** | **Caso 1 · Parados Larga Duración (Fase A)** | **Diagnóstico:** Entender el colectivo y su fallo de mercado (estigma, histéresis, obsolescencia del capital humano). | **EB Temas 1 y 2:** Curva de Beveridge, emparejamiento (*matching* de Mortensen-Pissarides) y costes de búsqueda. |
+| **EPD 3** | **Caso 1 · Parados Larga Duración (Fase B)** | **Diseño:** Definir cuantía, requisitos, condicionalidad y temporalidad del incentivo (tipo Orden Emplea-T). | **EB Tema 2:** Políticas Activas (PAE), tipología de incentivos a la contratación y evaluación empírica. |
+| **EPD 4** | **Caso 1 · Parados Larga Duración (Fase C)** | **Consecuencias y Defensa:** Analizar efectos de peso muerto (*deadweight*), sustitución y sostenibilidad fiscal. | **EB Tema 2 y 3:** Evaluación de impacto según Card-Kluve-Weber y trade-offs distributivos. |
+| **EPD 5** | **Caso 2 · Mayores de 45 años (Fase A)** | **Diagnóstico:** Obstáculos específicos a la reinserción (edadismo, costes salariales por antigüedad, horizonte de amortización). | **EB Temas 3 y 4:** Subsidio mayores de 52, trampa del desempleo, costes de despido (EPL) y dualidad laboral. |
+| **EPD 6** | **Caso 2 · Mayores de 45 años (Fase B)** | **Diseño autónomo:** Definición del incentivo con menor andamiaje por parte del profesor. | **EB Temas 5 y 6:** Negociación colectiva, salarios de reserva, productividad decreciente y salario mínimo. |
+| **EPD 7** | **Caso 2 · Mayores de 45 años (Fase C)** | **Consecuencias y Cierre:** Defensa del diseño, evaluación global y entrega final del Dossier de Política. | **EB Tema 7:** Reto demográfico, sostenibilidad intergeneracional y ensayo del caso del examen final. |
+
+---
+
+## 3. La Función de las Sesiones EB: Entrenar el Caso Práctico
+
+Para que las EB tengan sentido y creen una necesidad imperiosa de asistencia, **cada bloque de EB se diseña como el entrenamiento previo de la siguiente sesión de EPD**:
 
 ```mermaid
-graph LR
-    A["ANTES DE CLASE<br><b>Espacio Individual</b><br>Ficha de Enigma Previo<br>+ Muddiest Point"] --> B["DURANTE LA CLASE<br><b>Espacio Grupal (EB)</b><br>Clase Mejorada (90-120 min)<br>+ Micro-App en Vivo"]
-    B --> C["DESPUÉS DE CLASE<br><b>Consolidación & Examen</b><br>Pregunta Clave Tipo Test/Caso<br>(Hacia el 70% final)"]
+graph TD
+    subgraph "EB: Laboratorio Conceptual (Gran Grupo)"
+        EB1["Mini-Lección: Mecanismos Causales"] --> EB2["Micro-App en Vivo: Simulación Rápida"]
+        EB2 --> EB3["Debriefing: ¿Por qué falló vuestro diseño?"]
+    end
+    subgraph "EPD: Mesa de Operaciones (Grupo Reducido)"
+        EPD1["Aplicación a la Orden Real (Emplea-T)"] --> EPD2["Toma de Decisiones en el Dossier"]
+        EPD2 --> EPD3["Defensa Técnica del Colectivo"]
+    end
+    subgraph "Examen Final (70%)"
+        EX["Resolución de Caso Análogo de Política Sociolaboral"]
+    end
+    EB3 ==> EPD1
+    EPD3 ==> EX
+    EB3 -.-> EX
 ```
 
-### Fase 1: Antes de Clase (Espacio Individual de Trabajo Autónomo)
-- **La Ficha de Enigma Previo (1 página):** No se pide al alumno que "se estudie el tema". Se publica una ficha breve con **1 o 2 paradojas reales del mercado laboral** que solo pueden entenderse consultando determinados epígrafes del documento de apuntes.
-- **El "Punto más Confuso" (*Muddiest Point*):** Un buzón digital de una sola línea en el Aula Virtual donde los alumnos indican anónimamente qué concepto de la lectura les ha parecido más contraintuitivo o difícil. El docente utiliza estas respuestas para calibrar el arranque de la clase.
-
-### Fase 2: Durante la Clase (Espacio Grupal de Interacción en el Aula)
-- La sesión presencial no compite con el texto: **resuelve el misterio y experimenta las decisiones**.
-- Aplicación del formato de la **"Clase Mejorada" (*Enhanced Lecture*)**: bloques expositivos de máximo 20 minutos intercalados con actividades activas de discusión en parejas (*Think-Pair-Share*) y simulaciones con micro-apps.
-
-### Fase 3: Después de Clase (Conexión con el Examen Oficial)
-- En los últimos minutos de cada sesión se trabaja **un reto o pregunta análoga a la prueba final de la asignatura**.
-- El estudiante experimenta que la sesión presencial le prepara directamente para superar el 70% de la calificación oficial.
+### ¿Por qué el alumno no puede permitirse faltar a la EB?
+1. **Asistir a la EB te aprueba la EPD:** En la EB se desmenuzan con la **micro-app** exactamente las mismas variables (cuantía de la subvención, meses de mantenimiento, penalizaciones) que el alumno tendrá que justificar en el Dossier de la EPD. El alumno que asiste a la EB llega a la EPD sabiendo exactamente qué hacer; quien no asiste, se bloquea ante el caso real.
+2. **Asistir a la EB te aprueba el 70% del Examen Final:** El examen final no preguntará artículos de leyes de memoria, sino la resolución de un caso práctico análogo al trabajado durante el curso. La EB entrena semanalmente este razonamiento.
 
 ---
 
-## 3. Estructura Tipo de una Sesión EB (90 a 120 minutos)
+## 4. Estructura Tipo de una Sesión EB (90 a 120 minutos)
 
-A partir del modelo pedagógico de pausas activas y dinamización de grandes grupos, cada sesión de EB se estructurará en 5 bloques cronometrados:
+Siguiendo el modelo de la **"Clase Mejorada" (*Enhanced Lecture*)** del cuaderno NotebookLM:
 
-| Bloque | Minutos | Actividad del Profesor | Actividad de los Estudiantes |
+| Bloque | Minutos | Actividad del Profesor | Actividad de los Alumnos |
 | :--- | :---: | :--- | :--- |
-| **1. El Gancho y el *Muddiest Point*** | 10–15 min | Presenta la paradoja del día y las dudas más frecuentes enviadas por el buzón virtual. | Votan su intuición inicial o comentan en parejas durante 2 minutos (*Think-Pair-Share*). |
-| **2. Mini-Lección Magistral 1 (Núcleo Causal)** | 25 min | Exposición rigurosa de los mecanismos económicos e institucionales centrales (apoyada en diapositivas de marca). | Toman notas centradas en relaciones de causalidad y *trade-offs*. |
-| **3. Simulación en Vivo con Micro-App *ad hoc*** | 30 min | Lanza el enlace/QR de la micro-app. Plantea el escenario de política sociolaboral a resolver. | En parejas, toman decisiones en la aplicación desde el móvil/portátil y ven el impacto en tiempo real. |
-| **4. Mini-Lección 2 + *Debriefing*** | 20–25 min | Proyecta los resultados globales de la clase. Utiliza los aciertos y errores de los alumnos para explicar la teoría empírica. | Contrastan sus hipótesis iniciales con los modelos económicos de la literatura. |
-| **5. Cierre: Pregunta Tipo Examen** | 10–15 min | Plantea una pregunta real de examen sobre el caso analizado y explica los criterios de rigor que se evaluarán. | Ensayan mentalmente o por escrito la respuesta y consolidan el aprendizaje. |
+| **1. El Gancho y el Enigma Previo** | 10–15 min | Lanza el misterio de la sesión conectándolo con el colectivo de la EPD (ej. *«¿Por qué subvencionar la contratación de un parado de larga duración suele traducirse en que la empresa despide a otro trabajador?»*). | Votan su intuición inicial o comentan en parejas durante 2 minutos (*Think-Pair-Share*). |
+| **2. Mini-Lección 1: Mecanismo Causal** | 25 min | Explicación teórica quirúrgica del mecanismo económico (curva de Beveridge, emparejamiento, salarios de reserva). Máximo 6 diapositivas con la paleta de marca. | Toman notas focalizadas en la relación causa-efecto que necesitarán en su dossier. |
+| **3. Micro-App Interactiva en Vivo** | 30 min | Proyecta el código QR de la micro-app del tema. Plantea el reto de simulación: *«Tenéis 15 minutos para calibrar el incentivo sin provocar un efecto sustitución masivo»*. | En parejas, ajustan parámetros desde el móvil o portátil y visualizan los efectos en tiempo real. |
+| **4. Debriefing Socrático: El Enlace con la EPD** | 20–25 min | Muestra en pantalla gigante los resultados de la clase. Conecta los fallos cometidos en la app con los errores habituales en las convocatorias de la Junta de Andalucía. | Descubren cómo justificar técnica y económicamente su diseño para la EPD. |
+| **5. Cierre: Pregunta Tipo Examen** | 10–15 min | Proyecta una pregunta real de examen sobre el caso analizado y detalla la rúbrica de corrección. | Ensayan individualmente la respuesta durante 3 minutos. |
 
 ---
 
-## 4. Criterio de Curación de Contenidos: ¿Qué se explica y qué no?
+## 5. El Catálogo de Micro-Apps Alineadas con las EPD
 
-Para no saturar las sesiones presenciales, se aplicará el siguiente filtro curricular a cada uno de los temas:
+Las micro-apps interactivas en HTML/JS se redefinen para ser **simuladores preparatorios de las decisiones de las EPD**:
 
-### 🛑 Se queda en el documento de apuntes (Lectura autónoma):
-- Catálogos exhaustivos de artículos legales o trámites administrativos (ej. listados de tipos contractuales, requisitos burocráticos del SEPE).
-- Tablas estadísticas extensas o series históricas de contexto.
-- Fórmulas algebraicas o definiciones puramente nemotécnicas (ej. cálculo aritmético de tasas de actividad/paro).
-
-### 🎯 Se explica y debate en el aula presencial (Conceptos Nucleares):
-- **Mecanismos de incentivos y conducta:** Cómo reaccionan trabajadores y empleadores ante un cambio normativo o institucional.
-- **Dilemas y *Trade-offs* de política económica:** Eficiencia vs. Equidad, Protección del *insider* vs. Oportunidades del *outsider*, Efecto desincentivo vs. Efecto liquidez.
-- **Falacias del sentido común:** Desmontar mitos populares (ej. la falacia de la cantidad fija de trabajo, la neutralidad del coste de despido).
-
----
-
-## 5. Catálogo de Micro-Apps Interactivas por Temas
-
-Las micro-apps serán herramientas web ligeras (HTML5/CSS/JavaScript), responsive para smartphone y sin requerimiento de registro ni servidor externo:
-
-| Tema | Nombre de la Micro-App | Dinámica en el Aula |
+| Tema EB | Micro-App *ad hoc* | Conexión Directa con EPD |
 | :--- | :--- | :--- |
-| **Tema 1: Mercado de trabajo y flujos** | *Simulador de Flujos y Curva de Beveridge* | Los alumnos ajustan flujos de entrada/salida y choque migratorio para comprobar por qué el desempleo y las vacantes pueden convivir. |
-| **Tema 2: Políticas Activas de Empleo (PAE)** | *El Gestor de Fondos del SEPE* | Distribución de un presupuesto limitado entre formación, bonificaciones y orientación, midiendo efectos de peso muerto y sustitución. |
-| **Tema 3: Políticas Pasivas y Desempleo** | *La Trampa de la Pobreza y Salario de Reserva* | Simular la decisión de un trabajador ante distintas tasas de reemplazo y complementos salariales (reforma asistencial de 2024). |
-| **Tema 4: Dualidad y Costes de Despido (EPL)** | *El Simulador de Contratación Dual* | Una empresa ante un ciclo económico: qué contratos se rescinden primero y cómo influyen las indemnizaciones en la rotación laboral. |
-| **Tema 5: Negociación Colectiva** | *El Tablero de la Negociación Salarial* | Juego de roles interactivo (Patronal vs. Sindicato) con asimetría de información y convenios colectivos. |
-| **Tema 6: Salarios y Desigualdad** | *El Dilema del Salario Mínimo (SMI)* | Medir elasticidades de empleo en sectores de bajo valor añadido frente a ganancias agregadas de renta. |
-| **Tema 7: Pensiones y Reto Demográfico** | *La Balanza Intergeneracional 2050* | Simular la tasa de dependencia demográfica y ajustar edad de jubilación, cotizaciones y factor de sostenibilidad. |
+| **Tema 1 (Mercado de trabajo)** | *Simulador de Flujos y Curva de Beveridge* | Permite diagnosticar por qué los parados de larga duración quedan desconectados de las vacantes (**Fase A del Caso 1**). |
+| **Tema 2 (Políticas Activas)** | *Calibrador de Subvenciones a la Contratación* | Los alumnos ajustan cuantías y compromisos de permanencia para medir el peso muerto y el efecto sustitución (**Fases B y C del Caso 1**). |
+| **Tema 3 (Políticas Pasivas)** | *Simulador de la Trampa de Inactividad* | Mide el impacto del subsidio para mayores de 52 años en el salario de reserva y la búsqueda activa (**Fase A del Caso 2**). |
+| **Tema 4 (Flexibilidad y EPL)** | *Simulador de Costes de Despido y Dualidad* | Experimentar por qué las empresas prefieren no contratar a mayores de 45 ante costes de despido crecientes (**Fase B del Caso 2**). |
+| **Tema 5 (Negociación Colectiva)** | *Tablero de Salarios por Antigüedad y Convenios* | Analizar el papel de las tablas salariales de convenio en las dificultades de reempleo de mayores de 45 (**Fases B y C del Caso 2**). |
+| **Tema 6 y 7 (Salarios y Pensiones)** | *Simulador de Retiro, Productividad y Relevo* | Conectar el final de la vida laboral con la sostenibilidad del sistema de pensiones (**Fase C del Caso 2 y Examen Final**). |
 
 ---
 
-## 6. Próximos Pasos de Implementación
-1. **Validación del modelo:** Revisión y ajuste conjunto de esta propuesta.
-2. **Prototipo Piloto (Tema 1):**
-   - Redacción de la *Ficha de Enigma Previo del Tema 1*.
-   - Programación de la primera micro-app interactiva del Tema 1.
-   - Ajuste de las diapositivas esenciales para la sesión EB.
-3. **Escalado progresivo:** Aplicación secuencial al resto de temas del curso 2026-27.
+## 6. Autonomía Guiada contra la IA: La Ficha de Enigma Previo
+
+Para activar el aprendizaje autónomo sin exigir lecturas que un LLM resumiría de forma estéril:
+- **Formato:** 1 página en PDF en el Aula Virtual antes de cada bloque.
+- **Contenido:** Contiene **un dato real paradójico o un gráfico oficial** y **2 preguntas de juicio técnico**:
+  - *«Revisa el gráfico de la página 8 de los apuntes sobre la duración del desempleo en Andalucía. ¿Por qué a partir de los 12 meses la probabilidad de salir del paro cae un 60%? Identifica los 2 mecanismos explicativos en el epígrafe 4.2 para defender tu postura en el debate del martes»*.
+- **Efecto:** El alumno consulta los apuntes de forma selectiva con un propósito analítico claro, llegando a la EB con las ideas listas para la simulación.
