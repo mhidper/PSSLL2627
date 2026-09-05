@@ -18,10 +18,11 @@ Este proyecto está vinculado permanentemente al cuaderno de NotebookLM:
      ```
      o que proporcione la cookie actualizada para reconectar.
 
-## Marca e Identidad Visual (Skill `marca_psll`)
+## Marca e Identidad Visual
 
-Este proyecto dispone de una skill de identidad visual de marca oficial en [.agents/skills/marca_psll/SKILL.md](file:///c:/Users/Usuario/Dropbox/DOCENCIA%20UPO/CURSO%2026-27/PSLL/.agents/skills/marca_psll/SKILL.md):
+Este proyecto tiene una identidad visual oficial basada en el emblema real de la asignatura (`Logos y skills/psll-presentaciones-skill/assets/psll_emblem.png`), documentada en [Logos y skills/BRAND.md](file:///c:/Users/Usuario/Dropbox/DOCENCIA%20UPO/CURSO%2026-27/PSLL/Logos%20y%20skills/BRAND.md) y en [Logos y skills/psll-presentaciones-skill/SKILL.md](file:///c:/Users/Usuario/Dropbox/DOCENCIA%20UPO/CURSO%2026-27/PSLL/Logos%20y%20skills/psll-presentaciones-skill/SKILL.md) (para presentaciones). La versión equivalente para Claude Code vive en `.claude/skills/marca-psll/SKILL.md`.
 - **Ámbito:** Aplica obligatoriamente al redactar o editar documentos (`.docx`, apuntes, lecturas), diapositivas (`.pptx`) y figuras/gráficos en Python (`matplotlib`).
-- **Paleta oficial (estilo editorial cálido):** Lienzo crema suave `#FDFBF7`, cajas `#FAF6F0`, texto de lectura `#4A3B32` (nunca negro puro), rojo ladrillo `#A33327` (titulares y serie principal), terracota `#D47B5A` (subtítulos y 2ª serie), ámbar `#C68B59`.
-- **Tipografías:** `Poppins` / `Century Gothic` para titulares, `Calibri` / `Arial` para cuerpo de texto y tablas.
-- **Gráficos en Python:** Aplicar siempre los `rcParams` de marca y añadir el pie de fuente y autoría con `anadir_firma()`.
+- **Paleta oficial (menta/salvia/coral, la que coincide con el emblema real):** Lienzo menta `#E1F6EA`, salvia `#76927A` (estructura y serie principal), verde profundo `#566B56` (títulos y contraste fuerte), verde tinta `#2F3A30` (texto de cuerpo — nunca negro puro), coral `#E99073` (acento puntual, nunca párrafos enteros), melocotón `#EDB090` (acento suave).
+- **Tipografías:** `Poppins` para titulares (alternativa: Century Schoolbook/Cambria), `Calibri` / `Arial` para cuerpo de texto y tablas. Nunca `Aptos`.
+- **Gráficos en Python:** usar el módulo de estilo con la paleta menta/salvia/coral y añadir siempre el pie de fuente y autoría.
+- **Nota:** existió una guía anterior con paleta crema/terracota (`Logos y skills/marca_psll/`) que no coincidía con el logo real; se eliminó del proyecto — no debe reintroducirse ni usarse como referencia.
