@@ -1,17 +1,28 @@
 ---
 name: marca-psll
-description: Aplica la identidad visual oficial de Políticas Sociolaborales (PSLL, UPO) — paleta menta/salvia/coral del emblema PSLL real — siempre que se cree, edite o revise cualquier apunte (.docx), presentación (.pptx) o gráfico/figura (Python/Matplotlib/Seaborn) de la asignatura. Actívala también al auditar o corregir material ya existente para comprobar que cumple la marca.
+description: Aplica la identidad visual oficial de Políticas Sociolaborales (PSLL, UPO) — paleta menta/salvia/coral del emblema PSLL real — y la convención de versionado de archivos, siempre que se cree, edite o revise cualquier apunte (.docx), presentación (.pptx) o gráfico/figura (Python/Matplotlib/Seaborn) de la asignatura. Actívala también al auditar o corregir material ya existente para comprobar que cumple la marca.
 ---
 
 # Identidad Visual y Marca PSLL (Docencia UPO)
 
 > [!IMPORTANT]
-> Esta es la guía de marca **autorizada**. Coincide con el emblema real de la asignatura (`assets/psll_emblem.png`: libros + pluma, "PS" en salvia y "LL" en coral, sobre fondo menta). Existe otra guía anterior en el repositorio (`Logos y skills/marca_psll/`, paleta crema/terracota) que **no** coincide con el logo y no debe usarse — está pendiente de limpieza/archivo.
+> Esta es la guía de marca **autorizada**. Coincide con el emblema real de la asignatura (`assets/psll_emblem.png`: libros + pluma, "PS" en salvia y "LL" en coral, sobre fondo menta).
 
 Actívala siempre que se genere o modifique:
 1. **Documentos y apuntes:** `.docx`, guías didácticas, lecturas complementarias, Markdown.
 2. **Presentaciones:** `.pptx` de cualquier tema de la asignatura.
 3. **Figuras y gráficos:** scripts o gráficos con `matplotlib`/`seaborn` sobre datos del mercado de trabajo.
+
+---
+
+## 0. Convención de versionado de archivos (obligatoria)
+
+Cuando se reelabora un `.docx` o `.pptx` ya existente del curso (apuntes, diapositivas), aprovechando al máximo el contenido y el material ya suministrado — no se parte de cero salvo que se indique explícitamente:
+
+- El archivo nuevo se guarda **en el mismo directorio** que el original (misma carpeta `Apuntes/`, `Diapositivas/`, etc.).
+- El nombre es el del archivo original **+ sufijo `_2627`** justo antes de la extensión. Ejemplos: `Tema 1 2526.docx` → `Tema 1 2526_2627.docx`; `Tema 5.pptx` → `Tema 5_2627.pptx`.
+- El archivo original **nunca se sobrescribe ni se borra** al crear la versión `_2627` — queda como referencia/histórico hasta que el profesor decida qué hacer con él (p. ej. moverlo a `Versiones antiguas/`).
+- Esta convención aplica a cualquier documento que resulte de ejecutar un checklist de `work_in_progress/` o de aplicar una nueva dinámica de clase sobre material ya existente.
 
 ---
 
