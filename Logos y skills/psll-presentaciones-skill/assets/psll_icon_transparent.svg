@@ -1,0 +1,15 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="PSLL icono">
+  <!-- book cover (salvia) -->
+  <path d="M16 57 L50 67 L84 57 L84 73 L50 83 L16 73 Z" fill="#76927A" stroke="#566B56" stroke-width="3.2" stroke-linejoin="round"/>
+  <!-- left page -->
+  <path d="M50 67 L18 55 Q15.5 44 20 41 L50 53 Z" fill="#F3EFDC" stroke="#566B56" stroke-width="3.2" stroke-linejoin="round"/>
+  <!-- right page -->
+  <path d="M50 67 L82 55 Q84.5 44 80 41 L50 53 Z" fill="#F3EFDC" stroke="#566B56" stroke-width="3.2" stroke-linejoin="round"/>
+  <!-- spine -->
+  <line x1="50" y1="53" x2="50" y2="67" stroke="#566B56" stroke-width="3.2" stroke-linecap="round"/>
+  <!-- feather blade (melocoton base + coral) -->
+  <path d="M76 20 Q90 27 80 42 Q68 49 57 52 Q63 37 76 20 Z" fill="#EDB090" stroke="#566B56" stroke-width="3.2" stroke-linejoin="round"/>
+  <path d="M76 20 Q63 37 57 52 Q66 49 72 45 Q72 33 76 20 Z" fill="#E99073"/>
+  <!-- feather central vein -->
+  <line x1="76" y1="20" x2="58" y2="55" stroke="#566B56" stroke-width="2.4" stroke-linecap="round"/>
+</svg>
