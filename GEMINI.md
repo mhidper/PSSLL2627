@@ -17,3 +17,11 @@ Este proyecto está vinculado permanentemente al cuaderno de NotebookLM:
      notebooklm-mcp-auth
      ```
      o que proporcione la cookie actualizada para reconectar.
+
+## Marca e Identidad Visual (Skill `marca_psll`)
+
+Este proyecto dispone de una skill de identidad visual de marca oficial en [.agents/skills/marca_psll/SKILL.md](file:///c:/Users/Usuario/Dropbox/DOCENCIA%20UPO/CURSO%2026-27/PSLL/.agents/skills/marca_psll/SKILL.md):
+- **Ámbito:** Aplica obligatoriamente al redactar o editar documentos (`.docx`, apuntes, lecturas), diapositivas (`.pptx`) y figuras/gráficos en Python (`matplotlib`).
+- **Paleta oficial (estilo editorial cálido):** Lienzo crema suave `#FDFBF7`, cajas `#FAF6F0`, texto de lectura `#4A3B32` (nunca negro puro), rojo ladrillo `#A33327` (titulares y serie principal), terracota `#D47B5A` (subtítulos y 2ª serie), ámbar `#C68B59`.
+- **Tipografías:** `Poppins` / `Century Gothic` para titulares, `Calibri` / `Arial` para cuerpo de texto y tablas.
+- **Gráficos en Python:** Aplicar siempre los `rcParams` de marca y añadir el pie de fuente y autoría con `anadir_firma()`.
