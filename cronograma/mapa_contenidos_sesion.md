@@ -13,8 +13,8 @@
 
 | Tema | Semanas (cronograma) | Horas presenciales L1 | Horas presenciales L2 | Epígrafes principales (apuntes reales) | Extensión aprox. | Densidad relativa |
 | :--- | :--- | :---: | :---: | :--- | :---: | :--- |
-| **0** | S1 (parte) | *(sin cuantificar)* | *(sin cuantificar)* | Sin apuntes — solo diapositivas de presentación | — | Baja, pero **sin minutos propios** en el guion actual (ver Alerta 1) |
-| **1** | S1 (parte) + S2 | ~7 h (compartida con Tema 0) | ~7 h (compartida con Tema 0) | 6 (Fundamentos, PIB/productividad, Equilibrio, Tipología desempleo, Tasa natural/Phillips, Beveridge) | 10.019 palabras | Media-alta — 6 bloques en ~5,5 h netas (tras restar Tema 0) |
+| **0** | S1 (parte) | **1 h** (primeros 60 min de la sesión de lunes) | **1 h** (ídem) | Sin apuntes — solo diapositivas de presentación | — | Baja — con minutos propios ya asignados (ver Alerta 1, resuelta) |
+| **1** | S1 (parte) + S2 | **6 h** (30 min resto de sesión de lunes S1 + sesión martes S1 + Semana 2 completa) | **6 h** (ídem, viernes en vez de martes) | 6 (Fundamentos, PIB/productividad, Equilibrio, Tipología desempleo, Tasa natural/Phillips, Beveridge) | 10.019 palabras | Media — 6 bloques en 6 h netas, con la dinámica de innovación arrancando ya en la Sesión 2 |
 | **2** | S3 + S4 + S5 | 9 h | 9 h | 5 (Introducción, Marco institucional, Tipología PAE, Políticas específicas, Evaluación efectividad) | 8.189 palabras | Media — bien repartido en 3 semanas |
 | **3** | S6 + S7 + S8 | 7,5 h | 7,5 h | 7 (Introducción, Prestaciones España, Comparativa internacional, Control/extinción, Desafíos, Efectos/eficacia, Conclusiones) | 10.958 palabras | Media-alta |
 | **4** | S9 (única) | **2 h** | **2 h** | 8 bloques + ~24 subepígrafes (Flex. externa, índice EPL OCDE con 6 subapartados, Flex. interna con 7, Calidad de empleo con 7, Modelo español con 4, Evidencia empírica, Conclusiones) | 7.932 palabras | **Muy alta — el Tema con más subepígrafes de todo el curso, comprimido en una sola sesión de 2 h** |
@@ -26,10 +26,11 @@
 
 ## 2. Mapa semana a semana
 
-**Semana 1 (14-18/09) — Tema 0 y 1**
+**Semana 1 (14-18/09) — Tema 0 (1 h) y Tema 1 (arranque)**
 - L1: L 14/09 (1,5 h) + M 15/09 (2 h) = 3,5 h · L2: L 14/09 (1,5 h) + V 18/09 (2 h) = 3,5 h.
-- Contenido recomendado: presentación de la asignatura/método del caso (Tema 0, sin apuntes propios) + Tema 1 epígrafes 1-2 (Fundamentos del mercado de trabajo; PIB y productividad).
-- **⚠️ Alerta 1 (ya detectada en los guiones):** la presentación de la asignatura (Tema 0 + cronograma + guía docente, ~25 min según el propio checklist del guion) no está descontada del minutado de la Sesión 1. Con esa resta, el tiempo real para Tema 1 en el primer día baja de ~90 a ~65 min en L1.
+- Reparto explícito de la sesión de lunes (90 min, ambas líneas): **60 min Tema 0** (presentación de la asignatura, método del caso, conformación de equipos) + **30 min Tema 1** (arranque, epígrafe 1 — Fundamentos del mercado de trabajo, sin dinámica de innovación todavía).
+- La sesión de martes/viernes (120 min) se dedica íntegramente a Tema 1 (epígrafe 2 y siguientes) y es donde **arranca la dinámica docente de innovación** (gancho gamificado, mini-lección, laboratorio activo — ya reflejado en `guion_sesion_1409_martes.md`).
+- **✅ Alerta 1 — Resuelta:** el profesor ha fijado explícitamente 1 h para Tema 0 dentro de la sesión de lunes, con los 30 min restantes para el arranque de Tema 1. Ya no hay tiempo "fantasma" sin presupuestar.
 
 **Semana 2 (21-25/09) — Tema 1 (continuación)**
 - L1: L 21/09 (1,5 h) + M 22/09 (2 h) = 3,5 h · L2: igual.
@@ -95,7 +96,7 @@
 
 | # | Alerta | Tema(s) afectados | Gravedad |
 | :---: | :--- | :--- | :--- |
-| 1 | Presentación de la asignatura (Tema 0) sin minutos propios en el guion de la Sesión 1 | 0 / 1 | Media (ya detectado, fácil de corregir en el guion) |
+| 1 | ~~Presentación de la asignatura (Tema 0) sin minutos propios en el guion de la Sesión 1~~ | 0 / 1 | **Resuelta** — 1 h fija para Tema 0 en la sesión de lunes, 30 min de arranque de Tema 1 |
 | 2 | Hueco de contenido: Tema 2 no cubre explícitamente incentivos autonómicos a la contratación (tipo Emplea-T) que exige EPD 1-2 | 2 | **Alta** — afecta directamente al Caso 1 de EPD |
 | 3 | Tema 4 (el más fragmentado, ~24 subepígrafes) comprimido en una única sesión de 2 h | 4 | **Muy alta** |
 | 4 | "Trampa de la pobreza/METR" y "RMI→IMV" no aparecen como epígrafes propios en Tema 3, pese a ser la base teórica directa del Caso 2 de EPD | 3 | **Alta** |
@@ -111,6 +112,6 @@ Retomando las 4 opciones planteadas (A: mapa — este documento; B: solo ajustar
 - **Prioridad 1 — Temas 4 y 7:** son los candidatos claros para material nuevo "nativo por sesión" (Opción D o incluso C solo para estos dos), porque el problema no es de diseño de guion sino de que el contenido actual no cabe físicamente en el tiempo asignado. Aquí no basta con reformular el guion: hay que decidir qué subepígrafes se quedan fuera del aula (lectura autónoma / Aula Virtual) antes de construir el material de la sesión.
 - **Prioridad 2 — Tema 2 (Semana 5) y Tema 3 (Semanas 7-8):** no son un problema de tiempo sino de contenido ausente respecto a lo que EPD necesita. Antes de tocar el formato, hay que decidir si se amplía el apunte existente con el contenido que falta (incentivos autonómicos concretos; METR; RMI→IMV) o si ese contenido se traslada a un documento de apoyo específico para EPD 1 y EPD 4.
 - **Prioridad 3 — Temas 1, 2, 3, 5, 6:** el ajuste de tiempo es menor; probablemente basta con la Opción B (guiones bien acotados por epígrafe, como ya se ha hecho para la Semana 1-2) sin rehacer el material de fondo.
-- **Tema 0:** decidir si se le da una franja explícita de tiempo dentro de la Sesión 1 (ajustando el guion) o si se resuelve en un documento independiente de "primer día de clase" reutilizable cada curso.
+- **Tema 0:** ✅ decidido — franja fija de 1 h dentro de la Sesión 1 (primeros 60 min del lunes), con Tema 1 arrancando en los últimos 30 min de esa misma sesión.
 
 Ninguna de estas acciones se ha ejecutado todavía — quedan a la espera de que decidas por dónde empezar (p. ej., Tema 4 primero, dado que es la alerta más grave).
