@@ -61,8 +61,8 @@ PSLL/
 
 ### 1. Sincronización Estricta entre Líneas (L1 y L2)
 La asignatura se imparte simultáneamente en dos turnos con distinta configuración horaria y número de sesiones prácticas:
-- **Línea 1 (Mañana):** EB los lunes (13:30–15:00) y martes (10:00–11:30) en el Aula E13A7. Dispone de **6 sesiones de EPD** en aula informática.
-- **Línea 2 (Tarde):** EB los lunes (20:00–21:30) y viernes (18:30–20:00) en el Aula E10A3. Dispone de **7 sesiones de EPD** en aula informática.
+- **Línea 1 (Mañana):** EB los lunes (13:30–15:00, 1,5 h) y martes (09:30–11:30, 2,0 h) en el Aula E13A7. Dispone de **6 sesiones de EPD** en aula informática (lunes 13:30–15:00 o martes 11:30–13:00).
+- **Línea 2 (Tarde):** EB los lunes (20:00–21:30, 1,5 h) y viernes (17:30–19:30, 2,0 h) en el Aula E10A3. Dispone de **7 sesiones de EPD** en aula informática (viernes 19:30–21:00).
 
 > Para consultar el desglose exacto fecha a fecha, aula y contenido diario, véase [cronograma/cronograma_psll_2026_27.md](file:///c:/Users/Usuario/Dropbox/DOCENCIA%20UPO/CURSO%2026-27/PSLL/cronograma/cronograma_psll_2026_27.md).
 
