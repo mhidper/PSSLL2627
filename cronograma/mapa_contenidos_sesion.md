@@ -1,0 +1,116 @@
+# Mapa de Contenidos por Sesión — PSLL 2026-27
+
+> **Qué es esto y qué no es.** Documento de coordinación previo (Opción A del análisis de
+> reestructuración). Cruza el `cronograma_psll_2026_27.md` (que fija qué Tema entra cada semana)
+> con la estructura **real** de los apuntes 2526 de cada Tema (epígrafes, extensión), para detectar
+> desajustes de tiempo/contenido ANTES de tocar guiones o generar material nuevo.
+> **No modifica** el cronograma ni ningún guion de sesión — es un mapa de trabajo para decidir
+> dónde priorizar el rediseño de material (Temas EB - 2526/TemaN/work_in_progress).
+
+---
+
+## 1. Carga horaria vs. densidad de contenido, por Tema
+
+| Tema | Semanas (cronograma) | Horas presenciales L1 | Horas presenciales L2 | Epígrafes principales (apuntes reales) | Extensión aprox. | Densidad relativa |
+| :--- | :--- | :---: | :---: | :--- | :---: | :--- |
+| **0** | S1 (parte) | *(sin cuantificar)* | *(sin cuantificar)* | Sin apuntes — solo diapositivas de presentación | — | Baja, pero **sin minutos propios** en el guion actual (ver Alerta 1) |
+| **1** | S1 (parte) + S2 | ~7 h (compartida con Tema 0) | ~7 h (compartida con Tema 0) | 6 (Fundamentos, PIB/productividad, Equilibrio, Tipología desempleo, Tasa natural/Phillips, Beveridge) | 10.019 palabras | Media-alta — 6 bloques en ~5,5 h netas (tras restar Tema 0) |
+| **2** | S3 + S4 + S5 | 9 h | 9 h | 5 (Introducción, Marco institucional, Tipología PAE, Políticas específicas, Evaluación efectividad) | 8.189 palabras | Media — bien repartido en 3 semanas |
+| **3** | S6 + S7 + S8 | 7,5 h | 7,5 h | 7 (Introducción, Prestaciones España, Comparativa internacional, Control/extinción, Desafíos, Efectos/eficacia, Conclusiones) | 10.958 palabras | Media-alta |
+| **4** | S9 (única) | **2 h** | **2 h** | 8 bloques + ~24 subepígrafes (Flex. externa, índice EPL OCDE con 6 subapartados, Flex. interna con 7, Calidad de empleo con 7, Modelo español con 4, Evidencia empírica, Conclusiones) | 7.932 palabras | **Muy alta — el Tema con más subepígrafes de todo el curso, comprimido en una sola sesión de 2 h** |
+| **5** | S10 (única) | 3,5 h | 3,5 h | 5 (Marco institucional, Estructura/niveles, Determinación salarial, Empleo/desempleo, Reformas) | 5.526 palabras (el más corto) | Baja — encaja bien |
+| **6** | S11 + S12 (compartida con T7) | 2 h + parte de 2 h | 2 h + parte de 2 h | 6 (Introducción, SMI, Moderación salarial, Brecha salarial, Efectos sobre empleo, Conclusiones) | 7.967 palabras | Alta para el tiempo disponible |
+| **7** | S12 (parte) + S13 + S14 | **0 h en S13 (telemático)** + 3,5 h en S14 + parte de S12 | 2 h en S13 + 3,5 h en S14 + parte de S12 | 8 bloques + ~20 subepígrafes (Introducción, Fundamentos, Desafío demográfico, Situación financiera, Reformas 2021-23 con 8 subapartados, Equidad intergeneracional, Alternativas, Conclusiones) | 10.879 palabras (el más largo) | **Muy alta — el Tema más denso, con la sesión intermedia de L1 sin clase presencial** |
+
+---
+
+## 2. Mapa semana a semana
+
+**Semana 1 (14-18/09) — Tema 0 y 1**
+- L1: L 14/09 (1,5 h) + M 15/09 (2 h) = 3,5 h · L2: L 14/09 (1,5 h) + V 18/09 (2 h) = 3,5 h.
+- Contenido recomendado: presentación de la asignatura/método del caso (Tema 0, sin apuntes propios) + Tema 1 epígrafes 1-2 (Fundamentos del mercado de trabajo; PIB y productividad).
+- **⚠️ Alerta 1 (ya detectada en los guiones):** la presentación de la asignatura (Tema 0 + cronograma + guía docente, ~25 min según el propio checklist del guion) no está descontada del minutado de la Sesión 1. Con esa resta, el tiempo real para Tema 1 en el primer día baja de ~90 a ~65 min en L1.
+
+**Semana 2 (21-25/09) — Tema 1 (continuación)**
+- L1: L 21/09 (1,5 h) + M 22/09 (2 h) = 3,5 h · L2: igual.
+- Contenido recomendado: epígrafes 3-6 (Equilibrio en el mercado de trabajo; Tipología del desempleo; Tasa natural/Phillips; Curva de Beveridge — ya cubierto en `guion_sesion_1409_martes.md`).
+- Cuadra razonablemente si la Semana 1 no arrastra déficit del Tema 1 por la Alerta 1.
+
+**Semana 3 (28/09-02/10) — Tema 2 (I): justificación, tipologías, intermediación**
+- L1: M 29/09 (2 h) + X 30/09 ajuste (1,5 h) = 3,5 h · L2: L 28/09 (1,5 h) + V 02/10 (2 h) = 3,5 h.
+- Contenido recomendado: epígrafe 1 (Introducción y conceptos básicos) + epígrafe 3 (Tipología de políticas activas: orientación, formación, incentivos, emprendimiento, empleo público).
+- Encaja: 2 epígrafes de los apuntes en 3,5 h.
+
+**Semana 4 (05-09/10) — Tema 2 (II): evaluación de impacto, sesgo de selección, deadweight**
+- L1: L 05/10 (1,5 h) + M 06/10 (2 h) = 3,5 h · L2: igual.
+- Contenido recomendado: epígrafe 5 (Evaluación de efectividad y retos futuros: evidencia empírica, comparativa internacional, desafíos pendientes).
+- Encaja bien, incluso con margen para practicar el caso de deadweight que luego se usa en EPD 1-3.
+
+**Semana 5 (12-16/10) — Tema 2 (III): incentivos a la contratación en España y Andalucía**
+- L1: M 13/10 (2 h, único — L 12/10 festivo) · L2: V 16/10 (2 h, único).
+- Contenido recomendado: epígrafe 4 (Políticas específicas y programas destacados: Garantía Juvenil, fondos europeos, digitalización).
+- **⚠️ Alerta 2:** esta semana es la base teórica directa de **EPD 1**, que arranca el Caso 1 sobre el **Programa Emplea-T** (subvención autonómica a la contratación de PLD en Andalucía). El epígrafe 4 actual de los apuntes de Tema 2 no menciona explícitamente programas de incentivo a la contratación de ámbito autonómico (tipo Emplea-T) ni los conceptos que EPD 1-2 dan por conocidos: subvención fija vs. bonificación de cuotas, cláusulas de permanencia, efecto sustitución/deadweight aplicado a un caso concreto. Es un hueco de contenido real entre lo que enseña el Tema 2 y lo que exige el Caso 1 de EPD.
+
+**Semana 6 (19-23/10) — Tema 3 (I): protección por desempleo, tasa de sustitución, riesgo moral**
+- L1: L 19/10 (1,5 h) + M 20/10 (2 h) = 3,5 h · L2: igual.
+- Contenido recomendado: epígrafes 1-3 (Introducción; Sistema de prestaciones en España; Generosidad y comparativa internacional).
+
+**Semana 7 (26-30/10) — Tema 3 (II): trampa de la pobreza, tipos marginales (METR)**
+- L1: M 27/10 (2 h, único) · L2: V 30/10 (2 h, único).
+- Contenido recomendado: epígrafe 6 (Efectos y eficacia de las políticas pasivas) — pero "trampa de la pobreza y METR" como tal no aparece como epígrafe propio en la tabla de contenidos de Tema 3; es probable que esté embebido dentro del epígrafe 5 o 6. Conviene verificar antes de esta semana que el concepto de tipos marginales efectivos está desarrollado explícitamente (es la base directa del EITC que se trabajará en EPD 5, Caso 2).
+
+**Semana 8 (02-06/11) — Tema 3 (III): sistema de garantía de rentas, IMV**
+- L1: M 03/11 (2 h, único — L 02/11 festivo) · L2: V 06/11 (2 h, único).
+- Contenido recomendado: epígrafes 4-7 (Control/extinción; Desafíos actuales; Efectos/eficacia; Conclusiones) — pero el contenido específico de "RMI autonómicas → IMV" que pide el cronograma no aparece como epígrafe propio en la tabla de Tema 3. Es la base teórica directa del **Caso 2 de EPD (IMV)**: conviene confirmar que está desarrollado en detalle (no solo mencionado de pasada) antes de EPD 4.
+
+**Semana 9 (09-13/11) — Tema 4: flexibilidad, EPL, dualidad**
+- L1: M 10/11 (2 h, único) · L2: V 13/11 (2 h, único).
+- **⚠️ Alerta 3 (la más grave del mapa):** Tema 4 es el tema con más subepígrafes de todo el curso (8 bloques, ~24 subapartados: índice EPL de la OCDE con 6 subapartados propios, flexibilidad interna con 7, calidad del empleo con 7...) y se le asigna una única sesión de 2 h. Es matemáticamente imposible tratar los 24 subapartados con algo de profundidad en 120 minutos. Es el candidato número uno para: (a) una selección drástica y explícita de qué subapartados se explican en clase y cuáles quedan como lectura autónoma, o (b) material nuevo construido específicamente para encajar en 2 h en vez de heredar la estructura completa del docx.
+
+**Semana 10 (16-20/11) — Tema 5: negociación colectiva y fijación salarial**
+- L1: L 16/11 (1,5 h) + M 17/11 (2 h) = 3,5 h · L2: igual.
+- Contenido recomendado: los 5 epígrafes completos (es el Tema más corto, 5.526 palabras) — el único Tema donde sobra margen relativo.
+
+**Semana 11 (23-27/11) — Tema 6 (I): desigualdad, working poor, SMI**
+- L1: M 24/11 (2 h, único) · L2: V 27/11 (2 h, único).
+- Contenido recomendado: epígrafes 1-2 (Introducción; Salario Mínimo Interprofesional).
+
+**Semana 12 (30/11-04/12) — Tema 6 (II) y Tema 7 (inicio): EITC, sostenibilidad de rentas**
+- L1: M 01/12 (2 h, único) · L2: V 04/12 (2 h, único).
+- Contenido recomendado: cierre de Tema 6 (epígrafes 3-6: moderación salarial, brecha salarial, efectos sobre empleo, conclusiones) + arranque de Tema 7 (epígrafe 1, introducción).
+- **⚠️ Alerta 4:** comprimir el cierre de un Tema (6) y el arranque de otro (7) en una sola sesión de 2 h es ya de por sí ajustado; ambos Temas están entre los de mayor densidad del curso.
+
+**Semana 13 (07-11/12) — Tema 7 (continuación): sostenibilidad del sistema de pensiones**
+- L1: **sin sesión presencial de EB** (festivos 07/12 y 08/12; "cierre y tutorías telemáticas"). L2: V 11/12 (16:00-18:00, 2 h de recuperación).
+- **⚠️ Alerta 5:** L1 pierde su única sesión de esta semana para el Tema más denso del curso (Tema 7, 8 bloques/~20 subepígrafes) y queda solo con tutoría telemática, mientras L2 sí recupera 2 h presenciales. Esto amplía la asimetría entre líneas exactamente en el peor Tema para hacerlo (el de mayor extensión), y deja a L1 dependiendo casi en exclusiva de la Semana 14 para cerrar Tema 7.
+
+**Semana 14 (14-18/12) — Tema 7 (cierre) y síntesis final**
+- L1: M 15/12 (2 h) + X 16/12 (1,5 h) = 3,5 h · L2: L 14/12 (1,5 h) + V 18/12 (2 h) = 3,5 h.
+- Contenido recomendado: resto de Tema 7 (demografía, situación financiera, reformas 2021-23, equidad intergeneracional, alternativas, conclusiones) + síntesis global de la asignatura.
+- Con la Alerta 5, en L1 esta semana debe absorber prácticamente todo Tema 7 salvo lo ya visto en la Semana 12 — es la semana de mayor riesgo de sobrecarga de todo el cronograma para esa línea.
+
+---
+
+## 3. Alertas críticas — resumen priorizado
+
+| # | Alerta | Tema(s) afectados | Gravedad |
+| :---: | :--- | :--- | :--- |
+| 1 | Presentación de la asignatura (Tema 0) sin minutos propios en el guion de la Sesión 1 | 0 / 1 | Media (ya detectado, fácil de corregir en el guion) |
+| 2 | Hueco de contenido: Tema 2 no cubre explícitamente incentivos autonómicos a la contratación (tipo Emplea-T) que exige EPD 1-2 | 2 | **Alta** — afecta directamente al Caso 1 de EPD |
+| 3 | Tema 4 (el más fragmentado, ~24 subepígrafes) comprimido en una única sesión de 2 h | 4 | **Muy alta** |
+| 4 | "Trampa de la pobreza/METR" y "RMI→IMV" no aparecen como epígrafes propios en Tema 3, pese a ser la base teórica directa del Caso 2 de EPD | 3 | **Alta** |
+| 5 | Cierre de Tema 6 + arranque de Tema 7 comprimidos en una sola sesión de 2 h | 6 / 7 | Media-alta |
+| 6 | L1 pierde su sesión de la Semana 13 (Tema 7) mientras L2 la recupera — asimetría entre líneas en el Tema más denso del curso | 7 | Alta |
+
+---
+
+## 4. Opciones de acción, ahora informadas por el mapa
+
+Retomando las 4 opciones planteadas (A: mapa — este documento; B: solo ajustar guiones; C: rehacer todo el material por sesión; D: híbrido apuntes-Tema + pptx nativo por sesión):
+
+- **Prioridad 1 — Temas 4 y 7:** son los candidatos claros para material nuevo "nativo por sesión" (Opción D o incluso C solo para estos dos), porque el problema no es de diseño de guion sino de que el contenido actual no cabe físicamente en el tiempo asignado. Aquí no basta con reformular el guion: hay que decidir qué subepígrafes se quedan fuera del aula (lectura autónoma / Aula Virtual) antes de construir el material de la sesión.
+- **Prioridad 2 — Tema 2 (Semana 5) y Tema 3 (Semanas 7-8):** no son un problema de tiempo sino de contenido ausente respecto a lo que EPD necesita. Antes de tocar el formato, hay que decidir si se amplía el apunte existente con el contenido que falta (incentivos autonómicos concretos; METR; RMI→IMV) o si ese contenido se traslada a un documento de apoyo específico para EPD 1 y EPD 4.
+- **Prioridad 3 — Temas 1, 2, 3, 5, 6:** el ajuste de tiempo es menor; probablemente basta con la Opción B (guiones bien acotados por epígrafe, como ya se ha hecho para la Semana 1-2) sin rehacer el material de fondo.
+- **Tema 0:** decidir si se le da una franja explícita de tiempo dentro de la Sesión 1 (ajustando el guion) o si se resuelve en un documento independiente de "primer día de clase" reutilizable cada curso.
+
+Ninguna de estas acciones se ha ejecutado todavía — quedan a la espera de que decidas por dónde empezar (p. ej., Tema 4 primero, dado que es la alerta más grave).
