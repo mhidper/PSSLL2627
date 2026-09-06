@@ -14,8 +14,8 @@
 | Tema | Semanas (cronograma) | Horas presenciales L1 | Horas presenciales L2 | Epígrafes principales (apuntes reales) | Extensión aprox. | Densidad relativa |
 | :--- | :--- | :---: | :---: | :--- | :---: | :--- |
 | **0** | S1 (parte) | **1 h** (primeros 60 min de la sesión de lunes) | **1 h** (ídem) | Sin apuntes — solo diapositivas de presentación | — | Baja — con minutos propios ya asignados (ver Alerta 1, resuelta) |
-| **1** | S1 (parte) + S2 | **6 h** (30 min resto de sesión de lunes S1 + sesión martes S1 + Semana 2 completa) | **6 h** (ídem, viernes en vez de martes) | 6 (Fundamentos, PIB/productividad, Equilibrio, Tipología desempleo, Tasa natural/Phillips, Beveridge) | 10.019 palabras | Media — 6 bloques en 6 h netas, con la dinámica de innovación arrancando ya en la Sesión 2 |
-| **2** | S3 + S4 + S5 | 9 h | 9 h | 5 (Introducción, Marco institucional, Tipología PAE, Políticas específicas, Evaluación efectividad) | 8.189 palabras | Media — bien repartido en 3 semanas |
+| **1** | S1 (parte) + S2 + S3 (parte, en Semana 3) | **8 h** (30 min S1 + S2 120min + S3 90min + S4 120min + S5 120min) | **7,5 h** (ídem, con S5 de 90 min en vez de 120) | 6 (Fundamentos, PIB/productividad, Equilibrio, Tipología desempleo, Tasa natural/Phillips, Beveridge) + nuevo apartado 6.0 de dinámica de flujos ($u^*=s/(s+f)$) | 10.019 palabras (+ apartado nuevo) | Media — repartido en **5 sesiones** (ver Alerta 7, resuelta); la dinámica de innovación arranca en la Sesión 2 |
+| **2** | S3 (parte) + S4 + S5 | 7 h (1,5 h + 3,5 h + 2 h) | 7,5 h (2 h + 3,5 h + 2 h) | 5 (Introducción, Marco institucional, Tipología PAE, Políticas específicas, Evaluación efectividad) | 8.189 palabras | Media — comprimido de 9 h a ~7-7,5 h por ceder su primera sesión de la Semana 3 a Tema 1 (ver Alerta 7) |
 | **3** | S6 + S7 + S8 | 7,5 h | 7,5 h | 7 (Introducción, Prestaciones España, Comparativa internacional, Control/extinción, Desafíos, Efectos/eficacia, Conclusiones) | 10.958 palabras | Media-alta |
 | **4** | S9 (única) | **2 h** | **2 h** | 8 bloques + ~24 subepígrafes (Flex. externa, índice EPL OCDE con 6 subapartados, Flex. interna con 7, Calidad de empleo con 7, Modelo español con 4, Evidencia empírica, Conclusiones) | 7.932 palabras | **Muy alta — el Tema con más subepígrafes de todo el curso, comprimido en una sola sesión de 2 h** |
 | **5** | S10 (única) | 3,5 h | 3,5 h | 5 (Marco institucional, Estructura/niveles, Determinación salarial, Empleo/desempleo, Reformas) | 5.526 palabras (el más corto) | Baja — encaja bien |
@@ -29,18 +29,19 @@
 **Semana 1 (14-18/09) — Tema 0 (1 h) y Tema 1 (arranque)**
 - L1: L 14/09 (1,5 h) + M 15/09 (2 h) = 3,5 h · L2: L 14/09 (1,5 h) + V 18/09 (2 h) = 3,5 h.
 - Reparto explícito de la sesión de lunes (90 min, ambas líneas): **60 min Tema 0** (presentación de la asignatura, método del caso, conformación de equipos) + **30 min Tema 1** (arranque, epígrafe 1 — Fundamentos del mercado de trabajo, sin dinámica de innovación todavía).
-- La sesión de martes/viernes (120 min) se dedica íntegramente a Tema 1 (epígrafe 2 y siguientes) y es donde **arranca la dinámica docente de innovación** (gancho gamificado, mini-lección, laboratorio activo — ya reflejado en `guion_sesion_1409_martes.md`).
+- La sesión de martes/viernes (Sesión 2, 120 min) se dedica al epígrafe 4 (Tipología del desempleo) + apartado nuevo 6.0 (dinámica de flujos, $u^*=s/(s+f)$) + epígrafes 6.1-6.2 (Beveridge, fundamentos y lectura gráfica de movimientos/desplazamientos) y es donde **arranca la dinámica docente de innovación** (gancho gamificado, mini-lección, laboratorio activo — `guion_sesion_1409_martes.md`).
 - **✅ Alerta 1 — Resuelta:** el profesor ha fijado explícitamente 1 h para Tema 0 dentro de la sesión de lunes, con los 30 min restantes para el arranque de Tema 1. Ya no hay tiempo "fantasma" sin presupuestar.
 
 **Semana 2 (21-25/09) — Tema 1 (continuación)**
 - L1: L 21/09 (1,5 h) + M 22/09 (2 h) = 3,5 h · L2: igual.
-- Contenido recomendado: epígrafes 3-6 (Equilibrio en el mercado de trabajo; Tipología del desempleo; Tasa natural/Phillips; Curva de Beveridge — ya cubierto en `guion_sesion_1409_martes.md`).
-- Cuadra razonablemente si la Semana 1 no arrastra déficit del Tema 1 por la Alerta 1.
+- Sesión 3 (lunes, 90 min): epígrafe 3/"Equilibrio en el mercado de trabajo" (oferta y demanda de trabajo, determinación de salarios, negociación colectiva — `guion_sesion_2109_lunes.md`).
+- Sesión 4 (martes/viernes, 120 min): epígrafe 6.1 en profundidad (función de emparejamiento de Pissarides, tensión $\theta=V/U$) + 6.3-6.4 (eficiencia del emparejamiento, caso español 2008-2016) y conexión con histéresis/PLD, cerrando con el lanzamiento del Caso 1 de EPD (`guion_sesion_2109_martes.md`).
 
-**Semana 3 (28/09-02/10) — Tema 2 (I): justificación, tipologías, intermediación**
+**Semana 3 (28/09-02/10) — Tema 1 (Sesión 5, cierre) y Tema 2 (I, comprimido)**
 - L1: M 29/09 (2 h) + X 30/09 ajuste (1,5 h) = 3,5 h · L2: L 28/09 (1,5 h) + V 02/10 (2 h) = 3,5 h.
-- Contenido recomendado: epígrafe 1 (Introducción y conceptos básicos) + epígrafe 3 (Tipología de políticas activas: orientación, formación, incentivos, emprendimiento, empleo público).
-- Encaja: 2 epígrafes de los apuntes en 3,5 h.
+- **Sesión 5 de Tema 1** (primera sesión de la semana — M 29/09 en L1, 2 h; L 28/09 en L2, 1,5 h): epígrafe 2 (PIB y Productividad) + epígrafe 5 (Tasa Natural de Desempleo/NAIRU y Curva de Phillips). Cierra Tema 1 con 8 h netas en L1 / 7,5 h en L2 repartidas en 5 sesiones.
+- **Tema 2 (I)** (segunda sesión de la semana — X 30/09 en L1, 1,5 h; V 02/10 en L2, 2 h): epígrafe 1 (Introducción y conceptos básicos) + epígrafe 3 (Tipología de políticas activas), comprimido a una sola sesión en vez de dos.
+- **✅ Alerta 7 (nueva, resuelta con decisión del profesor):** al construir el material por sesión de Tema 1 se detectó que los epígrafes 2 y 5 no estaban asignados a ninguna sesión de las Semanas 1-2. Se resuelve añadiendo una 5ª sesión de Tema 1 que ocupa la que era la primera sesión de Tema 2 en la Semana 3. Efecto colateral: Tema 2 (I) pasa de 3,5 h a 1 sola sesión (1,5-2 h) — vigilar si "Introducción + Tipología de políticas activas" cabe con suficiente profundidad; las Semanas 4-5 de Tema 2 no se ven afectadas.
 
 **Semana 4 (05-09/10) — Tema 2 (II): evaluación de impacto, sesgo de selección, deadweight**
 - L1: L 05/10 (1,5 h) + M 06/10 (2 h) = 3,5 h · L2: igual.
@@ -102,6 +103,7 @@
 | 4 | "Trampa de la pobreza/METR" y "RMI→IMV" no aparecen como epígrafes propios en Tema 3, pese a ser la base teórica directa del Caso 2 de EPD | 3 | **Alta** |
 | 5 | Cierre de Tema 6 + arranque de Tema 7 comprimidos en una sola sesión de 2 h | 6 / 7 | Media-alta |
 | 6 | L1 pierde su sesión de la Semana 13 (Tema 7) mientras L2 la recupera — asimetría entre líneas en el Tema más denso del curso | 7 | Alta |
+| 7 | ~~Epígrafes de PIB/Productividad y NAIRU/Phillips de Tema 1 sin sesión asignada~~ | 1 / 2 | **Resuelta** — 5ª sesión de Tema 1 en la Semana 3, a costa de comprimir Tema 2 (I) a 1 sesión |
 
 ---
 
