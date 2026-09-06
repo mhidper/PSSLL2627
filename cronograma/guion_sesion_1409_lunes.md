@@ -34,61 +34,78 @@
 
 ---
 
-## 🎯 3. Objetivos de Aprendizaje de la Sesión
+## 🎯 3. Objetivos de Aprendizaje y Competencias Clave
 
-1. **Comprender el "Contrato Pedagógico":** El alumnado debe entender que la clase no es una lección magistral pasiva, sino un taller de entrenamiento para diseñar políticas públicas en las EPD y resolver el examen final.
-2. **Dominar la taxonomía oficial de la EPA:** Distinguir con precisión matemática y conceptual entre población total, en edad de trabajar (PET), activa (ocupados y parados) e inactiva.
-3. **Comprender la diferencia crucial entre Stocks y Flujos:** Entender que el mercado de trabajo no es una foto fija estática, sino una bañera con grifos de entrada (despidos, nuevos activos) y desagües (colocaciones, jubilaciones, desánimo).
+1. **Inmersión en la Narrativa Transmedia y Rol Profesional:** El alumnado asume el rol de **analista técnico junior** en la *Unidad de Evaluación y Diseño de Políticas Sociolaborales* (Consejería de Empleo / Ministerio de Inclusión). El aula es el centro de operaciones donde se resuelven casos reales.
+2. **Dominio Operativo de la Taxonomía EPA (INE/OIT):** Distinguir con precisión matemática y conceptual entre población total, en edad de trabajar (PET), activa (ocupados y parados) e inactiva.
+3. **Dinámica de Flujos vs. Stocks:** Comprender que el mercado laboral es un sistema dinámico (bañera de flujos con entradas por despido/incorporación y salidas por colocación/desánimo/jubilación).
 
 ---
 
-## ⏱️ 4. Desarrollo Minuto a Minuto con Innovación Docente (90 min)
+## 🔁 4. Estructura de Aula Invertida (*Flipped Classroom*) y Fases de la Sesión
 
-### Bloque 1: El Gancho y Presentación del Nuevo Enfoque (00:00 – 00:25 · 25 min)
-- **Actividad del Profesor (15 min):**
-  - Bienvenida y ruptura de expectativas: *«No venís a memorizar leyes laborales; venís a aprender a actuar como evaluadores y diseñadores de políticas públicas sociolaborales para la Consejería o el Ministerio»*.
-  - Presentación de la arquitectura del curso: Explicar cómo cada clase de EB alimenta la siguiente EPD y cómo se articulan los **dos casos reales del semestre** (Caso 1: Incentivos a la contratación / Caso 2: Ingreso Mínimo Vital).
-  - Reglas de juego: Evaluación (70% examen final aplicado + 30% dossiers continuos de EPD).
-- **Actividad del Alumnado (10 min):**
-  - Escaneo del QR en pantalla y respuesta al sondeo interactivo de expectativas y conocimientos previos (Mentimeter).
+Siguiendo las directrices pedagógicas del cuaderno de innovación docente de la asignatura:
 
-### Bloque 2: Noticia Disparadora y Enigma Empírico (00:25 – 00:40 · 15 min)
-- **Noticia en pantalla:** Proyección del titular:
-  > **«Récord histórico de afiliación a la Seguridad Social con 21,7 millones de ocupados mientras España duplica la tasa de paro media de la OCDE (11,3% frente a 4,9%)».**
-- **Dinámica Think-Pair-Share (Piensa - En Pareja - Comparte):**
-  - *Minutos 25-28 (Individual):* Cada alumno escribe en un papel una razón por la que conviven récord de empleo y récord de paro.
-  - *Minutos 28-34 (En parejas):* Comparan su respuesta con el compañero de al lado y acuerdan una síntesis común.
-  - *Minutos 34-40 (Plenario):* El profesor saca 3 respuestas al azar. Conduce la discusión hacia el concepto de **tasa de actividad** y el **crecimiento de la población activa** (inmigración, incorporación de la mujer).
+```mermaid
+flowchart LR
+    A["<b>1. Antes de Clase (En Casa)</b><br>Lectura guía / Vídeo píldora (8 min)<br>Cuestionario de comprobación"] --> B["<b>2. El Gancho (15 min)</b><br>Gamificación diagnóstica (Mentimeter)<br>Resolución activa de dudas"]
+    B --> C["<b>3. Laboratorio Activo (45 min)</b><br>Mini-lección causal (20 min)<br>Micro-reto de cálculo en parejas (25 min)"]
+    C --> D["<b>4. Cierre y Metacognición (15 min)</b><br>Pregunta tipo examen in situ<br>Conexión transmedia con la siguiente clase"]
+```
 
-### Bloque 3: Mini-Lección Quirúrgica de Fundamentos (00:40 – 01:05 · 25 min)
-- **Exposición teórica con Diapositivas 1 a 12 del Tema 1:**
-  - Taxonomía estricta de la Encuesta de Población Activa (EPA - metodología OIT):
-    $$\text{Tasa de Actividad} = \frac{\text{Activos}}{\text{Población } \ge 16} \times 100$$
-    $$\text{Tasa de Paro} = \frac{\text{Parados}}{\text{Población Activa}} \times 100$$
+### Fase 0: Antes de Clase · Trabajo Autónomo del Alumnado (En Casa)
+- **Recurso digital provisto:** Píldora explicativa breve (vídeo de 7-9 minutos o infografía resumen) en el Aula Virtual: *«La arquitectura de la EPA: cómo se mide el empleo y el paro sin caer en trampas estadísticas»*.
+- **Comprobación formativa automatizada:** Cuestionario de 3 preguntas de opción múltiple autocalificables en el campus virtual (Moodle). El docente recibe el mapa de calor de aciertos antes de entrar a clase para saber qué conceptos exigen refuerzo.
+
+---
+
+## ⏱️ 5. Desarrollo Minuto a Minuto en el Aula Presencial (90 min)
+
+### Bloque 1: El Gancho y Gamificación Diagnóstica (00:00 – 00:20 · 20 min)
+- **Actividad del Profesor (8 min):**
+  - Bienvenida e inmersión en el rol profesional: *«Bienvenidos al equipo de evaluación de políticas públicas sociolaborales. Aquí no se memoriza legislación; se aprende a tomar decisiones con datos para cambiar la vida de las personas»*.
+  - Proyección de la noticia disparadora en pantalla:
+    > **«Récord histórico de afiliación a la Seguridad Social con 21,7 millones de ocupados mientras España duplica la tasa de paro media de la OCDE (11,3% frente a 4,9%)».**
+- **Gamificación y Sondeo de Arranque (Mentimeter) (12 min):**
+  - Los alumnos escanean el código QR desde sus móviles y responden a dos preguntas trampa:
+    1. *«Si se crean 400.000 empleos en un año, ¿la tasa de paro baja obligatoriamente?»* (Sí / No / Depende de la población activa).
+    2. *«¿Qué colectivo es numéricamente mayor en España: los parados registrados en el SEPE o los parados según la EPA?»*
+  - El profesor analiza los resultados proyectados en tiempo real para calibrar el debate.
+
+### Bloque 2: Mini-Lección Quirúrgica de Mecanismos Causales (00:20 – 00:45 · 25 min)
+- **Exposición teórica focalizada (Diapositivas 1 a 12 del Tema 1 — paleta oficial menta/salvia/coral):**
+  - Taxonomía estricta OIT/EPA:
+    $$\text{Tasa de Actividad} = \frac{\text{Población Activa}}{\text{Población } \ge 16} \times 100$$
+    $$\text{Tasa de Paro} = \frac{\text{Desempleados}}{\text{Población Activa}} \times 100$$
     $$\text{Tasa de Empleo} = \frac{\text{Ocupados}}{\text{Población } \ge 16} \times 100$$
-  - **La trampa del desánimo:** ¿Qué ocurre con la tasa de paro si 100.000 desempleados tiran la toalla y dejan de buscar empleo? *La tasa de paro baja artificialmente porque se reduce el denominador.*
-  - **Diferencia entre paro registrado (SEPE) y desempleo EPA (INE):** Por qué no coinciden nunca y por qué Europa exige la EPA.
+  - **La trampa del desánimo:** Simulación de qué ocurre cuando 150.000 parados de larga duración dejan de renovar su demanda activa de empleo.
+  - Diferencia metodológica entre paro registrado (administrativo, SEPE) y paro EPA (encuesta muestral homogénea internacional).
 
-### Bloque 4: Aplicación Activa y Micro-Cálculo en Vivo (01:05 – 01:20 · 15 min)
-- **Reto Práctico en el Aula:** El profesor proyecta una tabla con cifras simuladas de una comunidad autónoma (Andalucía) y plantea el siguiente reto:
-  - *«Durante el último trimestre, 50.000 jóvenes terminan sus estudios y empiezan a buscar empleo sin encontrarlo inmediatamente. Simultáneamente, 30.000 personas en paro encuentran trabajo a jornada parcial y 20.000 parados mayores de 55 años dejan de renovar la demanda por desánimo. ¿Qué ha ocurrido exactamente con la Tasa de Paro y con la Tasa de Actividad?»*.
-- **Trabajo en parejas (8 min):** Calculan los signos de variación (+ / - / =) de cada tasa.
-- **Resolución socrática (7 min):** El profesor demuestra en la pizarra digital cómo los flujos simultáneos pueden provocar que la tasa de paro aumente aun cuando se está creando empleo neto.
+### Bloque 3: Laboratorio Activo · Reto de Simulación en Parejas (00:45 – 01:15 · 30 min)
+- **Dinámica cooperativa (*Think-Pair-Share* en rol de evaluador):**
+  - Se proyecta una matriz de datos reales/simulados de Andalucía para un trimestre.
+  - **Misión del equipo:** Resolver el siguiente dictamen técnico en 15 minutos:
+    - *«Durante el trimestre analizado, 40.000 graduados universitarios entran por primera vez a buscar trabajo; paralelamente se crean 35.000 empleos en el sector servicios y 25.000 desempleados mayores de 52 años pasan a la inactividad por desánimo. Determinad analíticamente si el gobierno autonómico puede anunciar que 'el desempleo ha mejorado' y explicad qué contradicciones detectáis»*.
+  - **El profesor como facilitador:** Recorre el aula resolviendo dudas en los grupos mediante preguntas socráticas (no dando la respuesta directa).
+- **Debriefing cruzado (15 min):** Dos parejas exponen su dictamen y se contrastan las conclusiones con el marco de evaluación de políticas públicas.
 
-### Bloque 5: Cierre, Pregunta Tipo Examen y Enlace (01:20 – 01:30 · 10 min)
-- **Pregunta Tipo Examen Proyectada:**
-  > *«En una economía, el gobierno aprueba un subsidio que incentiva a 200.000 amas de casa inactivas a inscribirse en las oficinas de empleo para optar a un programa de formación. Si durante ese año no se destruye ningún empleo, explique razonadamente qué efecto inmediato tendrá esta política sobre: a) La tasa de actividad, b) La tasa de paro, c) La tasa de ocupación».*
-- **Autoevaluación:** Se concede 1 minuto para pensarlo y el profesor proyecta la solución modelo y los errores típicos que restan nota en la prueba final.
-- **Puente hacia la Sesión 2:** Avisar de que en la siguiente sesión (martes L1 / viernes L2) se trabajará el **modelo de flujos y la Curva de Beveridge** (desajuste entre vacantes y desempleo).
+### Bloque 4: Cierre Metacognitivo y Pregunta Tipo Examen (01:15 – 01:30 · 15 min)
+- **Pregunta Tipo Examen (Simulacro in situ de 3 minutos):**
+  > *«En una economía, el gobierno aprueba una ayuda asistencial que exige a 100.000 personas inactivas inscribirse como demandantes de empleo. Si en ese periodo no se crea ni destruye ningún puesto de trabajo, determine y razone el impacto en la Tasa de Actividad, Tasa de Paro y Tasa de Empleo».*
+- **Rúbrica ágil de corrección (proyectada en pantalla):**
+  - $\uparrow$ Tasa de Actividad (aumenta el numerador y el denominador).
+  - $\uparrow$ Tasa de Paro (aumenta el numerador en mayor proporción que el denominador).
+  - $=$ Tasa de Empleo (los ocupados y la población $\ge 16$ no varían).
+- **Conexión transmedia con la siguiente clase:**
+  - Pista para la Sesión 2: *«El martes/viernes entraremos en la sala de máquinas del desempleo: ¿por qué los empresarios dicen que no encuentran trabajadores mientras hay 2,6 millones de personas en paro? La Curva de Beveridge os dará la respuesta»*.
 
 ---
 
-## 📎 5. Material y Fuentes Propuestas para la Sesión
+## 📎 6. Material y Fuentes Propuestas para la Sesión
 
 1. **Noticia recomendada:**
-   - INE / El País (Julio 2024 / Actualizable al inicio de curso): *«La EPA confirma el máximo histórico de empleo en España pero evidencia la persistencia del paro estructural»*.
-2. **Gráfico interactivo de apoyo:**
-   - Visualizador INE de la EPA: Gráfico de población clasificada por relación con la actividad económica (Árbol de flujos EPA).
-3. **Conceptos clave a fijar en la pizarra:**
-   - Población Activa vs. Inactiva (criterio de búsqueda activa en las últimas 4 semanas y disponibilidad inmediata en 2 semanas).
-   - El "Efecto Desánimo" vs. "Efecto Trabajador Adicional".
+   - INE / Cinco Días (Último trimestre disponible): *«La paradoja del empleo en España: récord histórico de cotizantes con la mayor tasa de paro juvenil de la OCDE»*.
+2. **Recurso transmedia en Aula Virtual:**
+   - Píldora introductoria en vídeo (8 min) + infografía del árbol de clasificación EPA.
+3. **Criterio de evaluación formativa del profesor:**
+   - Registro ágil de participación y argumentación técnica durante el reto en parejas (evaluación in situ sin sobrecarga de corrección en casa).

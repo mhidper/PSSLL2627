@@ -34,75 +34,83 @@
 
 ---
 
-## 🎯 3. Objetivos de Aprendizaje de la Sesión
+## 🎯 3. Objetivos de Aprendizaje y Competencias Clave
 
-1. **Comprender la dinámica de flujos (la ecuación de paro de equilibrio):** Demostrar matemáticamente y con intuición económica cómo la tasa de paro estacionaria depende del cociente entre la tasa de destrucción de empleo ($s$) y la tasa de salida del paro ($f$):
+1. **La Ecuación Dinámica de Flujos (Pissarides):** Demostrar analítica e intuitivamente cómo el paro de equilibrio depende del balance entre destrucción ($s$) y creación/salida ($f$):
    $$u^* = \frac{s}{s + f}$$
-2. **Clasificar con rigor técnico los tipos de desempleo:** Diferenciar sin titubeos entre paro friccional, estructural, cíclico y estacional, entendiendo que cada tipo de paro exige un instrumento de política pública radicalmente distinto.
-3. **Introducir la Curva de Beveridge como herramienta de diagnóstico:** Interpretar el espacio $(U, V)$ para saber si un mercado sufre una recesión económica (desplazamiento a lo largo de la curva) o un fallo de emparejamiento / ineficiencia estructural (desplazamiento de la curva hacia fuera).
+2. **Diagnóstico Causal de Tipologías de Desempleo:** Asignar el instrumento de política pública adecuado a cada tipo de desempleo (friccional $\rightarrow$ intermediación; estructural $\rightarrow$ recalificación/movilidad; cíclico $\rightarrow$ demanda macro).
+3. **La Curva de Beveridge como Radiografía Estructural:** Interpretar desplazamientos a lo largo de la curva (ciclo económico) vs. desplazamientos de la propia curva (eficiencia de emparejamiento y parados de larga duración).
 
 ---
 
-## ⏱️ 4. Desarrollo Minuto a Minuto con Innovación Docente (120 min)
+## 🔁 4. Estructura de Aula Invertida (*Flipped Classroom*) y Fases de la Sesión
 
-### Bloque 1: El Gancho y Enigma de las Vacantes sin Cubrir (00:00 – 00:20 · 20 min)
+```mermaid
+flowchart LR
+    A["<b>1. Antes de Clase (En Casa)</b><br>Lectura guía / Vídeo (10 min)<br>Autoevaluación diagnóstica"] --> B["<b>2. El Gancho (20 min)</b><br>Dilema de vacantes (Mentimeter)<br>Resolución de dudas previas"]
+    B --> C["<b>3. Laboratorio Activo (70 min)</b><br>Mini-lección flujos (25 min)<br>Reto gráfico Beveridge (30 min)<br>Debate socrático (15 min)"]
+    C --> D["<b>4. Cierre y Metacognición (15 min)</b><br>Pregunta tipo examen in situ<br>Conexión directa con EPD 1"]
+```
+
+### Fase 0: Antes de Clase · Trabajo Autónomo del Alumnado (En Casa)
+- **Recurso digital provisto:** Vídeo-píldora breve (10 min) en Aula Virtual: *«La bañera del desempleo y la Curva de Beveridge explicada en 5 pasos»*.
+- **Comprobación formativa automatizada:** Cuestionario previo de 3 preguntas de verificación en el campus virtual.
+
+---
+
+## ⏱️ 5. Desarrollo Minuto a Minuto en el Aula Presencial (120 min)
+
+### Bloque 1: El Gancho y la Paradoja de las Vacantes (00:00 – 00:20 · 20 min)
 - **Actividad del Profesor (8 min):**
-  - Proyección de dos testimonios contrapuestos extraídos de prensa:
-    - *Testimonio A (Patronal):* «No encontramos personal cualificado ni con ganas de trabajar; tenemos puestos vacantes sin cubrir desde hace meses».
-    - *Testimonio B (Sindicatos/Trabajadores):* «Hay millones de personas deseando trabajar, pero las ofertas exigen experiencia irreal y ofrecen salarios que no cubren el coste de la vida».
-  - Planteamiento del dilema técnico: *«¿Es un fallo de precios (salarios), un fallo de cualificaciones (desajuste formativo) o un fallo de intermediación (el SAE/SEPE no conecta a las partes)?»*.
-- **Actividad del Alumnado (12 min):**
-  - Dinámica de **"Votación Polarizada y Argumentación en 60 segundos"**:
-    - Votan en Mentimeter cuál es el factor principal: A) Salarios bajos, B) Falta de formación adecuada, C) Subsidios desincentivadores, D) Ineficiencia del servicio de empleo.
-    - Dos alumnos defienden posturas opuestas con un argumento técnico.
+  - Proyección de dos titulares contrapuestos en pantalla:
+    - *Titular A (Patronal):* «Hostelería, construcción y tecnología alertan de 150.000 puestos vacantes que no logran cubrir».
+    - *Titular B (Demandantes):* «Más de 2,6 millones de personas buscan trabajo y denuncian ofertas precarias y desajuste de requisitos».
+  - Pregunta detonante en Mentimeter: *«Si sobran trabajadores y faltan empleados al mismo tiempo, ¿qué falla exactamente en el mercado?»*.
+- **Gamificación y Votación Polarizada (12 min):**
+  - Los alumnos votan entre 4 opciones y defienden posturas en 60 segundos con argumentos técnicos.
 
 ### Bloque 2: Mini-Lección 1: La Dinámica de Flujos (00:20 – 00:45 · 25 min)
-- **Exposición teórica rigurosa (Diapositivas 13 a 22):**
-  - Salir de la foto fija estática: el mercado laboral como sistema dinámico.
-  - Derivación analítica del paro de equilibrio en estado estacionario:
+- **Exposición teórica con Diapositivas 13 a 22 (Paleta oficial menta/salvia/coral):**
+  - Demostración de la ecuación de estado estacionario:
     $$\Delta U = s \cdot E - f \cdot U = 0 \implies u^* = \frac{s}{s + f}$$
-  - **Lección clave para evaluadores de políticas:**
-    - Para bajar el paro de equilibrio solo hay dos vías: o reducimos la tasa de separación $s$ (protegiendo empleos o mejorando su estabilidad) o aumentamos la tasa de salida $f$ (acelerando la colocación).
-    - ¿Por qué España tiene históricamente una $s$ muy alta en recesiones y una $f$ muy baja para parados de larga duración?
+  - Implicación directa para la política sociolaboral:
+    - O actuamos sobre $s$ (reducir la volatilidad del empleo y la temporalidad injustificada).
+    - O actuamos sobre $f$ (acelerar la búsqueda y el reentrenamiento de parados).
 
 ### Bloque 3: Tipología del Desempleo y Fallos de Política Pública (00:45 – 01:15 · 30 min)
-- **Taxonomía Económica del Desempleo (Diapositivas 23 a 34):**
-  - **Paro Friccional:** Búsqueda normal e información imperfecta. *Remedio:* Plataformas de empleo, agilidad en la información.
-  - **Paro Estructural:** Desajuste entre lo que demandan las empresas y lo que ofrecen los trabajadores (*skills mismatch* y desajuste geográfico). *Remedio:* Formación ocupacional, recalificación, incentivos a la movilidad.
-  - **Paro Cíclico (o Keynesiano):** Caída de la demanda agregada durante una recesión. *Remedio:* Políticas fiscales y monetarias expansivas.
-  - **Paro Estacional:** Calendario productivo (turismo, agricultura).
-- **El error de política pública (Discusión guiada con el profesor):**
-  - *«¿Qué ocurre si un gobierno intenta solucionar el paro estructural inyectando dinero público para estimular el consumo?»* $\rightarrow$ Genera inflación sin reducir el desempleo.
-  - *«¿Qué ocurre si intentamos solucionar el paro cíclico mandando a todos los desempleados a hacer cursos de formación de 6 meses?»* $\rightarrow$ Efecto encierro (*lock-in*) y retraso de la recuperación.
+- **Taxonomía Económica (Diapositivas 23 a 34):**
+  - Friccional vs. Estructural vs. Cíclico vs. Estacional.
+- **Debate guiado:**
+  - *«¿Por qué una política de estímulo del gasto público fracasa estrepitosamente si el paro es estructural?»*
+  - *«¿Por qué los programas de formación para parados no resuelven una recesión por falta de demanda?»*
 
-### Bloque 4: Taller Activo en Vivo: La Curva de Beveridge (01:15 – 01:45 · 30 min)
-- **Presentación del Modelo de Beveridge (10 min):**
-  - Eje horizontal: Tasa de Desempleo ($u$). Eje vertical: Tasa de Vacantes ($v$).
-  - Pendiente negativa natural: En épocas de bonanza hay muchas vacantes y poco paro (arriba a la izquierda); en crisis hay pocas vacantes y mucho paro (abajo a la derecha).
-- **Reto Gráfico por Parejas (15 min):**
-  - Cada pareja recibe en papel una cuadrícula con una Curva de Beveridge inicial ($BC_0$).
-  - **Caso a simular 1:** Estalla una crisis financiera como la de 2008. ¿Hacia dónde se mueve la economía? *(Movimiento a lo largo de la curva hacia abajo a la derecha)*.
-  - **Caso a simular 2:** Tras 5 años de crisis, los parados de la construcción pierden empleabilidad y no pueden reciclarse hacia el sector tecnológico. Las empresas abren vacantes pero no encuentran candidatos. ¿Qué le pasa a la Curva de Beveridge? *(Desplazamiento de toda la curva hacia afuera/arriba a la derecha, $BC_1$, reflejando ineficiencia y deterioro del matching)*.
-- **Puesta en común (5 min):** Dos alumnos proyectan sus dibujos en la pizarra digital y se debate el caso español post-2008.
+### Bloque 4: Taller Activo · Trazado y Simulación de la Curva de Beveridge (01:15 – 01:45 · 30 min)
+- **Misión de Trabajo en Parejas (Rol de Analistas de la Consejería):**
+  - Cada pareja recibe una plantilla gráfica con los ejes $(U, V)$.
+  - **Reto de simulación 1:** Representar el impacto de la crisis inmobiliaria de 2008 (movimiento a lo largo de la curva vs. desplazamiento hacia fuera).
+  - **Reto de simulación 2:** La Consejería de Empleo diseña un plan de subvenciones a la contratación de parados de larga duración. ¿Cómo se refleja en el gráfico si la política tiene éxito frente a si sufre de un efecto de peso muerto (*deadweight*) del 80%?
+- **Puesta en común interactiva (10 min):** Dos parejas proyectan y defienden su gráfica ante el plenario.
 
-### Bloque 5: Cierre, Pregunta Tipo Examen y Conexión con EPD (01:45 – 02:00 · 15 min)
+### Bloque 5: Cierre Metacognitivo, Pregunta Tipo Examen y Conexión con EPD (01:45 – 02:00 · 15 min)
 - **Pregunta Tipo Examen (Resolución individual de 3 minutos):**
-  > *«Suponga que en un país la tasa de vacantes no ha variado durante los últimos tres años, pero la tasa de desempleo ha aumentado 4 puntos porcentuales. Utilizando el marco analítico de la Curva de Beveridge:*  
+  > *«En los últimos 3 años, la tasa de vacantes en España se ha mantenido constante en el 0,9%, pero la tasa de paro ha aumentado en 3 puntos porcentuales. Utilizando el marco de la Curva de Beveridge:*  
   > *a) Represente gráficamente la situación.*  
-  > *b) Explique si este fenómeno se debe a una insuficiencia de demanda agregada o a un empeoramiento de la eficiencia de emparejamiento.*  
-  > *c) ¿Recomendaría una política fiscal expansiva o un programa de formación y recalificación laboral? Justifique su respuesta técnica».*
-- **Corrección en directo y rúbrica:** El profesor detalla los 3 puntos clave que los correctores buscan en una respuesta excelente.
-- **Tarea previa para la Semana 2:**
-  - Leer en el Aula Virtual el documento introductorio sobre el **Caso 1 de EPD: Parados de Larga Duración en Andalucía**.
-  - Revisar los apuntes de la Curva de Beveridge para conectar con las Políticas Activas de Empleo (PAE).
+  > *b) Diagnostique razonadamente si el problema es de demanda o de matching.*  
+  > *c) ¿Qué tipo de política activa recomendaría y cuál desaconsejaría tajantemente? Justifique su respuesta».*
+- **Rúbrica de corrección in situ (proyectada):**
+  - Identificación del desplazamiento de la curva hacia la derecha.
+  - Diagnóstico de ineficiencia de emparejamiento / desajuste estructural.
+  - Recomendación de políticas de recalificación focalizadas y desaconsejar estímulos macro de demanda agregada.
+- **Puente hacia el Caso 1 de EPD:**
+  - Anuncio de la apertura del Caso 1 en Aula Virtual: *«En las próximas semanas utilizaremos exactamente este marco para auditar el Programa Emplea-T de la Junta de Andalucía»*.
 
 ---
 
-## 📎 5. Material y Fuentes Propuestas para la Sesión
+## 📎 6. Material y Fuentes Propuestas para la Sesión
 
-1. **Noticia y fuente de datos recomendada:**
-   - Banco de España (Boletín Económico / Documentos Ocasionales): *«El desajuste educativo y laboral en España: análisis de la curva de Beveridge»*.
-2. **Herramienta visual:**
-   - Gráfico de la Curva de Beveridge en España (comparativa 2007 vs. 2014 vs. 2024).
-3. **Concepto nuclear a consolidar:**
-   - Diferencia entre **moverse a lo largo de la curva de Beveridge** (ciclo económico) vs. **desplazar la curva de Beveridge** (eficiencia institucional, cualificación y parados de larga duración).
+1. **Documento oficial de apoyo:**
+   - Banco de España (Documentos Ocasionales): *«El desajuste educativo y laboral en España: análisis de la curva de Beveridge»*.
+2. **Gráfico interactivo de apoyo:**
+   - Series temporales de vacantes y desempleo en España (1980–2024).
+3. **Criterio de evaluación formativa:**
+   - Rúbrica ágil de observación en el aula: rigor en la interpretación gráfica y justificación económica de la medida.
