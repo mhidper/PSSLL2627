@@ -46,6 +46,7 @@ Basado estrictamente en [Logos y skills/BRAND.md](file:///c:/Users/Usuario/Dropb
 3. **Cajas Destacadas (*Callout Boxes*):**
    - Tabla unificada de 1 celda con fondo temático, borde izquierdo grueso de 3 pt (26 dxa), padding interior calibrado y título en negrita con icono temático:
      - 🗓️ **Caja de Sesión Docente (*Session Box*):** Fondo verde menta suave (`#E1F6EA`), borde en Verde Profundo (`#566B56`). Sitúa al estudiante en el cronograma oficial de la asignatura (ej. *Sesión 1 · Semana 1*).
+     - 💭 **Parada Reflexiva (*Reflection Box*):** Fondo neutro cálido/crema suave (`#F3EFDC`), borde en Verde Salvia (`#76927A`). Preguntas detonantes y dilemas intuitivos para que el estudiante auto-evalúe su comprensión antes de avanzar.
      - ⚠️ **Alerta de Examen / Trampa Habitual (*Warning Box*):** Fondo suave de alerta (`#FDF4F0`), borde en Coral (`#E99073`). Errores analíticos frecuentes en pruebas de evaluación.
      - 💡 **Concepto Clave (*Concept Box*):** Fondo verde menta (`#E1F6EA`), borde en Verde Salvia (`#76927A`). Fundamentos teóricos e intuiciones microeconómicas.
      - 📊 **Dato Empírico / Noticia (*Case Box*):** Fondo crema cálido (`#F3EFDC`), borde en Verde Profundo (`#566B56`). Aplicaciones reales de la EPA, SEPE o Banco de España.

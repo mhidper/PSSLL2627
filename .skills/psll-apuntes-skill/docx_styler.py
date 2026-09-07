@@ -132,6 +132,11 @@ def insert_callout_box(doc, callout_type: str, title: str, text: str):
         border_hex = HEX_COLORS["deep_green"] # Borde verde profundo distintivo
         icon = "🗓️"
         title_color = RGB_COLORS["deep_green"]
+    elif callout_type == "reflection":
+        bg_hex = HEX_COLORS["warm_cream"]     # Neutro cálido / crema suave
+        border_hex = HEX_COLORS["sage"]       # Borde verde salvia
+        icon = "💭"
+        title_color = RGB_COLORS["deep_green"]
     elif callout_type == "concept":
         bg_hex = HEX_COLORS["mint"]
         border_hex = HEX_COLORS["sage"]
@@ -178,6 +183,59 @@ def insert_callout_box(doc, callout_type: str, title: str, text: str):
     p_after = doc.add_paragraph()
     p_after.paragraph_format.space_before = Pt(0)
     p_after.paragraph_format.space_after = Pt(4)
+
+def insert_reflection_box(doc, title: str, q_and_a_list: list):
+    """
+    Inserta una caja estructurada de Parada Reflexiva con preguntas encadenadas.
+    q_and_a_list es una lista de tuplas: [ (pregunta, respuesta), ... ]
+    """
+    tbl = doc.add_table(rows=1, cols=1)
+    tbl.alignment = WD_TABLE_ALIGNMENT.CENTER
+    tbl.autofit = False
+    cell = tbl.cell(0, 0)
+    cell.width = Inches(6.5)
+    
+    bg_hex = HEX_COLORS["warm_cream"]
+    border_hex = HEX_COLORS["sage"]
+    
+    set_cell_shading(cell, bg_hex)
+    set_cell_margins(cell, top_dpt=140, bottom_dpt=140, left_dpt=200, right_dpt=160)
+    set_callout_borders(cell, border_hex, border_size_pt=26)
+    
+    # Párrafo del título
+    p_title = cell.paragraphs[0]
+    p_title.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    p_title.paragraph_format.space_before = Pt(0)
+    p_title.paragraph_format.space_after = Pt(4)
+    run_icon = p_title.add_run(f"💭  PARADA REFLEXIVA: {title.upper()}\n")
+    run_icon.font.name = FONT_HEADINGS
+    run_icon.font.size = Pt(10.0)
+    run_icon.font.bold = True
+    run_icon.font.color.rgb = RGB_COLORS["deep_green"]
+    
+    # Preguntas y respuestas
+    for i, (q, a) in enumerate(q_and_a_list):
+        p_item = cell.add_paragraph()
+        p_item.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+        p_item.paragraph_format.space_before = Pt(4 if i > 0 else 0)
+        p_item.paragraph_format.space_after = Pt(2)
+        p_item.paragraph_format.line_spacing = 1.15
+        
+        run_q = p_item.add_run(f"• {q.strip()}\n")
+        run_q.font.name = FONT_BODY
+        run_q.font.size = Pt(9.5)
+        run_q.font.bold = True
+        run_q.font.color.rgb = RGB_COLORS["deep_green"]
+        
+        run_a = p_item.add_run(f"  {a.strip()}")
+        run_a.font.name = FONT_BODY
+        run_a.font.size = Pt(9.5)
+        run_a.font.color.rgb = RGB_COLORS["ink_green"]
+        
+    p_after = doc.add_paragraph()
+    p_after.paragraph_format.space_before = Pt(0)
+    p_after.paragraph_format.space_after = Pt(4)
+
 
 
 def insert_figure(doc, image_path: str, caption_text: str, source_text: str, width_inches=6.2):

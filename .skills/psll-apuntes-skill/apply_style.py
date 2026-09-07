@@ -31,7 +31,7 @@ from brand_theme import (
 from figure_generator import generate_beveridge_figure, generate_epa_taxonomy_figure
 from docx_styler import (
     set_document_geometry, setup_document_styles, add_header_and_footer,
-    insert_callout_box, insert_figure
+    insert_callout_box, insert_reflection_box, insert_figure
 )
 
 def create_institutional_cover(doc, emblem_path: str, upo_logo_path: str):
@@ -179,6 +179,7 @@ def style_topic_document(input_path: str, output_path: str):
     epa_callout_inserted = False
     beveridge_fig_inserted = False
     beveridge_callout_inserted = False
+    skip_reflection_block = False
     
     print("Procesando y reclasificando párrafos...")
     for idx, p in enumerate(doc_orig.paragraphs):
@@ -186,7 +187,27 @@ def style_topic_document(input_path: str, output_path: str):
         if not raw_text:
             continue
             
-        # 0. INDICACIÓN DE SESIÓN DOCENTE (CRONOGRAMA DE AULA)
+        # 0.1. PARADA REFLEXIVA AGRUPADA: RANGOS DE LA TASA DE ACTIVIDAD
+        if "Reflexión sobre los rangos de la tasa de actividad" in raw_text:
+            insert_reflection_box(
+                doc,
+                title="Límites y Rangos de Variación de la Tasa de Actividad",
+                q_and_a_list=[
+                    ("¿Puede ser negativa?", "Teóricamente, la tasa de actividad no puede asumir valores negativos, ya que una población activa negativa carece de sentido práctico."),
+                    ("¿Es razonable que sea cero?", "Una tasa de actividad del 0% indicaría que ninguna persona en edad de trabajar está buscando empleo ni trabajando, lo cual sería un escenario extremadamente raro y poco realista en cualquier economía moderna."),
+                    ("¿Es razonable que sea del 20%?", "Una tasa de actividad del 20% podría darse en países o regiones con una participación limitada en el mercado laboral, quizás debido a restricciones culturales, sociales o a altos niveles de desempleo estructural. No obstante, sigue siendo un valor relativamente bajo en comparación con economías desarrolladas, donde las tasas de actividad suelen oscilar entre el 60% y el 80%.")
+                ]
+            )
+            skip_reflection_block = True
+            continue
+            
+        if skip_reflection_block:
+            if "Factores determinantes de la tasa de actividad" in raw_text:
+                skip_reflection_block = False
+            else:
+                continue
+
+        # 0.2. INDICACIÓN DE SESIÓN DOCENTE (CRONOGRAMA DE AULA)
         if "📍" in raw_text or (raw_text.startswith("SESIÓN") and any(k in raw_text for k in ["Semana", "min", "Lunes", "Martes", "Viernes"])):
             clean_session = raw_text.replace("📍", "").strip()
             parts = clean_session.split("—", 1)
