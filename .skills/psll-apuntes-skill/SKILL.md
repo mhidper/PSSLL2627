@@ -66,7 +66,17 @@ Basado estrictamente en [Logos y skills/BRAND.md](file:///c:/Users/Usuario/Dropb
    - Ancladas centradas con pie reglamentario:  
      *«Figura X.X: Título descriptivo. Fuente: Elaboración propia para Políticas Sociolaborales (UPO)...»*.
 
-6. **Encabezado y Pie de Página Corporativo:**
+6. **Cabecera Institucional Inicial (Página 1):**
+   - Tabla de 2 columnas flotante transparente alineada a la izquierda (`WD_TABLE_ALIGNMENT.LEFT`).
+   - Todos los párrafos de metadatos académicos formateados como líneas independientes alineadas a la izquierda (`WD_ALIGN_PARAGRAPH.LEFT`):
+     - `UNIVERSIDAD PABLO DE OLAVIDE` (9 pt Poppins negrita en Verde Profundo `#566B56`).
+     - `Facultad de Ciencias del Trabajo · Grado en RRLL y Recursos Humanos` (8.5 pt Calibri en Verde Salvia `#76927A`).
+     - `Políticas Sociolaborales y de Empleo (Código 102023) | Curso 2026-2027` (8.5 pt Calibri en Verde Tinta `#2F3A30`).
+     - `Prof. Manuel A. Hidalgo Pérez` (8.5 pt Calibri en Verde Tinta `#2F3A30`).
+   - Celda derecha con el emblema oficial de la asignatura (`psll_emblem.png`).
+   - Línea separadora horizontal (`―` * 48) alineada a la izquierda en Verde Salvia.
+
+7. **Encabezado y Pie de Página Corporativo:**
    - **Encabezado Justificado a la Izquierda:** Alineado a la izquierda (`WD_ALIGN_PARAGRAPH.LEFT`) con el título del tema en verde salvia (`#76927A`), 8 pt Poppins.
    - Pie con paginación automática dinámica ("Página X de Y") y referencia institucional UPO / Grado en RRLL y RRHH.
 

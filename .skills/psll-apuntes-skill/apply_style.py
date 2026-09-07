@@ -35,33 +35,55 @@ from docx_styler import (
 )
 
 def create_institutional_cover(doc, emblem_path: str, upo_logo_path: str):
-    """Inserta la cabecera institucional en la primera página."""
+    """Inserta la cabecera institucional en la primera página alineada a la izquierda."""
     tbl = doc.add_table(rows=1, cols=2)
-    tbl.alignment = WD_TABLE_ALIGNMENT.CENTER
+    tbl.alignment = WD_TABLE_ALIGNMENT.LEFT
     tbl.autofit = False
     
-    # Celda izquierda: Textos institucionales
+    # Celda izquierda: Textos institucionales alineados a la izquierda
     cell_l = tbl.cell(0, 0)
     cell_l.width = Inches(4.8)
-    p_inst = cell_l.paragraphs[0]
-    p_inst.paragraph_format.space_before = Pt(0)
-    p_inst.paragraph_format.space_after = Pt(2)
     
-    run_univ = p_inst.add_run("UNIVERSIDAD PABLO DE OLAVIDE\n")
+    # Párrafo 1: UNIVERSIDAD PABLO DE OLAVIDE
+    p1 = cell_l.paragraphs[0]
+    p1.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    p1.paragraph_format.space_before = Pt(0)
+    p1.paragraph_format.space_after = Pt(1.5)
+    run_univ = p1.add_run("UNIVERSIDAD PABLO DE OLAVIDE")
     run_univ.font.name = FONT_HEADINGS
     run_univ.font.size = Pt(9.0)
     run_univ.font.bold = True
     run_univ.font.color.rgb = RGB_COLORS["deep_green"]
     
-    run_fac = p_inst.add_run("Facultad de Ciencias del Trabajo · Grado en RRLL y Recursos Humanos\n")
+    # Párrafo 2: Facultad de Ciencias del Trabajo...
+    p2 = cell_l.add_paragraph()
+    p2.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    p2.paragraph_format.space_before = Pt(0)
+    p2.paragraph_format.space_after = Pt(1.5)
+    run_fac = p2.add_run("Facultad de Ciencias del Trabajo · Grado en RRLL y Recursos Humanos")
     run_fac.font.name = FONT_BODY
     run_fac.font.size = Pt(8.5)
     run_fac.font.color.rgb = RGB_COLORS["sage"]
     
-    run_asig = p_inst.add_run("Políticas Sociolaborales y de Empleo (Código 102023) | Curso 2026-2027\nProf. Manuel A. Hidalgo Pérez")
+    # Párrafo 3: Políticas Sociolaborales y de Empleo...
+    p3 = cell_l.add_paragraph()
+    p3.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    p3.paragraph_format.space_before = Pt(0)
+    p3.paragraph_format.space_after = Pt(1.5)
+    run_asig = p3.add_run("Políticas Sociolaborales y de Empleo (Código 102023) | Curso 2026-2027")
     run_asig.font.name = FONT_BODY
     run_asig.font.size = Pt(8.5)
     run_asig.font.color.rgb = RGB_COLORS["ink_green"]
+    
+    # Párrafo 4: Prof. Manuel A. Hidalgo Pérez
+    p4 = cell_l.add_paragraph()
+    p4.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    p4.paragraph_format.space_before = Pt(0)
+    p4.paragraph_format.space_after = Pt(0)
+    run_prof = p4.add_run("Prof. Manuel A. Hidalgo Pérez")
+    run_prof.font.name = FONT_BODY
+    run_prof.font.size = Pt(8.5)
+    run_prof.font.color.rgb = RGB_COLORS["ink_green"]
     
     # Celda derecha: Emblema oficial PSLL
     cell_r = tbl.cell(0, 1)
@@ -74,9 +96,10 @@ def create_institutional_cover(doc, emblem_path: str, upo_logo_path: str):
     if os.path.exists(emblem_path):
         p_logo.add_run().add_picture(emblem_path, width=Inches(1.2))
         
-    # Línea separadora horizontal
+    # Línea separadora horizontal alineada a la izquierda
     p_div = doc.add_paragraph()
-    p_div.paragraph_format.space_before = Pt(6)
+    p_div.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    p_div.paragraph_format.space_before = Pt(4)
     p_div.paragraph_format.space_after = Pt(16)
     run_div = p_div.add_run("―" * 48)
     run_div.font.name = FONT_HEADINGS
