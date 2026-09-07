@@ -1030,6 +1030,175 @@ def generate_curva_phillips_dual(output_path: str):
     plt.tight_layout(rect=[0.02, 0.04, 0.98, 0.91])
     save_figure(fig, output_path)
 
+def generate_curva_beveridge_dual(output_path: str):
+    """
+    Genera la Figura Dual de la Curva de Beveridge:
+    - Panel A: Modelo Teórico de Beveridge (DMP: Diamond-Mortensen-Pissarides).
+      Movimientos cíclicos a lo largo de la curva vs. desplazamientos estructurales de emparejamiento.
+    - Panel B: Evidencia Empírica en España (1980–2024).
+      Serie temporal de 45 años en 3 fases macroeconómicas (pre-crisis, Gran Recesión y recuperación récord de vacantes).
+    """
+    setup_academic_style()
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(11.6, 5.8), dpi=300)
+    fig.patch.set_facecolor(PALETTE["blanco"])
+
+    for ax in (ax1, ax2):
+        ax.set_facecolor(PALETTE["blanco"])
+        ax.spines['top'].set_visible(False)
+        ax.spines['right'].set_visible(False)
+        ax.spines['left'].set_color(PALETTE["verde_tinta"])
+        ax.spines['bottom'].set_color(PALETTE["verde_tinta"])
+        ax.spines['left'].set_linewidth(1.3)
+        ax.spines['bottom'].set_linewidth(1.3)
+
+    # =======================================================
+    # PANEL A: EL MODELO TEÓRICO (DIAMOND-MORTENSEN-PISSARIDES)
+    # =======================================================
+    ax1.grid(True, linestyle="--", alpha=0.45, color=PALETTE["gris_ejes"])
+
+    u = np.linspace(2.5, 18.0, 200)
+
+    # Curvas de Beveridge teóricas: v(u) = k / (u - c)
+    # Curva 1: Mayor eficiencia de emparejamiento (pasa por E1: u=7.0, v=4.0)
+    c1 = 1.0
+    k1 = 4.0 * (7.0 - c1) # 24.0
+    v1 = k1 / (u - c1)
+
+    # Curva 2: Menor eficiencia de emparejamiento / Desajuste estructural (pasa por E2: u=11.5, v=4.0)
+    k2 = 4.0 * (11.5 - c1) # 42.0
+    v2 = k2 / (u - c1)
+
+    ax1.plot(u, v1, color=PALETTE["salvia"], lw=2.6, label=r"Curva $B_1$ (Mayor eficiencia emparejamiento)")
+    ax1.plot(u, v2, color=PALETTE["coral"], lw=2.4, linestyle="--", label=r"Curva $B_2$ (Menor eficiencia / Desajuste estructural)")
+
+    # Puntos clave en B1
+    u_exp, v_exp = 4.2, k1 / (4.2 - c1)
+    u_rec, v_rec = 13.0, k1 / (13.0 - c1)
+    u_e1, v_e1 = 7.0, 4.0
+    u_e2, v_e2 = 11.5, 4.0
+
+    ax1.scatter([u_exp], [v_exp], color=PALETTE["verde_profundo"], s=75, zorder=5)
+    ax1.text(u_exp + 0.35, v_exp + 0.1, "Expansión\n($v \\uparrow, u \\downarrow$)", fontsize=7.6, fontweight="bold", color=PALETTE["verde_profundo"])
+
+    ax1.scatter([u_rec], [v_rec], color=PALETTE["verde_profundo"], s=75, zorder=5)
+    ax1.text(u_rec + 0.35, v_rec + 0.1, "Recesión\n($v \\downarrow, u \\uparrow$)", fontsize=7.6, fontweight="bold", color=PALETTE["verde_profundo"])
+
+    ax1.scatter([u_e1], [v_e1], color=PALETTE["verde_profundo"], s=85, zorder=5)
+    ax1.text(u_e1 - 0.7, v_e1 - 0.5, r"$\mathbf{E_1}$", fontsize=11.0, fontweight="bold", color=PALETTE["verde_profundo"])
+
+    ax1.scatter([u_e2], [v_e2], color=PALETTE["coral"], s=85, zorder=5)
+    ax1.text(u_e2 + 0.3, v_e2 + 0.2, r"$\mathbf{E_2}$", fontsize=11.0, fontweight="bold", color=PALETTE["coral"])
+
+    # Flecha bidireccional de ciclo a lo largo de B1
+    ax1.annotate("", xy=(5.2, k1 / (5.2 - c1) - 0.1), xytext=(10.5, k1 / (10.5 - c1) + 0.2),
+                 arrowprops=dict(arrowstyle="<->", color=PALETTE["verde_profundo"], lw=2.0, connectionstyle="arc3,rad=-0.15"))
+    ax1.text(6.8, 2.2, "① Movimientos a lo largo:\nCiclo económico", fontsize=7.8, fontweight="bold",
+             color=PALETTE["verde_profundo"], ha="center")
+
+    # Flecha de desplazamiento estructural E1 -> E2
+    ax1.annotate("", xy=(u_e2 - 0.3, v_e2), xytext=(u_e1 + 0.3, v_e1),
+                 arrowprops=dict(arrowstyle="->", color=PALETTE["coral"], lw=2.2))
+    ax1.text((u_e1 + u_e2)/2, v_e1 + 0.45, "② Desplazamiento estructural:\nPérdida de eficiencia / Mismatch",
+             fontsize=7.8, fontweight="bold", color=PALETTE["coral"], ha="center")
+
+    # Flechas de los ejes
+    ax1.plot(0, 9.6, marker="^", markersize=6.5, color=PALETTE["verde_tinta"], clip_on=False)
+    ax1.plot(19.0, 0, marker=">", markersize=6.5, color=PALETTE["verde_tinta"], clip_on=False)
+
+    ax1.set_xlim(0, 19.0)
+    ax1.set_ylim(0, 9.6)
+    ax1.set_xlabel("Tasa de desempleo ($u$, %)", fontsize=9.5, fontweight="bold", color=PALETTE["verde_profundo"], labelpad=6)
+    ax1.set_ylabel("Tasa de vacantes ($v$, %)", fontsize=9.5, fontweight="bold", color=PALETTE["verde_profundo"], labelpad=6)
+
+    ax1.set_title("PANEL A: Modelo Teórico de Beveridge (DMP)", fontsize=9.8, fontweight="bold",
+                  color=PALETTE["verde_profundo"], pad=12)
+    ax1.legend(loc="upper right", framealpha=0.92, fontsize=7.3)
+
+    # =======================================================
+    # PANEL B: EVIDENCIA EMPÍRICA EN ESPAÑA (1980–2024)
+    # =======================================================
+    ax2.grid(True, linestyle="--", alpha=0.45, color=PALETTE["gris_ejes"])
+
+    # Datos armonizados de la Curva de Beveridge en España (FEDEA, Nada es Gratis e INE)
+    p1_u = [11.2, 11.5, 12.0, 12.2, 13.0, 14.5, 15.5, 16.0, 17.5, 17.8, 18.5, 19.5, 19.0, 18.5,
+            17.0, 15.5, 14.0, 13.0, 11.0, 10.5, 9.5, 9.0, 8.5, 8.2, 7.95]
+    p1_v = [0.14, 0.12, 0.10, 0.09, 0.08, 0.08, 0.09, 0.10, 0.12, 0.12, 0.13, 0.12, 0.18, 0.23,
+            0.28, 0.35, 0.44, 0.50, 0.58, 0.65, 0.72, 0.76, 0.82, 0.85, 0.88]
+
+    p2_u = [9.6, 11.2, 13.8, 17.8, 18.7, 19.8, 20.1, 21.1, 22.6, 24.2, 24.8, 25.8, 26.9, 26.1, 25.7]
+    p2_v = [0.82, 0.77, 0.77, 0.79, 0.78, 0.65, 0.62, 0.55, 0.48, 0.45, 0.38, 0.36, 0.38, 0.40, 0.38]
+
+    p3_u = [24.5, 23.7, 22.5, 21.0, 19.8, 18.6, 17.2, 16.3, 15.2, 14.4, 13.8, 15.3, 14.6, 13.3, 12.9, 12.2, 11.6, 11.3]
+    p3_v = [0.32, 0.33, 0.35, 0.38, 0.42, 0.44, 0.48, 0.52, 0.55, 0.58, 0.62, 0.42, 0.58, 0.65, 0.68, 0.71, 0.73, 0.70]
+
+    ax2.scatter(p1_u, p1_v, color=PALETTE["verde_profundo"], s=40, alpha=0.85, label="1980–2007 (Curva pre-crisis)", zorder=4)
+    ax2.scatter(p2_u, p2_v, color=PALETTE["coral"], s=42, alpha=0.85, label="2008–2013 (Gran Recesión y shock)", zorder=4)
+    ax2.scatter(p3_u, p3_v, color=PALETTE["salvia"], s=44, marker="s", alpha=0.90, label="2014–2024 (Recuperación y récord vacantes)", zorder=4)
+
+    # Curvas de tendencia empíricas
+    u_grid1 = np.linspace(7.8, 20.0, 150)
+    fit1 = np.polyfit(p1_u, p1_v, deg=2)
+    v_fit1 = np.polyval(fit1, u_grid1)
+    ax2.plot(u_grid1, v_fit1, color=PALETTE["verde_profundo"], lw=2.0, linestyle=":", label="Ajuste pre-crisis (1980–2007)")
+
+    u_grid2 = np.linspace(11.0, 27.0, 150)
+    fit2 = np.polyfit(p2_u + p3_u, p2_v + p3_v, deg=2)
+    v_fit2 = np.polyval(fit2, u_grid2)
+    ax2.plot(u_grid2, v_fit2, color=PALETTE["coral"], lw=2.0, linestyle="--", label="Ajuste desplazado hacia el exterior")
+
+    # Puntos emblemáticos A y B
+    ptA = (14.5, 0.42)
+    ptB = (19.8, 0.65)
+    ax2.scatter([ptA[0]], [ptA[1]], color=PALETTE["verde_profundo"], s=95, edgecolors="#2F3A30", lw=1.5, zorder=6)
+    ax2.text(ptA[0] - 0.7, ptA[1] - 0.06, r"$\mathbf{A}$", fontsize=10.5, fontweight="bold", color=PALETTE["verde_profundo"])
+
+    ax2.scatter([ptB[0]], [ptB[1]], color=PALETTE["coral"], s=95, edgecolors="#2F3A30", lw=1.5, zorder=6)
+    ax2.text(ptB[0] + 0.35, ptB[1] + 0.03, r"$\mathbf{B}$", fontsize=10.5, fontweight="bold", color=PALETTE["coral"])
+
+    # Flecha conectora A -> B
+    ax2.annotate("", xy=(ptB[0] - 0.3, ptB[1]), xytext=(ptA[0] + 0.3, ptA[1]),
+                 arrowprops=dict(arrowstyle="->", color=PALETTE["coral"], lw=2.0, linestyle=":"))
+    ax2.text((ptA[0] + ptB[0])/2, (ptA[1] + ptB[1])/2 + 0.05, "Desplazamiento estructural (+5 p.p. de paro)",
+             fontsize=7.2, fontweight="bold", color=PALETTE["coral"], rotation=22, ha="center")
+
+    # Anotaciones didácticas
+    ax2.annotate("2007T2: Máx. vacantes (0,88%)\nParo mínimo 7,95%", xy=(7.95, 0.88), xytext=(8.8, 0.94),
+                 arrowprops=dict(arrowstyle="->", color=PALETTE["verde_profundo"], lw=1.0),
+                 fontsize=7.0, fontweight="bold", color=PALETTE["verde_profundo"])
+
+    ax2.annotate("2013T4: Pico desempleo (26,9%)\nVacantes al 0,38%", xy=(26.1, 0.38), xytext=(21.5, 0.22),
+                 arrowprops=dict(arrowstyle="->", color=PALETTE["coral"], lw=1.0),
+                 fontsize=7.0, fontweight="bold", color=PALETTE["coral"])
+
+    ax2.annotate("2023-2024: Vacantes récord (0,73%)\nParo al 11,3%", xy=(11.3, 0.70), xytext=(12.8, 0.84),
+                 arrowprops=dict(arrowstyle="->", color=PALETTE["salvia"], lw=1.0),
+                 fontsize=7.0, fontweight="bold", color=PALETTE["salvia"])
+
+    ax2.set_xlim(6.0, 28.5)
+    ax2.set_ylim(0.0, 1.05)
+    ax2.set_xlabel("Tasa de desempleo (%)", fontsize=9.5, fontweight="bold", color=PALETTE["verde_profundo"], labelpad=6)
+    ax2.set_ylabel("Vacantes sobre población activa (%)", fontsize=9.5, fontweight="bold", color=PALETTE["verde_profundo"], labelpad=6)
+
+    ax2.set_title("PANEL B: Evidencia Empírica en España (1980–2024)", fontsize=9.8, fontweight="bold",
+                  color=PALETTE["verde_profundo"], pad=12)
+
+    ax2.legend(loc="lower left", framealpha=0.92, fontsize=6.8, bbox_to_anchor=(0.02, 0.02))
+
+    # Título y Subtítulo corporativos
+    fig.text(0.05, 0.968, "La Curva de Beveridge: Modelo Teórico y Evidencia Empírica en España (1980–2024)",
+             fontsize=11.5, fontweight="bold", color=PALETTE["verde_profundo"])
+    fig.text(0.05, 0.935, "Relación inversa vacantes-desempleo: movimientos cíclicos a lo largo de la curva vs. desplazamientos estructurales de emparejamiento",
+             fontsize=8.5, style="italic", color=PALETTE["salvia"])
+
+    # Pie didáctico e institucional
+    fig.text(0.05, 0.015, "Panel A: Modelo Diamond-Mortensen-Pissarides. Panel B: Desplazamiento estructural pre vs post Gran Recesión.",
+             fontsize=7.8, color=PALETTE["verde_profundo"])
+    fig.text(0.95, 0.015, "Fuente: Elaboración propia a partir de FEDEA (2017), Nada es Gratis e INE (EPA y ETCL, 2024).",
+             ha="right", fontsize=7.5, style="italic", color=PALETTE["verde_tinta"])
+
+    plt.tight_layout(rect=[0.02, 0.04, 0.98, 0.91])
+    save_figure(fig, output_path)
+
 def generate_figures_for_topic(topic_num: int, project_root: str):
     """Genera las figuras remasterizadas para un tema específico en su carpeta relativa."""
     dest_dir = os.path.join(project_root, f"Temas EB/Tema {topic_num}/figuras/remasterizadas")
@@ -1042,7 +1211,7 @@ def generate_figures_for_topic(topic_num: int, project_root: str):
         vab_path = os.path.join(dest_dir, "vab_pan.png")
         pib_path = os.path.join(dest_dir, "pib_interanual.png")
         prod_path = os.path.join(dest_dir, "productividad_salarios.png")
-        bev_path = os.path.join(dest_dir, "beveridge.png")
+        bev_dual_path = os.path.join(dest_dir, "curva_beveridge_dual.png")
         neo_path = os.path.join(dest_dir, "modelo_desempleo_neoclasico.png")
         nairu_path = os.path.join(dest_dir, "tasa_natural_nairu.png")
         phil_path = os.path.join(dest_dir, "curva_phillips_dual.png")
@@ -1051,7 +1220,7 @@ def generate_figures_for_topic(topic_num: int, project_root: str):
         generate_vab_pan(vab_path)
         generate_pib_interanual(pib_path)
         generate_productividad_salarios(prod_path)
-        generate_beveridge_curve(bev_path)
+        generate_curva_beveridge_dual(bev_dual_path)
         generate_modelo_desempleo_neoclasico(neo_path)
         generate_tasa_natural_nairu(nairu_path)
         generate_curva_phillips_dual(phil_path)

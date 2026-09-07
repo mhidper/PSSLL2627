@@ -76,19 +76,17 @@ TEMA_1_FIGURES_META = {
         "source": "Fuente: Elaboración propia para Políticas Sociolaborales (UPO) a partir de Friedman (1968), Phelps (1967) e Instituto Nacional de Estadística (EPA y ETCL, 2024)."
     },
     "image9.png": {
-        "remastered": "beveridge.png",
-        "caption": "Figura 1.9: La Curva de Beveridge. Desplazamientos a lo largo de la curva vs. desplazamientos estructurales.",
-        "source": "Fuente: Elaboración propia para Políticas Sociolaborales (UPO). Modelo Diamond-Mortensen-Pissarides."
+        "remastered": "curva_beveridge_dual.png",
+        "caption": "Figura 1.9: La Curva de Beveridge: modelo teórico de emparejamiento (DMP) y evidencia empírica en España (1980–2024).",
+        "source": "Fuente: Elaboración propia para Políticas Sociolaborales (UPO) a partir de FEDEA (2017), Nada es Gratis e Instituto Nacional de Estadística (EPA y ETCL, 2024)."
     },
     "image10.png": {
         "remastered": None,
-        "caption": "Figura 1.10: Estimación empírica de la Curva de Beveridge en España (1980-2016).",
-        "source": "Fuente: Fundación de Estudios de Economía Aplicada (FEDEA, 2017)."
+        "skip": True
     },
     "image11.png": {
         "remastered": None,
-        "caption": "Figura 1.11: Dinámica de la Curva de Beveridge española por subperiodos y efecto de la reforma de 2012.",
-        "source": "Fuente: FEDEA (2017), Colección Estudios sobre la Economía Española."
+        "skip": True
     },
 }
 
@@ -310,6 +308,8 @@ def style_topic_document(input_path: str, output_path: str):
                 if fname and fname not in inserted_figures:
                     inserted_figures.add(fname)
                     meta = TEMA_1_FIGURES_META.get(fname, {})
+                    if meta.get("skip", False):
+                        continue
                     remastered_name = meta.get("remastered")
                     caption = meta.get("caption", f"Figura 1.{fig_counter}: Ilustración complementaria del epígrafe.")
                     source = meta.get("source", "Fuente: Elaboración propia para Políticas Sociolaborales (UPO).")
