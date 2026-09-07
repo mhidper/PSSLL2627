@@ -26,3 +26,16 @@ Este proyecto tiene una identidad visual oficial basada en el emblema real de la
 - **Tipografías:** `Poppins` para titulares (alternativa: Century Schoolbook/Cambria), `Calibri` / `Arial` para cuerpo de texto y tablas. Nunca `Aptos`.
 - **Gráficos en Python:** usar el módulo de estilo con la paleta menta/salvia/coral y añadir siempre el pie de fuente y autoría.
 - **Nota:** existió una guía anterior con paleta crema/terracota (`Logos y skills/marca_psll/`) que no coincidía con el logo real; se eliminó del proyecto — no debe reintroducirse ni usarse como referencia.
+
+## Maquetación y Formato de Apuntes (Skill de Maquetación)
+
+Para la edición, diseño y maquetación de los documentos de apuntes (`.docx`) de la asignatura:
+- Se debe utilizar obligatoriamente la skill de maquetación ubicada en `.skills/psll-apuntes-skill/`.
+- Esta skill gobierna la aplicación sistemática de la identidad visual de PSLL:
+  - Tipografías oficiales (`Poppins` para títulos, `Calibri` para cuerpo de texto).
+  - Paleta oficial (títulos en `#566B56`, subtítulos en `#76927A`, texto en verde tinta `#2F3A30`, cajas de aviso en coral `#E99073` / melocotón `#EDB090`).
+  - Cajas destacadas (*Callout boxes*) con fondos suaves e iconos semánticos.
+  - Tablas estilizadas con cabeceras en verde profundo y alternancia de filas.
+  - Inserción de figuras de datos en alta resolución (300 DPI) generadas con el motor de gráficos `matplotlib` adaptado a la marca.
+  - Encabezados con emblema oficial (`psll_emblem.png`) y pie de página con paginación dinámica.
+- Se prohíbe maquetar apuntes de forma manual o ad-hoc sin apoyarse en este motor de estilo, asegurando la reproducibilidad y homogeneidad total en todos los temas del curso.

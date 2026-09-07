@@ -1,0 +1,314 @@
+"""
+apply_style.py - Script principal de la skill psll-apuntes-skill.
+Lee un documento de apuntes en .docx, aplica la maquetación corporativa completa,
+inserta figuras de alta resolución, cajas callout y tablas estilizadas, y guarda el resultado.
+"""
+
+import os
+import sys
+import re
+import io
+import argparse
+import docx
+
+if hasattr(sys.stdout, 'buffer'):
+    sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+if hasattr(sys.stderr, 'buffer'):
+    sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8')
+from docx.shared import Inches, Pt, RGBColor
+from docx.enum.text import WD_ALIGN_PARAGRAPH
+from docx.enum.table import WD_TABLE_ALIGNMENT
+
+# Asegurar importación de módulos hermanos
+CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
+if CURRENT_DIR not in sys.path:
+    sys.path.insert(0, CURRENT_DIR)
+
+from brand_theme import (
+    HEX_COLORS, RGB_COLORS, FONT_HEADINGS, FONT_BODY,
+    set_cell_shading, set_cell_margins, set_callout_borders, set_table_borders
+)
+from figure_generator import generate_beveridge_figure, generate_epa_taxonomy_figure
+from docx_styler import (
+    set_document_geometry, setup_document_styles, add_header_and_footer,
+    insert_callout_box, insert_figure
+)
+
+def create_institutional_cover(doc, emblem_path: str, upo_logo_path: str):
+    """Inserta la cabecera institucional en la primera página."""
+    tbl = doc.add_table(rows=1, cols=2)
+    tbl.alignment = WD_TABLE_ALIGNMENT.CENTER
+    tbl.autofit = False
+    
+    # Celda izquierda: Textos institucionales
+    cell_l = tbl.cell(0, 0)
+    cell_l.width = Inches(4.8)
+    p_inst = cell_l.paragraphs[0]
+    p_inst.paragraph_format.space_before = Pt(0)
+    p_inst.paragraph_format.space_after = Pt(2)
+    
+    run_univ = p_inst.add_run("UNIVERSIDAD PABLO DE OLAVIDE\n")
+    run_univ.font.name = FONT_HEADINGS
+    run_univ.font.size = Pt(9.0)
+    run_univ.font.bold = True
+    run_univ.font.color.rgb = RGB_COLORS["deep_green"]
+    
+    run_fac = p_inst.add_run("Facultad de Ciencias del Trabajo · Grado en RRLL y Recursos Humanos\n")
+    run_fac.font.name = FONT_BODY
+    run_fac.font.size = Pt(8.5)
+    run_fac.font.color.rgb = RGB_COLORS["sage"]
+    
+    run_asig = p_inst.add_run("Políticas Sociolaborales y de Empleo (Código 102023) | Curso 2026-2027\nProf. Manuel A. Hidalgo Pérez")
+    run_asig.font.name = FONT_BODY
+    run_asig.font.size = Pt(8.5)
+    run_asig.font.color.rgb = RGB_COLORS["ink_green"]
+    
+    # Celda derecha: Emblema oficial PSLL
+    cell_r = tbl.cell(0, 1)
+    cell_r.width = Inches(1.7)
+    p_logo = cell_r.paragraphs[0]
+    p_logo.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+    p_logo.paragraph_format.space_before = Pt(0)
+    p_logo.paragraph_format.space_after = Pt(0)
+    
+    if os.path.exists(emblem_path):
+        p_logo.add_run().add_picture(emblem_path, width=Inches(1.2))
+        
+    # Línea separadora horizontal
+    p_div = doc.add_paragraph()
+    p_div.paragraph_format.space_before = Pt(6)
+    p_div.paragraph_format.space_after = Pt(16)
+    run_div = p_div.add_run("―" * 48)
+    run_div.font.name = FONT_HEADINGS
+    run_div.font.size = Pt(10)
+    run_div.font.color.rgb = RGB_COLORS["sage"]
+
+def insert_epa_summary_table(doc):
+    """Inserta una tabla estilizada con el resumen de las tasas fundamentales de la EPA."""
+    table = doc.add_table(rows=4, cols=3)
+    table.alignment = WD_TABLE_ALIGNMENT.CENTER
+    table.autofit = False
+    
+    headers = ["Indicador Laboral", "Fórmula Matemática Oficial", "Interpretación Económica"]
+    widths = [Inches(1.8), Inches(2.2), Inches(2.5)]
+    
+    # Cabecera
+    hdr_cells = table.rows[0].cells
+    for i, title in enumerate(headers):
+        hdr_cells[i].width = widths[i]
+        set_cell_shading(hdr_cells[i], HEX_COLORS["deep_green"])
+        set_cell_margins(hdr_cells[i], top_dpt=140, bottom_dpt=140, left_dpt=140, right_dpt=140)
+        p = hdr_cells[i].paragraphs[0]
+        p.alignment = WD_ALIGN_PARAGRAPH.LEFT
+        p.paragraph_format.space_before = Pt(0)
+        p.paragraph_format.space_after = Pt(0)
+        run = p.add_run(title)
+        run.font.name = FONT_HEADINGS
+        run.font.size = Pt(9.5)
+        run.font.bold = True
+        run.font.color.rgb = RGB_COLORS["white"]
+        
+    data = [
+        ("Tasa de Actividad", "Activos / Población ≥ 16 × 100", "Mide la propensión y disposición a participar en el mercado de trabajo."),
+        ("Tasa de Desempleo (Paro)", "Parados / Población Activa × 100", "Proporción de personas que buscando activamente trabajo no lo encuentran."),
+        ("Tasa de Empleo (Ocupación)", "Ocupados / Población ≥ 16 × 100", "Capacidad real de la economía de generar puestos para la población en edad laboral."),
+    ]
+    
+    for row_idx, (col1, col2, col3) in enumerate(data, start=1):
+        row_cells = table.rows[row_idx].cells
+        bg_color = "F7FAF8" if row_idx % 2 == 1 else "FFFFFF"
+        for i, val in enumerate([col1, col2, col3]):
+            row_cells[i].width = widths[i]
+            set_cell_shading(row_cells[i], bg_color)
+            set_cell_margins(row_cells[i], top_dpt=120, bottom_dpt=120, left_dpt=140, right_dpt=140)
+            p = row_cells[i].paragraphs[0]
+            p.paragraph_format.space_before = Pt(0)
+            p.paragraph_format.space_after = Pt(0)
+            run = p.add_run(val)
+            run.font.name = FONT_BODY
+            run.font.size = Pt(9.0)
+            if i == 0:
+                run.font.bold = True
+                run.font.color.rgb = RGB_COLORS["deep_green"]
+            elif i == 1:
+                run.font.color.rgb = RGB_COLORS["sage"]
+                run.font.bold = True
+            else:
+                run.font.color.rgb = RGB_COLORS["ink_green"]
+                
+    set_table_borders(table)
+    
+    # Párrafo posterior
+    p_post = doc.add_paragraph()
+    p_post.paragraph_format.space_before = Pt(2)
+    p_post.paragraph_format.space_after = Pt(6)
+
+def style_topic_document(input_path: str, output_path: str):
+    """Procesa el documento original y genera la versión maquetada con alta fidelidad."""
+    print(f"Leyendo documento original: {input_path}")
+    doc_orig = docx.Document(input_path)
+    
+    # Crear nuevo documento con estilos y geometría
+    doc = docx.Document()
+    set_document_geometry(doc)
+    setup_document_styles(doc)
+    
+    # Generar figuras si no existen
+    figures_dir = os.path.join(CURRENT_DIR, "figures")
+    os.makedirs(figures_dir, exist_ok=True)
+    epa_fig_path = os.path.join(figures_dir, "epa_taxonomy.png")
+    beveridge_fig_path = os.path.join(figures_dir, "beveridge.png")
+    
+    print("Generando figuras oficiales con la paleta PSLL...")
+    generate_epa_taxonomy_figure(epa_fig_path)
+    generate_beveridge_figure(beveridge_fig_path)
+    
+    # Rutas de assets oficiales
+    project_root = os.path.abspath(os.path.join(CURRENT_DIR, "..", ".."))
+    emblem_path = os.path.join(project_root, "Logos y skills", "psll-presentaciones-skill", "assets", "psll_emblem.png")
+    upo_logo_path = os.path.join(project_root, "Logos y skills", "psll-presentaciones-skill", "assets", "upo_logo.jpg")
+    
+    # 1. Cabecera Institucional
+    create_institutional_cover(doc, emblem_path, upo_logo_path)
+    
+    # Identificar título del tema para encabezados dinámicos
+    topic_title = "Tema 1: Fundamentos del Mercado Laboral"
+    
+    # Banderas para inserción controlada de figuras y cajas piloto
+    epa_fig_inserted = False
+    epa_callout_inserted = False
+    beveridge_fig_inserted = False
+    beveridge_callout_inserted = False
+    
+    print("Procesando y reclasificando párrafos...")
+    for idx, p in enumerate(doc_orig.paragraphs):
+        raw_text = p.text.strip()
+        if not raw_text:
+            continue
+            
+        # 1. TÍTULO PRINCIPAL (TEMA X: ...)
+        if re.match(r"^TEMA\s+\d+:", raw_text, re.IGNORECASE):
+            topic_title = raw_text
+            p_new = doc.add_paragraph()
+            p_new.paragraph_format.space_before = Pt(8)
+            p_new.paragraph_format.space_after = Pt(14)
+            p_new.paragraph_format.keep_with_next = True
+            run = p_new.add_run(raw_text)
+            run.font.name = FONT_HEADINGS
+            run.font.size = Pt(20.0)
+            run.font.bold = True
+            run.font.color.rgb = RGB_COLORS["deep_green"]
+            continue
+            
+        # 2. CAPÍTULOS PRINCIPALES (1. FUNDAMENTOS..., 2. EL PIB..., 6. LA CURVA...)
+        if re.match(r"^\d+\.\s+[A-ZÁÉÍÓÚÑ\s]{4,}", raw_text) or raw_text in ["EQUILIBRIO EN EL MERCADO DE TRABAJO", "PREGUNTAS PARA EL DEBATE", "REFERENCIAS BIBLIOGRÁFICAS"]:
+            p_new = doc.add_paragraph(style='Heading 1')
+            run = p_new.add_run(raw_text)
+            run.font.name = FONT_HEADINGS
+            run.font.size = Pt(15.0)
+            run.font.bold = True
+            run.font.color.rgb = RGB_COLORS["deep_green"]
+            continue
+            
+        # 3. SUBEPÍGRAFES NIVEL 2 (1.1., 1.2., 2.1., 6.1., etc.)
+        if re.match(r"^\d+\.\d+\.\s+", raw_text):
+            p_new = doc.add_paragraph(style='Heading 2')
+            run = p_new.add_run(raw_text)
+            run.font.name = FONT_HEADINGS
+            run.font.size = Pt(12.5)
+            run.font.bold = True
+            run.font.color.rgb = RGB_COLORS["sage"]
+            
+            # Si es el epígrafe de Indicadores EPA, insertar diagrama conceptual y tabla resumen
+            if not epa_fig_inserted and "1.2. Indicadores básicos" in raw_text:
+                insert_figure(
+                    doc,
+                    epa_fig_path,
+                    caption_text="Figura 1.1: Taxonomía oficial y articulación de la población según la EPA (INE / OIT).",
+                    source_text="Fuente: Elaboración propia a partir de la metodología de la Encuesta de Población Activa (INE)."
+                )
+                insert_epa_summary_table(doc)
+                epa_fig_inserted = True
+                
+            # Si es el epígrafe de la Curva de Beveridge, insertar gráfico canónico
+            if not beveridge_fig_inserted and ("6.1. Fundamentos" in raw_text or "6.0. Dinámica" in raw_text):
+                insert_figure(
+                    doc,
+                    beveridge_fig_path,
+                    caption_text="Figura 1.2: La Curva de Beveridge. Desplazamientos a lo largo de la curva vs. desplazamientos estructurales.",
+                    source_text="Fuente: Elaboración propia para Políticas Sociolaborales (UPO). Modelo Diamond-Mortensen-Pissarides."
+                )
+                beveridge_fig_inserted = True
+            continue
+            
+        # 4. SUBEPÍGRAFES NIVEL 3 (1.2.1., 1.2.2., 4.1.1., etc.)
+        if re.match(r"^\d+\.\d+\.\d+\.\s+", raw_text):
+            p_new = doc.add_paragraph(style='Heading 3')
+            run = p_new.add_run(raw_text)
+            run.font.name = FONT_HEADINGS
+            run.font.size = Pt(11.0)
+            run.font.bold = True
+            run.font.color.rgb = RGB_COLORS["deep_green"]
+            continue
+            
+        # 5. PÁRRAFO NORMAL (CUERPO DE TEXTO)
+        p_new = doc.add_paragraph(style='Normal')
+        
+        # Detectar si es un elemento de lista numerada o con viñeta
+        if re.match(r"^(\d+\.|\-|\•)\s+", raw_text):
+            p_new.paragraph_format.left_indent = Inches(0.25)
+            p_new.paragraph_format.space_after = Pt(3)
+        else:
+            p_new.paragraph_format.left_indent = Inches(0)
+            p_new.paragraph_format.space_after = Pt(4.5)
+            
+        p_new.paragraph_format.line_spacing = 1.15
+        
+        # Preservar negritas básicas si el primer run original era negrita
+        first_bold = False
+        if p.runs and p.runs[0].bold:
+            first_bold = True
+            
+        # Copiar texto
+        run = p_new.add_run(raw_text)
+        run.font.name = FONT_BODY
+        run.font.size = Pt(10.5)
+        run.font.color.rgb = RGB_COLORS["ink_green"]
+        if first_bold and len(raw_text) < 60:
+            run.font.bold = True
+            
+        # --- INYECCIÓN DE CAJAS DESTACADAS PILOTO ---
+        if not epa_callout_inserted and ("tasa de paro" in raw_text.lower() and idx > 60):
+            insert_callout_box(
+                doc,
+                callout_type="warning",
+                title="Alerta de Examen: La Trampa Estadística del Desánimo",
+                text="Un descenso en la tasa de desempleo no equivale automáticamente a una mejora en el bienestar laboral. Si personas desempleadas dejan de buscar empleo activamente por frustración, pasan a la inactividad. Esto reduce tanto el numerador (desempleados) como el denominador (activos), lo que disminuye numéricamente la tasa de paro sin que se haya creado un solo puesto de trabajo adicional."
+            )
+            epa_callout_inserted = True
+            
+        if not beveridge_callout_inserted and ("desplazamientos de la curva" in raw_text.lower() and idx > 490):
+            insert_callout_box(
+                doc,
+                callout_type="concept",
+                title="Concepto Clave: Movimientos a lo Largo vs. Desplazamientos de la Curva",
+                text="Las variaciones en la demanda agregada (ciclo económico) provocan movimientos A LO LARGO de la misma Curva de Beveridge. Por el contrario, un aumento simultáneo del desempleo con vacantes constantes o crecientes indica un DESPLAZAMIENTO HACIA FUERA de la curva, señal inequívoca de desajuste formativo (skills mismatch), desajuste geográfico o histéresis."
+            )
+            beveridge_callout_inserted = True
+
+
+    # Agregar encabezados y pies de página
+    add_header_and_footer(doc, topic_title)
+    
+    # Guardar documento
+    os.makedirs(os.path.dirname(output_path), exist_ok=True)
+    doc.save(output_path)
+    print(f"\n✅ Documento maquetado generado con éxito en: {output_path}")
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description="Aplica la maquetación corporativa oficial de PSLL a un archivo .docx.")
+    parser.add_argument("--input", default=r"Temas EB\Tema 1\Apuntes\Tema 1 2627.docx", help="Ruta del documento de entrada")
+    parser.add_argument("--output", default=r"Temas EB\Tema 1\Apuntes\Tema 1 2627_maquetado.docx", help="Ruta del documento de salida")
+    args = parser.parse_args()
+    
+    style_topic_document(args.input, args.output)
