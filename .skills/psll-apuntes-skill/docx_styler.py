@@ -39,6 +39,7 @@ def setup_document_styles(doc):
         normal.paragraph_format.line_spacing = 1.15
         normal.paragraph_format.space_after = Pt(4.5)
         normal.paragraph_format.space_before = Pt(0)
+        normal.paragraph_format.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
     
     # Heading 1 (Capítulo / Bloque mayor)
     if 'Heading 1' in styles:
@@ -118,7 +119,7 @@ def add_header_and_footer(doc, topic_title: str):
 def insert_callout_box(doc, callout_type: str, title: str, text: str):
     """
     Inserta una caja destacada (callout box) de 1 celda con sombreado y borde izquierdo grueso.
-    Tipos: 'concept', 'warning', 'case'.
+    Tipos: 'session', 'concept', 'warning', 'case'.
     """
     tbl = doc.add_table(rows=1, cols=1)
     tbl.alignment = WD_TABLE_ALIGNMENT.CENTER
@@ -126,7 +127,12 @@ def insert_callout_box(doc, callout_type: str, title: str, text: str):
     cell = tbl.cell(0, 0)
     cell.width = Inches(6.5)
     
-    if callout_type == "concept":
+    if callout_type == "session":
+        bg_hex = HEX_COLORS["mint"]          # Verde menta suave
+        border_hex = HEX_COLORS["deep_green"] # Borde verde profundo distintivo
+        icon = "🗓️"
+        title_color = RGB_COLORS["deep_green"]
+    elif callout_type == "concept":
         bg_hex = HEX_COLORS["mint"]
         border_hex = HEX_COLORS["sage"]
         icon = "💡"
@@ -144,20 +150,26 @@ def insert_callout_box(doc, callout_type: str, title: str, text: str):
         
     set_cell_shading(cell, bg_hex)
     set_cell_margins(cell, top_dpt=140, bottom_dpt=140, left_dpt=200, right_dpt=160)
-    set_callout_borders(cell, border_hex, border_size_pt=24)
+    set_callout_borders(cell, border_hex, border_size_pt=26)
     
     # Párrafo del título
     p_title = cell.paragraphs[0]
+    p_title.alignment = WD_ALIGN_PARAGRAPH.LEFT
     p_title.paragraph_format.space_before = Pt(0)
-    p_title.paragraph_format.space_after = Pt(3)
+    p_title.paragraph_format.space_after = Pt(2)
     run_icon = p_title.add_run(f"{icon}  {title.upper()}\n")
     run_icon.font.name = FONT_HEADINGS
     run_icon.font.size = Pt(9.5)
     run_icon.font.bold = True
     run_icon.font.color.rgb = title_color
     
-    # Texto interior
-    run_text = p_title.add_run(text)
+    # Texto interior (justificado)
+    p_text = cell.add_paragraph()
+    p_text.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+    p_text.paragraph_format.space_before = Pt(0)
+    p_text.paragraph_format.space_after = Pt(0)
+    p_text.paragraph_format.line_spacing = 1.15
+    run_text = p_text.add_run(text)
     run_text.font.name = FONT_BODY
     run_text.font.size = Pt(9.5)
     run_text.font.color.rgb = RGB_COLORS["ink_green"]
@@ -166,6 +178,7 @@ def insert_callout_box(doc, callout_type: str, title: str, text: str):
     p_after = doc.add_paragraph()
     p_after.paragraph_format.space_before = Pt(0)
     p_after.paragraph_format.space_after = Pt(4)
+
 
 def insert_figure(doc, image_path: str, caption_text: str, source_text: str, width_inches=6.2):
     """Inserta una figura centrada con pie y fuente reglamentarios."""

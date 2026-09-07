@@ -186,10 +186,29 @@ def style_topic_document(input_path: str, output_path: str):
         if not raw_text:
             continue
             
+        # 0. INDICACIÓN DE SESIÓN DOCENTE (CRONOGRAMA DE AULA)
+        if "📍" in raw_text or (raw_text.startswith("SESIÓN") and any(k in raw_text for k in ["Semana", "min", "Lunes", "Martes", "Viernes"])):
+            clean_session = raw_text.replace("📍", "").strip()
+            parts = clean_session.split("—", 1)
+            if len(parts) == 2:
+                sess_title = parts[0].strip()
+                sess_desc = parts[1].strip()
+            else:
+                sess_title = clean_session
+                sess_desc = "Desarrollo presencial de los contenidos, debates y dinámicas activas correspondientes a este bloque según la planificación oficial de la asignatura."
+            insert_callout_box(
+                doc,
+                callout_type="session",
+                title=f"Encuadre Docente Presencial · {sess_title}",
+                text=sess_desc
+            )
+            continue
+
         # 1. TÍTULO PRINCIPAL (TEMA X: ...)
         if re.match(r"^TEMA\s+\d+:", raw_text, re.IGNORECASE):
             topic_title = raw_text
             p_new = doc.add_paragraph()
+            p_new.alignment = WD_ALIGN_PARAGRAPH.LEFT
             p_new.paragraph_format.space_before = Pt(8)
             p_new.paragraph_format.space_after = Pt(14)
             p_new.paragraph_format.keep_with_next = True
@@ -203,6 +222,7 @@ def style_topic_document(input_path: str, output_path: str):
         # 2. CAPÍTULOS PRINCIPALES (1. FUNDAMENTOS..., 2. EL PIB..., 6. LA CURVA...)
         if re.match(r"^\d+\.\s+[A-ZÁÉÍÓÚÑ\s]{4,}", raw_text) or raw_text in ["EQUILIBRIO EN EL MERCADO DE TRABAJO", "PREGUNTAS PARA EL DEBATE", "REFERENCIAS BIBLIOGRÁFICAS"]:
             p_new = doc.add_paragraph(style='Heading 1')
+            p_new.alignment = WD_ALIGN_PARAGRAPH.LEFT
             run = p_new.add_run(raw_text)
             run.font.name = FONT_HEADINGS
             run.font.size = Pt(15.0)
@@ -213,6 +233,7 @@ def style_topic_document(input_path: str, output_path: str):
         # 3. SUBEPÍGRAFES NIVEL 2 (1.1., 1.2., 2.1., 6.1., etc.)
         if re.match(r"^\d+\.\d+\.\s+", raw_text):
             p_new = doc.add_paragraph(style='Heading 2')
+            p_new.alignment = WD_ALIGN_PARAGRAPH.LEFT
             run = p_new.add_run(raw_text)
             run.font.name = FONT_HEADINGS
             run.font.size = Pt(12.5)
@@ -244,29 +265,97 @@ def style_topic_document(input_path: str, output_path: str):
         # 4. SUBEPÍGRAFES NIVEL 3 (1.2.1., 1.2.2., 4.1.1., etc.)
         if re.match(r"^\d+\.\d+\.\d+\.\s+", raw_text):
             p_new = doc.add_paragraph(style='Heading 3')
+            p_new.alignment = WD_ALIGN_PARAGRAPH.LEFT
             run = p_new.add_run(raw_text)
             run.font.name = FONT_HEADINGS
             run.font.size = Pt(11.0)
             run.font.bold = True
             run.font.color.rgb = RGB_COLORS["deep_green"]
             continue
+
+        # 5. LISTAS ITEMIZADAS CON VIÑETAS (BULLET POINTS)
+        # Patrón A: Lista numerada con título en negrita (ej. "1. Heterogeneidad del factor trabajo: ...")
+        m_num_item = re.match(r"^(\d+)\.\s+([A-ZÁÉÍÓÚÑ][^:]{2,55}):\s*(.*)$", raw_text)
+        if m_num_item:
+            p_new = doc.add_paragraph(style='Normal')
+            p_new.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+            p_new.paragraph_format.left_indent = Inches(0.35)
+            p_new.paragraph_format.first_line_indent = Inches(-0.18)
+            p_new.paragraph_format.space_after = Pt(3.5)
             
-        # 5. PÁRRAFO NORMAL (CUERPO DE TEXTO)
+            run_b = p_new.add_run("•  ")
+            run_b.font.name = FONT_BODY
+            run_b.font.bold = True
+            run_b.font.color.rgb = RGB_COLORS["sage"]
+            
+            run_t = p_new.add_run(f"{m_num_item.group(2).strip()}: ")
+            run_t.font.name = FONT_BODY
+            run_t.font.bold = True
+            run_t.font.color.rgb = RGB_COLORS["deep_green"]
+            
+            if m_num_item.group(3).strip():
+                run_c = p_new.add_run(m_num_item.group(3).strip())
+                run_c.font.name = FONT_BODY
+                run_c.font.color.rgb = RGB_COLORS["ink_green"]
+            continue
+
+        # Patrón B: Elemento con etiqueta explicativa antes de dos puntos (ej. "Motor económico: El empleo...")
+        m_lbl_item = re.match(r"^([A-ZÁÉÍÓÚÑ][^:]{2,40}):\s+(.+)$", raw_text)
+        if m_lbl_item and not raw_text.startswith(("TEMA", "NOTA", "Figura", "Fuente", "Definición")):
+            p_new = doc.add_paragraph(style='Normal')
+            p_new.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+            p_new.paragraph_format.left_indent = Inches(0.35)
+            p_new.paragraph_format.first_line_indent = Inches(-0.18)
+            p_new.paragraph_format.space_after = Pt(3.5)
+            
+            run_b = p_new.add_run("•  ")
+            run_b.font.name = FONT_BODY
+            run_b.font.bold = True
+            run_b.font.color.rgb = RGB_COLORS["sage"]
+            
+            run_t = p_new.add_run(f"{m_lbl_item.group(1).strip()}: ")
+            run_t.font.name = FONT_BODY
+            run_t.font.bold = True
+            run_t.font.color.rgb = RGB_COLORS["deep_green"]
+            
+            run_c = p_new.add_run(m_lbl_item.group(2).strip())
+            run_c.font.name = FONT_BODY
+            run_c.font.color.rgb = RGB_COLORS["ink_green"]
+            continue
+
+        # Patrón C: Viñetas preexistentes o requisitos directos de una lista
+        is_bullet_item = bool(re.match(r"^(\-|\•|\*)\s*(.+)$", raw_text)) or raw_text.startswith((
+            "Estar sin empleo", "Haber tomado medidas concretas", "Estar disponible para trabajar"
+        ))
+        if is_bullet_item:
+            clean_item = re.sub(r"^(\-|\•|\*)\s*", "", raw_text).strip()
+            p_new = doc.add_paragraph(style='Normal')
+            p_new.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+            p_new.paragraph_format.left_indent = Inches(0.35)
+            p_new.paragraph_format.first_line_indent = Inches(-0.18)
+            p_new.paragraph_format.space_after = Pt(3.5)
+            
+            run_b = p_new.add_run("•  ")
+            run_b.font.name = FONT_BODY
+            run_b.font.bold = True
+            run_b.font.color.rgb = RGB_COLORS["sage"]
+            
+            run_c = p_new.add_run(clean_item)
+            run_c.font.name = FONT_BODY
+            run_c.font.color.rgb = RGB_COLORS["ink_green"]
+            continue
+
+        # 6. PÁRRAFO NORMAL (CUERPO DE TEXTO JUSTIFICADO)
         p_new = doc.add_paragraph(style='Normal')
-        
-        # Detectar si es un elemento de lista numerada o con viñeta
-        if re.match(r"^(\d+\.|\-|\•)\s+", raw_text):
-            p_new.paragraph_format.left_indent = Inches(0.25)
-            p_new.paragraph_format.space_after = Pt(3)
-        else:
-            p_new.paragraph_format.left_indent = Inches(0)
-            p_new.paragraph_format.space_after = Pt(4.5)
-            
+        p_new.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+        p_new.paragraph_format.left_indent = Inches(0)
+        p_new.paragraph_format.first_line_indent = Inches(0)
+        p_new.paragraph_format.space_after = Pt(4.5)
         p_new.paragraph_format.line_spacing = 1.15
         
-        # Preservar negritas básicas si el primer run original era negrita
+        # Preservar negritas básicas si el primer run original era negrita o títulos internos cortos
         first_bold = False
-        if p.runs and p.runs[0].bold:
+        if (p.runs and p.runs[0].bold) or (len(raw_text) < 55 and not raw_text.endswith(".")):
             first_bold = True
             
         # Copiar texto
@@ -274,36 +363,26 @@ def style_topic_document(input_path: str, output_path: str):
         run.font.name = FONT_BODY
         run.font.size = Pt(10.5)
         run.font.color.rgb = RGB_COLORS["ink_green"]
-        if first_bold and len(raw_text) < 60:
+        if first_bold:
             run.font.bold = True
-            
-        # --- INYECCIÓN DE CAJAS DESTACADAS PILOTO ---
-        if not epa_callout_inserted and ("tasa de paro" in raw_text.lower() and idx > 60):
-            insert_callout_box(
-                doc,
-                callout_type="warning",
-                title="Alerta de Examen: La Trampa Estadística del Desánimo",
-                text="Un descenso en la tasa de desempleo no equivale automáticamente a una mejora en el bienestar laboral. Si personas desempleadas dejan de buscar empleo activamente por frustración, pasan a la inactividad. Esto reduce tanto el numerador (desempleados) como el denominador (activos), lo que disminuye numéricamente la tasa de paro sin que se haya creado un solo puesto de trabajo adicional."
-            )
-            epa_callout_inserted = True
-            
-        if not beveridge_callout_inserted and ("desplazamientos de la curva" in raw_text.lower() and idx > 490):
-            insert_callout_box(
-                doc,
-                callout_type="concept",
-                title="Concepto Clave: Movimientos a lo Largo vs. Desplazamientos de la Curva",
-                text="Las variaciones en la demanda agregada (ciclo económico) provocan movimientos A LO LARGO de la misma Curva de Beveridge. Por el contrario, un aumento simultáneo del desempleo con vacantes constantes o crecientes indica un DESPLAZAMIENTO HACIA FUERA de la curva, señal inequívoca de desajuste formativo (skills mismatch), desajuste geográfico o histéresis."
-            )
-            beveridge_callout_inserted = True
+            if len(raw_text) < 55:
+                run.font.color.rgb = RGB_COLORS["deep_green"]
+
 
 
     # Agregar encabezados y pies de página
     add_header_and_footer(doc, topic_title)
     
-    # Guardar documento
+    # Guardar documento con gestión de archivo abierto en Word
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    doc.save(output_path)
-    print(f"\n✅ Documento maquetado generado con éxito en: {output_path}")
+    try:
+        doc.save(output_path)
+        print(f"\n✅ Documento maquetado generado con éxito en: {output_path}")
+    except PermissionError:
+        alt_output = output_path.replace(".docx", "_v2.docx")
+        doc.save(alt_output)
+        print(f"\n⚠️ El archivo '{output_path}' está abierto en Microsoft Word.")
+        print(f"✅ Se ha guardado la versión actualizada en: {alt_output}")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Aplica la maquetación corporativa oficial de PSLL a un archivo .docx.")

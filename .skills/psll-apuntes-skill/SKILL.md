@@ -23,35 +23,44 @@ Basado estrictamente en [Logos y skills/BRAND.md](file:///c:/Users/Usuario/Dropb
 | **Acentos secundarios** | Melocotón | `#EDB090` |
 | **Fondos alternativos cajas** | Neutro cálido / Crema | `#F3EFDC` |
 | **Tipografía Titulares** | Poppins (alternativa: Century Schoolbook/Cambria) | 24 pt (Título), 16 pt (H1), 13 pt (H2), 11 pt (H3) |
-| **Tipografía Cuerpo** | Calibri | 10.5 pt, interlineado 1.15, espacio posterior 4 pt |
+| **Tipografía Cuerpo** | Calibri | 10.5 pt, interlineado 1.15, espacio posterior 4.5 pt, **texto justificado** |
 | **Márgenes de página** | Estándar institucional | Superior/Inferior 2.5 cm, Izquierdo/Derecho 2.5 cm |
 
 ---
 
 ## 🧩 Componentes Modulares Soportados
 
-1. **Jerarquía Tipográfica Homogénea:**
+1. **Jerarquía Tipográfica y Alineación Justificada:**
    - Detección y normalización automática de epígrafes (`1.`, `1.1.`, `1.2.1.`).
-   - Aplicación estricta de `Heading 1`, `Heading 2` y `Heading 3` para navegación en Word.
+   - Aplicación estricta de `Heading 1` (15 pt en verde profundo), `Heading 2` (12.5 pt en salvia) y `Heading 3` (11 pt en verde profundo) alineados a la izquierda para navegación en Word.
+   - **Alineación Justificada Obligatoria:** Todo el texto de cuerpo, listas y cajas destacadas debe estar justificado (`WD_ALIGN_PARAGRAPH.JUSTIFY`) para garantizar un acabado editorial limpio.
 
-2. **Cajas Destacadas (*Callout Boxes*):**
-   - Tabla unificada de 1 celda con fondo `#E1F6EA` (o `#FDF4F0` para alertas), borde izquierdo grueso de 3 pt en Salvia (`#76927A`) o Coral (`#E99073`), padding interior calibrado y título en negrita con icono temático.
-   - Tipos:
-     - 💡 *Concepto Clave*: Fundamentos micro/macroeconómicos y definiciones.
-     - ⚠️ *Alerta / Trampa Habitual*: Errores conceptuales típicos en exámenes.
-     - 📊 *Dato Empírico / Noticia*: Casos reales de la EPA, SEPE o Banco de España.
+2. **Itemización Sistemática con Viñetas (Bullet Points):**
+   - Detección automática y conversión de listas de factores, enumeraciones de características y requisitos en listas itemizadas con viñetas reales (`• `).
+   - Formato de viñeta corporativo:
+     - Símbolo `• ` en Verde Salvia (`#76927A`) negrita.
+     - Sangría francesa / colgante: `left_indent = 0.35 pulgadas` (~0.9 cm), `first_line_indent = -0.18 pulgadas`.
+     - Término o etiqueta clave en negrita Verde Profundo (`#566B56`) antes de dos puntos.
+     - Texto explicativo justificado en Verde Tinta (`#2F3A30`).
 
-3. **Tablas Estilizadas:**
+3. **Cajas Destacadas (*Callout Boxes*):**
+   - Tabla unificada de 1 celda con fondo temático, borde izquierdo grueso de 3 pt (26 dxa), padding interior calibrado y título en negrita con icono temático:
+     - 🗓️ **Caja de Sesión Docente (*Session Box*):** Fondo verde menta suave (`#E1F6EA`), borde en Verde Profundo (`#566B56`). Sitúa al estudiante en el cronograma oficial de la asignatura (ej. *Sesión 1 · Semana 1*).
+     - ⚠️ **Alerta de Examen / Trampa Habitual (*Warning Box*):** Fondo suave de alerta (`#FDF4F0`), borde en Coral (`#E99073`). Errores analíticos frecuentes en pruebas de evaluación.
+     - 💡 **Concepto Clave (*Concept Box*):** Fondo verde menta (`#E1F6EA`), borde en Verde Salvia (`#76927A`). Fundamentos teóricos e intuiciones microeconómicas.
+     - 📊 **Dato Empírico / Noticia (*Case Box*):** Fondo crema cálido (`#F3EFDC`), borde en Verde Profundo (`#566B56`). Aplicaciones reales de la EPA, SEPE o Banco de España.
+
+4. **Tablas Estilizadas:**
    - Fila de cabecera con fondo Verde Profundo (`#566B56`) o Salvia (`#76927A`), texto en blanco y negrita.
    - Filas de datos con texto en Verde Tinta (`#2F3A30`), bordes horizontales limpios (`#D0DCD2`) y sombreado alterno sutil.
 
-4. **Figuras Oficiales Generadas en Python (`matplotlib`):**
-   - Gráficos generados a 300 DPI respetando la paleta de la marca.
+5. **Figuras Oficiales Generadas en Python (`matplotlib`):**
+   - Gráficos generados a 300 DPI respetando la paleta de la marca (`figure_generator.py`).
    - Ancladas centradas con pie reglamentario:  
      *«Figura X.X: Título descriptivo. Fuente: Elaboración propia para Políticas Sociolaborales (UPO)...»*.
 
-5. **Encabezado y Pie de Página Corporativo:**
-   - Cabecera con logo horizontal o emblema oficial.
+6. **Encabezado y Pie de Página Corporativo:**
+   - Cabecera con título del tema en verde salvia.
    - Pie con paginación automática ("Página X de Y") y código de asignatura (`PSLL · 102023`).
 
 ---
