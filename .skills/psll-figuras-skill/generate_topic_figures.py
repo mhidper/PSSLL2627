@@ -84,6 +84,114 @@ def generate_epa_taxonomy(output_path: str):
     
     save_figure(fig, output_path)
 
+def generate_epa_decision_tree(output_path: str):
+    """
+    Genera el diagrama de flujo oficial de decisión de la OIT y la EPA:
+    - Clasificación en Ocupados, Parados e Inactivos según las preguntas filtro normativas.
+    """
+    setup_academic_style()
+    fig, ax = plt.subplots(figsize=(9.6, 5.2), dpi=300)
+    fig.patch.set_facecolor(PALETTE["blanco"])
+    ax.set_facecolor(PALETTE["blanco"])
+    
+    # 1. Entrada: Población en edad de trabajar (16 o más años)
+    box_start = patches.FancyBboxPatch((0.2, 2.4), 2.1, 1.2, boxstyle="round,pad=0.08",
+                                       facecolor=PALETTE["menta"], edgecolor=PALETTE["verde_profundo"], linewidth=2.0)
+    ax.add_patch(box_start)
+    ax.text(1.25, 3.15, "POBLACIÓN EN EDAD\nDE TRABAJAR", ha="center", va="center",
+            fontsize=9.5, fontweight="bold", color=PALETTE["verde_profundo"])
+    ax.text(1.25, 2.65, "(16 o más años)", ha="center", va="center",
+            fontsize=8.5, style="italic", color=PALETTE["verde_tinta"])
+    
+    # Flecha inicial hacia Filtro 1 (horizontal limpia)
+    ax.annotate("", xy=(2.85, 3.0), xytext=(2.3, 3.0),
+                arrowprops=dict(arrowstyle="->", color=PALETTE["verde_profundo"], lw=2.2))
+    
+    # 2. Filtro 1 (Empleo): ¿Trabajó al menos 1 hora?
+    box_q1 = patches.FancyBboxPatch((2.85, 1.9), 2.5, 2.2, boxstyle="round,pad=0.1",
+                                    facecolor=PALETTE["crema"], edgecolor=PALETTE["salvia"], linewidth=1.8)
+    ax.add_patch(box_q1)
+    ax.text(4.1, 3.75, "FILTRO 1: EMPLEO", ha="center", va="center",
+            fontsize=8.5, fontweight="bold", color=PALETTE["salvia"])
+    ax.text(4.1, 2.85, "¿Trabajó al menos 1 hora\nremunerada en la semana\nde referencia?",
+            ha="center", va="center", fontsize=8.5, fontweight="bold", color=PALETTE["verde_profundo"], linespacing=1.3)
+    
+    # Rama SÍ de Filtro 1 -> OCUPADOS (sale de la esquina superior derecha x=5.35, y=3.7 hacia x=6.3, y=4.4)
+    ax.annotate("", xy=(6.3, 4.4), xytext=(5.35, 3.7),
+                arrowprops=dict(arrowstyle="->", color=PALETTE["salvia"], lw=2.2, connectionstyle="arc3,rad=-0.1"))
+    # Badge SÍ
+    ax.text(5.75, 4.25, "  SÍ  ", ha="center", va="center", fontsize=8.5, fontweight="bold",
+            color="white", bbox=dict(boxstyle="round,pad=0.25", facecolor=PALETTE["salvia"], edgecolor="none"))
+    
+    # Caja OCUPADOS
+    box_ocup = patches.FancyBboxPatch((6.3, 3.9), 2.8, 1.0, boxstyle="round,pad=0.08",
+                                      facecolor=PALETTE["menta"], edgecolor=PALETTE["verde_profundo"], linewidth=2.0)
+    ax.add_patch(box_ocup)
+    ax.text(7.7, 4.45, "OCUPADOS", ha="center", va="center",
+            fontsize=10.5, fontweight="bold", color=PALETTE["verde_profundo"])
+    ax.text(7.7, 4.12, "(Asalariados y trabajadores por cuenta propia)", ha="center", va="center",
+            fontsize=7.5, color=PALETTE["verde_tinta"])
+    
+    # Rama NO de Filtro 1 -> Filtro 2 (sale del borde derecho x=5.35, y=2.55 hacia x=6.1, y=2.55)
+    ax.annotate("", xy=(6.1, 2.55), xytext=(5.35, 2.55),
+                arrowprops=dict(arrowstyle="->", color=PALETTE["coral"], lw=2.2))
+    # Badge NO
+    ax.text(5.72, 2.85, "  NO  ", ha="center", va="center", fontsize=8.5, fontweight="bold",
+            color="white", bbox=dict(boxstyle="round,pad=0.2", facecolor=PALETTE["coral"], edgecolor="none"))
+    
+    # 3. Filtro 2 (Doble requisito OIT de Paro)
+    box_q2 = patches.FancyBboxPatch((6.1, 1.5), 3.2, 2.1, boxstyle="round,pad=0.1",
+                                    facecolor=PALETTE["crema"], edgecolor=PALETTE["salvia"], linewidth=1.8)
+    ax.add_patch(box_q2)
+    ax.text(7.7, 3.35, "FILTRO 2: PARO (CONCURRENTE)", ha="center", va="center",
+            fontsize=8.0, fontweight="bold", color=PALETTE["salvia"])
+    ax.text(7.7, 2.85, "1. ¿Búsqueda activa de empleo\nen el mes precedente?",
+            ha="center", va="center", fontsize=8.0, fontweight="bold", color=PALETTE["verde_tinta"])
+    ax.text(7.7, 2.45, "Y (simultáneamente)", ha="center", va="center",
+            fontsize=7.5, fontweight="bold", color=PALETTE["coral"], style="italic")
+    ax.text(7.7, 2.05, "2. ¿Disponibilidad inmediata\npara trabajar en < 2 semanas?",
+            ha="center", va="center", fontsize=8.0, fontweight="bold", color=PALETTE["verde_tinta"])
+    
+    # Rama SÍ de Filtro 2 -> PARADOS (sale de la esquina inferior izquierda x=6.1, y=1.7 hacia caja Parados x=5.2, y=1.1)
+    ax.annotate("", xy=(5.2, 1.1), xytext=(6.1, 1.7),
+                arrowprops=dict(arrowstyle="->", color=PALETTE["coral"], lw=2.2, connectionstyle="arc3,rad=0.08"))
+    # Badge SÍ
+    ax.text(5.8, 1.55, "  SÍ (Ambos)  ", ha="center", va="center", fontsize=7.5, fontweight="bold",
+            color="white", bbox=dict(boxstyle="round,pad=0.25", facecolor=PALETTE["coral"], edgecolor="none"))
+    
+    # Caja PARADOS
+    box_par = patches.FancyBboxPatch((3.4, 0.15), 2.6, 0.95, boxstyle="round,pad=0.08",
+                                     facecolor="#FDF4F0", edgecolor=PALETTE["coral"], linewidth=2.0)
+    ax.add_patch(box_par)
+    ax.text(4.7, 0.72, "PARADOS", ha="center", va="center",
+            fontsize=10.5, fontweight="bold", color=PALETTE["coral"])
+    ax.text(4.7, 0.38, "(Desempleo genuino según norma OIT)", ha="center", va="center",
+            fontsize=7.5, color=PALETTE["verde_tinta"])
+    
+    # Rama NO de Filtro 2 -> INACTIVOS (flecha vertical directa limpia hacia abajo x=8.0)
+    ax.annotate("", xy=(8.0, 1.1), xytext=(8.0, 1.5),
+                arrowprops=dict(arrowstyle="->", color=PALETTE["salvia"], lw=2.2))
+    # Badge NO
+    ax.text(8.0, 1.35, "  NO (Falla alguno)  ", ha="center", va="center", fontsize=7.5, fontweight="bold",
+            color="white", bbox=dict(boxstyle="round,pad=0.25", facecolor=PALETTE["salvia"], edgecolor="none"))
+    
+    # Caja INACTIVOS
+    box_inac = patches.FancyBboxPatch((6.7, 0.15), 2.6, 0.95, boxstyle="round,pad=0.08",
+                                      facecolor="#F7FAF8", edgecolor=PALETTE["salvia"], linewidth=1.8)
+    ax.add_patch(box_inac)
+    ax.text(8.0, 0.72, "INACTIVOS", ha="center", va="center",
+            fontsize=10.5, fontweight="bold", color=PALETTE["salvia"])
+    ax.text(8.0, 0.38, "(Estudiantes, jubilados, desánimo, hogar)", ha="center", va="center",
+            fontsize=7.5, color=PALETTE["verde_tinta"])
+    
+    ax.set_xlim(0, 9.6)
+    ax.set_ylim(0.0, 5.2)
+    ax.axis("off")
+    ax.set_title("Algoritmo Oficial de Clasificación de la Población según la OIT y la EPA",
+                 fontsize=12.5, fontweight="bold", color=PALETTE["verde_profundo"], pad=14)
+    
+    save_figure(fig, output_path)
+
 def generate_beveridge_curve(output_path: str):
     """Genera la Curva de Beveridge teórica oficial en alta resolución."""
     setup_academic_style()
@@ -142,8 +250,10 @@ def generate_figures_for_topic(topic_num: int, project_root: str):
     
     if topic_num == 1:
         epa_path = os.path.join(dest_dir, "epa_taxonomy.png")
+        tree_path = os.path.join(dest_dir, "epa_decision_tree.png")
         bev_path = os.path.join(dest_dir, "beveridge.png")
         generate_epa_taxonomy(epa_path)
+        generate_epa_decision_tree(tree_path)
         generate_beveridge_curve(bev_path)
     else:
         print(f"Aún no hay generadores registrados para el Tema {topic_num}.")

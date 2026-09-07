@@ -41,9 +41,9 @@ TEMA_1_FIGURES_META = {
         "source": "Fuente: Elaboración propia a partir de la metodología de la Encuesta de Población Activa (INE)."
     },
     "image2.png": {
-        "remastered": None,
-        "caption": "Figura 1.2: Factores determinantes y dinámicas de la tasa de actividad.",
-        "source": "Fuente: Elaboración propia para Políticas Sociolaborales (UPO)."
+        "remastered": "epa_decision_tree.png",
+        "caption": "Figura 1.2: Algoritmo y criterios de clasificación de la población laboral según la OIT y la EPA.",
+        "source": "Fuente: Elaboración propia a partir de los criterios metodológicos de la OIT y la Encuesta de Población Activa (INE)."
     },
     "image3.png": {
         "remastered": None,
