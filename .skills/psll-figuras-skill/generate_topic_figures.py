@@ -192,56 +192,6 @@ def generate_epa_decision_tree(output_path: str):
     
     save_figure(fig, output_path)
 
-def generate_beveridge_curve(output_path: str):
-    """Genera la Curva de Beveridge teórica oficial en alta resolución."""
-    setup_academic_style()
-    fig, ax = plt.subplots(figsize=(7.5, 4.8), dpi=300)
-    fig.patch.set_facecolor(PALETTE["blanco"])
-    ax.set_facecolor(PALETTE["blanco"])
-    
-    u = np.linspace(3.5, 22.0, 300)
-    v1 = 18.0 / (u - 1.5) + 0.3
-    v2 = 28.0 / (u - 1.5) + 0.8
-    
-    ax.plot(u, v1, color=PALETTE["salvia"], linewidth=2.8, label=r'Curva de Beveridge inicial ($BC_1$)')
-    ax.plot(u, v2, color=PALETTE["coral"], linewidth=2.8, linestyle="--", label=r'Desplazamiento estructural ($BC_2$ · Desajuste / Histéresis)')
-    
-    u_A, v_A = 7.5, 18.0 / (7.5 - 1.5) + 0.3
-    u_B, v_B = 14.5, 18.0 / (14.5 - 1.5) + 0.3
-    u_C, v_C = 14.5, 28.0 / (14.5 - 1.5) + 0.8
-    
-    ax.scatter([u_A], [v_A], color=PALETTE["verde_profundo"], s=70, zorder=5)
-    ax.scatter([u_B], [v_B], color=PALETTE["salvia"], s=70, zorder=5)
-    ax.scatter([u_C], [v_C], color=PALETTE["coral"], s=80, zorder=5)
-    
-    ax.annotate("Punto A\n(Expansión cíclica)", xy=(u_A, v_A), xytext=(u_A - 0.5, v_A + 0.7),
-                fontsize=9.5, fontweight="bold", color=PALETTE["verde_profundo"])
-    ax.annotate("Punto B\n(Recesión cíclica)", xy=(u_B, v_B), xytext=(u_B - 1.0, v_B + 0.6),
-                fontsize=9.5, fontweight="bold", color=PALETTE["salvia"])
-    ax.annotate("Punto C\n(Desajuste estructural / PLD)", xy=(u_C, v_C), xytext=(u_C + 0.4, v_C + 0.2),
-                fontsize=9.5, fontweight="bold", color=PALETTE["coral"])
-    
-    ax.annotate("", xy=(u_B - 0.5, v_B + 0.1), xytext=(u_A + 1.0, v_A - 0.5),
-                arrowprops=dict(arrowstyle="->", color=PALETTE["salvia"], lw=1.6, connectionstyle="arc3,rad=-0.15"))
-    ax.text(9.8, 1.8, "Movimiento cíclico a lo largo\n(Shock de Demanda Agregada)", 
-            fontsize=8.5, color=PALETTE["salvia"], style="italic")
-    
-    ax.annotate("", xy=(u_C, v_C - 0.1), xytext=(u_B, v_B + 0.2),
-                arrowprops=dict(arrowstyle="->", color=PALETTE["coral"], lw=1.8, linestyle=":"))
-    ax.text(14.8, 2.0, "Desplazamiento hacia fuera\n(Pérdida de eficiencia / Mismatch)", 
-            fontsize=8.5, color=PALETTE["coral"], style="italic")
-    
-    ax.set_xlim(2, 23)
-    ax.set_ylim(0, 5.0)
-    ax.set_xlabel("Tasa de Desempleo, $u$ (%)", fontsize=11, labelpad=8, fontweight="bold")
-    ax.set_ylabel("Tasa de Vacantes, $v$ (%)", fontsize=11, labelpad=8, fontweight="bold")
-    ax.set_title("La Curva de Beveridge: Dinámica Cíclica vs. Desajuste Estructural", 
-                 fontsize=12.5, fontweight="bold", pad=14, color=PALETTE["verde_profundo"])
-    ax.legend(loc="upper right", framealpha=0.9, fontsize=9.5)
-    ax.grid(True)
-    
-    save_figure(fig, output_path)
-
 def generate_vab_pan(output_path: str):
     """
     Genera el diagrama metodológico oficial del Valor Añadido Bruto (VAB) 
