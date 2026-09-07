@@ -14,7 +14,9 @@
 | **Día y Fecha** | **Lunes, 21 de septiembre de 2026** | **Lunes, 21 de septiembre de 2026** |
 | **Horario y Duración** | **13:30 – 15:00** (90 minutos / 1,5 h) | **20:00 – 21:30** (90 minutos / 1,5 h) |
 | **Aula Oficial** | **Aula E13A7** (Edif. 13, Aula 7 — Mobiliario móvil) | **Aula E10A3** (Edif. 10, Aula 3) |
-| **Material Base** | • [Tema 1 (Diapositivas 2627)](file:///c:/Users/Usuario/Dropbox/DOCENCIA%20UPO/CURSO%2026-27/PSLL/Temas%20EB/Tema%201/Diapositivas/Tema%201%202627.pptx) (Slides 20–35)<br>• [Tema 1 (Apuntes)](file:///c:/Users/Usuario/Dropbox/DOCENCIA%20UPO/CURSO%2026-27/PSLL/Temas%20EB/Tema%201/Apuntes/Tema%201%202627_maquetado.docx) (Sección 3: Oferta, Demanda y Salarios) |
+| **Material Base** | • [Tema 1 (Apuntes)](file:///c:/Users/Usuario/Dropbox/DOCENCIA%20UPO/CURSO%2026-27/PSLL/Temas%20EB/Tema%201/Apuntes/Tema%201%202627_maquetado.docx) — Epígrafe "Equilibrio en el Mercado de Trabajo" completo (3.1 Oferta y demanda, 3.2 Determinación de salarios, 3.3 Negociación colectiva, 3.4 Factores del equilibrio).<br>• **Diapositivas:** pendiente de construir el pptx nativo de la Sesión 3 (carpeta `Temas EB/Sesiones EB/`). |
+
+> **Nota de alineación (Alerta 8, verificado):** el contenido de esta sesión (oferta, demanda y equilibrio) no cambió con el reordenamiento del docx de Tema 1 — sigue siendo la Sesión 3. Solo se ha corregido el enlace al archivo canónico y la frase-puente hacia la Sesión 4, que sí cambió de contenido (ver más abajo).
 
 ---
 
@@ -102,7 +104,7 @@ flowchart LR
   - Desplazamiento hacia la izquierda de la curva de oferta agregada ($L^S$).
   - Reducción del empleo de equilibrio y aumento de la presión salarial al alza.
 - **Enlace transmedia con la Sesión 4:**
-  - *«El martes/viernes conectaremos la oferta y la demanda con las vacantes reales. Descubriremos la función de emparejamiento de Pissarides y la Curva de Beveridge, la herramienta definitiva para arrancar el Caso 1 de EPD»*.
+  - *«El martes/viernes dejamos el equilibrio micro y volvemos a la pregunta que abrió el curso: ¿por qué hay tantos tipos distintos de desempleo, y por qué existe un paro "natural" que ni el mejor gobierno puede eliminar del todo? Veremos la tipología del desempleo y la tasa natural (NAIRU)»*.
 
 ---
 
@@ -111,6 +113,6 @@ flowchart LR
 1. **Lectura breve recomendada:**
    - Bentolila, S. y Jansen, M. (Blog *Nada es Gratis*): *«El salario de reserva y los desincentivos al trabajo en el sistema asistencial español»*.
 2. **Material gráfico:**
-   - Diapositivas 20 a 35 del deck oficial de la asignatura.
+   - Epígrafe "Equilibrio en el Mercado de Trabajo" del apunte maquetado de Tema 1 (pptx nativo de la Sesión 3 pendiente de construir).
 3. **Evaluación formativa del docente:**
    - Registro in situ del rigor en el cálculo de la ganancia neta en el reto por parejas.

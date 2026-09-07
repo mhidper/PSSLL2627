@@ -1,5 +1,5 @@
 # Guion de Sesión EB 4 · Semana 2 (Martes 22/09 / Viernes 25/09)
-## Matching de Pissarides, Paro de Larga Duración y la Curva de Beveridge
+## Tipología del Desempleo, la Tasa Natural (NAIRU) y la Curva de Phillips
 **Asignatura:** Políticas Sociolaborales y de Empleo (Código 102023)  
 **Curso Académico:** 2026-2027 | Semestre 1  
 **Profesor:** Manuel A. Hidalgo Pérez  
@@ -14,117 +14,119 @@
 | **Día y Fecha** | **Martes, 22 de septiembre de 2026** | **Viernes, 25 de septiembre de 2026** |
 | **Horario y Duración** | **09:30 – 11:30** (**120 minutos / 2,0 h**) | **17:30 – 19:30** (**120 minutos / 2,0 h**) |
 | **Aula Oficial** | **Aula E13A7** (Edif. 13, Aula 7 — Mobiliario móvil) | **Aula E10A3** (Edif. 10, Aula 3) |
-| **Material Base** | • [Tema 1 (Diapositivas 2627)](file:///c:/Users/Usuario/Dropbox/DOCENCIA%20UPO/CURSO%2026-27/PSLL/Temas%20EB/Tema%201/Diapositivas/Tema%201%202627.pptx) (Slides 36–60)<br>• [Tema 1 (Apuntes)](file:///c:/Users/Usuario/Dropbox/DOCENCIA%20UPO/CURSO%2026-27/PSLL/Temas%20EB/Tema%201/Apuntes/Tema%201%202627_maquetado.docx) (Sección 4: Curva de Beveridge y Matching) |
+| **Material Base** | • [Tema 1 (Apuntes)](file:///c:/Users/Usuario/Dropbox/DOCENCIA%20UPO/CURSO%2026-27/PSLL/Temas%20EB/Tema%201/Apuntes/Tema%201%202627_maquetado.docx) — Epígrafe 4 completo (Tipología del Desempleo) + Epígrafe 5 completo (NAIRU y Curva de Phillips), con las Figuras 1.6, 1.7 y 1.8.<br>• **Diapositivas:** pendiente de construir el pptx nativo de la Sesión 4 (carpeta `Temas EB/Sesiones EB/`) — mientras tanto, proyectar directamente las Figuras 1.6-1.8 del apunte maquetado. |
+| **Sistema de Puntuación** | Acumulación de retos en el **Pasaporte de Evaluación Continua** (hacia el 10% de Participación Activa y Retos Semanales). |
 
 > **Nota de coordinación:** Este guion aplica de forma idéntica en contenido, dinámicas y duración (120 min) al grupo de mañana (martes 22/09) y al grupo de tarde (viernes 25/09).
+>
+> **Nota de alineación (Alerta 8 resuelta):** esta sesión cubría antes la función de emparejamiento de Pissarides, la Curva de Beveridge y el lanzamiento del Caso 1 de EPD. Al reordenar el docx de Tema 1 en secuencia lineal, la Sesión 4 pasa a cubrir Tipología del Desempleo (Epígrafe 4) + NAIRU/Curva de Phillips (Epígrafe 5) en un único bloque de 120 min. La Curva de Beveridge completa (con la función de emparejamiento y el lanzamiento del Caso 1 de EPD) se traslada a la Sesión 5, que cierra Tema 1 en la Semana 3.
 
 ---
 
 ## 📋 2. Tareas Pendientes para el Profesorado (Checklist previo)
 
-- [ ] **Seleccionar noticia disparadora sobre Parados de Larga Duración (PLD):**
-  - *Propuesta del asistente:* Informe del mercado laboral / Datos EPA: *"El núcleo duro del desempleo en Andalucía: el 44% de los parados lleva más de un año buscando trabajo y los mayores de 45 años sufren una tasa de salida del desempleo inferior al 5% trimestral"* (Diario de Sevilla / INE).
-  - *Pregunta clave asociada:* «¿Por qué una empresa prefiere contratar a un desempleado reciente antes que a un parado de larga duración con idéntica titulación académica? ¿Es depreciación real de habilidades o es estigma/discriminación estadística?».
-- [ ] **Configurar cuestionario interactivo en Mentimeter:**
-  - *Pregunta:* «Te ponen sobre la mesa dos currículums idénticos: Candidato A lleva 1 mes en paro; Candidato B lleva 2 años en paro. Como director de RRHH, ¿a quién llamas primero para la entrevista?» (Candidato A / Candidato B / Indiferente).
-- [ ] **Preparar en el Aula Virtual la Orden del Programa Emplea-T:**
-  - Disponer del enlace al PDF de la Orden de 3 de octubre de 2024 de la Junta de Andalucía para proyectarlo en el cierre como puente al Caso 1 de EPD.
-- [ ] **Revisar el mapa de calor del cuestionario previo de Moodle:**
-  - Identificar si hay dudas sobre el concepto de tensión del mercado laboral ($\theta = V/U$).
+- [ ] **Seleccionar noticia disparadora sobre la coexistencia de tipos de desempleo:**
+  - *Propuesta del asistente:* Noticia económica: *"España combina zonas con parados de larga duración en sectores industriales en declive con la imposibilidad de encontrar camareros, albañiles o informáticos en zonas turísticas y tecnológicas"* (Cinco Días / El Economista).
+  - *Pregunta clave asociada:* «Si en el mismo país conviven estos problemas tan distintos, ¿tiene sentido aplicar la misma política de empleo a todos ellos?».
+- [ ] **Configurar sondeo inicial en Mentimeter:**
+  1. *«Un trabajador de la construcción pierde su empleo en invierno porque baja la actividad del sector y lo recupera en primavera. ¿Qué tipo de desempleo es?»* (Friccional / Estructural / Cíclico / Estacional).
+  2. *«Un ingeniero industrial lleva 2 años en paro porque su fábrica cerró y sus competencias no encajan con los empleos tecnológicos que se ofertan ahora. ¿Qué tipo de desempleo es?»* (Friccional / Estructural / Cíclico / Estacional).
+- [ ] **Preparar la Figura 1.7 (NAIRU España vs. Eurozona 1980-2024) y la Figura 1.8 (Curva de Phillips dual):**
+  - Localizar de antemano los periodos de recesión/expansión que se van a comentar en el Bloque 3.
+- [ ] **Revisar el mapa de calor del cuestionario previo de Moodle (Fase 0):**
+  - Identificar si hay dudas previas sobre la diferencia entre desempleo cíclico y estructural.
 
 ---
 
 ## 🎯 3. Objetivos de Aprendizaje y Competencias Clave
 
-1. **Formalizar la Función de Emparejamiento (*Matching Function*):** Entender la tecnología que casa vacantes ($V$) y desempleados ($U$) inspirada en el modelo Nobel de Diamond-Mortensen-Pissarides:
-   $$M = A \cdot U^\alpha \cdot V^{1-\alpha}$$
-   y analizar el papel crucial del parámetro de eficiencia institucional ($A$).
-2. **Diagnosticar el Desajuste Laboral (*Mismatch*):** Diferenciar entre desajuste educativo/formativo (*skills mismatch*) y desajuste espacial/geográfico (*spatial mismatch*), y entender cómo ambos desplazan la Curva de Beveridge hacia afuera.
-3. **Comprender la Mecánica del Paro de Larga Duración:** Analizar los tres mecanismos que atrapan a los desempleados estructurales: histéresis, depreciación de capital humano y señalización adversa / estigma del empleador.
-4. **Preparar el Instrumental Técnico del Caso 1 de EPD:** Sentar las bases teóricas de los incentivos a la contratación que se diseñarán en las prácticas.
+1. **Diagnóstico Causal de Tipologías de Desempleo:** Distinguir con precisión el desempleo friccional, estructural, cíclico y estacional, y asignar el instrumento de política pública adecuado a cada uno (Epígrafe 4 de los apuntes).
+2. **El Concepto de Tasa Natural de Desempleo (NAIRU):** Entender que la NAIRU no es fija ni "óptima", sino un punto de equilibrio dinámico que cambia con factores demográficos, tecnológicos e institucionales (Epígrafe 5.1 y 5.3).
+3. **La Curva de Phillips, Corto y Largo Plazo:** Interpretar la relación inversa entre desempleo e inflación a corto plazo, y por qué esa relación desaparece (curva vertical) a largo plazo en torno a la NAIRU (Epígrafe 5.2).
+4. **Diagnóstico de Política Macroeconómica:** Explicar por qué un estímulo de demanda agregada reduce el desempleo cíclico pero fracasa frente al desempleo estructural, y qué coste en forma de inflación conlleva intentarlo por debajo de la NAIRU.
 
 ---
 
-## 🔁 4. Estructura de Aula Invertida (*Flipped Classroom*)
+## 🔁 4. Estructura de Aula Invertida (*Flipped Classroom*) y Fases de la Sesión
 
 ```mermaid
 flowchart LR
-    A["<b>Fase 0: En Casa</b><br>Vídeo píldora (10 min): Función de Matching<br>Cuestionario Moodle"] --> B["<b>Fase 1: El Gancho (20 min)</b><br>Dilema selección de candidatos<br>Sondeo Mentimeter"]
-    B --> C["<b>Fase 2: Mini-Lección (30 min)</b><br>Curva de Beveridge y Mismatch<br>Elasticidad del matching"]
-    C --> D["<b>Fase 3: Laboratorio Activo (40 min)</b><br>Reto por parejas: Diagnóstico PLD<br>Auditoría del sesgo de contratación"]
-    D --> E["<b>Fase 4: Cierre (15 min)</b><br>Pregunta tipo examen in situ<br>Lanzamiento Caso 1 Emplea-T (15 min)"]
+    A["<b>1. Antes de Clase (En Casa)</b><br>Vídeo píldora (10 min): Tipos de desempleo y NAIRU<br>Cuestionario Moodle"] --> B["<b>2. El Gancho (20 min)</b><br>Coexistencia de tipos de paro<br>Sondeo Mentimeter"]
+    B --> C["<b>3. Laboratorio Activo (85 min)</b><br>Mini-lección Tipología (25 min)<br>Mini-lección NAIRU/Phillips (30 min)<br>Taller de diagnóstico en parejas (30 min)"]
+    C --> D["<b>4. Cierre y Metacognición (15 min)</b><br>Pregunta tipo examen in situ<br>Puente hacia la Sesión 5 (Beveridge)"]
 ```
 
 ### Fase 0: Antes de Clase · Trabajo Autónomo del Alumnado (En Casa)
-- **Recurso digital provisto:** Píldora en vídeo (10 min): *«La función de matching y la tensión del mercado: cómo se encuentran empresas y trabajadores según Mortensen y Pissarides»*.
-- **Comprobación formativa automatizada:** Cuestionario de 3 preguntas de comprobación en el campus virtual.
+- **Recurso digital provisto:** Vídeo-píldora breve (10 min) en Aula Virtual: *«Los cuatro tipos de desempleo y por qué existe un paro "natural" que ninguna política puede eliminar»*.
+- **Comprobación formativa automatizada:** Cuestionario previo de 3 preguntas en el campus virtual (autocalificable).
 
 ---
 
 ## ⏱️ 5. Desarrollo Minuto a Minuto en el Aula Presencial (120 min)
 
-### Bloque 1: El Gancho y el Enigma del Paro Prolongado (00:00 – 00:20 · 20 min)
+### Bloque 1: El Gancho y la Coexistencia de Tipos de Paro (00:00 – 00:20 · 20 min)
 - **Actividad del Profesor (8 min):**
-  - Proyección de la noticia disparadora sobre el paro de larga duración en Andalucía y la brecha de empleabilidad en mayores de 45 años.
-  - Presentación del dilema de la selección de personal: el coste de buscar información sobre candidatos desconocidos.
-- **Dinámica en Mentimeter y Debate Relámpago (12 min):**
-  - Los alumnos votan anónimamente a qué candidato contratarían (A: 1 mes en paro vs. B: 2 años en paro).
-  - Más del 85% de la clase suele elegir al Candidato A.
-  - *Pregunta socrática del docente:* «¿Por qué habéis discriminado al Candidato B si tiene exactamente el mismo título universitario y las mismas notas que el Candidato A?».
-  - Introducción de los conceptos de **asimetría de información** y **señalización estadística**.
+  - Proyección de la noticia disparadora sobre la coexistencia de parados de larga duración en sectores en declive y vacantes sin cubrir en sectores en expansión.
+  - Pregunta detonante: *«Si el problema del desempleo tiene causas tan distintas según la persona y el sector, ¿por qué seguimos hablando de "la tasa de paro" como si fuera un fenómeno único?»*.
+- **Gamificación y Sondeo (Mentimeter) (12 min):**
+  - Los alumnos clasifican dos casos reales (obrero de la construcción en invierno; ingeniero con competencias obsoletas) en su tipo de desempleo correspondiente.
+  - El profesor usa los resultados para anticipar los errores típicos de confusión friccional/estructural/cíclico/estacional.
 
-### Bloque 2: Mini-Lección Quirúrgica · Matching y Curva de Beveridge (00:20 – 00:50 · 30 min)
-- **Exposición conceptual (Diapositivas 36 a 48 — Paleta menta/salvia/coral):**
-  - **La Función de Emparejamiento:**
-    $$M = m(U, V) = A \cdot U^\alpha \cdot V^{1-\alpha}$$
-  - **Tensión del mercado ($\theta = V/U$):**
-    - Si $\theta$ es alta: muchas vacantes por parado $\rightarrow$ mercado tensionado (fácil encontrar empleo, difícil para la empresa contratar).
-    - Si $\theta$ es baja: pocos puestos y muchos parados $\rightarrow$ mercado deprimido.
-  - **La probabilidad de salida del paro ($f$):**
-    $$f(\theta) = \frac{M}{U} = A \cdot \theta^{1-\alpha}$$
-  - **El parámetro de eficiencia $A$:**
-    - ¿Qué hace subir $A$? Buenas plataformas de empleo, servicios de orientación eficientes, movilidad geográfica.
-    - ¿Qué hace caer $A$? Desajuste formativo masivo y parados de larga duración cuyos conocimientos quedan obsoletos.
-  - **La Curva de Beveridge en España (1980–2024):**
-    - El gran desplazamiento hacia la derecha tras la crisis de 2008: España necesitó muchas más vacantes para lograr el mismo nivel de paro debido a la bolsa de parados de larga duración de la construcción.
+### Bloque 2: Mini-Lección 1 · Taxonomía del Desempleo (00:20 – 00:45 · 25 min)
+- **Exposición teórica (Paleta oficial menta/salvia/coral):**
+  - **Friccional:** temporal e inevitable, causado por información imperfecta; se combate mejorando la intermediación (servicios de empleo, plataformas digitales), no con más gasto público.
+  - **Estructural:** desajuste de habilidades (*skill mismatch*), geográfico o institucional; requiere formación, reconversión y movilidad — política de largo plazo.
+  - **Cíclico:** ligado al ciclo económico; se combate con políticas macroeconómicas de estabilización (demanda agregada).
+  - **Estacional:** predecible, ligado a sectores como agricultura, turismo o construcción; se combate con diversificación económica.
+  - Síntesis rápida con la Figura 1.6 (modelo neoclásico: rigidez salarial y exceso de oferta) para anclar visualmente por qué el desempleo no se autocorrige de forma instantánea.
 
-### Bloque 3: Laboratorio Activo · Misión de Diagnóstico Técnico por Parejas (00:50 – 01:30 · 40 min)
-- **Misión de Trabajo (Rol de Técnicos de la Consejería de Empleo):**
-  - Se distribuye a cada pareja una ficha con datos desglosados de paro registrado en Andalucía:
-    - 45% parados de larga duración (>12 meses).
-    - 60% de los PLD son mayores de 45 años o mujeres con baja cualificación formal.
-  - **Reto Práctico (20 min):**
-    1. Identificar si el fallo principal es un **desajuste formativo** (*skills mismatch*) o un **estigma puro de contratación**.
-    2. Modelizar en la función de matching qué ocurre si las empresas ignoran sistemáticamente al 45% de los desempleados (reducción del desempleo efectivo relevante).
-    3. Diseñar **dos requisitos técnicos** que debería tener una subvención pública a la contratación para romper este bloqueo sin provocar que la empresa despida a un trabajador actual para cobrar la ayuda (anticipar la cláusula de empleo neto).
-- **Puesta en común socrática (20 min):**
-  - Dos parejas exponen su propuesta ante el plenario.
-  - El profesor actúa como "Director General de Políticas de Empleo", rebatiendo las propuestas débiles y premiando las argumentaciones basadas en incentivos y costes de búsqueda.
+### Bloque 3: Mini-Lección 2 · NAIRU y Curva de Phillips (00:45 – 01:15 · 30 min)
+- **Exposición con las Figuras 1.7 (NAIRU España-Eurozona 1980-2024) y 1.8 (Curva de Phillips dual):**
+  - Concepto de tasa natural de desempleo (NAIRU): ni fija ni "óptima", cambia con factores demográficos, tecnológicos e institucionales.
+  - Curva de Phillips a corto plazo (relación inversa desempleo-inflación) vs. a largo plazo (vertical en la NAIRU): por qué intentar mantener el paro por debajo de la NAIRU de forma sostenida solo genera inflación creciente, sin ganancia duradera de empleo.
+  - Lectura conjunta de la Figura 1.7: identificar en la serie histórica española los periodos en que el desempleo observado se alejó de la NAIRU (recesión de 2008-2013, recuperación posterior) y relacionarlo con los cuatro tipos de desempleo del Bloque 2.
+- **Debate guiado:**
+  - *«¿Por qué una política de estímulo de demanda agregada fracasa si el problema es estructural?»*.
+  - *«¿Por qué los programas de formación para parados no resuelven una recesión cíclica por falta de demanda?»*.
 
-### Bloque 4: Cierre Metacognitivo y Pregunta Tipo Examen (01:30 – 01:45 · 15 min)
+### Bloque 4: Taller Activo · Diagnóstico y Recomendación de Política en Parejas (01:15 – 01:45 · 30 min)
+- **Misión de Trabajo en Parejas (Rol de Analistas de la Consejería de Empleo):**
+  - Cada pareja recibe 3 fichas con casos reales/simulados de desempleo en distintas comarcas andaluzas (una zona con cierre de industria, una zona turística con estacionalidad marcada, una zona en recesión generalizada).
+  - **Reto (20 min):**
+    1. Diagnosticar el tipo de desempleo dominante en cada caso.
+    2. Asignar el instrumento de política pública correcto (intermediación / formación y reconversión / estímulo macro / diversificación estacional).
+    3. Justificar por qué aplicar la política equivocada (p. ej., estímulo macro a un problema estructural) sería ineficaz o incluso inflacionario si el paro ya está cerca de la NAIRU.
+- **Puesta en común interactiva (10 min):** Dos parejas exponen su diagnóstico y se contrastan las recomendaciones.
+
+### Bloque 5: Cierre Metacognitivo, Pregunta Tipo Examen y Puente (01:45 – 02:00 · 15 min)
 - **Pregunta Tipo Examen (Resolución individual de 3 minutos):**
-  > *«Considere una economía donde el número de vacantes ($V$) se duplica, pero la tasa de salida del desempleo ($f$) permanece inalterada para los desempleados de más de un año. Utilizando la función de emparejamiento $M = A \cdot U^\alpha \cdot V^{1-\alpha}$ y la Curva de Beveridge:*  
-  > *a) Explique qué ha ocurrido con el parámetro de eficiencia $A$ para este colectivo.*  
-  > *b) Represente gráficamente el efecto sobre la Curva de Beveridge.*  
-  > *c) Razone por qué una bonificación a la contratación generalista puede no solucionar este problema si no se acompaña de formación específica».*
-- **Rúbrica proyectada:**
-  - Deducción de la caída en la eficiencia de matching ($A$).
-  - Gráfico con desplazamiento hacia afuera de la curva.
-  - Justificación de la pérdida de capital humano y complementariedad con formación.
+  > *«Un gobierno decide estimular la demanda agregada para reducir el desempleo, que ya se encuentra en el nivel de la NAIRU. Utilizando el marco de la Curva de Phillips: a) explique qué ocurre con el desempleo y la inflación a corto plazo; b) explique qué ocurre a largo plazo; c) razone qué tipo(s) de desempleo debería atacar en su lugar si quiere reducir la NAIRU de forma duradera».*
 
-### Bloque 5: Despliegue Transmedia y Puente hacia el Caso 1 de EPD (01:45 – 02:00 · 15 min)
-- **Lanzamiento del Caso 1 en Aula Virtual:**
-  - Proyección de la portada de la **Orden de 3 de octubre de 2024 (Programa Emplea-T de la Junta de Andalucía)**.
-  - Anuncio: *«En las sesiones de EPD que arrancan en la Semana 5, vuestro equipo asumirá la auditoría y rediseño de esta orden real. Todo lo que hemos visto hoy sobre Beveridge y emparejamiento será vuestra principal herramienta de trabajo»*.
-- **Instrucción para los estudiantes:** Descargar la orden de la plataforma y conformar los equipos de trabajo antes de la próxima semana.
+- **Clave de Corrección Completa (Proyectada in situ):**
+  | Apartado | Solución Rigurosa | Errores Típicos a Anticipar en el Alumnado | Matiz para Distinguir Nota Excelente vs. Aceptable |
+  | :--- | :--- | :--- | :--- |
+  | **a) Corto plazo** | El desempleo cae transitoriamente por debajo de la NAIRU y la inflación sube (movimiento a lo largo de la Curva de Phillips de corto plazo). | Pensar que el estímulo no tiene ningún efecto sobre el desempleo. | *Aceptable:* Indica que baja el paro y sube la inflación.<br>*Excelente:* Sitúa el movimiento en la curva de corto plazo y explica que es transitorio. |
+  | **b) Largo plazo** | El desempleo vuelve a la NAIRU (la Curva de Phillips de largo plazo es vertical), pero la inflación queda instalada en un nivel más alto: no hay ganancia duradera de empleo, solo más inflación. | Creer que el desempleo se mantiene bajo de forma permanente. | *Aceptable:* Indica que el paro vuelve a su nivel inicial.<br>*Excelente:* Explica el mecanismo de expectativas: los agentes incorporan la inflación esperada y la curva de corto plazo se desplaza hasta que el desempleo converge de nuevo a la NAIRU. |
+  | **c) Política correcta** | Para reducir la NAIRU de forma duradera hay que atacar el desempleo friccional (mejor intermediación) y estructural (formación, reconversión, movilidad), no estimular más la demanda agregada. | Repetir el estímulo de demanda como solución general, sin distinguir tipos de desempleo. | *Aceptable:* Menciona formación/intermediación.<br>*Excelente:* Vincula explícitamente cada tipo de desempleo (friccional/estructural) con su instrumento y explica por qué el estímulo macro es ineficaz para reducir la NAIRU misma. |
+
+- **Asignación en el Pasaporte de Puntos:**
+  - Registro de acierto individual/parejas en el pasaporte de evaluación continua del Aula Virtual.
+- **Puente hacia la Sesión 5 (cierre de Tema 1):**
+  - *«La semana que viene cerramos Tema 1 con la herramienta que sintetiza todo lo visto hasta ahora: la Curva de Beveridge. Nos va a permitir entender por qué, incluso con vacantes abiertas, hay parados que no las cubren — y es la base teórica exacta que usaremos para auditar el Programa Emplea-T en el Caso 1 de EPD»*.
 
 ---
 
 ## 📎 6. Material y Fuentes Propuestas para la Sesión
 
-1. **Documento normativo real:**
-   - Junta de Andalucía: *Orden de 3 de octubre de 2024, por la que se aprueban las bases reguladoras para la concesión de subvenciones del Programa Emplea-T*.
-2. **Lectura doctrinal:**
-   - Mortensen, D. y Pissarides, C. (Premio Nobel 2010): *«Job Creation and Job Destruction in the Theory of Unemployment»* (extracto en el repositorio docente).
-3. **Evaluación formativa del docente:**
-   - Rúbrica in situ para evaluar la capacidad de transferir la teoría de matching al problema empírico de los parados de larga duración.
+1. **Documento de apoyo:**
+   - Banco de España / INE / Eurostat: series históricas de desempleo, NAIRU estimada e inflación en España y la Eurozona (1980-2024).
+2. **Material gráfico:**
+   - Figuras 1.6 (modelo neoclásico de rigidez salarial), 1.7 (NAIRU España-Eurozona) y 1.8 (Curva de Phillips dual: teoría y evidencia España 2002-2024) del apunte maquetado de Tema 1.
+3. **Sistema de Evaluación Formativa y Gamificación Persistente:**
+   - Registro de hitos en el **Pasaporte de Competencias y Retos Semanales** del Aula Virtual (computable dentro del 10% de evaluación continua).
+4. **Actividad Opcional en Aula Virtual: «Preguntas Socráticas para Casa» (Incentivo de Participación):**
+   - Espacio voluntario en el foro del Aula Virtual. Su realización rigurosa queda registrada en el pasaporte y aporta bonificación de nota continua.
+   - **Batería de preguntas encadenadas (Sesión 4):**
+     1. *Pregunta de partida:* Si un gobierno autonómico anuncia un plan de choque de gasto público para "acabar con el paro estructural" de una comarca industrial en declive, ¿qué le espera si el diagnóstico real es un desajuste de competencias y no una falta de demanda agregada?
+     2. *Pregunta encadenada de profundización:* La NAIRU no es fija: puede subir o bajar con el tiempo. Cite dos factores institucionales (no cíclicos) que podrían reducir la NAIRU española en la próxima década y explique el mecanismo por el que actuarían.
+     3. *Dilema de política pública:* ¿Es legítimo que un banco central tolere un desempleo algo mayor a corto plazo con tal de anclar las expectativas de inflación a largo plazo? Argumente a favor y en contra, pensando en quién soporta el coste de esa decisión.
