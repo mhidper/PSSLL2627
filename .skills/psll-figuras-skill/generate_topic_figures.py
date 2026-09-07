@@ -465,6 +465,162 @@ def generate_pib_interanual(output_path: str):
     
     save_figure(fig, output_path)
 
+def generate_productividad_salarios(output_path: str):
+    """
+    Genera el gráfico econométrico oficial de la relación entre Productividad por Hora
+    Trabajada y Salario Medio en los 31 países de la OCDE (2024), con ranking salarial
+    y España destacada en coral (R² = 0,7309).
+    """
+    setup_academic_style()
+    
+    data = [
+        {"country": "Luxemburgo", "code": "LUX", "wage": 94.4, "prod": 124.0, "ha": "left", "va": "center", "ox": 7, "oy": 2},
+        {"country": "Suiza", "code": "SUI", "wage": 87.5, "prod": 101.5, "ha": "left", "va": "center", "ox": 7, "oy": 3},
+        {"country": "EE UU", "code": "USA", "wage": 82.9, "prod": 98.5, "ha": "right", "va": "bottom", "ox": -6, "oy": 5},
+        {"country": "Bélgica", "code": "BEL", "wage": 76.1, "prod": 101.0, "ha": "left", "va": "center", "ox": 8, "oy": 3},
+        {"country": "Austria", "code": "AUT", "wage": 75.8, "prod": 96.5, "ha": "right", "va": "bottom", "ox": -5, "oy": 6},
+        {"country": "Países Bajos", "code": "HOL", "wage": 75.4, "prod": 97.0, "ha": "right", "va": "top", "ox": -6, "oy": -4},
+        {"country": "Noruega", "code": "NOR", "wage": 74.9, "prod": 137.0, "ha": "left", "va": "center", "ox": 8, "oy": 0},
+        {"country": "Dinamarca", "code": "DIN", "wage": 74.0, "prod": 100.5, "ha": "left", "va": "top", "ox": 7, "oy": -6},
+        {"country": "Australia", "code": "AUS", "wage": 70.7, "prod": 85.0, "ha": "center", "va": "bottom", "ox": 0, "oy": 7},
+        {"country": "Alemania", "code": "ALE", "wage": 69.4, "prod": 97.5, "ha": "center", "va": "top", "ox": 0, "oy": -9},
+        {"country": "Canadá", "code": "CAN", "wage": 69.4, "prod": 74.5, "ha": "right", "va": "bottom", "ox": -5, "oy": 5},
+        {"country": "Reino Unido", "code": "GBR", "wage": 63.7, "prod": 71.5, "ha": "right", "va": "bottom", "ox": -5, "oy": 5},
+        {"country": "N. Zelanda", "code": "NZL", "wage": 62.4, "prod": 56.0, "ha": "right", "va": "bottom", "ox": -6, "oy": 4},
+        {"country": "Eslovenia", "code": "SLV", "wage": 61.8, "prod": 66.0, "ha": "right", "va": "bottom", "ox": -5, "oy": 5},
+        {"country": "Francia", "code": "FRA", "wage": 60.6, "prod": 91.0, "ha": "left", "va": "top", "ox": 6, "oy": -5},
+        {"country": "Suecia", "code": "SUE", "wage": 60.4, "prod": 89.0, "ha": "center", "va": "top", "ox": 0, "oy": -9},
+        {"country": "Finlandia", "code": "FIN", "wage": 59.6, "prod": 85.0, "ha": "right", "va": "top", "ox": -6, "oy": -4},
+        {"country": "Israel", "code": "ISR", "wage": 54.7, "prod": 57.0, "ha": "right", "va": "bottom", "ox": -6, "oy": 4},
+        {"country": "ESPAÑA", "code": "ESP", "wage": 54.6, "prod": 76.0, "ha": "left", "va": "center", "ox": 10, "oy": -2},
+        {"country": "Lituania", "code": "LIT", "wage": 52.9, "prod": 64.0, "ha": "left", "va": "bottom", "ox": 6, "oy": 4},
+        {"country": "Italia", "code": "ITA", "wage": 51.0, "prod": 79.0, "ha": "left", "va": "top", "ox": 6, "oy": -8},
+        {"country": "Corea", "code": "COR", "wage": 50.9, "prod": 55.0, "ha": "right", "va": "bottom", "ox": -6, "oy": 3},
+        {"country": "Japón", "code": "JAP", "wage": 49.4, "prod": 57.5, "ha": "left", "va": "top", "ox": 6, "oy": -5},
+        {"country": "Letonia", "code": "LET", "wage": 45.6, "prod": 56.0, "ha": "left", "va": "top", "ox": 6, "oy": -3},
+        {"country": "Polonia", "code": "POL", "wage": 44.2, "prod": 52.0, "ha": "right", "va": "center", "ox": -6, "oy": 0},
+        {"country": "Portugal", "code": "POR", "wage": 40.0, "prod": 59.0, "ha": "left", "va": "center", "ox": 6, "oy": 1},
+        {"country": "Estonia", "code": "EST", "wage": 39.0, "prod": 48.0, "ha": "right", "va": "center", "ox": -6, "oy": 0},
+        {"country": "Chequia", "code": "CZE", "wage": 38.5, "prod": 58.0, "ha": "left", "va": "top", "ox": 6, "oy": -6},
+        {"country": "Eslovaquia", "code": "SVQ", "wage": 36.1, "prod": 57.0, "ha": "left", "va": "top", "ox": 5, "oy": -7},
+        {"country": "Hungría", "code": "HUN", "wage": 35.0, "prod": 55.0, "ha": "center", "va": "top", "ox": 0, "oy": -8},
+        {"country": "Grecia", "code": "GRE", "wage": 32.3, "prod": 45.0, "ha": "center", "va": "top", "ox": 0, "oy": -8},
+    ]
+    
+    fig = plt.figure(figsize=(12.0, 7.2), dpi=300)
+    fig.patch.set_facecolor(PALETTE["blanco"])
+    
+    # Grid de subplots: panel izquierdo (ranking) y panel derecho (dispersión)
+    gs = fig.add_gridspec(1, 2, width_ratios=[1.08, 2.7], wspace=0.18, left=0.04, right=0.96, top=0.88, bottom=0.10)
+    
+    ax_table = fig.add_subplot(gs[0, 0])
+    ax_plot = fig.add_subplot(gs[0, 1])
+    
+    # --- PANEL IZQUIERDO: Ranking ---
+    ax_table.axis("off")
+    ax_table.set_xlim(0, 10)
+    ax_table.set_ylim(0, 33)
+    
+    ax_table.text(5, 32.2, "SALARIO MEDIO ANUAL", ha="center", va="center",
+                  fontsize=9.5, fontweight="bold", color=PALETTE["verde_profundo"])
+    ax_table.text(5, 31.3, "(PPA en miles de $, año 2024)", ha="center", va="center",
+                  fontsize=7.5, style="italic", color=PALETTE["verde_tinta"])
+    
+    ax_table.text(0.3, 30.2, "País", ha="left", va="center", fontsize=7.8, fontweight="bold", color=PALETTE["salvia"])
+    ax_table.text(9.7, 30.2, "Salario", ha="right", va="center", fontsize=7.8, fontweight="bold", color=PALETTE["salvia"])
+    ax_table.plot([0.2, 9.8], [29.7, 29.7], color=PALETTE["salvia"], lw=1.0)
+    
+    for i, d in enumerate(data):
+        y_pos = 29.0 - i * 0.92
+        is_esp = d["code"] == "ESP"
+        
+        if is_esp:
+            esp_rect = patches.FancyBboxPatch((0.1, y_pos - 0.40), 9.8, 0.78, boxstyle="round,pad=0.03",
+                                              facecolor="#FDF4F0", edgecolor=PALETTE["coral"], linewidth=1.3)
+            ax_table.add_patch(esp_rect)
+            ax_table.text(0.4, y_pos, f"19. {d['country']}", ha="left", va="center",
+                          fontsize=7.8, fontweight="bold", color=PALETTE["coral"])
+            ax_table.text(9.6, y_pos, f"{d['wage']:.1f}".replace('.', ','), ha="right", va="center",
+                          fontsize=7.8, fontweight="bold", color=PALETTE["coral"])
+        else:
+            rank_num = f"{i+1}."
+            color_text = PALETTE["verde_profundo"] if i < 8 else PALETTE["verde_tinta"]
+            ax_table.text(0.4, y_pos, f"{rank_num} {d['country']}", ha="left", va="center",
+                          fontsize=7.2, color=color_text)
+            ax_table.text(9.6, y_pos, f"{d['wage']:.1f}".replace('.', ','), ha="right", va="center",
+                          fontsize=7.2, color=color_text)
+    
+    # --- PANEL DERECHO: Dispersión y Regresión ---
+    x_vals = np.array([d["prod"] for d in data])
+    y_vals = np.array([d["wage"] for d in data])
+    
+    # Regresión MCO
+    m, b = np.polyfit(x_vals, y_vals, 1)
+    x_line = np.linspace(42, 130, 200)
+    y_line = m * x_line + b
+    
+    ax_plot.plot(x_line, y_line, color=PALETTE["verde_profundo"], linestyle="--", linewidth=1.8,
+                 label="Recta de regresión MCO ($R^2 = 0,7309$)", zorder=2)
+    
+    for d in data:
+        xp, yp = d["prod"], d["wage"]
+        is_esp = d["code"] == "ESP"
+        
+        if is_esp:
+            ax_plot.scatter([xp], [yp], color=PALETTE["coral"], s=130, edgecolors=PALETTE["blanco"],
+                            linewidth=2.0, zorder=6)
+            ax_plot.scatter([xp], [yp], color="none", s=240, edgecolors=PALETTE["coral"],
+                            linewidth=1.5, linestyle=":", zorder=5)
+            
+            ax_plot.annotate("ESPAÑA\n(54,6k$ · 76$/h)", xy=(xp, yp), xytext=(xp + 4, yp - 12),
+                             fontsize=8.8, fontweight="bold", color=PALETTE["coral"],
+                             arrowprops=dict(arrowstyle="->", color=PALETTE["coral"], lw=1.5),
+                             bbox=dict(boxstyle="round,pad=0.25", facecolor="#FFF7F5", edgecolor=PALETTE["coral"], lw=1.0),
+                             zorder=7)
+        else:
+            ax_plot.scatter([xp], [yp], color=PALETTE["salvia"], s=65, edgecolors=PALETTE["blanco"],
+                            linewidth=1.0, zorder=3)
+            ax_plot.annotate(d["code"], (xp, yp), xytext=(d["ox"], d["oy"]), textcoords="offset points",
+                             fontsize=7.2, color=PALETTE["verde_tinta"], ha=d["ha"], va=d["va"],
+                             fontweight="500", zorder=4)
+    
+    # Caja pedagógica interpretativa
+    callout_bg = patches.FancyBboxPatch((97, 29), 47, 14.5, boxstyle="round,pad=0.5",
+                                        facecolor=PALETTE["menta"], edgecolor=PALETTE["salvia"], linewidth=1.2)
+    ax_plot.add_patch(callout_bg)
+    ax_plot.text(120.5, 39.5, "POR DEBAJO DE LA RECTA", ha="center", va="center",
+                 fontsize=8.5, fontweight="bold", color=PALETTE["verde_profundo"])
+    ax_plot.text(120.5, 34.0, "España retribuye salarios medios\ninferiores a lo que le correspondería\npor su nivel de productividad por hora.",
+                 ha="center", va="center", fontsize=7.8, color=PALETTE["verde_tinta"], linespacing=1.25)
+    
+    # Ejes y rejilla
+    ax_plot.set_xlim(38, 146)
+    ax_plot.set_ylim(25, 102)
+    ax_plot.set_xlabel("Productividad por hora trabajada (PPA en dólares, 2024)", fontsize=9.5, fontweight="bold",
+                       color=PALETTE["verde_profundo"], labelpad=8)
+    ax_plot.set_ylabel("Salario medio anual (PPA en miles de dólares, 2024)", fontsize=9.5, fontweight="bold",
+                       color=PALETTE["verde_profundo"], labelpad=8)
+    
+    ax_plot.grid(True, linestyle="--", alpha=0.5, color=PALETTE["gris_ejes"])
+    ax_plot.spines['top'].set_visible(False)
+    ax_plot.spines['right'].set_visible(False)
+    ax_plot.spines['left'].set_color(PALETTE["gris_ejes"])
+    ax_plot.spines['bottom'].set_color(PALETTE["gris_ejes"])
+    
+    ax_plot.legend(loc="upper left", framealpha=0.92, fontsize=8.5)
+    
+    # Título y Subtítulo corporativos superiores
+    fig.text(0.50, 0.95, "Relación entre Productividad por Hora Trabajada y Salario Medio en la OCDE",
+             ha="center", va="center", fontsize=12.5, fontweight="bold", color=PALETTE["verde_profundo"])
+    fig.text(0.50, 0.915, "España presenta salarios medios bajos en relación a un nivel de productividad laboral intermedia",
+             ha="center", va="center", fontsize=8.8, style="italic", color=PALETTE["salvia"])
+    
+    # Pie de fuente
+    fig.text(0.04, 0.03, "Fuente: Elaboración propia a partir de datos oficiales de la OCDE (Productivity Statistics & Employment Outlook, 2024).",
+             fontsize=7.8, style="italic", color=PALETTE["verde_tinta"])
+    
+    save_figure(fig, output_path)
+
 def generate_figures_for_topic(topic_num: int, project_root: str):
     """Genera las figuras remasterizadas para un tema específico en su carpeta relativa."""
     dest_dir = os.path.join(project_root, f"Temas EB/Tema {topic_num}/figuras/remasterizadas")
@@ -476,11 +632,13 @@ def generate_figures_for_topic(topic_num: int, project_root: str):
         tree_path = os.path.join(dest_dir, "epa_decision_tree.png")
         vab_path = os.path.join(dest_dir, "vab_pan.png")
         pib_path = os.path.join(dest_dir, "pib_interanual.png")
+        prod_path = os.path.join(dest_dir, "productividad_salarios.png")
         bev_path = os.path.join(dest_dir, "beveridge.png")
         generate_epa_taxonomy(epa_path)
         generate_epa_decision_tree(tree_path)
         generate_vab_pan(vab_path)
         generate_pib_interanual(pib_path)
+        generate_productividad_salarios(prod_path)
         generate_beveridge_curve(bev_path)
     else:
         print(f"Aún no hay generadores registrados para el Tema {topic_num}.")

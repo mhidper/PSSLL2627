@@ -56,9 +56,9 @@ TEMA_1_FIGURES_META = {
         "source": "Fuente: Instituto Nacional de Estadística (INE), Contabilidad Nacional Trimestral de España (CNTR)."
     },
     "image5.png": {
-        "remastered": None,
-        "caption": "Figura 1.5: Relación a largo plazo entre productividad laboral y salarios reales.",
-        "source": "Fuente: Elaboración propia para Políticas Sociolaborales (UPO)."
+        "remastered": "productividad_salarios.png",
+        "caption": "Figura 1.5: Relación entre productividad por hora trabajada y salario medio en la OCDE (2024).",
+        "source": "Fuente: Elaboración propia a partir de datos oficiales de la OCDE (Productivity Statistics & Employment Outlook, 2024)."
     },
     "image6.jpeg": {
         "remastered": None,
