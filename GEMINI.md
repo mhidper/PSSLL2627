@@ -39,3 +39,13 @@ Para la edición, diseño y maquetación de los documentos de apuntes (`.docx`) 
   - Inserción de figuras de datos en alta resolución (300 DPI) generadas con el motor de gráficos `matplotlib` adaptado a la marca.
   - Encabezados con emblema oficial (`psll_emblem.png`) y pie de página con paginación dinámica.
 - Se prohíbe maquetar apuntes de forma manual o ad-hoc sin apoyarse en este motor de estilo, asegurando la reproducibilidad y homogeneidad total en todos los temas del curso.
+
+## Remasterización Gráfica y Figuras Académicas (Skill de Figuras)
+
+Para la generación, vectorización y rediseño de esquemas y gráficos de la asignatura:
+- Se debe utilizar la skill gráfica modular ubicada en `.skills/psll-figuras-skill/`.
+- Trabaja de manera coordinada con `psll-apuntes-skill`:
+  - `psll-apuntes-skill` extrae las figuras del original a `Temas EB/Tema X/figuras/originales/`.
+  - `psll-figuras-skill` genera las versiones en alta resolución (300 DPI) con la paleta oficial (menta/salvia/coral) en `Temas EB/Tema X/figuras/remasterizadas/`.
+  - Al maquetar, las versiones remasterizadas sustituyen automáticamente a las originales sin pérdida de ninguna figura.
+  - Las figuras remasterizadas son reutilizables transversalmente en apuntes (`.docx`), presentaciones (`.pptx`) y actividades EPD.

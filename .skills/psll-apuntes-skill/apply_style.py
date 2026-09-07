@@ -15,6 +15,7 @@ if hasattr(sys.stdout, 'buffer'):
     sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 if hasattr(sys.stderr, 'buffer'):
     sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8')
+import zipfile
 from docx.shared import Inches, Pt, RGBColor
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.enum.table import WD_TABLE_ALIGNMENT
@@ -28,11 +29,92 @@ from brand_theme import (
     HEX_COLORS, RGB_COLORS, FONT_HEADINGS, FONT_BODY,
     set_cell_shading, set_cell_margins, set_callout_borders, set_table_borders
 )
-from figure_generator import generate_beveridge_figure, generate_epa_taxonomy_figure
 from docx_styler import (
     set_document_geometry, setup_document_styles, add_header_and_footer,
     insert_callout_box, insert_reflection_box, insert_key_concepts_box, insert_figure
 )
+
+TEMA_1_FIGURES_META = {
+    "image1.png": {
+        "remastered": "epa_taxonomy.png",
+        "caption": "Figura 1.1: Taxonomía oficial y articulación de la población según la EPA (INE / OIT).",
+        "source": "Fuente: Elaboración propia a partir de la metodología de la Encuesta de Población Activa (INE)."
+    },
+    "image2.png": {
+        "remastered": None,
+        "caption": "Figura 1.2: Factores determinantes y dinámicas de la tasa de actividad.",
+        "source": "Fuente: Elaboración propia para Políticas Sociolaborales (UPO)."
+    },
+    "image3.png": {
+        "remastered": None,
+        "caption": "Figura 1.3: Cadena de valor añadido y generación del VAB en las fases del pan.",
+        "source": "Fuente: Elaboración propia para Políticas Sociolaborales (UPO)."
+    },
+    "image4.jpeg": {
+        "remastered": None,
+        "caption": "Figura 1.4: Medición del Producto Interior Bruto: Enfoque de la producción y valor añadido.",
+        "source": "Fuente: Elaboración propia a partir de la Contabilidad Nacional (INE)."
+    },
+    "image5.png": {
+        "remastered": None,
+        "caption": "Figura 1.5: Relación a largo plazo entre productividad laboral y salarios reales.",
+        "source": "Fuente: Elaboración propia para Políticas Sociolaborales (UPO)."
+    },
+    "image6.jpeg": {
+        "remastered": None,
+        "caption": "Figura 1.6: Teoría de la elección ocio-consumo y derivación de la oferta individual de trabajo.",
+        "source": "Fuente: Modelo microeconómico neoclásico del mercado de trabajo."
+    },
+    "image7.png": {
+        "remastered": None,
+        "caption": "Figura 1.7: La Tasa Natural de Desempleo (NAIRU) y equilibrio en el mercado de trabajo.",
+        "source": "Fuente: Elaboración propia para Políticas Sociolaborales (UPO)."
+    },
+    "image8.png": {
+        "remastered": None,
+        "caption": "Figura 1.8: La Curva de Phillips y la hipótesis de la tasa natural de desempleo.",
+        "source": "Fuente: Elaboración propia a partir de Friedman y Phelps."
+    },
+    "image9.png": {
+        "remastered": "beveridge.png",
+        "caption": "Figura 1.9: La Curva de Beveridge. Desplazamientos a lo largo de la curva vs. desplazamientos estructurales.",
+        "source": "Fuente: Elaboración propia para Políticas Sociolaborales (UPO). Modelo Diamond-Mortensen-Pissarides."
+    },
+    "image10.png": {
+        "remastered": None,
+        "caption": "Figura 1.10: Estimación empírica de la Curva de Beveridge en España (1980-2016).",
+        "source": "Fuente: Fundación de Estudios de Economía Aplicada (FEDEA, 2017)."
+    },
+    "image11.png": {
+        "remastered": None,
+        "caption": "Figura 1.11: Dinámica de la Curva de Beveridge española por subperiodos y efecto de la reforma de 2012.",
+        "source": "Fuente: FEDEA (2017), Colección Estudios sobre la Economía Española."
+    },
+}
+
+def extract_media_from_docx(docx_path: str, output_dir: str):
+    """
+    Extrae automáticamente todas las imágenes del archivo docx original
+    a la carpeta relativa figuras/originales/ y devuelve el diccionario rId -> filename.
+    """
+    os.makedirs(output_dir, exist_ok=True)
+    doc_raw = docx.Document(docx_path)
+    rid_map = {}
+    for rid, rel in doc_raw.part.rels.items():
+        if "image" in rel.target_ref:
+            rid_map[rid] = os.path.basename(rel.target_ref)
+            
+    with zipfile.ZipFile(docx_path, 'r') as z:
+        for member in z.namelist():
+            if member.startswith("word/media/"):
+                fname = os.path.basename(member)
+                if fname:
+                    dest = os.path.join(output_dir, fname)
+                    with open(dest, "wb") as f_out:
+                        f_out.write(z.read(member))
+                        
+    print(f"📦 Se han extraído {len(rid_map)} figuras originales a: {output_dir}")
+    return rid_map
 
 def create_institutional_cover(doc, emblem_path: str, upo_logo_path: str):
     """Inserta la cabecera institucional en la primera página alineada a la izquierda."""
@@ -167,7 +249,7 @@ def insert_epa_summary_table(doc):
     p_post.paragraph_format.space_after = Pt(6)
 
 def style_topic_document(input_path: str, output_path: str):
-    """Procesa el documento original y genera la versión maquetada con alta fidelidad."""
+    """Procesa el documento original y genera la versión maquetada con alta fidelidad y figuras."""
     print(f"Leyendo documento original: {input_path}")
     doc_orig = docx.Document(input_path)
     
@@ -176,32 +258,41 @@ def style_topic_document(input_path: str, output_path: str):
     set_document_geometry(doc)
     setup_document_styles(doc)
     
-    # Generar figuras si no existen
-    figures_dir = os.path.join(CURRENT_DIR, "figures")
-    os.makedirs(figures_dir, exist_ok=True)
-    epa_fig_path = os.path.join(figures_dir, "epa_taxonomy.png")
-    beveridge_fig_path = os.path.join(figures_dir, "beveridge.png")
+    # Rutas relativas del tema y figuras
+    project_root = os.path.abspath(os.path.join(CURRENT_DIR, "..", ".."))
+    theme_dir = os.path.dirname(os.path.dirname(os.path.abspath(input_path)))
+    fig_dir = os.path.join(theme_dir, "figuras")
+    orig_fig_dir = os.path.join(fig_dir, "originales")
+    remaster_fig_dir = os.path.join(fig_dir, "remasterizadas")
+    os.makedirs(orig_fig_dir, exist_ok=True)
+    os.makedirs(remaster_fig_dir, exist_ok=True)
     
-    print("Generando figuras oficiales con la paleta PSLL...")
-    generate_epa_taxonomy_figure(epa_fig_path)
-    generate_beveridge_figure(beveridge_fig_path)
+    # 1. Extracción automática de figuras originales del .docx
+    rid_map = extract_media_from_docx(input_path, orig_fig_dir)
+    
+    # 2. Generación de figuras remasterizadas mediante psll-figuras-skill
+    figuras_skill_dir = os.path.join(project_root, ".skills", "psll-figuras-skill")
+    if figuras_skill_dir not in sys.path:
+        sys.path.insert(0, figuras_skill_dir)
+    try:
+        from generate_topic_figures import generate_figures_for_topic
+        generate_figures_for_topic(1, project_root)
+    except Exception as e:
+        print(f"Nota sobre generador de figuras: {e}")
     
     # Rutas de assets oficiales
-    project_root = os.path.abspath(os.path.join(CURRENT_DIR, "..", ".."))
     emblem_path = os.path.join(project_root, "Logos y skills", "psll-presentaciones-skill", "assets", "psll_emblem.png")
     upo_logo_path = os.path.join(project_root, "Logos y skills", "psll-presentaciones-skill", "assets", "upo_logo.jpg")
     
-    # 1. Cabecera Institucional
+    # Cabecera Institucional
     create_institutional_cover(doc, emblem_path, upo_logo_path)
     
     # Identificar título del tema para encabezados dinámicos
     topic_title = "Tema 1: Fundamentos del Mercado Laboral"
     
-    # Banderas para inserción controlada de figuras y cajas piloto
-    epa_fig_inserted = False
-    epa_callout_inserted = False
-    beveridge_fig_inserted = False
-    beveridge_callout_inserted = False
+    # Variables de control
+    inserted_figures = set()
+    fig_counter = 1
     skip_reflection_block = False
     collecting_key_concepts = False
     key_concepts = []
@@ -210,6 +301,38 @@ def style_topic_document(input_path: str, output_path: str):
     print("Procesando y reclasificando párrafos...")
     for idx, p in enumerate(doc_orig.paragraphs):
         raw_text = p.text.strip()
+        
+        # 0. DETECCIÓN E INSERCIÓN INTELIGENTE DE FIGURAS (ORIGINALES O REMASTERIZADAS)
+        blips = p._p.xpath('.//a:blip/@r:embed')
+        if blips:
+            for r_id in blips:
+                fname = rid_map.get(r_id)
+                if fname and fname not in inserted_figures:
+                    inserted_figures.add(fname)
+                    meta = TEMA_1_FIGURES_META.get(fname, {})
+                    remastered_name = meta.get("remastered")
+                    caption = meta.get("caption", f"Figura 1.{fig_counter}: Ilustración complementaria del epígrafe.")
+                    source = meta.get("source", "Fuente: Elaboración propia para Políticas Sociolaborales (UPO).")
+                    
+                    # Precedencia: 1) Remasterizada si existe, 2) Original extraída
+                    target_fig = None
+                    if remastered_name:
+                        cand_remaster = os.path.join(remaster_fig_dir, remastered_name)
+                        if os.path.exists(cand_remaster):
+                            target_fig = cand_remaster
+                            
+                    if not target_fig:
+                        cand_orig = os.path.join(orig_fig_dir, fname)
+                        if os.path.exists(cand_orig):
+                            target_fig = cand_orig
+                            
+                    if target_fig:
+                        print(f"  -> Insertando figura #{fig_counter} ({fname}): {os.path.basename(target_fig)}")
+                        insert_figure(doc, target_fig, caption_text=caption, source_text=source)
+                        fig_counter += 1
+                        if fname == "image1.png":
+                            insert_epa_summary_table(doc)
+                            
         if not raw_text:
             continue
             
@@ -316,27 +439,6 @@ def style_topic_document(input_path: str, output_path: str):
             run.font.size = Pt(12.5)
             run.font.bold = True
             run.font.color.rgb = RGB_COLORS["sage"]
-            
-            # Si es el epígrafe de Indicadores EPA, insertar diagrama conceptual y tabla resumen
-            if not epa_fig_inserted and "1.2. Indicadores básicos" in raw_text:
-                insert_figure(
-                    doc,
-                    epa_fig_path,
-                    caption_text="Figura 1.1: Taxonomía oficial y articulación de la población según la EPA (INE / OIT).",
-                    source_text="Fuente: Elaboración propia a partir de la metodología de la Encuesta de Población Activa (INE)."
-                )
-                insert_epa_summary_table(doc)
-                epa_fig_inserted = True
-                
-            # Si es el epígrafe de la Curva de Beveridge, insertar gráfico canónico
-            if not beveridge_fig_inserted and ("6.1. Fundamentos" in raw_text or "6.0. Dinámica" in raw_text):
-                insert_figure(
-                    doc,
-                    beveridge_fig_path,
-                    caption_text="Figura 1.2: La Curva de Beveridge. Desplazamientos a lo largo de la curva vs. desplazamientos estructurales.",
-                    source_text="Fuente: Elaboración propia para Políticas Sociolaborales (UPO). Modelo Diamond-Mortensen-Pissarides."
-                )
-                beveridge_fig_inserted = True
             continue
             
         # 4. SUBEPÍGRAFES NIVEL 3 (1.2.1., 1.2.2., 4.1.1., etc.)

@@ -62,9 +62,11 @@ Basado estrictamente en [Logos y skills/BRAND.md](file:///c:/Users/Usuario/Dropb
    - Fila de cabecera con fondo Verde Profundo (`#566B56`) o Salvia (`#76927A`), texto en blanco y negrita.
    - Filas de datos con texto en Verde Tinta (`#2F3A30`), bordes horizontales limpios (`#D0DCD2`) y sombreado alterno sutil.
 
-5. **Figuras Oficiales Generadas en Python (`matplotlib`):**
-   - Gráficos generados a 300 DPI respetando la paleta de la marca (`figure_generator.py`).
-   - Ancladas centradas con pie reglamentario:  
+5. **Gestión Integral y Remasterización de Figuras:**
+   - **Extracción Automática de Originales:** El script extrae el 100% de las imágenes del `.docx` original a `Temas EB/Tema X/figuras/originales/` y mapea su ubicación contextual exacta.
+   - **Precedencia Inteligente de Remasterizadas:** Si existe una versión rediseñada en `Temas EB/Tema X/figuras/remasterizadas/` (generada mediante `.skills/psll-figuras-skill/` a 300 DPI con la paleta oficial), se inserta prioritariamente.
+   - **Conservación sin Pérdidas:** Si una figura aún no ha sido rediseñada, se inserta la versión original extraída para asegurar que el documento nunca carezca de sus imágenes.
+   - **Maquetación Reglamentaria:** Todas las figuras se insertan centradas (ancho estándar ~6.2 pulgadas), con pie descriptivo en 9 pt Poppins negrita Verde Profundo (`#566B56`) y fuente en 8 pt Calibri cursiva Verde Salvia (`#76927A`):  
      *«Figura X.X: Título descriptivo. Fuente: Elaboración propia para Políticas Sociolaborales (UPO)...»*.
 
 6. **Cabecera Institucional Inicial (Página 1):**
