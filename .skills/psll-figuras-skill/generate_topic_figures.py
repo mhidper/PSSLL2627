@@ -387,6 +387,79 @@ def generate_vab_pan(output_path: str):
     
     save_figure(fig, output_path)
 
+def generate_pib_interanual(output_path: str):
+    """
+    Genera el gráfico actualizado de evolución del PIB en España (2022T1 - 2026T2)
+    con las tasas de variación interanual en volumen encadenado (INE / CNTR).
+    """
+    setup_academic_style()
+    fig, ax = plt.subplots(figsize=(9.6, 4.8), dpi=300)
+    fig.patch.set_facecolor(PALETTE["blanco"])
+    ax.set_facecolor(PALETTE["blanco"])
+    
+    quarters = [
+        "2022T1", "2022T2", "2022T3", "2022T4",
+        "2023T1", "2023T2", "2023T3", "2023T4",
+        "2024T1", "2024T2", "2024T3", "2024T4",
+        "2025T1", "2025T2", "2025T3", "2025T4",
+        "2026T1", "2026T2"
+    ]
+    rates = [
+        7.1, 7.5, 6.3, 4.7,
+        3.6, 2.0, 2.0, 2.2,
+        2.9, 3.7, 3.6, 3.7,
+        3.1, 2.9, 2.7, 2.7,
+        2.7, 2.7
+    ]
+    
+    x = np.arange(len(quarters))
+    
+    # Relleno suave bajo la curva (estilo editorial académico)
+    ax.fill_between(x, rates, color=PALETTE["menta"], alpha=0.35, zorder=2)
+    
+    # Línea principal con paleta corporativa
+    ax.plot(x, rates, color=PALETTE["verde_profundo"], linewidth=2.4, zorder=3,
+            label="Variación interanual del PIB (%)")
+    
+    # Marcadores de rombo (diamante)
+    ax.scatter(x, rates, color=PALETTE["salvia"], edgecolor=PALETTE["verde_profundo"],
+               s=55, marker="D", linewidth=1.5, zorder=4)
+    
+    # Etiquetas numéricas sobre cada punto
+    for xi, yi in zip(x, rates):
+        label_text = f"{yi:.1f}".replace('.', ',')
+        # Offset dinámico para evitar solapes
+        y_offset = 6
+        ax.annotate(label_text, (xi, yi), textcoords="offset points", xytext=(0, y_offset),
+                    ha="center", va="bottom", fontsize=8.2, fontweight="bold",
+                    color=PALETTE["verde_profundo"], zorder=5)
+    
+    # Configuración de ejes
+    ax.set_xticks(x)
+    ax.set_xticklabels(quarters, rotation=45, ha="right", fontsize=8.5, fontweight="500", color=PALETTE["verde_tinta"])
+    
+    y_ticks = np.arange(0, 9.0, 1.0)
+    ax.set_yticks(y_ticks)
+    ax.set_yticklabels([f"{val:.1f}".replace('.', ',') for val in y_ticks], fontsize=8.5, color=PALETTE["verde_tinta"])
+    ax.set_ylim(0, 8.5)
+    ax.set_xlim(-0.5, len(quarters) - 0.5)
+    
+    # Cuadrícula horizontal sutil
+    ax.grid(True, axis="y", linestyle="--", alpha=0.5, color=PALETTE["gris_ejes"], zorder=1)
+    
+    # Estilo de spines
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+    ax.spines['left'].set_color(PALETTE["gris_ejes"])
+    ax.spines['bottom'].set_color(PALETTE["gris_ejes"])
+    
+    # Título y Subtítulo corporativos
+    plt.title("Producto Interior Bruto\n"
+              r"$\mathregular{Volumen\ encadenado.\ Tasas\ de\ variación\ interanual\ (\%)}$",
+              loc="left", fontsize=11.5, fontweight="bold", color=PALETTE["verde_profundo"], pad=14)
+    
+    save_figure(fig, output_path)
+
 def generate_figures_for_topic(topic_num: int, project_root: str):
     """Genera las figuras remasterizadas para un tema específico en su carpeta relativa."""
     dest_dir = os.path.join(project_root, f"Temas EB/Tema {topic_num}/figuras/remasterizadas")
@@ -397,10 +470,12 @@ def generate_figures_for_topic(topic_num: int, project_root: str):
         epa_path = os.path.join(dest_dir, "epa_taxonomy.png")
         tree_path = os.path.join(dest_dir, "epa_decision_tree.png")
         vab_path = os.path.join(dest_dir, "vab_pan.png")
+        pib_path = os.path.join(dest_dir, "pib_interanual.png")
         bev_path = os.path.join(dest_dir, "beveridge.png")
         generate_epa_taxonomy(epa_path)
         generate_epa_decision_tree(tree_path)
         generate_vab_pan(vab_path)
+        generate_pib_interanual(pib_path)
         generate_beveridge_curve(bev_path)
     else:
         print(f"Aún no hay generadores registrados para el Tema {topic_num}.")

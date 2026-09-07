@@ -51,9 +51,9 @@ TEMA_1_FIGURES_META = {
         "source": "Fuente: Elaboración propia para Políticas Sociolaborales (UPO). Metodología de Contabilidad Nacional (INE / SEC-2010)."
     },
     "image4.jpeg": {
-        "remastered": None,
-        "caption": "Figura 1.4: Medición del Producto Interior Bruto: Enfoque de la producción y valor añadido.",
-        "source": "Fuente: Elaboración propia a partir de la Contabilidad Nacional (INE)."
+        "remastered": "pib_interanual.png",
+        "caption": "Figura 1.4: Evolución del Producto Interior Bruto (PIB) en España: tasas de variación interanual en volumen encadenado (2022T1 - 2026T2).",
+        "source": "Fuente: Instituto Nacional de Estadística (INE), Contabilidad Nacional Trimestral de España (CNTR)."
     },
     "image5.png": {
         "remastered": None,
