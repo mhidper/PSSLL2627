@@ -621,6 +621,110 @@ def generate_productividad_salarios(output_path: str):
     
     save_figure(fig, output_path)
 
+def generate_modelo_desempleo_neoclasico(output_path: str):
+    """
+    Genera el gráfico del modelo neoclásico del mercado de trabajo:
+    - Curva de demanda convexa decreciente D.
+    - Curva de oferta con tramo backward-bending O.
+    - Equilibrio competitivo E*(N*, S*).
+    - Salario rígido S > S*, exceso de oferta (desempleo involuntario) y presión a la baja.
+    """
+    setup_academic_style()
+    fig, ax = plt.subplots(figsize=(8.8, 5.8), dpi=300)
+    fig.patch.set_facecolor(PALETTE["blanco"])
+    ax.set_facecolor(PALETTE["blanco"])
+
+    # 1. Curvas calibradas exactamente
+    # Equilibrio en N*=5.0, S*=4.0
+    N_d = np.linspace(1.3, 9.2, 200)
+    S_d = 1.6 + 12.0 / N_d
+
+    # Oferta O backward-bending: N_o(S) = 8.2 - a*(S - 7.5)^2 pasando por (5.0, 4.0)
+    S_o = np.linspace(2.0, 9.2, 200)
+    a_coeff = 3.2 / 12.25
+    N_o = 8.2 - a_coeff * (S_o - 7.5)**2
+
+    S_star = 4.0
+    N_star = 5.0
+
+    S_high = 6.80
+    N_D_high = 12.0 / (S_high - 1.6)      # 2.3077
+    N_O_high = 8.2 - a_coeff * (S_high - 7.5)**2 # 8.0720
+
+    # 2. Trazado de Curvas
+    ax.plot(N_d, S_d, color=PALETTE["verde_profundo"], linewidth=2.6, label="Demanda de trabajo ($D$)")
+    ax.plot(N_o, S_o, color=PALETTE["salvia"], linewidth=2.6, label="Oferta de trabajo ($O$)")
+
+    ax.text(N_d[-1] + 0.15, S_d[-1] + 0.1, "$D$", fontsize=12.5, fontweight="bold", color=PALETTE["verde_profundo"])
+    ax.text(N_o[-1] - 0.45, S_o[-1] + 0.25, "$O$", fontsize=12.5, fontweight="bold", color=PALETTE["salvia"])
+
+    # 3. Proyecciones del Equilibrio (N*, S*)
+    ax.plot([0, N_star], [S_star, S_star], color=PALETTE["gris_ejes"], linestyle="--", lw=1.3)
+    ax.plot([N_star, N_star], [0, S_star], color=PALETTE["gris_ejes"], linestyle="--", lw=1.3)
+    ax.scatter([N_star], [S_star], color=PALETTE["verde_profundo"], s=75, zorder=5)
+
+    ax.text(N_star + 0.22, S_star + 0.25, "$E^*$", fontsize=11.5, fontweight="bold", color=PALETTE["verde_profundo"])
+    ax.text(N_star + 0.65, S_star + 0.25, "(Equilibrio)", fontsize=8.2, style="italic", color=PALETTE["verde_profundo"])
+
+    # 4. Salario rígido S y Exceso de Oferta
+    ax.plot([0, N_O_high], [S_high, S_high], color=PALETTE["coral"], linestyle="--", lw=1.3)
+    ax.plot([N_D_high, N_D_high], [0, S_high], color=PALETTE["coral"], linestyle=":", lw=1.2)
+    ax.plot([N_O_high, N_O_high], [0, S_high], color=PALETTE["coral"], linestyle=":", lw=1.2)
+
+    ax.scatter([N_D_high], [S_high], color=PALETTE["verde_profundo"], s=65, zorder=5)
+    ax.scatter([N_O_high], [S_high], color=PALETTE["salvia"], s=65, zorder=5)
+
+    # Franja de Desempleo (flecha bidireccional)
+    ax.annotate("", xy=(N_D_high, S_high), xytext=(N_O_high, S_high),
+                arrowprops=dict(arrowstyle="<->", color=PALETTE["coral"], lw=2.2))
+    ax.text((N_D_high + N_O_high) / 2, S_high + 0.40, "Exceso de oferta de trabajo (Desempleo)",
+            ha="center", va="bottom", fontsize=9.0, fontweight="bold", color=PALETTE["coral"])
+
+    # Flecha hacia abajo: presión bajista
+    mid_x = (N_D_high + N_O_high) / 2
+    ax.annotate("", xy=(mid_x, S_star + 0.45), xytext=(mid_x, S_high - 0.45),
+                arrowprops=dict(arrowstyle="->", color=PALETTE["coral"], lw=2.0))
+    ax.text(mid_x - 0.25, (S_high + S_star)/2, "Presión a la baja\n(si salarios son flexibles)",
+            ha="right", va="center", fontsize=8.0, style="italic", color=PALETTE["coral"])
+
+    # 5. Ejes limpios con puntas de flecha
+    ax.set_xlim(0, 10.3)
+    ax.set_ylim(0, 10.5)
+    ax.spines['top'].set_visible(False)
+    ax.spines['right'].set_visible(False)
+    ax.spines['left'].set_color(PALETTE["verde_tinta"])
+    ax.spines['bottom'].set_color(PALETTE["verde_tinta"])
+    ax.spines['left'].set_linewidth(1.4)
+    ax.spines['bottom'].set_linewidth(1.4)
+
+    ax.plot(0, 10.5, marker="^", markersize=7, color=PALETTE["verde_tinta"], clip_on=False)
+    ax.plot(10.3, 0, marker=">", markersize=7, color=PALETTE["verde_tinta"], clip_on=False)
+
+    ax.set_xticks([0, N_D_high, N_star, N_O_high])
+    ax.set_xticklabels(["0", "$N_D$", "$N^*$", "$N_O$"], fontsize=10.0, fontweight="bold", color=PALETTE["verde_tinta"])
+    ax.set_yticks([0, S_star, S_high])
+    ax.set_yticklabels(["0", "$S^*$", "$S$"], fontsize=10.0, fontweight="bold", color=PALETTE["verde_tinta"])
+
+    ax.set_xlabel("Nº Trabajadores / Nivel de Empleo ($N$)", fontsize=10.0, fontweight="bold",
+                  color=PALETTE["verde_profundo"], labelpad=8)
+    ax.set_ylabel("Salario real ($S$)", fontsize=10.0, fontweight="bold",
+                  color=PALETTE["verde_profundo"], labelpad=8)
+
+    # Título y Subtítulo corporativos
+    fig.text(0.06, 0.95, "El Desempleo en el Modelo Neoclásico de Mercado de Trabajo",
+             fontsize=12.0, fontweight="bold", color=PALETTE["verde_profundo"])
+    fig.text(0.06, 0.915, "Rigidez salarial por encima del equilibrio, exceso de oferta y brecha de desempleo involuntario",
+             fontsize=8.5, style="italic", color=PALETTE["salvia"])
+
+    # Footer didáctico e institucional
+    fig.text(0.08, 0.02, r"$\mathbf{Desempleo\ Involuntario} = N_O - N_D$ (a salario rígido $S > S^*$)",
+             fontsize=9.0, fontweight="bold", color=PALETTE["coral"])
+    fig.text(0.92, 0.02, "Fuente: Modelo neoclásico del mercado de trabajo (adaptado de M. Barneto).",
+             ha="right", fontsize=7.8, style="italic", color=PALETTE["verde_tinta"])
+
+    plt.tight_layout(rect=[0.02, 0.05, 0.98, 0.89])
+    save_figure(fig, output_path)
+
 def generate_figures_for_topic(topic_num: int, project_root: str):
     """Genera las figuras remasterizadas para un tema específico en su carpeta relativa."""
     dest_dir = os.path.join(project_root, f"Temas EB/Tema {topic_num}/figuras/remasterizadas")
@@ -634,12 +738,14 @@ def generate_figures_for_topic(topic_num: int, project_root: str):
         pib_path = os.path.join(dest_dir, "pib_interanual.png")
         prod_path = os.path.join(dest_dir, "productividad_salarios.png")
         bev_path = os.path.join(dest_dir, "beveridge.png")
+        neo_path = os.path.join(dest_dir, "modelo_desempleo_neoclasico.png")
         generate_epa_taxonomy(epa_path)
         generate_epa_decision_tree(tree_path)
         generate_vab_pan(vab_path)
         generate_pib_interanual(pib_path)
         generate_productividad_salarios(prod_path)
         generate_beveridge_curve(bev_path)
+        generate_modelo_desempleo_neoclasico(neo_path)
     else:
         print(f"Aún no hay generadores registrados para el Tema {topic_num}.")
 

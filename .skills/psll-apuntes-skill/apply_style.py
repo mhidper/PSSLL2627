@@ -61,9 +61,9 @@ TEMA_1_FIGURES_META = {
         "source": "Fuente: Elaboración propia a partir de datos oficiales de la OCDE (Productivity Statistics & Employment Outlook, 2024)."
     },
     "image6.jpeg": {
-        "remastered": None,
-        "caption": "Figura 1.6: Teoría de la elección ocio-consumo y derivación de la oferta individual de trabajo.",
-        "source": "Fuente: Modelo microeconómico neoclásico del mercado de trabajo."
+        "remastered": "modelo_desempleo_neoclasico.png",
+        "caption": "Figura 1.6: El desempleo en el modelo neoclásico del mercado de trabajo: rigidez salarial y exceso de oferta.",
+        "source": "Fuente: Elaboración propia a partir del modelo neoclásico del mercado de trabajo (adaptado de M. Barneto)."
     },
     "image7.png": {
         "remastered": None,
