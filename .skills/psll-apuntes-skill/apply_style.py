@@ -246,6 +246,77 @@ def insert_epa_summary_table(doc):
     p_post.paragraph_format.space_before = Pt(2)
     p_post.paragraph_format.space_after = Pt(6)
 
+def extract_paragraph_full_text(p):
+    """Extrae el texto completo del párrafo, preservando fórmulas matemáticas de nodos m:oMath."""
+    texts = []
+    for node in p._p.iter():
+        tag = node.tag.split('}')[-1]
+        if tag == 't':
+            if node.text:
+                texts.append(node.text)
+    full = ''.join(texts).strip()
+    return full if full else p.text.strip()
+
+def clean_and_enhance_text(raw_text: str) -> str:
+    """Normaliza fórmulas matemáticas y ajusta redacciones clave a las figuras oficiales."""
+    # Fórmulas de la Sección 2 (PIB y Productividad)
+    if raw_text == "PIB=VAB+impuestos-subvenciones":
+        return "PIB = VAB + Impuestos indirectos netos de subvenciones"
+    if "t.c.Xt=Xt-Xt-1Xt-1×100" in raw_text or "t.c.Xt=" in raw_text:
+        return "Tasa de variación interanual:  t.c. X_t = [(X_t - X_{t-1}) / X_{t-1}] × 100"
+    if raw_text == "PIB per cápita=PIB totalPoblación total":
+        return "PIB per cápita = PIB total / Población total"
+    if "Productividad Laboral=ProducciónNúmero de trabajadores" in raw_text or "Productividad Laboral=" in raw_text:
+        return "Productividad laboral = Producción total (PIB) / (Número de trabajadores o de horas trabajadas)"
+    
+    # Fórmulas de la Sección 5 (Curva de Phillips)
+    if "πt=πte-λut-un" in raw_text or raw_text.startswith("πt="):
+        return "π_t = π_t^e - λ · (u_t - u_n)"
+    if raw_text == "πt = Tasa de inflación actual" or raw_text.startswith("= Tasa de inflación actual"):
+        return "π_t: Tasa de inflación observada actual"
+    if raw_text == "πte = Tasa de inflación esperada" or raw_text.startswith("= Tasa de inflación esperada"):
+        return "π_t^e: Tasa de inflación esperada por los agentes económicos"
+    if raw_text == "ut = Tasa de desempleo actual" or raw_text.startswith("= Tasa de desempleo actual"):
+        return "u_t: Tasa de desempleo observada en el período"
+    if raw_text == "un = Tasa natural de desempleo (NAIRU)" or raw_text.startswith("= Tasa natural de desempleo"):
+        return "u_n: Tasa natural de desempleo o NAIRU"
+    if raw_text.startswith("λ = Parámetro") or raw_text.startswith("= Parámetro que mide"):
+        return "λ: Parámetro de sensibilidad de la inflación a la brecha de desempleo"
+    if "Si ut>un" in raw_text or raw_text.startswith("Si , se produce una reducción"):
+        return "Si u_t > u_n: se generan presiones deflacionarias (la tasa de inflación se reduce)."
+    if "Si ut<un" in raw_text or raw_text.startswith("Si , se produce un aumento"):
+        return "Si u_t < u_n: se generan presiones inflacionarias (la tasa de inflación aumenta)."
+    if "Si ut=un" in raw_text or raw_text.startswith("Si , la tasa de inflación no varía"):
+        return "Si u_t = u_n: la inflación se mantiene estable en el nivel esperado (equilibrio NAIRU)."
+    
+    # Fórmulas de la Sección 6 (Stocks/Flujos y Beveridge)
+    if "∆U=s·E-f·U=0" in raw_text or "s·E-f·U=0" in raw_text:
+        return "Condición de equilibrio dinámico:  ΔU = s · E - f · U = 0"
+    if "u*=ss+f" in raw_text or "u*=" in raw_text:
+        return "Tasa de desempleo de estado estacionario:  u* = s / (s + f)"
+    if "m=fU,V,A" in raw_text or raw_text == "m=f(U,V,A)":
+        return "Función de emparejamiento (matching function):  m = f(U, V, A) = A · U^α · V^(1-α)"
+    if raw_text == "m = Número de emparejamientos (contrataciones) por período" or raw_text.startswith("= Número de emparejamientos"):
+        return "m: Número de contrataciones o emparejamientos realizados por período"
+    if raw_text == "U = Número de desempleados al comienzo del período" or raw_text.startswith("= Número de desempleados"):
+        return "U: Stock de personas desempleadas al inicio del período"
+    if raw_text == "V = Número de vacantes al comienzo del período" or raw_text.startswith("= Número de vacantes"):
+        return "V: Stock de puestos de trabajo vacantes disponibles en la economía"
+    if raw_text == "A = Eficiencia del proceso de emparejamiento" or raw_text.startswith("= Eficiencia del proceso"):
+        return "A: Parámetro de eficiencia tecnológica e institucional del emparejamiento"
+
+    # Errata histórica y remisión a figuras en Sección 6.4
+    if raw_text == "Dos fases distintas identificadas:":
+        return "Tres fases macroeconómicas identificadas en la serie histórica (ver Panel B de la Figura 1.9):"
+    if raw_text in ["Fase 1 (1994-2007): Estabilidad pre-crisis", "Fase 1 (1980-2007): Estabilidad pre-crisis"]:
+        return "Fase 1 (1980–2007: Estabilidad pre-crisis y ancla en Punto A)"
+    if raw_text == "Fase 2 (2008-2014): Crisis y desplazamiento":
+        return "Fase 2 (2008–2013: Gran Recesión y desplazamiento hacia el Punto B)"
+    if raw_text == "Fase 3 (2014-2016): Recuperación única":
+        return "Fase 3 (2014–2024: Recuperación económica y récord histórico de vacantes)"
+
+    return raw_text
+
 def style_topic_document(input_path: str, output_path: str):
     """Procesa el documento original y genera la versión maquetada con alta fidelidad y figuras."""
     print(f"Leyendo documento original: {input_path}")
@@ -298,7 +369,7 @@ def style_topic_document(input_path: str, output_path: str):
     
     print("Procesando y reclasificando párrafos...")
     for idx, p in enumerate(doc_orig.paragraphs):
-        raw_text = p.text.strip()
+        raw_text = clean_and_enhance_text(extract_paragraph_full_text(p))
         
         # 0. DETECCIÓN E INSERCIÓN INTELIGENTE DE FIGURAS (ORIGINALES O REMASTERIZADAS)
         blips = p._p.xpath('.//a:blip/@r:embed')
@@ -332,6 +403,44 @@ def style_topic_document(input_path: str, output_path: str):
                         fig_counter += 1
                         if fname == "image1.png":
                             insert_epa_summary_table(doc)
+                        elif fname == "image8.png":
+                            # Párrafo explicativo conectando con el doble panel de la Figura 1.8
+                            p_exp = doc.add_paragraph(style='Normal')
+                            p_exp.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+                            p_exp.paragraph_format.space_before = Pt(4)
+                            p_exp.paragraph_format.space_after = Pt(6)
+                            p_exp.paragraph_format.line_spacing = 1.15
+                            r_exp = p_exp.add_run(
+                                "Interpretación analítica de la Figura 1.8: En el Panel A (modelo teórico de Friedman-Phelps), "
+                                "un estímulo de demanda reduce coyunturalmente el desempleo a corto plazo desplazando la economía de A a B sobre CP₁; "
+                                "sin embargo, la revisión al alza de las expectativas de inflación desplaza la curva a CP₂, retornando "
+                                "el desempleo a la NAIRU en C (curva vertical a largo plazo LP). En el Panel B, la serie empírica de España "
+                                "(2002–2024) confirma esta dinámica: la fase de burbuja (2002-2007) dio paso a la severa devaluación salarial "
+                                "de 2012 (-3,6% con paro al 26%) y, tras la recuperación, al reciente shock inflacionista post-COVID con aumentos de costes salariales superiores al 5%."
+                            )
+                            r_exp.font.name = FONT_BODY
+                            r_exp.font.size = Pt(9.8)
+                            r_exp.font.italic = True
+                            r_exp.font.color.rgb = RGB_COLORS["ink_green"]
+                        elif fname == "image9.png":
+                            # Párrafo explicativo conectando con el doble panel de la Figura 1.9
+                            p_exp = doc.add_paragraph(style='Normal')
+                            p_exp.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+                            p_exp.paragraph_format.space_before = Pt(4)
+                            p_exp.paragraph_format.space_after = Pt(6)
+                            p_exp.paragraph_format.line_spacing = 1.15
+                            r_exp = p_exp.add_run(
+                                "Interpretación analítica de la Figura 1.9: El Panel A sintetiza el modelo teórico de emparejamiento (DMP): "
+                                "los ciclos económicos generan oscilaciones a lo largo de la curva (expansión vs. recesión), mientras que los "
+                                "desajustes estructurales de cualificación (mismatch) desplazan la curva hacia el exterior (E₁ → E₂). "
+                                "El Panel B muestra la estimación empírica en España (1980–2024): tras el shock de la Gran Recesión que desplazó "
+                                "la curva del Punto A al Punto B (+5 p.p. de paro estructural), la recuperación reciente hasta 2024 ha situado las vacantes "
+                                "en máximos históricos (0,73%) mientras el desempleo se sitúa en el 11,3%, confirmando un problema persistente de emparejamiento."
+                            )
+                            r_exp.font.name = FONT_BODY
+                            r_exp.font.size = Pt(9.8)
+                            r_exp.font.italic = True
+                            r_exp.font.color.rgb = RGB_COLORS["ink_green"]
                             
         if not raw_text:
             continue
@@ -450,6 +559,23 @@ def style_topic_document(input_path: str, output_path: str):
             p_new.paragraph_format.keep_with_next = True
             run = p_new.add_run(raw_text)
             run.font.name = FONT_HEADINGS
+            run.font.size = Pt(11.0)
+            run.font.bold = True
+            run.font.color.rgb = RGB_COLORS["deep_green"]
+            continue
+
+        # 4.1. FÓRMULAS MATEMÁTICAS DESTACADAS
+        is_formula = any(raw_text.startswith(k) for k in [
+            "π_t =", "Condición de equilibrio dinámico:", "Tasa de desempleo de estado",
+            "Función de emparejamiento", "PIB = VAB", "Tasa de variación interanual:", "PIB per cápita ="
+        ])
+        if is_formula:
+            p_new = doc.add_paragraph()
+            p_new.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            p_new.paragraph_format.space_before = Pt(6)
+            p_new.paragraph_format.space_after = Pt(6)
+            run = p_new.add_run(raw_text)
+            run.font.name = FONT_BODY
             run.font.size = Pt(11.0)
             run.font.bold = True
             run.font.color.rgb = RGB_COLORS["deep_green"]
