@@ -5,7 +5,7 @@
 > con la estructura **real** de los apuntes 2526 de cada Tema (epígrafes, extensión), para detectar
 > desajustes de tiempo/contenido ANTES de tocar guiones o generar material nuevo.
 > **No modifica** el cronograma ni ningún guion de sesión — es un mapa de trabajo para decidir
-> dónde priorizar el rediseño de material (Temas EB - 2526/TemaN/work_in_progress).
+> dónde priorizar el rediseño de material (Temas EB/TemaN/work_in_progress).
 
 ---
 

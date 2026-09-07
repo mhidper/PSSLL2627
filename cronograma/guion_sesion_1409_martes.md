@@ -14,7 +14,7 @@
 | **Día y Fecha** | **Martes, 15 de septiembre de 2026** | **Viernes, 18 de septiembre de 2026** |
 | **Horario y Duración** | **09:30 – 11:30** (**120 minutos / 2,0 h**) | **17:30 – 19:30** (**120 minutos / 2,0 h**) |
 | **Aula Oficial** | **Aula E13A7** (Edif. 13, Aula 7) | **Aula E10A3** (Edif. 10, Aula 3) |
-| **Material Base** | • [Tema 1 (Diapositivas 2627)](file:///c:/Users/Usuario/Dropbox/DOCENCIA%20UPO/CURSO%2026-27/PSLL/Temas%20EB%20-%202526/Tema%201/Diapositivas/Tema%201%202627.pptx) (Bloques de Dinámica de Flujos, Tipología del Desempleo y Curva de Beveridge)<br>• [Tema 1 (Apuntes)](file:///c:/Users/Usuario/Dropbox/DOCENCIA%20UPO/CURSO%2026-27/PSLL/Temas%20EB%20-%202526/Tema%201/Apuntes/Tema%201%202627.docx) (Sección 1.1: Rotación laboral; Sección 4: Tipología del Desempleo; Sección 6: La Curva de Beveridge) |
+| **Material Base** | • [Tema 1 (Diapositivas 2627)](file:///c:/Users/Usuario/Dropbox/DOCENCIA%20UPO/CURSO%2026-27/PSLL/Temas%20EB/Tema%201/Diapositivas/Tema%201%202627.pptx) (Bloques de Dinámica de Flujos, Tipología del Desempleo y Curva de Beveridge)<br>• [Tema 1 (Apuntes)](file:///c:/Users/Usuario/Dropbox/DOCENCIA%20UPO/CURSO%2026-27/PSLL/Temas%20EB/Tema%201/Apuntes/Tema%201%202627.docx) (Sección 1.1: Rotación laboral; Sección 4: Tipología del Desempleo; Sección 6: La Curva de Beveridge) |
 | **Sistema de Puntuación** | Acumulación de retos en el **Pasaporte de Evaluación Continua** (hacia el 10% de Participación Activa y Retos Semanales). |
 
 > **Nota de coordinación:** Aunque el nombre de archivo toma por convención el martes de la Línea 1 (`guion_sesion_1409_martes.md`), este guion aplica con idéntica duración (120 min) y contenido a la sesión de tarde de la Línea 2 (viernes 18/09).

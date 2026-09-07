@@ -31,7 +31,7 @@ PSLL/
 ├── innovación_docente/                       # Marco metodológico e innovación pedagógica
 │   └── propuesta_innovacion_docente.md       # Estrategias Flipped Classroom, dinámicas activas y gamificación
 │
-├── Temas EB - 2526/                          # Materiales teóricos de Enseñanzas Básicas (EB)
+├── Temas EB/                                 # Materiales teóricos de Enseñanzas Básicas (EB)
 │   ├── Recursos generales/                   # Código de gráficos (matplotlib) y plantillas
 │   ├── Tema 0/                               # Presentación, metodología y conceptos introductorios
 │   ├── Tema 1/                               # Flujos/stocks del mercado laboral, Beveridge y desajuste (mismatch)

@@ -14,7 +14,7 @@
 | **Día y Fecha** | **Lunes, 21 de septiembre de 2026** | **Lunes, 21 de septiembre de 2026** |
 | **Horario y Duración** | **13:30 – 15:00** (90 minutos / 1,5 h) | **20:00 – 21:30** (90 minutos / 1,5 h) |
 | **Aula Oficial** | **Aula E13A7** (Edif. 13, Aula 7 — Mobiliario móvil) | **Aula E10A3** (Edif. 10, Aula 3) |
-| **Material Base** | • [Tema 1 (Diapositivas 2627)](file:///c:/Users/Usuario/Dropbox/DOCENCIA%20UPO/CURSO%2026-27/PSLL/Temas%20EB%20-%202526/Tema%201/Diapositivas/Tema%201%202627.pptx) (Slides 20–35)<br>• [Tema 1 (Apuntes)](file:///c:/Users/Usuario/Dropbox/DOCENCIA%20UPO/CURSO%2026-27/PSLL/Temas%20EB%20-%202526/Tema%201/Apuntes/Tema%201%202627.docx) (Sección 3: Oferta, Demanda y Salarios) |
+| **Material Base** | • [Tema 1 (Diapositivas 2627)](file:///c:/Users/Usuario/Dropbox/DOCENCIA%20UPO/CURSO%2026-27/PSLL/Temas%20EB/Tema%201/Diapositivas/Tema%201%202627.pptx) (Slides 20–35)<br>• [Tema 1 (Apuntes)](file:///c:/Users/Usuario/Dropbox/DOCENCIA%20UPO/CURSO%2026-27/PSLL/Temas%20EB/Tema%201/Apuntes/Tema%201%202627.docx) (Sección 3: Oferta, Demanda y Salarios) |
 
 ---
 
