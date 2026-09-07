@@ -31,7 +31,7 @@ from brand_theme import (
 from figure_generator import generate_beveridge_figure, generate_epa_taxonomy_figure
 from docx_styler import (
     set_document_geometry, setup_document_styles, add_header_and_footer,
-    insert_callout_box, insert_reflection_box, insert_figure
+    insert_callout_box, insert_reflection_box, insert_key_concepts_box, insert_figure
 )
 
 def create_institutional_cover(doc, emblem_path: str, upo_logo_path: str):
@@ -180,6 +180,9 @@ def style_topic_document(input_path: str, output_path: str):
     beveridge_fig_inserted = False
     beveridge_callout_inserted = False
     skip_reflection_block = False
+    collecting_key_concepts = False
+    key_concepts = []
+    key_concepts_title = "Conceptos Clave del Tema"
     
     print("Procesando y reclasificando párrafos...")
     for idx, p in enumerate(doc_orig.paragraphs):
@@ -187,6 +190,30 @@ def style_topic_document(input_path: str, output_path: str):
         if not raw_text:
             continue
             
+        # 0.0. RECOLECCIÓN Y VOLCADO DE CONCEPTOS CLAVE EN PÁGINA NUEVA
+        if collecting_key_concepts:
+            # Si encontramos un nuevo encabezado (capítulo, debate, referencias, etc.), cerramos la caja
+            if re.match(r"^\d+\.", raw_text) or raw_text in ["PREGUNTAS PARA EL DEBATE", "REFERENCIAS BIBLIOGRÁFICAS"] or raw_text.startswith("TEMA"):
+                if key_concepts:
+                    insert_key_concepts_box(doc, title=key_concepts_title, concepts_list=key_concepts, page_break_before=True)
+                collecting_key_concepts = False
+                key_concepts = []
+                # Se continúa la ejecución sin continue para que el párrafo actual se procese normalmente
+            else:
+                if ":" in raw_text:
+                    parts = raw_text.split(":", 1)
+                    key_concepts.append((parts[0].strip(), parts[1].strip()))
+                elif raw_text:
+                    key_concepts.append(("", raw_text.strip()))
+                continue
+
+        # Detección del inicio de Conceptos Clave
+        if re.match(r"^Conceptos\s+clave", raw_text, re.IGNORECASE):
+            collecting_key_concepts = True
+            key_concepts_title = raw_text.rstrip(":")
+            key_concepts = []
+            continue
+
         # 0.1. PARADA REFLEXIVA AGRUPADA: RANGOS DE LA TASA DE ACTIVIDAD
         if "Reflexión sobre los rangos de la tasa de actividad" in raw_text:
             insert_reflection_box(
@@ -244,6 +271,9 @@ def style_topic_document(input_path: str, output_path: str):
         if re.match(r"^\d+\.\s+[A-ZÁÉÍÓÚÑ\s]{4,}", raw_text) or raw_text in ["EQUILIBRIO EN EL MERCADO DE TRABAJO", "PREGUNTAS PARA EL DEBATE", "REFERENCIAS BIBLIOGRÁFICAS"]:
             p_new = doc.add_paragraph(style='Heading 1')
             p_new.alignment = WD_ALIGN_PARAGRAPH.LEFT
+            p_new.paragraph_format.space_before = Pt(26)
+            p_new.paragraph_format.space_after = Pt(6)
+            p_new.paragraph_format.keep_with_next = True
             run = p_new.add_run(raw_text)
             run.font.name = FONT_HEADINGS
             run.font.size = Pt(15.0)
@@ -255,6 +285,9 @@ def style_topic_document(input_path: str, output_path: str):
         if re.match(r"^\d+\.\d+\.\s+", raw_text):
             p_new = doc.add_paragraph(style='Heading 2')
             p_new.alignment = WD_ALIGN_PARAGRAPH.LEFT
+            p_new.paragraph_format.space_before = Pt(18)
+            p_new.paragraph_format.space_after = Pt(5)
+            p_new.paragraph_format.keep_with_next = True
             run = p_new.add_run(raw_text)
             run.font.name = FONT_HEADINGS
             run.font.size = Pt(12.5)
@@ -287,6 +320,9 @@ def style_topic_document(input_path: str, output_path: str):
         if re.match(r"^\d+\.\d+\.\d+\.\s+", raw_text):
             p_new = doc.add_paragraph(style='Heading 3')
             p_new.alignment = WD_ALIGN_PARAGRAPH.LEFT
+            p_new.paragraph_format.space_before = Pt(12)
+            p_new.paragraph_format.space_after = Pt(3)
+            p_new.paragraph_format.keep_with_next = True
             run = p_new.add_run(raw_text)
             run.font.name = FONT_HEADINGS
             run.font.size = Pt(11.0)
@@ -390,6 +426,9 @@ def style_topic_document(input_path: str, output_path: str):
                 run.font.color.rgb = RGB_COLORS["deep_green"]
 
 
+
+    if collecting_key_concepts and key_concepts:
+        insert_key_concepts_box(doc, title=key_concepts_title, concepts_list=key_concepts, page_break_before=True)
 
     # Agregar encabezados y pies de página
     add_header_and_footer(doc, topic_title)

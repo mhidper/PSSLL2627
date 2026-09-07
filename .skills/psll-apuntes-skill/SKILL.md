@@ -30,9 +30,13 @@ Basado estrictamente en [Logos y skills/BRAND.md](file:///c:/Users/Usuario/Dropb
 
 ## 🧩 Componentes Modulares Soportados
 
-1. **Jerarquía Tipográfica y Alineación Justificada:**
+1. **Jerarquía Tipográfica y Organización Visual de Secciones:**
    - Detección y normalización automática de epígrafes (`1.`, `1.1.`, `1.2.1.`).
-   - Aplicación estricta de `Heading 1` (15 pt en verde profundo), `Heading 2` (12.5 pt en salvia) y `Heading 3` (11 pt en verde profundo) alineados a la izquierda para navegación en Word.
+   - Aplicación estricta de `Heading 1` (15.5 pt en verde profundo), `Heading 2` (12.5 pt en salvia) y `Heading 3` (11 pt en verde profundo) alineados a la izquierda para navegación en Word.
+   - **Espaciado Generoso entre Secciones:** Para garantizar la respiración y una organización visual diáfana, se establecen márgenes previos amplios:
+     - `Heading 1`: 26 pt antes / 6 pt después (`keep_with_next = True`).
+     - `Heading 2`: 18 pt antes / 5 pt después (`keep_with_next = True`).
+     - `Heading 3`: 12 pt antes / 3 pt después (`keep_with_next = True`).
    - **Alineación Justificada Obligatoria:** Todo el texto de cuerpo, listas y cajas destacadas debe estar justificado (`WD_ALIGN_PARAGRAPH.JUSTIFY`) para garantizar un acabado editorial limpio.
 
 2. **Itemización Sistemática con Viñetas (Bullet Points):**
@@ -48,7 +52,9 @@ Basado estrictamente en [Logos y skills/BRAND.md](file:///c:/Users/Usuario/Dropb
      - 🗓️ **Caja de Sesión Docente (*Session Box*):** Fondo verde menta suave (`#E1F6EA`), borde en Verde Profundo (`#566B56`). Sitúa al estudiante en el cronograma oficial de la asignatura (ej. *Sesión 1 · Semana 1*).
      - 💭 **Parada Reflexiva (*Reflection Box*):** Fondo neutro cálido/crema suave (`#F3EFDC`), borde en Verde Salvia (`#76927A`). Preguntas detonantes y dilemas intuitivos para que el estudiante auto-evalúe su comprensión antes de avanzar.
      - ⚠️ **Alerta de Examen / Trampa Habitual (*Warning Box*):** Fondo suave de alerta (`#FDF4F0`), borde en Coral (`#E99073`). Errores analíticos frecuentes en pruebas de evaluación.
-     - 💡 **Concepto Clave (*Concept Box*):** Fondo verde menta (`#E1F6EA`), borde en Verde Salvia (`#76927A`). Fundamentos teóricos e intuiciones microeconómicas.
+     - 💡 **Concepto Clave / Conceptos Clave del Tema (*Concept Box*):**
+       - **Regla Mandatoria:** Debe situarse **en una página nueva** (incorporando obligatoriamente un **salto de página previo**).
+       - Fondo verde menta suave (`#E1F6EA`), borde en Verde Salvia (`#76927A`), icono `💡` y título en Verde Profundo (`#566B56`). Los conceptos se listan de forma itemizada y jerárquica con viñeta salvia y término en negrita.
      - 📊 **Dato Empírico / Noticia (*Case Box*):** Fondo crema cálido (`#F3EFDC`), borde en Verde Profundo (`#566B56`). Aplicaciones reales de la EPA, SEPE o Banco de España.
 
 4. **Tablas Estilizadas:**
@@ -61,8 +67,8 @@ Basado estrictamente en [Logos y skills/BRAND.md](file:///c:/Users/Usuario/Dropb
      *«Figura X.X: Título descriptivo. Fuente: Elaboración propia para Políticas Sociolaborales (UPO)...»*.
 
 6. **Encabezado y Pie de Página Corporativo:**
-   - Cabecera con título del tema en verde salvia.
-   - Pie con paginación automática ("Página X de Y") y código de asignatura (`PSLL · 102023`).
+   - **Encabezado Justificado a la Izquierda:** Alineado a la izquierda (`WD_ALIGN_PARAGRAPH.LEFT`) con el título del tema en verde salvia (`#76927A`), 8 pt Poppins.
+   - Pie con paginación automática dinámica ("Página X de Y") y referencia institucional UPO / Grado en RRLL y RRHH.
 
 ---
 

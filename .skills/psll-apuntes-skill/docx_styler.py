@@ -48,8 +48,8 @@ def setup_document_styles(doc):
         h1.font.size = Pt(15.5)
         h1.font.bold = True
         h1.font.color.rgb = RGB_COLORS['deep_green']
-        h1.paragraph_format.space_before = Pt(14)
-        h1.paragraph_format.space_after = Pt(4)
+        h1.paragraph_format.space_before = Pt(26)
+        h1.paragraph_format.space_after = Pt(6)
         h1.paragraph_format.keep_with_next = True
         
     # Heading 2 (Subepígrafe nivel 2)
@@ -59,8 +59,8 @@ def setup_document_styles(doc):
         h2.font.size = Pt(12.5)
         h2.font.bold = True
         h2.font.color.rgb = RGB_COLORS['sage']
-        h2.paragraph_format.space_before = Pt(10)
-        h2.paragraph_format.space_after = Pt(3)
+        h2.paragraph_format.space_before = Pt(18)
+        h2.paragraph_format.space_after = Pt(5)
         h2.paragraph_format.keep_with_next = True
 
     # Heading 3 (Subepígrafe nivel 3)
@@ -70,18 +70,18 @@ def setup_document_styles(doc):
         h3.font.size = Pt(11.0)
         h3.font.bold = True
         h3.font.color.rgb = RGB_COLORS['deep_green']
-        h3.paragraph_format.space_before = Pt(7)
-        h3.paragraph_format.space_after = Pt(2)
+        h3.paragraph_format.space_before = Pt(12)
+        h3.paragraph_format.space_after = Pt(3)
         h3.paragraph_format.keep_with_next = True
 
 def add_header_and_footer(doc, topic_title: str):
     """Agrega cabecera y pie de página dinámico con paginación en Word."""
     for section in doc.sections:
-        # Encabezado
+        # Encabezado (justificado a la izquierda según solicitud de marca)
         header = section.header
         header.is_linked_to_previous = False
         hp = header.paragraphs[0]
-        hp.alignment = WD_ALIGN_PARAGRAPH.RIGHT
+        hp.alignment = WD_ALIGN_PARAGRAPH.LEFT
         hp.text = f"POLÍTICAS SOCIOLABORALES Y DE EMPLEO · {topic_title.upper()}"
         hp.runs[0].font.name = FONT_HEADINGS
         hp.runs[0].font.size = Pt(8.0)
@@ -116,11 +116,15 @@ def add_header_and_footer(doc, topic_title: str):
         fld_numpages = parse_xml(r'<w:fldSimple %s w:instr="NUMPAGES"/>' % nsdecls('w'))
         fp._p.append(fld_numpages)
 
-def insert_callout_box(doc, callout_type: str, title: str, text: str):
+def insert_callout_box(doc, callout_type: str, title: str, text: str, page_break_before: bool = False):
     """
     Inserta una caja destacada (callout box) de 1 celda con sombreado y borde izquierdo grueso.
     Tipos: 'session', 'concept', 'warning', 'case'.
+    Si page_break_before es True o callout_type == 'concept', inserta un salto de página antes.
     """
+    if page_break_before or callout_type == "concept":
+        doc.add_page_break()
+
     tbl = doc.add_table(rows=1, cols=1)
     tbl.alignment = WD_TABLE_ALIGNMENT.CENTER
     tbl.autofit = False
@@ -235,6 +239,68 @@ def insert_reflection_box(doc, title: str, q_and_a_list: list):
     p_after = doc.add_paragraph()
     p_after.paragraph_format.space_before = Pt(0)
     p_after.paragraph_format.space_after = Pt(4)
+
+def insert_key_concepts_box(doc, title: str, concepts_list: list, page_break_before: bool = True):
+    """
+    Inserta una caja destacada completa de Conceptos Clave en una página nueva.
+    Por solicitud de diseño editorial, SIEMPRE va precedida de un salto de página.
+    concepts_list es una lista de tuplas: [ (término, definición), ... ]
+    """
+    if page_break_before:
+        doc.add_page_break()
+        
+    tbl = doc.add_table(rows=1, cols=1)
+    tbl.alignment = WD_TABLE_ALIGNMENT.CENTER
+    tbl.autofit = False
+    cell = tbl.cell(0, 0)
+    cell.width = Inches(6.5)
+    
+    bg_hex = HEX_COLORS["mint"]          # Verde menta corporativo
+    border_hex = HEX_COLORS["sage"]      # Borde verde salvia distintivo
+    
+    set_cell_shading(cell, bg_hex)
+    set_cell_margins(cell, top_dpt=160, bottom_dpt=160, left_dpt=200, right_dpt=160)
+    set_callout_borders(cell, border_hex, border_size_pt=26)
+    
+    # Título de la caja
+    p_title = cell.paragraphs[0]
+    p_title.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    p_title.paragraph_format.space_before = Pt(0)
+    p_title.paragraph_format.space_after = Pt(6)
+    run_icon = p_title.add_run(f"💡  {title.upper()}\n")
+    run_icon.font.name = FONT_HEADINGS
+    run_icon.font.size = Pt(11.0)
+    run_icon.font.bold = True
+    run_icon.font.color.rgb = RGB_COLORS["deep_green"]
+    
+    # Lista de conceptos
+    for i, (term, desc) in enumerate(concepts_list):
+        p_item = cell.add_paragraph()
+        p_item.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+        p_item.paragraph_format.left_indent = Inches(0.25)
+        p_item.paragraph_format.first_line_indent = Inches(-0.15)
+        p_item.paragraph_format.space_before = Pt(3 if i > 0 else 0)
+        p_item.paragraph_format.space_after = Pt(2)
+        p_item.paragraph_format.line_spacing = 1.15
+        
+        run_b = p_item.add_run("• ")
+        run_b.font.name = FONT_BODY
+        run_b.font.bold = True
+        run_b.font.color.rgb = RGB_COLORS["sage"]
+        
+        run_t = p_item.add_run(f"{term.strip()}: ")
+        run_t.font.name = FONT_BODY
+        run_t.font.bold = True
+        run_t.font.color.rgb = RGB_COLORS["deep_green"]
+        
+        run_d = p_item.add_run(desc.strip())
+        run_d.font.name = FONT_BODY
+        run_d.font.size = Pt(9.5)
+        run_d.font.color.rgb = RGB_COLORS["ink_green"]
+        
+    p_after = doc.add_paragraph()
+    p_after.paragraph_format.space_before = Pt(0)
+    p_after.paragraph_format.space_after = Pt(8)
 
 
 
