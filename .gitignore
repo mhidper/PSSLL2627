@@ -16,5 +16,6 @@ __pycache__/
 .vscode/
 .idea/
 
-# Carpetas de trabajo temporal del asistente
+# Carpetas de trabajo temporal y personal
 scratch/
+personal/
