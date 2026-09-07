@@ -725,6 +725,147 @@ def generate_modelo_desempleo_neoclasico(output_path: str):
     plt.tight_layout(rect=[0.02, 0.05, 0.98, 0.89])
     save_figure(fig, output_path)
 
+def generate_tasa_natural_nairu(output_path: str):
+    """
+    Genera la comparativa pedagógica de Tasa de Desempleo Observada vs NAIRU (1980-2024)
+    para España y la Zona Euro a partir de datos oficiales de AMECO (Comisión Europea).
+    """
+    setup_academic_style()
+    years = np.arange(1980, 2025)
+
+    esp_ur_data = {
+        1980: 11.7, 1981: 14.6, 1982: 16.6, 1983: 14.7, 1984: 16.7, 1985: 17.8, 1986: 17.4, 1987: 19.7,
+        1988: 18.7, 1989: 16.5, 1990: 15.5, 1991: 15.5, 1992: 17.0, 1993: 22.6, 1994: 24.1, 1995: 22.9,
+        1996: 22.1, 1997: 20.6, 1998: 18.6, 1999: 15.7, 2000: 13.9, 2001: 10.6, 2002: 11.5, 2003: 11.5,
+        2004: 11.0, 2005: 9.2, 2006: 8.5, 2007: 8.2, 2008: 11.3, 2009: 17.9, 2010: 19.9, 2011: 21.4,
+        2012: 24.8, 2013: 26.1, 2014: 24.5, 2015: 22.1, 2016: 19.6, 2017: 17.2, 2018: 15.3, 2019: 14.1,
+        2020: 15.5, 2021: 14.9, 2022: 13.0, 2023: 12.2, 2024: 11.4
+    }
+
+    esp_nawru_data = {
+        1980: 10.38, 1981: 11.37, 1982: 12.38, 1983: 12.62, 1984: 13.7, 1985: 14.53, 1986: 14.99, 1987: 16.08,
+        1988: 16.47, 1989: 16.66, 1990: 17.0, 1991: 17.22, 1992: 17.3, 1993: 18.03, 1994: 17.89, 1995: 17.41,
+        1996: 17.11, 1997: 16.61, 1998: 16.05, 1999: 15.29, 2000: 14.82, 2001: 13.91, 2002: 13.9, 2003: 13.67,
+        2004: 13.58, 2005: 13.39, 2006: 13.54, 2007: 13.63, 2008: 14.17, 2009: 15.36, 2010: 15.59, 2011: 15.84,
+        2012: 16.52, 2013: 16.86, 2014: 16.77, 2015: 16.59, 2016: 16.31, 2017: 15.93, 2018: 15.52, 2019: 15.02,
+        2020: 14.94, 2021: 14.32, 2022: 13.53, 2023: 13.07, 2024: 12.58
+    }
+
+    ea_ur_data = {
+        1980: 6.0, 1981: 7.1, 1982: 8.1, 1983: 8.9, 1984: 9.4, 1985: 9.8, 1986: 9.9, 1987: 9.7,
+        1988: 9.3, 1989: 8.4, 1990: 7.6, 1991: 7.9, 1992: 8.5, 1993: 10.2, 1994: 10.9, 1995: 10.7,
+        1996: 10.9, 1997: 10.8, 1998: 10.3, 1999: 9.5, 2000: 8.5, 2001: 7.9, 2002: 8.3, 2003: 8.9,
+        2004: 9.1, 2005: 9.0, 2006: 8.4, 2007: 7.5, 2008: 7.6, 2009: 9.6, 2010: 10.0, 2011: 10.1,
+        2012: 11.4, 2013: 12.1, 2014: 11.6, 2015: 10.9, 2016: 10.2, 2017: 9.2, 2018: 8.3, 2019: 7.7,
+        2020: 8.0, 2021: 7.8, 2022: 6.8, 2023: 6.6, 2024: 6.4
+    }
+
+    ea_nawru_data = {
+        1980: 5.2, 1981: 5.8, 1982: 6.4, 1983: 7.0, 1984: 7.4, 1985: 7.8, 1986: 8.1, 1987: 8.3,
+        1988: 8.5, 1989: 8.6, 1990: 8.7, 1991: 8.8, 1992: 8.9, 1993: 9.1, 1994: 9.2, 1995: 9.2,
+        1996: 9.3, 1997: 9.3, 1998: 9.2, 1999: 9.1, 2000: 9.1, 2001: 8.9, 2002: 9.0, 2003: 9.0,
+        2004: 9.1, 2005: 9.1, 2006: 9.1, 2007: 9.0, 2008: 9.0, 2009: 9.2, 2010: 9.1, 2011: 8.9,
+        2012: 9.0, 2013: 8.9, 2014: 8.7, 2015: 8.4, 2016: 8.2, 2017: 8.0, 2018: 7.8, 2019: 7.5,
+        2020: 7.3, 2021: 7.3, 2022: 7.0, 2023: 6.9, 2024: 6.8
+    }
+
+    u_esp = np.array([esp_ur_data[y] for y in years])
+    n_esp = np.array([esp_nawru_data[y] for y in years])
+    u_ea = np.array([ea_ur_data[y] for y in years])
+    n_ea = np.array([ea_nawru_data[y] for y in years])
+
+    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(10.0, 7.6), dpi=300, sharex=True)
+    fig.patch.set_facecolor(PALETTE["blanco"])
+
+    for ax in (ax1, ax2):
+        ax.set_facecolor(PALETTE["blanco"])
+        ax.grid(True, linestyle="--", alpha=0.5, color=PALETTE["gris_ejes"])
+        ax.spines['top'].set_visible(False)
+        ax.spines['right'].set_visible(False)
+        ax.spines['left'].set_color(PALETTE["verde_tinta"])
+        ax.spines['bottom'].set_color(PALETTE["verde_tinta"])
+        ax.spines['left'].set_linewidth(1.2)
+        ax.spines['bottom'].set_linewidth(1.2)
+
+    # --- PANEL 1: ZONA EURO ---
+    ax1.plot(years, u_ea, color=PALETTE["verde_profundo"], lw=2.4, label="Tasa de desempleo observada ($u$)")
+    ax1.plot(years, n_ea, color=PALETTE["salvia"], lw=2.2, linestyle="--", label="Tasa natural de desempleo / NAIRU ($u^*$)")
+
+    ax1.fill_between(years, u_ea, n_ea, where=(u_ea >= n_ea), color="#FDF0EC", alpha=0.95, interpolate=True,
+                     label="Desempleo cíclico ($u > u^*$, recesión / holgura laboral)")
+    ax1.fill_between(years, u_ea, n_ea, where=(u_ea < n_ea), color="#EAF8F0", alpha=0.95, interpolate=True,
+                     label="Sobrecalentamiento ($u < u^*$, presiones salariales)")
+
+    ax1.set_ylim(3.5, 15.0)
+    ax1.set_ylabel("Tasa de desempleo (%)", fontsize=9.2, fontweight="bold", color=PALETTE["verde_profundo"])
+    ax1.text(0.02, 0.88, "PANEL A: ZONA DEL EURO (EA-20)", transform=ax1.transAxes,
+             fontsize=10.0, fontweight="bold", color=PALETTE["verde_profundo"],
+             bbox=dict(boxstyle="round,pad=0.25", facecolor=PALETTE["menta"], edgecolor="none", alpha=0.75))
+
+    ax1.annotate("Pico crisis de deuda\n(2013: 12,1%)", xy=(2013, 12.1), xytext=(2014.2, 13.6),
+                 arrowprops=dict(arrowstyle="->", color=PALETTE["coral"], lw=1.2),
+                 fontsize=7.8, fontweight="bold", color=PALETTE["coral"])
+    ax1.annotate("Mínimo histórico\n(2024: 6,4%)", xy=(2024, 6.4), xytext=(2019.5, 4.5),
+                 arrowprops=dict(arrowstyle="->", color=PALETTE["verde_profundo"], lw=1.2),
+                 fontsize=7.8, fontweight="bold", color=PALETTE["verde_profundo"])
+    ax1.text(1987, 6.2, "NAIRU relativamente estable (~7% – 9%)", fontsize=8.0, style="italic", color=PALETTE["salvia"])
+
+    # --- PANEL 2: ESPAÑA ---
+    ax2.plot(years, u_esp, color=PALETTE["verde_profundo"], lw=2.6, label="Tasa de desempleo observada ($u$)")
+    ax2.plot(years, n_esp, color=PALETTE["salvia"], lw=2.2, linestyle="--", label="Tasa natural de desempleo / NAIRU ($u^*$)")
+
+    ax2.fill_between(years, u_esp, n_esp, where=(u_esp >= n_esp), color="#FDF0EC", alpha=0.95, interpolate=True)
+    ax2.fill_between(years, u_esp, n_esp, where=(u_esp < n_esp), color="#EAF8F0", alpha=0.95, interpolate=True)
+
+    ax2.set_ylim(6.0, 30.5)
+    ax2.set_ylabel("Tasa de desempleo (%)", fontsize=9.2, fontweight="bold", color=PALETTE["verde_profundo"])
+    ax2.set_xlabel("Año", fontsize=9.5, fontweight="bold", color=PALETTE["verde_profundo"], labelpad=6)
+    ax2.text(0.02, 0.88, "PANEL B: ESPAÑA", transform=ax2.transAxes,
+             fontsize=10.0, fontweight="bold", color=PALETTE["verde_profundo"],
+             bbox=dict(boxstyle="round,pad=0.25", facecolor=PALETTE["menta"], edgecolor="none", alpha=0.75))
+
+    ax2.annotate("Crisis 1993-94\n(24,1%)", xy=(1994, 24.1), xytext=(1991.5, 27.2),
+                 arrowprops=dict(arrowstyle="->", color=PALETTE["coral"], lw=1.2),
+                 fontsize=7.8, fontweight="bold", color=PALETTE["coral"])
+
+    ax2.annotate("Burbuja / Expansión\n(2007: 8,2% < NAIRU 13,6%)", xy=(2007, 8.2), xytext=(2000.5, 7.3),
+                 arrowprops=dict(arrowstyle="->", color=PALETTE["verde_profundo"], lw=1.2),
+                 fontsize=7.8, fontweight="bold", color=PALETTE["verde_profundo"])
+
+    ax2.annotate("Gran Recesión: pico 26,1%\nBrecha cíclica récord (+9,2 p.p.)", xy=(2013, 26.1), xytext=(2010.5, 28.5),
+                 arrowprops=dict(arrowstyle="->", color=PALETTE["coral"], lw=1.3),
+                 fontsize=8.0, fontweight="bold", color=PALETTE["coral"])
+
+    ax2.annotate("Mínimo en 16 años\n(2024: 11,4%)", xy=(2024, 11.4), xytext=(2020.5, 9.2),
+                 arrowprops=dict(arrowstyle="->", color=PALETTE["verde_profundo"], lw=1.2),
+                 fontsize=7.8, fontweight="bold", color=PALETTE["verde_profundo"])
+
+    callout_bg = patches.FancyBboxPatch((1999.0, 21.0), 7.8, 3.8, boxstyle="round,pad=0.25",
+                                        facecolor=PALETTE["crema"], edgecolor=PALETTE["salvia"], lw=1.1, alpha=0.95)
+    ax2.add_patch(callout_bg)
+    ax2.text(2002.9, 22.9, "SUELO ESTRUCTURAL ELEVADO\nNAIRU media española: ~15,0%\n(duplica el promedio de la Eurozona)",
+             ha="center", va="center", fontsize=7.6, fontweight="bold", color=PALETTE["verde_profundo"], linespacing=1.25)
+
+    ax2.set_xticks(np.arange(1980, 2026, 5))
+    ax2.set_xticklabels([str(y) for y in np.arange(1980, 2026, 5)], fontsize=9.0, color=PALETTE["verde_tinta"])
+
+    handles, labels = ax1.get_legend_handles_labels()
+    fig.legend(handles, labels, loc="upper center", bbox_to_anchor=(0.50, 0.935),
+               ncol=2, frameon=True, facecolor="#FCFDFC", edgecolor=PALETTE["gris_ejes"], fontsize=7.9)
+
+    fig.text(0.05, 0.98, "Tasa de Desempleo Observada y Tasa Natural (NAIRU): España vs. Zona Euro (1980–2024)",
+             fontsize=11.5, fontweight="bold", color=PALETTE["verde_profundo"])
+    fig.text(0.05, 0.952, "Descomposición entre el desempleo estructural (tendencia de fondo) y el desempleo cíclico (brecha de holgura)",
+             fontsize=8.5, style="italic", color=PALETTE["salvia"])
+
+    fig.text(0.05, 0.015, r"$\mathbf{Desempleo\ C\acute{\imath}clico} = u - u^*$ (recesión y holgura laboral si $u > u^*$)",
+             fontsize=8.0, fontweight="bold", color=PALETTE["verde_profundo"])
+    fig.text(0.95, 0.015, "Fuente: Elaboración propia a partir de datos oficiales de AMECO (Comisión Europea, DG ECFIN, 2024).",
+             ha="right", fontsize=7.5, style="italic", color=PALETTE["verde_tinta"])
+
+    plt.tight_layout(rect=[0.03, 0.04, 0.97, 0.91])
+    save_figure(fig, output_path)
+
 def generate_figures_for_topic(topic_num: int, project_root: str):
     """Genera las figuras remasterizadas para un tema específico en su carpeta relativa."""
     dest_dir = os.path.join(project_root, f"Temas EB/Tema {topic_num}/figuras/remasterizadas")
@@ -739,6 +880,7 @@ def generate_figures_for_topic(topic_num: int, project_root: str):
         prod_path = os.path.join(dest_dir, "productividad_salarios.png")
         bev_path = os.path.join(dest_dir, "beveridge.png")
         neo_path = os.path.join(dest_dir, "modelo_desempleo_neoclasico.png")
+        nairu_path = os.path.join(dest_dir, "tasa_natural_nairu.png")
         generate_epa_taxonomy(epa_path)
         generate_epa_decision_tree(tree_path)
         generate_vab_pan(vab_path)
@@ -746,6 +888,7 @@ def generate_figures_for_topic(topic_num: int, project_root: str):
         generate_productividad_salarios(prod_path)
         generate_beveridge_curve(bev_path)
         generate_modelo_desempleo_neoclasico(neo_path)
+        generate_tasa_natural_nairu(nairu_path)
     else:
         print(f"Aún no hay generadores registrados para el Tema {topic_num}.")
 

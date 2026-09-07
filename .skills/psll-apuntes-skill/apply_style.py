@@ -66,9 +66,9 @@ TEMA_1_FIGURES_META = {
         "source": "Fuente: Elaboración propia a partir del modelo neoclásico del mercado de trabajo (adaptado de M. Barneto)."
     },
     "image7.png": {
-        "remastered": None,
-        "caption": "Figura 1.7: La Tasa Natural de Desempleo (NAIRU) y equilibrio en el mercado de trabajo.",
-        "source": "Fuente: Elaboración propia para Políticas Sociolaborales (UPO)."
+        "remastered": "tasa_natural_nairu.png",
+        "caption": "Figura 1.7: Tasa de desempleo observada y tasa natural de desempleo (NAIRU) en España y la Zona Euro (1980–2024): desempleo estructural vs. desempleo cíclico.",
+        "source": "Fuente: Elaboración propia a partir de datos oficiales de la base AMECO (Comisión Europea, DG ECFIN, 2024)."
     },
     "image8.png": {
         "remastered": None,
