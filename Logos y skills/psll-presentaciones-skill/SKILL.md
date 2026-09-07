@@ -50,7 +50,7 @@ Genera presentaciones de la asignatura **Políticas Sociolaborales (UPO)** con i
 2. **Índice / hoja de ruta** del tema.
 3. **Divisor de bloque** (salvia/verde profundo) por cada apartado.
 4. **Contenido** — preferir párrafo desarrollado y un visual (esquema, dato grande, comparativa) frente a listas largas de viñetas (coherente con la preferencia "menos items, más texto").
-5. **Datos** — gráficos con la secuencia de color de marca; fuente citada al pie en 10–12 pt.
+5. **Datos y Figuras Oficiales** — gráficos con la secuencia de color de marca; fuente citada al pie en 10–12 pt. Reutilizar prioritariamente las figuras oficiales generadas a 300 DPI por `psll-figuras-skill` disponibles en `Temas EB/Tema X/figuras/remasterizadas/`.
 6. **Cierre** — síntesis + contacto + logos PSLL y UPO.
 
 ## Comprobaciones antes de entregar

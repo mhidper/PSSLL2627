@@ -66,8 +66,10 @@ Basado estrictamente en [Logos y skills/BRAND.md](file:///c:/Users/Usuario/Dropb
    - **Extracción Automática de Originales:** El script extrae el 100% de las imágenes del `.docx` original a `Temas EB/Tema X/figuras/originales/` y mapea su ubicación contextual exacta.
    - **Precedencia Inteligente de Remasterizadas:** Si existe una versión rediseñada en `Temas EB/Tema X/figuras/remasterizadas/` (generada mediante `.skills/psll-figuras-skill/` a 300 DPI con la paleta oficial), se inserta prioritariamente.
    - **Conservación sin Pérdidas:** Si una figura aún no ha sido rediseñada, se inserta la versión original extraída para asegurar que el documento nunca carezca de sus imágenes.
+   - **Exclusión Selectiva de Figuras Obsoletas / Redundantes:** Permite declarar metadatos con `"skip": True` (ej. antiguas figuras de baja resolución que han sido absorbidas por un panel dual más completo), evitando duplicidades o gráficos anticuados en el documento maquetado.
    - **Maquetación Reglamentaria:** Todas las figuras se insertan centradas (ancho estándar ~6.2 pulgadas), con pie descriptivo en 9 pt Poppins negrita Verde Profundo (`#566B56`) y fuente en 8 pt Calibri cursiva Verde Salvia (`#76927A`):  
      *«Figura X.X: Título descriptivo. Fuente: Elaboración propia para Políticas Sociolaborales (UPO)...»*.
+   - **Párrafos de Interpretación Analítica:** En figuras de alta complejidad teórica y empírica (ej. Figuras Duales 1.8 de Phillips y 1.9 de Beveridge), se añade inmediatamente bajo la fuente un párrafo analítico en 9.8 pt Calibri cursiva Verde Tinta (`#2F3A30`) que guía al alumno en la interpretación conjunta del panel teórico y del panel empírico.
 
 6. **Cabecera Institucional Inicial (Página 1):**
    - Tabla de 2 columnas flotante transparente alineada a la izquierda (`WD_TABLE_ALIGNMENT.LEFT`).
@@ -82,6 +84,11 @@ Basado estrictamente en [Logos y skills/BRAND.md](file:///c:/Users/Usuario/Dropb
 7. **Encabezado y Pie de Página Corporativo:**
    - **Encabezado Justificado a la Izquierda:** Alineado a la izquierda (`WD_ALIGN_PARAGRAPH.LEFT`) con el título del tema en verde salvia (`#76927A`), 8 pt Poppins.
    - Pie con paginación automática dinámica ("Página X de Y") y referencia institucional UPO / Grado en RRLL y RRHH.
+
+8. **Tratamiento Avanzado de Fórmulas Matemáticas (`m:oMath`):**
+   - Extracción nativa desde el XML de Word de todos los nodos matemáticos (`m:oMath` y `m:t`), evitando que se pierdan símbolos griegos ($\pi, \lambda, \alpha$) o condiciones lógicas al procesar el texto.
+   - Las ecuaciones principales se maquetan automáticamente **centradas, con margen vertical holgado (6 pt antes / 6 pt después) y en negrita Verde Profundo (`#566B56`, 11 pt)**.
+   - Las definiciones de parámetros y condiciones de desviación se integran en la jerarquía visual con viñetas institucionales y negritas en verde profundo.
 
 ---
 
