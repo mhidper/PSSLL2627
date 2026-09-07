@@ -242,6 +242,151 @@ def generate_beveridge_curve(output_path: str):
     
     save_figure(fig, output_path)
 
+def generate_vab_pan(output_path: str):
+    """
+    Genera el diagrama metodológico oficial del Valor Añadido Bruto (VAB) 
+    y el proceso de producción del pan en alta resolución (300 DPI) con paleta PSLL.
+    """
+    setup_academic_style()
+    fig, ax = plt.subplots(figsize=(9.8, 5.5), dpi=300)
+    fig.patch.set_facecolor(PALETTE["blanco"])
+    ax.set_facecolor(PALETTE["blanco"])
+    
+    # 1. Título y Subtítulo
+    ax.text(5.0, 5.18, "VALOR AÑADIDO BRUTO (VAB) · CADENA PRODUCTIVA DEL PAN",
+            ha="center", va="center", fontsize=12.5, fontweight="bold", color=PALETTE["verde_profundo"])
+    ax.text(5.0, 4.80, "Medición del PIB por la vía de la producción y eliminación del error de doble contabilización",
+            ha="center", va="center", fontsize=9.0, style="italic", color=PALETTE["salvia"])
+    
+    # Dimensiones y posiciones horizontales refinadas (más espacio entre tarjetas)
+    w_card = 2.30
+    h_card = 2.65
+    y_card = 1.88
+    x1, x2, x3 = 0.55, 3.85, 7.15
+    c1, c2, c3 = x1 + w_card/2, x2 + w_card/2, x3 + w_card/2
+    
+    # --- Tarjeta 1: Agricultor ---
+    box_agri = patches.FancyBboxPatch((x1, y_card), w_card, h_card, boxstyle="round,pad=0.1",
+                                      facecolor=PALETTE["menta"], edgecolor=PALETTE["verde_profundo"], linewidth=2.0)
+    ax.add_patch(box_agri)
+    
+    # Pill de Fase 1
+    pill1 = patches.FancyBboxPatch((c1 - 0.60, 4.22), 1.2, 0.32, boxstyle="round,pad=0.04",
+                                   facecolor=PALETTE["verde_profundo"], edgecolor="none")
+    ax.add_patch(pill1)
+    ax.text(c1, 4.38, "FASE 1", ha="center", va="center", fontsize=7.5, fontweight="bold", color="white")
+    
+    ax.text(c1, 4.02, "AGRICULTOR", ha="center", va="center",
+            fontsize=11.0, fontweight="bold", color=PALETTE["verde_profundo"])
+    ax.text(c1, 3.75, "Sector primario · Cultivo", ha="center", va="center",
+            fontsize=7.8, style="italic", color=PALETTE["verde_tinta"])
+    
+    ax.plot([x1 + 0.18, x1 + w_card - 0.18], [3.55, 3.55], color=PALETTE["salvia"], lw=0.8, alpha=0.5)
+    ax.text(x1 + 0.18, 3.25, "Venta de trigo:", ha="left", va="center", fontsize=8.2, color=PALETTE["verde_tinta"])
+    ax.text(x1 + w_card - 0.18, 3.25, "100 €", ha="right", va="center", fontsize=8.2, fontweight="bold", color=PALETTE["verde_profundo"])
+    
+    ax.text(x1 + 0.18, 2.90, "Consumo interm.:", ha="left", va="center", fontsize=8.2, color=PALETTE["verde_tinta"])
+    ax.text(x1 + w_card - 0.18, 2.90, "0 €", ha="right", va="center", fontsize=8.2, color=PALETTE["gris_ejes"])
+    
+    # Badge VAB Fase 1
+    badge_vab1 = patches.FancyBboxPatch((c1 - 0.90, 2.05), 1.8, 0.62, boxstyle="round,pad=0.06",
+                                        facecolor=PALETTE["blanco"], edgecolor=PALETTE["verde_profundo"], linewidth=1.6)
+    ax.add_patch(badge_vab1)
+    ax.text(c1, 2.36, "VAB = 100 €", ha="center", va="center",
+            fontsize=10.0, fontweight="bold", color=PALETTE["verde_profundo"])
+    
+    # --- Flecha 1 -> 2 ---
+    ax.annotate("", xy=(x2 - 0.08, 3.15), xytext=(x1 + w_card + 0.08, 3.15),
+                arrowprops=dict(arrowstyle="->", color=PALETTE["salvia"], lw=2.4))
+    ax.text((x1 + w_card + x2)/2, 3.50, "Trigo\n100 €", ha="center", va="center",
+            fontsize=7.8, fontweight="bold", color=PALETTE["salvia"], linespacing=1.2)
+    
+    # --- Tarjeta 2: Molino ---
+    box_moli = patches.FancyBboxPatch((x2, y_card), w_card, h_card, boxstyle="round,pad=0.1",
+                                      facecolor=PALETTE["crema"], edgecolor=PALETTE["salvia"], linewidth=1.8)
+    ax.add_patch(box_moli)
+    
+    pill2 = patches.FancyBboxPatch((c2 - 0.60, 4.22), 1.2, 0.32, boxstyle="round,pad=0.04",
+                                   facecolor=PALETTE["salvia"], edgecolor="none")
+    ax.add_patch(pill2)
+    ax.text(c2, 4.38, "FASE 2", ha="center", va="center", fontsize=7.5, fontweight="bold", color="white")
+    
+    ax.text(c2, 4.02, "MOLINO", ha="center", va="center",
+            fontsize=11.0, fontweight="bold", color=PALETTE["verde_profundo"])
+    ax.text(c2, 3.75, "Industria harinera", ha="center", va="center",
+            fontsize=7.8, style="italic", color=PALETTE["verde_tinta"])
+    
+    ax.plot([x2 + 0.18, x2 + w_card - 0.18], [3.55, 3.55], color=PALETTE["salvia"], lw=0.8, alpha=0.5)
+    ax.text(x2 + 0.18, 3.25, "Venta de harina:", ha="left", va="center", fontsize=8.2, color=PALETTE["verde_tinta"])
+    ax.text(x2 + w_card - 0.18, 3.25, "150 €", ha="right", va="center", fontsize=8.2, fontweight="bold", color=PALETTE["verde_profundo"])
+    
+    ax.text(x2 + 0.18, 2.90, "Compra de trigo:", ha="left", va="center", fontsize=8.2, color=PALETTE["verde_tinta"])
+    ax.text(x2 + w_card - 0.18, 2.90, "-100 €", ha="right", va="center", fontsize=8.2, color=PALETTE["coral"], fontweight="bold")
+    
+    # Badge VAB Fase 2
+    badge_vab2 = patches.FancyBboxPatch((c2 - 0.90, 2.05), 1.8, 0.62, boxstyle="round,pad=0.06",
+                                        facecolor=PALETTE["blanco"], edgecolor=PALETTE["salvia"], linewidth=1.6)
+    ax.add_patch(badge_vab2)
+    ax.text(c2, 2.36, "VAB = 50 €", ha="center", va="center",
+            fontsize=10.0, fontweight="bold", color=PALETTE["verde_profundo"])
+    
+    # --- Flecha 2 -> 3 ---
+    ax.annotate("", xy=(x3 - 0.08, 3.15), xytext=(x2 + w_card + 0.08, 3.15),
+                arrowprops=dict(arrowstyle="->", color=PALETTE["salvia"], lw=2.4))
+    ax.text((x2 + w_card + x3)/2, 3.50, "Harina\n150 €", ha="center", va="center",
+            fontsize=7.8, fontweight="bold", color=PALETTE["salvia"], linespacing=1.2)
+    
+    # --- Tarjeta 3: Panadería ---
+    box_pana = patches.FancyBboxPatch((x3, y_card), w_card, h_card, boxstyle="round,pad=0.1",
+                                      facecolor="#FDF4F0", edgecolor=PALETTE["coral"], linewidth=2.0)
+    ax.add_patch(box_pana)
+    
+    pill3 = patches.FancyBboxPatch((c3 - 0.60, 4.22), 1.2, 0.32, boxstyle="round,pad=0.04",
+                                   facecolor=PALETTE["coral"], edgecolor="none")
+    ax.add_patch(pill3)
+    ax.text(c3, 4.38, "FASE 3", ha="center", va="center", fontsize=7.5, fontweight="bold", color="white")
+    
+    ax.text(c3, 4.02, "PANADERÍA", ha="center", va="center",
+            fontsize=11.0, fontweight="bold", color=PALETTE["coral"])
+    ax.text(c3, 3.75, "Transformación final · Pan", ha="center", va="center",
+            fontsize=7.8, style="italic", color=PALETTE["verde_tinta"])
+    
+    ax.plot([x3 + 0.18, x3 + w_card - 0.18], [3.55, 3.55], color=PALETTE["coral"], lw=0.8, alpha=0.5)
+    ax.text(x3 + 0.18, 3.25, "Venta al público:", ha="left", va="center", fontsize=8.2, color=PALETTE["verde_tinta"])
+    ax.text(x3 + w_card - 0.18, 3.25, "250 €", ha="right", va="center", fontsize=8.2, fontweight="bold", color=PALETTE["coral"])
+    
+    ax.text(x3 + 0.18, 2.90, "Compra de harina:", ha="left", va="center", fontsize=8.2, color=PALETTE["verde_tinta"])
+    ax.text(x3 + w_card - 0.18, 2.90, "-150 €", ha="right", va="center", fontsize=8.2, color=PALETTE["coral"], fontweight="bold")
+    
+    # Badge VAB Fase 3
+    badge_vab3 = patches.FancyBboxPatch((c3 - 0.90, 2.05), 1.8, 0.62, boxstyle="round,pad=0.06",
+                                        facecolor=PALETTE["blanco"], edgecolor=PALETTE["coral"], linewidth=1.6)
+    ax.add_patch(badge_vab3)
+    ax.text(c3, 2.36, "VAB = 100 €", ha="center", va="center",
+            fontsize=10.0, fontweight="bold", color=PALETTE["coral"])
+    
+    # --- Banner Inferior de Síntesis Macroeconómica ---
+    banner_box = patches.FancyBboxPatch((0.55, 0.32), 8.90, 1.28, boxstyle="round,pad=0.1",
+                                        facecolor=PALETTE["verde_profundo"], edgecolor=PALETTE["salvia"], linewidth=1.8)
+    ax.add_patch(banner_box)
+    
+    # Texto Banner Línea 1 (Fórmula agregada y PIB)
+    ax.text(2.65, 1.15, "VAB TOTAL = 100 € + 50 € + 100 € = 250 €", ha="center", va="center",
+            fontsize=10.5, fontweight="bold", color=PALETTE["menta"])
+    ax.text(5.0, 1.15, "=", ha="center", va="center", fontsize=15.0, fontweight="bold", color="white")
+    ax.text(7.35, 1.15, "PIB (VALOR DEL BIEN FINAL) = 250 €", ha="center", va="center",
+            fontsize=10.5, fontweight="bold", color=PALETTE["melocoton"])
+    
+    # Texto Banner Línea 2 (Regla didáctica anti-doble contabilización)
+    ax.text(5.0, 0.62, "Principio de Contabilidad Nacional: El PIB mide únicamente el valor añadido generado en cada fase o el valor de los bienes finales.\nSumar las ventas brutas de todos los agentes (100 € + 150 € + 250 € = 500 €) cometería un error grave de doble contabilización.",
+            ha="center", va="center", fontsize=8.0, color="#FFFFFF", linespacing=1.35)
+    
+    ax.set_xlim(0, 10.0)
+    ax.set_ylim(0.0, 5.6)
+    ax.axis("off")
+    
+    save_figure(fig, output_path)
+
 def generate_figures_for_topic(topic_num: int, project_root: str):
     """Genera las figuras remasterizadas para un tema específico en su carpeta relativa."""
     dest_dir = os.path.join(project_root, f"Temas EB/Tema {topic_num}/figuras/remasterizadas")
@@ -251,9 +396,11 @@ def generate_figures_for_topic(topic_num: int, project_root: str):
     if topic_num == 1:
         epa_path = os.path.join(dest_dir, "epa_taxonomy.png")
         tree_path = os.path.join(dest_dir, "epa_decision_tree.png")
+        vab_path = os.path.join(dest_dir, "vab_pan.png")
         bev_path = os.path.join(dest_dir, "beveridge.png")
         generate_epa_taxonomy(epa_path)
         generate_epa_decision_tree(tree_path)
+        generate_vab_pan(vab_path)
         generate_beveridge_curve(bev_path)
     else:
         print(f"Aún no hay generadores registrados para el Tema {topic_num}.")

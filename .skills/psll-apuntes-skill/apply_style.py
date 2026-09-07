@@ -46,9 +46,9 @@ TEMA_1_FIGURES_META = {
         "source": "Fuente: Elaboración propia a partir de los criterios metodológicos de la OIT y la Encuesta de Población Activa (INE)."
     },
     "image3.png": {
-        "remastered": None,
-        "caption": "Figura 1.3: Cadena de valor añadido y generación del VAB en las fases del pan.",
-        "source": "Fuente: Elaboración propia para Políticas Sociolaborales (UPO)."
+        "remastered": "vab_pan.png",
+        "caption": "Figura 1.3: Cadena de valor añadido bruto (VAB) y proceso de producción del pan.",
+        "source": "Fuente: Elaboración propia para Políticas Sociolaborales (UPO). Metodología de Contabilidad Nacional (INE / SEC-2010)."
     },
     "image4.jpeg": {
         "remastered": None,
