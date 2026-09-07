@@ -1,5 +1,5 @@
 # Guion de Sesión EB 2 · Semana 1 (Martes 15/09 / Viernes 18/09)
-## Flujos Dinámicos, Tipos de Desempleo y la Curva de Beveridge
+## El PIB, la Productividad y el Mercado de Trabajo
 **Asignatura:** Políticas Sociolaborales y de Empleo (Código 102023)  
 **Curso Académico:** 2026-2027 | Semestre 1  
 **Profesor:** Manuel A. Hidalgo Pérez  
@@ -14,32 +14,37 @@
 | **Día y Fecha** | **Martes, 15 de septiembre de 2026** | **Viernes, 18 de septiembre de 2026** |
 | **Horario y Duración** | **09:30 – 11:30** (**120 minutos / 2,0 h**) | **17:30 – 19:30** (**120 minutos / 2,0 h**) |
 | **Aula Oficial** | **Aula E13A7** (Edif. 13, Aula 7) | **Aula E10A3** (Edif. 10, Aula 3) |
-| **Material Base** | • [Tema 1 (Diapositivas 2627)](file:///c:/Users/Usuario/Dropbox/DOCENCIA%20UPO/CURSO%2026-27/PSLL/Temas%20EB/Tema%201/Diapositivas/Tema%201%202627.pptx) (Bloques de Dinámica de Flujos, Tipología del Desempleo y Curva de Beveridge)<br>• [Tema 1 (Apuntes)](file:///c:/Users/Usuario/Dropbox/DOCENCIA%20UPO/CURSO%2026-27/PSLL/Temas%20EB/Tema%201/Apuntes/Tema%201%202627_maquetado.docx) (Sección 1.1: Rotación laboral; Sección 4: Tipología del Desempleo; Sección 6: La Curva de Beveridge) |
+| **Material Base** | • [Tema 1 (Apuntes)](file:///c:/Users/Usuario/Dropbox/DOCENCIA%20UPO/CURSO%2026-27/PSLL/Temas%20EB/Tema%201/Apuntes/Tema%201%202627_maquetado.docx) — Epígrafe 2 completo (2.1 El PIB, 2.2 Productividad, 2.3 Estructura productiva y empleo de calidad), con las Figuras 1.3, 1.4 y 1.5.<br>• **Diapositivas:** pendiente de construir el pptx nativo de la Sesión 2 (carpeta `Temas EB/Sesiones EB/`) — mientras tanto, proyectar directamente las Figuras 1.3-1.5 del apunte maquetado. |
 | **Sistema de Puntuación** | Acumulación de retos en el **Pasaporte de Evaluación Continua** (hacia el 10% de Participación Activa y Retos Semanales). |
 
 > **Nota de coordinación:** Aunque el nombre de archivo toma por convención el martes de la Línea 1 (`guion_sesion_1409_martes.md`), este guion aplica con idéntica duración (120 min) y contenido a la sesión de tarde de la Línea 2 (viernes 18/09).
+>
+> **Nota de alineación (Alerta 8 resuelta):** esta sesión cubría antes Tipología del Desempleo + Beveridge-intro. Al reordenar el docx de Tema 1 en secuencia lineal (Fundamentos → PIB/Productividad → Equilibrio → Tipología+NAIRU → Beveridge), la Sesión 2 pasa a cubrir el Epígrafe 2 completo (PIB y Productividad). Tipología y NAIRU se trasladan a la Sesión 4; Beveridge completo se traslada a la Sesión 5.
 
 ---
 
 ## 📋 2. Tareas Pendientes para el Profesorado (Checklist previo)
 
-- [ ] **Seleccionar noticia disparadora sobre la "Paradoja de las Vacantes":**
-  - *Propuesta del asistente:* Informe del Banco de España / Noticia económica: *"Las empresas declaran más de 150.000 vacantes sin cubrir mientras España supera los 2,6 millones de desempleados"* (El Economista / Cinco Días).
-  - *Pregunta clave asociada:* «Si faltan camareros, informáticos y albañiles, ¿por qué el mercado no ajusta los salarios o por qué no se cubren esos puestos con los desempleados existentes?».
-- [ ] **Preparar gráfico en pizarra o diapositiva de la "Bañera del Desempleo":**
-  - Disponer del esquema visual de flujos de entrada (tasa de separación $s$) y salida (tasa de salida del desempleo $f$) para ilustrar la rotación laboral analizada en los apuntes.
-- [ ] **Diseñar plantilla interactiva de la Curva de Beveridge:**
-  - Preparar en la pizarra o pantalla los ejes $U$ (tasa de desempleo) y $V$ (tasa de vacantes) para que los estudiantes contrasten movimientos a lo largo de la curva vs. desplazamientos estructurales.
+- [ ] **Seleccionar noticia disparadora sobre la "Paradoja de la Productividad Española":**
+  - *Propuesta del asistente:* Noticia económica: *"España encadena récords de afiliación y empleo, pero la productividad por hora trabajada lleva más de una década estancada en torno al 85% de la media de la UE"* (Banco de España / Expansión / Cinco Días).
+  - *Pregunta clave asociada:* «Si trabajamos tantas horas y creamos tanto empleo, ¿por qué no somos capaces de producir tanto valor por hora como Alemania o Francia? ¿Y por qué debería importarnos?».
+- [ ] **Configurar sondeo inicial en Mentimeter:**
+  1. *«¿Cuál crees que es la productividad por hora trabajada de España en relación con Alemania?»* (Opciones: 70% / 85% / 100% / 110%).
+  2. *«Si en un sector los salarios suben mucho más rápido que lo que produce cada trabajador, ¿qué pasa a medio plazo?»* (Sube la competitividad / Baja la competitividad / No pasa nada).
+- [ ] **Preparar en pizarra o diapositiva la Figura 1.3 (cadena de valor del pan):**
+  - Tener a mano el esquema agricultor → molino → panadería para dibujar en vivo el cálculo del PIB por valor añadido.
+- [ ] **Proyectar la Figura 1.5 (productividad vs. salarios, OCDE 2024):**
+  - Localizar de antemano dónde se sitúa España en el gráfico para señalarlo en el Bloque 3.
 - [ ] **Revisar el mapa de calor del cuestionario previo de Moodle (Fase 0):**
-  - Analizar las respuestas del alumnado al test de autoevaluación para calibrar los puntos débiles antes de la mini-lección.
+  - Analizar las respuestas del alumnado para calibrar el nivel de partida antes de la mini-lección.
 
 ---
 
 ## 🎯 3. Objetivos de Aprendizaje y Competencias Clave
 
-1. **La Perspectiva Dinámica de Flujos y Rotación Laboral:** Comprender el mercado laboral como un sistema dinámico de flujos continuos de entrada y salida (creación vs. destrucción de empleo, tal como se fundamenta conceptualmente en las Secciones 1.1 y 6 de los apuntes). Utilizar la relación intuitiva entre tasa de separación ($s$) y tasa de salida ($f$) para ilustrar cómo el paro de equilibrio ($u^* = \frac{s}{s+f}$) exige combinar políticas de estabilidad en el empleo con políticas de intermediación activa.
-2. **Diagnóstico Causal de Tipologías de Desempleo:** Asignar el instrumento de política pública adecuado a cada tipo de desempleo (friccional $\rightarrow$ intermediación y servicios de empleo; estructural $\rightarrow$ formación y movilidad; cíclico $\rightarrow$ demanda macroeconómica; estacional $\rightarrow$ diversificación productiva), siguiendo la Sección 4 de los apuntes.
-3. **La Curva de Beveridge como Radiografía Estructural:** Interpretar y graficar con rigor los movimientos a lo largo de la curva (ciclo económico) frente a los desplazamientos de la curva hacia fuera (ineficiencia de emparejamiento, *mismatch* e histéresis), conforme a la Sección 6 de los apuntes.
+1. **El PIB como Medida de Valor Añadido:** Comprender por qué el PIB se calcula sumando el valor añadido en cada etapa productiva (y no el total de transacciones), y distinguir PIB nominal de PIB real (Epígrafe 2.1 de los apuntes).
+2. **Productividad y su Relación de Largo Plazo con los Salarios:** Entender el principio fundamental de que los salarios reales no pueden crecer de forma sostenida por encima de la productividad, y qué ocurre cuando esa relación se rompe (Epígrafe 2.2).
+3. **Diagnóstico de la Brecha de Productividad Española:** Analizar por qué España tiene una productividad por hora inferior a la de sus socios europeos y qué papel juega la estructura productiva (sectores de alto vs. bajo valor añadido) en la calidad del empleo (Epígrafe 2.3).
 4. **Acumulación de Hitos en el Pasaporte de Evaluación Continua:** Consolidar puntos de reto individuales y en pareja para el 10% de evaluación continua.
 
 ---
@@ -48,83 +53,80 @@
 
 ```mermaid
 flowchart LR
-    A["<b>1. Antes de Clase (En Casa)</b><br>Vídeo píldora (10 min): Beveridge y Flujos<br>Test Moodle (3 preguntas)"] --> B["<b>2. El Gancho (20 min)</b><br>Paradoja vacantes vs. paro<br>Gamificación polarizada (Mentimeter)"]
-    B --> C["<b>3. Laboratorio Activo (70 min)</b><br>Mini-lección flujos (25 min)<br>Tipologías de desempleo (15 min)<br>Taller gráfico Beveridge en parejas (30 min)"]
-    C --> D["<b>4. Cierre y Metacognición (15 min)</b><br>Pregunta tipo examen in situ<br>Conexión directa con EPD 1"]
+    A["<b>1. Antes de Clase (En Casa)</b><br>Vídeo píldora (8 min): PIB y Productividad<br>Test Moodle (3 preguntas)"] --> B["<b>2. El Gancho (20 min)</b><br>Paradoja de la productividad española<br>Sondeo Mentimeter"]
+    B --> C["<b>3. Laboratorio Activo (85 min)</b><br>Mini-lección PIB (25 min)<br>Mini-lección Productividad + debate (30 min)<br>Taller en parejas (30 min)"]
+    C --> D["<b>4. Cierre y Metacognición (15 min)</b><br>Pregunta tipo examen in situ<br>Puente hacia la Sesión 3"]
 ```
 
 ### Fase 0: Antes de Clase · Trabajo Autónomo del Alumnado (En Casa)
-- **Recurso digital provisto:** Vídeo-píldora breve (10 min) en Aula Virtual: *«La bañera del desempleo y la Curva de Beveridge explicada en 5 pasos»*.
-- **Comprobación formativa automatizada:** Cuestionario previo de 3 preguntas de verificación en el campus virtual (autocalificable).
+- **Recurso digital provisto:** Vídeo-píldora breve (8 min) en Aula Virtual: *«El PIB y la productividad explicados con la cadena de valor del pan»*.
+- **Comprobación formativa automatizada:** Cuestionario previo de 3 preguntas en el campus virtual (autocalificable).
 
 ---
 
 ## ⏱️ 5. Desarrollo Minuto a Minuto en el Aula Presencial (120 min)
 
-### Bloque 1: El Gancho y la Paradoja de las Vacantes (00:00 – 00:20 · 20 min)
+### Bloque 1: El Gancho y la Paradoja de la Productividad (00:00 – 00:20 · 20 min)
 - **Actividad del Profesor (8 min):**
-  - Proyección de dos titulares contrapuestos en pantalla:
-    - *Titular A (Patronal):* «Hostelería, construcción y tecnología alertan de 150.000 puestos vacantes que no logran cubrir».
-    - *Titular B (Demandantes):* «Más de 2,6 millones de personas buscan trabajo y denuncian ofertas precarias y desajuste de requisitos».
-  - Pregunta detonante en Mentimeter: *«Si sobran trabajadores y faltan empleados al mismo tiempo, ¿qué falla exactamente en el mercado?»*.
-- **Gamificación y Votación Polarizada (12 min):**
-  - Los alumnos votan entre 4 opciones y defienden posturas en 60 segundos con argumentos técnicos.
+  - Proyección de la noticia disparadora: *«España encadena récords de empleo, pero la productividad por hora lleva más de una década estancada en el 85% de la media UE»*.
+  - Pregunta detonante: *«¿Cómo es posible crear tanto empleo y seguir siendo menos productivos que nuestros vecinos? ¿Es esto un problema o simplemente una forma distinta de crecer?»*.
+- **Gamificación y Sondeo (Mentimeter) (12 min):**
+  - Los alumnos votan sus intuiciones sobre la productividad relativa de España y sobre qué ocurre cuando los salarios suben más que la productividad.
+  - El profesor proyecta los resultados en vivo para calibrar el debate posterior.
 
-### Bloque 2: Mini-Lección 1: La Dinámica de Flujos y Rotación Laboral (00:20 – 00:45 · 25 min)
-- **Exposición teórica con el Bloque de Dinámica de Flujos y Equilibrio (Paleta oficial menta/salvia/coral):**
-  - Conexión con la Sección 1.1 y Sección 6 de los apuntes: el mercado de trabajo no es una foto fija de stocks, sino un flujo continuo de entradas y salidas (rotación laboral).
-  - Presentación analítica intuitiva de la relación de equilibrio estacionario:
-    $$\Delta U = s \cdot E - f \cdot U = 0 \implies u^* = \frac{s}{s + f}$$
-    *(donde $s$ representa la tasa de destrucción/separación del empleo y $f$ la tasa de salida o emparejamiento).*
-  - Implicación directa para el diseño de políticas sociolaborales:
-    - O actuamos sobre $s$ (reducir la volatilidad injustificada, rotación excesiva y precariedad contractual).
-    - O actuamos sobre $f$ (mejorar la intermediación, activación y capacitación de los desempleados).
+### Bloque 2: Mini-Lección 1 · El PIB como Medida de Valor Añadido (00:20 – 00:45 · 25 min)
+- **Exposición teórica con la Figura 1.3 (Paleta oficial menta/salvia/coral):**
+  - Construcción en vivo, en pizarra o proyectada, de la cadena de valor del pan (agricultor → molino → panadería) para mostrar por qué el PIB suma **valor añadido** en cada etapa y no el total de transacciones (evitar la doble contabilización).
+  - Distinción PIB nominal vs. PIB real, y por qué usamos el PIB real para medir crecimiento económico genuino (Figura 1.4: evolución del PIB español, tasas de variación interanual).
+  - Breve mención al PIB per cápita como indicador complementario (y sus límites: no refleja distribución de la riqueza).
 
-### Bloque 3: Tipología del Desempleo y Fallos de Política Pública (00:45 – 01:15 · 30 min)
-- **Taxonomía Económica (Bloque de Tipología del Desempleo — Sección 4 de los apuntes):**
-  - Desempleo Friccional vs. Estructural vs. Cíclico vs. Estacional.
+### Bloque 3: Mini-Lección 2 · Productividad y su Relación con los Salarios (00:45 – 01:15 · 30 min)
+- **Exposición con la Figura 1.5 (productividad vs. salarios, OCDE 2024):**
+  - Concepto de productividad laboral y **principio fundamental**: a largo plazo, los salarios reales no pueden crecer de forma sostenida por encima de la productividad sin erosionar la competitividad de las empresas.
+  - Localizar a España en el gráfico de la Figura 1.5 y comparar su posición con Alemania, Francia y la media OCDE.
 - **Debate guiado en el aula:**
-  - *«¿Por qué una política de estímulo del gasto público fracasa estrepitosamente si el paro es estructural?»*
-  - *«¿Por qué los programas de formación para parados no resuelven una recesión originada por falta de demanda agregada?»*
-  - El profesor modera el diálogo estimulando respuestas fundamentadas en fallos de mercado y adecuación del instrumento.
+  - *«¿Por qué España tiene una productividad por hora más baja que sus socios europeos? ¿Es un problema de estructura productiva (peso del turismo y la construcción frente a sectores de alto valor añadido) o de negociación colectiva ineficiente?»*.
+  - *«Si un país "trucara" sus estadísticas para que los salarios subieran más rápido que la productividad, ¿qué le pasaría a medio plazo a sus empresas?»*.
+  - El profesor conecta con el Epígrafe 2.3: sectores de alto valor añadido ofrecen mejores salarios y más estabilidad; la precariedad es más común en sectores de bajo VAB.
 
-### Bloque 4: Taller Activo · Trazado y Simulación de la Curva de Beveridge (01:15 – 01:45 · 30 min)
-- **Misión de Trabajo en Parejas (Bloque de la Curva de Beveridge — Sección 6 de los apuntes):**
-  - Cada pareja dispone de una plantilla gráfica con los ejes $(U, V)$.
-  - **Reto de simulación 1:** Representar el impacto de una recesión económica severa frente a un empeoramiento del desajuste de cualificaciones (*skills mismatch*).
-  - **Reto de simulación 2:** La Consejería de Empleo aprueba subvenciones a la contratación de parados de larga duración. ¿Cómo se refleja en el gráfico si la medida mejora la eficiencia de emparejamiento frente a si sufre de un elevado efecto de peso muerto (*deadweight*)?
-- **Puesta en común interactiva (10 min):** Dos parejas proyectan y defienden su gráfica ante el plenario.
+### Bloque 4: Taller Activo · Diagnóstico Sectorial en Parejas (01:15 – 01:45 · 30 min)
+- **Misión de Trabajo en Parejas (Rol de Analistas de la Consejería de Empleo):**
+  - Cada pareja recibe una ficha simplificada con datos de VAB por hora y salario medio de tres sectores (p. ej. tecnología, hostelería, industria manufacturera).
+  - **Reto (20 min):**
+    1. Identificar qué sector tiene más margen para subir salarios sin perder competitividad, y cuál tiene menos.
+    2. Proponer una política sociolaboral distinta para cada sector (formación y digitalización para el sector rezagado; retención de talento para el sector puntero).
+    3. Razonar por qué una economía muy especializada en sectores de bajo valor añadido queda "atrapada" en salarios bajos si no cambia su estructura productiva.
+- **Puesta en común interactiva (10 min):** Dos parejas exponen su diagnóstico y se contrastan las propuestas.
 
-### Bloque 5: Cierre Metacognitivo, Pregunta Tipo Examen y Conexión con EPD (01:45 – 02:00 · 15 min)
-- **Pregunta Tipo Examen (Resolución individual en 3 minutos):**
-  > *«En los últimos 3 años, la tasa de vacantes en una economía se ha mantenido constante en el 0,9%, pero la tasa de paro ha aumentado en 3 puntos porcentuales (del 11% al 14%). Utilizando el marco analítico de la Curva de Beveridge:*  
-  > *a) Represente gráficamente la situación en los ejes correspondientes.*  
-  > *b) Diagnostique razonadamente si el problema es de demanda o de emparejamiento (matching).*  
-  > *c) ¿Qué tipo de política sociolaboral recomendaría y cuál desaconsejaría tajantemente? Justifique su respuesta».*
+### Bloque 5: Cierre Metacognitivo, Pregunta Tipo Examen y Puente (01:45 – 02:00 · 15 min)
+- **Pregunta Tipo Examen (Resolución individual de 3 minutos):**
+  > *«Un sector ha incrementado sus salarios un 8% en un año en el que su productividad solo creció un 2%. Razone: a) qué ocurre con los costes laborales unitarios del sector; b) qué riesgo corre su competitividad frente a sectores equivalentes de otros países; c) qué papel podría jugar la negociación colectiva para evitar este desajuste en el futuro».*
 
 - **Clave de Corrección Completa (Proyectada in situ):**
   | Apartado | Solución Rigurosa | Errores Típicos a Anticipar en el Alumnado | Matiz para Distinguir Nota Excelente vs. Aceptable |
   | :--- | :--- | :--- | :--- |
-  | **a) Representación Gráfica** | **Desplazamiento de la Curva de Beveridge hacia fuera (a la derecha).** En los ejes $(u, v)$, el punto pasa de $(11\%, 0{,}9\%)$ a $(14\%, 0{,}9\%)$. La curva se aleja del origen, evidenciando menor eficiencia agregada para emparejar parados y vacantes. | Dibujar un movimiento *a lo largo* de la misma curva (confundir ciclo con estructura) o invertir los ejes sin coherencia analítica. | *Aceptable:* Traza la curva desplazada a la derecha con los valores indicados.<br>*Excelente:* Señala explícitamente que no hay movimiento a lo largo porque $v$ es constante, y marca la curva desplazada $BC_1 \rightarrow BC_2$ alejándose del origen. |
-  | **b) Diagnóstico Causal** | **Problema de matching / ineficiencia estructural, NO de demanda.** Si fuera un shock negativo de demanda agregada (recesión cíclica), las empresas retirarían ofertas y la tasa de vacantes habría caído significativamente, produciendo un movimiento descendente a lo largo de la curva. Al mantenerse $v$ constante, las empresas buscan trabajadores pero no logran casar las vacantes (desajuste formativo, geográfico o histéresis). | Diagnosticar que "faltan empleos en la economía" por simple intuición no técnica, ignorando que las vacantes no han disminuido. | *Aceptable:* Afirma que es estructural porque la curva se desplaza.<br>*Excelente:* Argumenta por exclusión: demuestra por qué la constancia de $v$ descarta un shock cíclico de demanda y cita el desajuste de cualificaciones o la depreciación del capital humano como causas de ineficiencia de emparejamiento. |
-  | **c) Recomendación de Políticas** | **Recomendada:** Políticas Activas de Empleo (PAE) focalizadas en recualificación profesional (*reskilling/upskilling*), modernización de la intermediación pública y movilidad geográfica.<br>**Desaconsejada:** Estímulos macroeconómicos de demanda agregada (expansión fiscal indiscriminada o bajadas generales de tipos), ya que las empresas ya tienen vacantes abiertas; inyectar más demanda solo generaría inflación, déficit público y cuellos de botella salariales sin resolver el desajuste de perfiles. | Recomendar "subvencionar cualquier contrato" o "gastar más en obras públicas", sin comprender que el dinero se malgasta si el desempleado no tiene las competencias requeridas. | *Aceptable:* Cita cursos de formación y rechaza el gasto público indiscriminado.<br>*Excelente:* Articula con precisión que la política óptima debe desplazar la curva de nuevo hacia el origen aumentando la eficacia del emparejamiento, y advierte del riesgo de presiones inflacionarias y peso muerto si se aplican estímulos de demanda agregada. |
+  | **a) Costes laborales unitarios** | **Aumentan de forma clara.** Si el salario crece un 8% y la productividad solo un 2%, el coste laboral por unidad producida sube aproximadamente un 6%. | Confundir "subida de salarios" con "subida de costes" sin relacionarlo con la productividad. | *Aceptable:* Indica que los costes suben.<br>*Excelente:* Calcula la brecha aproximada (8%-2%=6%) y explica que ese es el coste laboral unitario adicional. |
+  | **b) Riesgo de competitividad** | El sector pierde competitividad frente a rivales internacionales con costes laborales unitarios más estables, arriesgando cuota de mercado, exportaciones o, a medio plazo, empleo. | Pensar que "más salario" es siempre positivo sin considerar el efecto sobre la demanda de trabajo de las empresas. | *Aceptable:* Menciona pérdida de competitividad.<br>*Excelente:* Conecta con la demanda derivada de trabajo (Epígrafe 3, próxima sesión): si sube el coste laboral por encima de la productividad, las empresas demandarán menos trabajo a largo plazo. |
+  | **c) Papel de la negociación colectiva** | Vincular los incrementos salariales a la productividad real de cada empresa o sector (en vez de subidas generalizadas desconectadas de la productividad) evita este desajuste. | Proponer "congelar salarios" sin matizar, ignorando el papel legítimo de la negociación colectiva en la distribución de las ganancias de productividad. | *Aceptable:* Propone vincular salarios a productividad.<br>*Excelente:* Matiza que el objetivo no es congelar salarios, sino sincronizar su crecimiento con el de la productividad real, evitando tanto la pérdida de competitividad como la pérdida de poder adquisitivo. |
 
 - **Asignación en el Pasaporte de Puntos:**
-  - Registro de acierto individual/parejas en el pasaporte de evaluación continua del Aula Virtual.
-- **Puente hacia el Caso 1 de EPD:**
-  - Anuncio del Caso 1: *«En las próximas semanas utilizaremos exactamente este marco de la Beveridge para evaluar el Programa Emplea-T de la Junta de Andalucía»*.
+  - Quienes justifiquen con rigor los 3 apartados suman registro positivo en el pasaporte de evaluación continua.
+- **Puente hacia la Sesión 3:**
+  - *«Hoy hemos visto la macro: cuánto produce el país y cómo de eficientemente lo hace. El próximo lunes bajamos al nivel micro: cómo se determina exactamente el salario de cada trabajador a través de la oferta y la demanda de trabajo, y qué es el salario de reserva»*.
 
 ---
 
 ## 📎 6. Material y Fuentes Propuestas para la Sesión
 
-1. **Documento oficial de apoyo:**
-   - Banco de España (Documentos Ocasionales): *«El desajuste educativo y laboral en España: análisis de la curva de Beveridge»*.
-2. **Sistema de Evaluación Formativa y Gamificación Persistente:**
-   - Registro de hitos en el **Pasaporte de Competencias y Retos Semanales** del Aula Virtual (computable dentro del 10% de evaluación continua). El baremo consolidado y la escala de insignias se detallan en la *Guía de Evaluación Continua de la Asignatura*.
-3. **Actividad Opcional en Aula Virtual: «Preguntas Socráticas para Casa» (Incentivo de Participación):**
-   - Actividad de reflexión voluntaria habilitada en el campus virtual tras finalizar la sesión presencial. Quienes respondan de forma justificada obtienen puntuación bonificada en su pasaporte de evaluación continua.
+1. **Documento de apoyo:**
+   - Banco de España / INE: series de Contabilidad Nacional (PIB) y productividad por hora trabajada, comparativa internacional OCDE.
+2. **Material gráfico:**
+   - Figuras 1.3 (cadena de valor del pan), 1.4 (PIB interanual España) y 1.5 (productividad vs. salarios OCDE 2024) del apunte maquetado de Tema 1.
+3. **Sistema de Evaluación Formativa y Gamificación Persistente:**
+   - Registro de hitos en el **Pasaporte de Competencias y Retos Semanales** del Aula Virtual (computable dentro del 10% de evaluación continua).
+4. **Actividad Opcional en Aula Virtual: «Preguntas Socráticas para Casa» (Incentivo de Participación):**
+   - Espacio voluntario en el foro del Aula Virtual. Su realización rigurosa queda registrada en el pasaporte y aporta bonificación de nota continua.
    - **Batería de preguntas encadenadas (Sesión 2):**
-     1. *Pregunta de partida:* Supongamos que en una misma comarca conviven vacantes sin cubrir en el sector tecnológico y vacantes sin cubrir en la hostelería. ¿Tienen ambas vacantes la misma naturaleza económica o una responde a desajuste competencial (*skills mismatch*) y otra a salarios ofrecidos por debajo del salario de reserva?
-     2. *Pregunta encadenada de profundización:* Si la administración pública aprueba una subvención directa a la contratación fija de 6.000 € por contrato sin distinguir entre sectores, ¿en cuál de los dos casos se producirá un mayor efecto de peso muerto (*deadweight loss*, contrataciones que se habrían producido igualmente)? Justifique su análisis.
-     3. *Dilema de política pública:* A la luz del análisis de la Curva de Beveridge, ¿por qué la modernización digital de los portales de empleo (hacer más visibles las ofertas en internet) puede reducir eficazmente el desempleo friccional pero resulta prácticamente inútil para reducir el desempleo estructural de larga duración? Explique qué intervención alternativa se requeriría para este último colectivo.
+     1. *Pregunta de partida:* Si un país aumenta su PIB simplemente porque sube el nivel de precios (inflación), sin producir ni un bien más, ¿debería un gobierno presumir de "crecimiento económico"? ¿Qué medida del PIB desmonta esa afirmación?
+     2. *Pregunta encadenada de profundización:* Dos países tienen el mismo PIB per cápita, pero uno lo reparte de forma mucho más desigual que el otro. ¿Qué nos dice esto sobre las limitaciones del PIB per cápita como indicador de bienestar?
+     3. *Dilema de política pública:* Si un gobierno quiere subir los salarios reales de forma sostenible sin generar inflación ni pérdida de competitividad, ¿debería centrar su política en subir el salario mínimo por decreto, o en programas de formación y digitalización que aumenten la productividad? Argumente los plazos y los riesgos de cada alternativa.
