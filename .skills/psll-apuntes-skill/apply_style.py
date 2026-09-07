@@ -71,9 +71,9 @@ TEMA_1_FIGURES_META = {
         "source": "Fuente: Elaboración propia a partir de datos oficiales de la base AMECO (Comisión Europea, DG ECFIN, 2024)."
     },
     "image8.png": {
-        "remastered": None,
-        "caption": "Figura 1.8: La Curva de Phillips y la hipótesis de la tasa natural de desempleo.",
-        "source": "Fuente: Elaboración propia a partir de Friedman y Phelps."
+        "remastered": "curva_phillips_dual.png",
+        "caption": "Figura 1.8: La Curva de Phillips: modelo teórico de expectativas aceleracionistas (Friedman-Phelps) y evidencia empírica en España (2002–2024).",
+        "source": "Fuente: Elaboración propia para Políticas Sociolaborales (UPO) a partir de Friedman (1968), Phelps (1967) e Instituto Nacional de Estadística (EPA y ETCL, 2024)."
     },
     "image9.png": {
         "remastered": "beveridge.png",

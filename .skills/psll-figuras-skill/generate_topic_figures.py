@@ -866,6 +866,170 @@ def generate_tasa_natural_nairu(output_path: str):
     plt.tight_layout(rect=[0.03, 0.04, 0.97, 0.91])
     save_figure(fig, output_path)
 
+def generate_curva_phillips_dual(output_path: str):
+    """
+    Genera la Figura Dual de la Curva de Phillips:
+    - Panel A: Modelo Teórico de Friedman-Phelps (Curvas CP1, CP2 y Largo Plazo vertical en la NAIRU).
+    - Panel B: Evidencia Empírica en España (2002-2024) categorizada en 4 fases cíclicas con datos oficiales INE.
+    """
+    setup_academic_style()
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(11.6, 5.8), dpi=300)
+    fig.patch.set_facecolor(PALETTE["blanco"])
+
+    for ax in (ax1, ax2):
+        ax.set_facecolor(PALETTE["blanco"])
+        ax.spines['top'].set_visible(False)
+        ax.spines['right'].set_visible(False)
+        ax.spines['left'].set_color(PALETTE["verde_tinta"])
+        ax.spines['bottom'].set_color(PALETTE["verde_tinta"])
+        ax.spines['left'].set_linewidth(1.3)
+        ax.spines['bottom'].set_linewidth(1.3)
+
+    # ==========================================
+    # PANEL A: EL MODELO TEÓRICO (FRIEDMAN-PHELPS)
+    # ==========================================
+    ax1.grid(True, linestyle="--", alpha=0.45, color=PALETTE["gris_ejes"])
+
+    u_axis = np.linspace(2.0, 9.5, 200)
+    u_star = 5.5  # NAIRU / Tasa natural de desempleo
+    u_low = 3.2   # Paro reducido tras estímulo
+
+    k_val = 3.0 / (1.0 / (u_low - 1.2) - 1.0 / (u_star - 1.2))
+    cp1 = 2.0 + k_val * (1.0 / (u_axis - 1.2) - 1.0 / (u_star - 1.2))
+    cp2 = 5.0 + k_val * (1.0 / (u_axis - 1.2) - 1.0 / (u_star - 1.2))
+
+    ax1.plot(u_axis, cp1, color=PALETTE["salvia"], lw=2.5, label=r"$CP_1$ (Expectativas $\pi_1^e = 2\%$)")
+    ax1.plot(u_axis, cp2, color="#9AB39E", lw=2.5, linestyle="-.", label=r"$CP_2$ (Expectativas $\pi_2^e = 5\%$)")
+    ax1.axvline(x=u_star, color=PALETTE["verde_profundo"], lw=2.8, label=r"$LP$ (Largo Plazo vertical en NAIRU $u^*$)")
+
+    # Puntos clave
+    ax1.scatter([u_star], [2.0], color=PALETTE["verde_profundo"], s=85, zorder=5)
+    ax1.text(u_star + 0.25, 1.85, r"$\mathbf{A}$", fontsize=11.5, fontweight="bold", color=PALETTE["verde_profundo"])
+    ax1.text(u_star + 0.65, 1.85, r"$(\pi_1=2\%)$", fontsize=8.2, color=PALETTE["verde_profundo"])
+
+    ax1.scatter([u_low], [5.0], color=PALETTE["coral"], s=85, zorder=5)
+    ax1.text(u_low - 0.55, 5.15, r"$\mathbf{B}$", fontsize=11.5, fontweight="bold", color=PALETTE["coral"])
+    ax1.text(u_low - 1.5, 4.7, r"$(\pi_2=5\%)$", fontsize=8.2, color=PALETTE["coral"])
+
+    ax1.scatter([u_star], [5.0], color=PALETTE["verde_profundo"], s=85, zorder=5)
+    ax1.text(u_star + 0.25, 5.15, r"$\mathbf{C}$", fontsize=11.5, fontweight="bold", color=PALETTE["verde_profundo"])
+    ax1.text(u_star + 0.65, 5.15, r"$(\pi_2=5\%)$", fontsize=8.2, color=PALETTE["verde_profundo"])
+
+    # Flechas dinámicas
+    ax1.annotate("", xy=(u_low + 0.25, 4.6), xytext=(u_star - 0.3, 2.3),
+                 arrowprops=dict(arrowstyle="->", color=PALETTE["coral"], lw=2.2, connectionstyle="arc3,rad=-0.18"))
+    ax1.text(3.7, 3.1, "① Estímulo coyuntural\n(paro cae a $u_1$, inflación sube)",
+             ha="right", fontsize=7.6, fontweight="bold", color=PALETTE["coral"])
+
+    ax1.annotate("", xy=(u_star - 0.2, 5.0), xytext=(u_low + 0.3, 5.0),
+                 arrowprops=dict(arrowstyle="->", color=PALETTE["verde_profundo"], lw=2.2))
+    ax1.text((u_low + u_star)/2, 4.45, "② Ajuste a largo plazo ($\pi^e = 5\%$)\n(el desempleo retorna a la NAIRU)",
+             ha="center", fontsize=7.4, fontweight="bold", color=PALETTE["verde_profundo"])
+
+    # Proyecciones punteadas
+    ax1.plot([u_star, u_star], [0, 2.0], color=PALETTE["gris_ejes"], linestyle=":", lw=1.2)
+    ax1.plot([0, u_star], [2.0, 2.0], color=PALETTE["gris_ejes"], linestyle=":", lw=1.2)
+    ax1.plot([u_low, u_low], [0, 5.0], color=PALETTE["gris_ejes"], linestyle=":", lw=1.2)
+    ax1.plot([0, u_star], [5.0, 5.0], color=PALETTE["gris_ejes"], linestyle=":", lw=1.2)
+
+    # Flechas ejes
+    ax1.plot(0, 8.4, marker="^", markersize=6.5, color=PALETTE["verde_tinta"], clip_on=False)
+    ax1.plot(10.0, 0, marker=">", markersize=6.5, color=PALETTE["verde_tinta"], clip_on=False)
+
+    ax1.set_xlim(0, 10.0)
+    ax1.set_ylim(0, 8.4)
+    ax1.set_xticks([u_low, u_star])
+    ax1.set_xticklabels([r"$u_1$", r"$u^*\ (\mathrm{NAIRU})$"], fontsize=9.2, fontweight="bold", color=PALETTE["verde_tinta"])
+    ax1.set_yticks([2.0, 5.0])
+    ax1.set_yticklabels([r"$\pi_1^e = 2\%$", r"$\pi_2^e = 5\%$"], fontsize=9.2, fontweight="bold", color=PALETTE["verde_tinta"])
+
+    ax1.set_xlabel("Tasa de desempleo ($u$)", fontsize=9.5, fontweight="bold", color=PALETTE["verde_profundo"], labelpad=6)
+    ax1.set_ylabel("Tasa de inflación ($\pi$)", fontsize=9.5, fontweight="bold", color=PALETTE["verde_profundo"], labelpad=6)
+
+    ax1.set_title("PANEL A: Modelo de Expectativas (Friedman-Phelps)",
+                  fontsize=9.8, fontweight="bold", color=PALETTE["verde_profundo"], pad=12)
+    ax1.legend(loc="lower left", framealpha=0.92, fontsize=7.5, bbox_to_anchor=(0.02, 0.03))
+
+    # ==========================================
+    # PANEL B: EVIDENCIA EMPÍRICA EN ESPAÑA (2002–2024)
+    # ==========================================
+    ax2.grid(True, linestyle="--", alpha=0.45, color=PALETTE["gris_ejes"])
+
+    p1_ur = [11.5, 11.4, 11.3, 11.5, 11.2, 11.3, 11.2, 11.0, 10.8, 10.6, 10.5, 10.2,
+             10.2, 9.3, 8.7, 8.6, 8.5, 8.3, 8.2, 8.0, 8.2, 8.0, 8.2, 8.6]
+    p1_w =  [3.6, 4.3, 3.9, 3.6, 4.0, 3.8, 3.9, 4.1, 4.2, 4.0, 3.5, 2.6,
+             1.8, 2.4, 2.6, 3.7, 3.9, 5.1, 4.8, 3.7, 4.3, 4.1, 4.5, 4.7]
+
+    p2_ur = [9.6, 10.4, 11.2, 13.8, 17.2, 17.8, 17.8, 18.7, 19.8, 19.9, 19.6, 20.1,
+             21.1, 20.7, 21.3, 22.6, 24.2, 24.4, 24.8, 25.8, 26.9, 26.1, 25.7, 25.7]
+    p2_w =  [5.2, 5.0, 5.3, 4.8, 2.9, 4.1, 3.1, 2.7, 1.9, 1.8, 0.1, 0.0,
+             1.7, 1.2, 0.6, 1.4, -0.1, 0.3, -0.3, -3.6, -1.8, 0.0, -0.6, -0.2]
+
+    p3_ur = [25.7, 24.3, 23.5, 23.7, 23.6, 22.2, 21.0, 20.8, 20.8, 19.8, 18.7, 18.6,
+             18.6, 17.1, 16.3, 16.5, 16.6, 15.2, 14.4, 14.3, 14.6, 13.9, 13.8, 13.7]
+    p3_w =  [0.0, 1.4, 1.2, -0.2, 0.6, 1.0, 1.2, 1.0, -0.2, -0.3, -0.8, -0.8,
+             -0.1, 0.0, 0.4, 0.6, 0.7, 0.9, 1.1, 1.5, 2.2, 2.1, 1.9, 2.3]
+
+    p4_ur = [14.4, 15.3, 16.3, 16.1, 16.0, 15.3, 14.6, 13.3, 13.6, 12.5, 12.7, 12.9,
+             13.3, 11.6, 11.8, 11.8, 12.3, 11.3, 11.2, 11.4]
+    p4_w =  [1.8, -1.4, 2.5, 2.8, 1.4, 3.1, 2.6, 2.8, 3.2, 4.3, 4.0, 3.8,
+             4.3, 5.1, 4.2, 4.0, 3.9, 4.3, 4.1, 3.8]
+
+    ax2.scatter(p1_ur, p1_w, color=PALETTE["verde_profundo"], s=42, alpha=0.85, label="2002–2007 (Expansión y Burbuja)", zorder=4)
+    ax2.scatter(p2_ur, p2_w, color=PALETTE["coral"], s=42, alpha=0.85, label="2008–2013 (Gran Recesión)", zorder=4)
+    ax2.scatter(p3_ur, p3_w, color=PALETTE["salvia"], s=42, alpha=0.85, label="2014–2019 (Recuperación y aplanamiento)", zorder=4)
+    ax2.scatter(p4_ur, p4_w, color="#2F3A30", s=44, marker="s", alpha=0.90, label="2020–2024 (COVID y Shock Inflacionista)", zorder=4)
+
+    all_ur = np.array(p1_ur + p2_ur + p3_ur + p4_ur)
+    all_w = np.array(p1_w + p2_w + p3_w + p4_w)
+
+    fit_u = np.linspace(7.8, 27.2, 200)
+    poly = np.polyfit(1.0 / all_ur, all_w, deg=1)
+    fit_w = poly[0] / fit_u + poly[1]
+    ax2.plot(fit_u, fit_w, color=PALETTE["verde_profundo"], lw=1.9, linestyle="--", alpha=0.85, label="Tendencia inversa estimada")
+    ax2.axhline(0, color=PALETTE["verde_tinta"], lw=0.9, linestyle="--", alpha=0.55)
+
+    # Anotaciones didácticas
+    ax2.annotate("2006T4: Paro 8,3%\nCoste sal. +5,1%", xy=(8.3, 5.1), xytext=(8.0, 6.2),
+                 arrowprops=dict(arrowstyle="->", color=PALETTE["verde_profundo"], lw=1.0),
+                 fontsize=7.2, fontweight="bold", color=PALETTE["verde_profundo"])
+
+    ax2.annotate("2012T4: Devaluación salarial\nrécord (-3,6%)", xy=(25.8, -3.6), xytext=(18.8, -4.5),
+                 arrowprops=dict(arrowstyle="->", color=PALETTE["coral"], lw=1.0),
+                 fontsize=7.2, fontweight="bold", color=PALETTE["coral"])
+
+    ax2.annotate("2013T1: Máximo paro (26,9%)", xy=(26.9, -1.8), xytext=(21.5, -1.0),
+                 arrowprops=dict(arrowstyle="->", color=PALETTE["coral"], lw=1.0),
+                 fontsize=7.2, color=PALETTE["coral"])
+
+    ax2.annotate("2023T2: Repunte (+5,1%)\ncon paro al 11,6%", xy=(11.6, 5.05), xytext=(14.2, 6.0),
+                 arrowprops=dict(arrowstyle="->", color="#2F3A30", lw=1.0),
+                 fontsize=7.2, fontweight="bold", color="#2F3A30")
+
+    ax2.set_xlim(6.0, 28.5)
+    ax2.set_ylim(-5.5, 7.2)
+    ax2.set_xlabel("Tasa de desempleo - EPA (%)", fontsize=9.5, fontweight="bold", color=PALETTE["verde_profundo"], labelpad=6)
+    ax2.set_ylabel("Variación anual coste salarial - ETCL (%)", fontsize=9.5, fontweight="bold", color=PALETTE["verde_profundo"], labelpad=6)
+
+    ax2.set_title("PANEL B: Evidencia Empírica en España (2002–2024)",
+                  fontsize=9.8, fontweight="bold", color=PALETTE["verde_profundo"], pad=12)
+    ax2.legend(loc="lower left", framealpha=0.92, fontsize=7.0, bbox_to_anchor=(0.02, 0.02))
+
+    # Título y Subtítulo corporativos
+    fig.text(0.05, 0.968, "La Curva de Phillips: Modelo Teórico y Evidencia Empírica en España (2002–2024)",
+             fontsize=11.5, fontweight="bold", color=PALETTE["verde_profundo"])
+    fig.text(0.05, 0.935, "De la relación inversa a corto plazo y la vertical a largo plazo (NAIRU) al comportamiento real de salarios y desempleo",
+             fontsize=8.5, style="italic", color=PALETTE["salvia"])
+
+    # Pie didáctico e institucional
+    fig.text(0.05, 0.015, "Panel A: Modelo de expectativas de Friedman-Phelps. Panel B: Datos trimestrales armonizados de la EPA y ETCL.",
+             fontsize=7.8, color=PALETTE["verde_profundo"])
+    fig.text(0.95, 0.015, "Fuente: Elaboración propia a partir de datos oficiales del Instituto Nacional de Estadística (INE, 2024).",
+             ha="right", fontsize=7.5, style="italic", color=PALETTE["verde_tinta"])
+
+    plt.tight_layout(rect=[0.02, 0.04, 0.98, 0.91])
+    save_figure(fig, output_path)
+
 def generate_figures_for_topic(topic_num: int, project_root: str):
     """Genera las figuras remasterizadas para un tema específico en su carpeta relativa."""
     dest_dir = os.path.join(project_root, f"Temas EB/Tema {topic_num}/figuras/remasterizadas")
@@ -881,6 +1045,7 @@ def generate_figures_for_topic(topic_num: int, project_root: str):
         bev_path = os.path.join(dest_dir, "beveridge.png")
         neo_path = os.path.join(dest_dir, "modelo_desempleo_neoclasico.png")
         nairu_path = os.path.join(dest_dir, "tasa_natural_nairu.png")
+        phil_path = os.path.join(dest_dir, "curva_phillips_dual.png")
         generate_epa_taxonomy(epa_path)
         generate_epa_decision_tree(tree_path)
         generate_vab_pan(vab_path)
@@ -889,6 +1054,7 @@ def generate_figures_for_topic(topic_num: int, project_root: str):
         generate_beveridge_curve(bev_path)
         generate_modelo_desempleo_neoclasico(neo_path)
         generate_tasa_natural_nairu(nairu_path)
+        generate_curva_phillips_dual(phil_path)
     else:
         print(f"Aún no hay generadores registrados para el Tema {topic_num}.")
 
