@@ -458,6 +458,11 @@ def generate_pib_interanual(output_path: str):
               r"$\mathregular{Volumen\ encadenado.\ Tasas\ de\ variación\ interanual\ (\%)}$",
               loc="left", fontsize=11.5, fontweight="bold", color=PALETTE["verde_profundo"], pad=14)
     
+    # Pie de fuente y autoría en la propia figura
+    ax.annotate("Fuente: Instituto Nacional de Estadística (INE). Contabilidad Nacional Trimestral de España (CNTR).",
+                xy=(0, 0), xytext=(0, -46), xycoords="axes fraction", textcoords="offset points",
+                ha="left", va="top", fontsize=8.0, style="italic", color=PALETTE["verde_tinta"])
+    
     save_figure(fig, output_path)
 
 def generate_figures_for_topic(topic_num: int, project_root: str):
