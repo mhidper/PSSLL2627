@@ -51,6 +51,7 @@ Basado estrictamente en [Logos y skills/BRAND.md](file:///c:/Users/Usuario/Dropb
    - Tabla unificada de 1 celda con fondo temático, borde izquierdo grueso de 3 pt (26 dxa), padding interior calibrado y título en negrita con icono temático:
      - 🗓️ **Caja de Sesión Docente (*Session Box*):** Fondo verde menta suave (`#E1F6EA`), borde en Verde Profundo (`#566B56`). Sitúa al estudiante en el cronograma oficial de la asignatura (ej. *Sesión 1 · Semana 1*).
      - 💭 **Parada Reflexiva (*Reflection Box*):** Fondo neutro cálido/crema suave (`#F3EFDC`), borde en Verde Salvia (`#76927A`). Preguntas detonantes y dilemas intuitivos para que el estudiante auto-evalúe su comprensión antes de avanzar.
+       - **Regla anti-estiramiento:** Las preguntas o enunciados breves van obligatoriamente en un **párrafo independiente alineado a la izquierda (`WD_ALIGN_PARAGRAPH.LEFT`)**, evitando que Word estire las palabras de margen a margen. La respuesta explicativa va en un párrafo inferior **justificado con sangría izquierda de 0.18 pulgadas**. Prohibido usar saltos de línea suaves (`\n`) en bloques justificados.
      - ⚠️ **Alerta de Examen / Trampa Habitual (*Warning Box*):** Fondo suave de alerta (`#FDF4F0`), borde en Coral (`#E99073`). Errores analíticos frecuentes en pruebas de evaluación.
      - 💡 **Concepto Clave / Conceptos Clave del Tema (*Concept Box*):**
        - **Regla Mandatoria:** Debe situarse **en una página nueva** (incorporando obligatoriamente un **salto de página previo**).

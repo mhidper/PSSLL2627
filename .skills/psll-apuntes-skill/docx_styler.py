@@ -166,7 +166,7 @@ def insert_callout_box(doc, callout_type: str, title: str, text: str, page_break
     p_title.alignment = WD_ALIGN_PARAGRAPH.LEFT
     p_title.paragraph_format.space_before = Pt(0)
     p_title.paragraph_format.space_after = Pt(2)
-    run_icon = p_title.add_run(f"{icon}  {title.upper()}\n")
+    run_icon = p_title.add_run(f"{icon}  {title.upper()}")
     run_icon.font.name = FONT_HEADINGS
     run_icon.font.size = Pt(9.5)
     run_icon.font.bold = True
@@ -192,6 +192,8 @@ def insert_reflection_box(doc, title: str, q_and_a_list: list):
     """
     Inserta una caja estructurada de Parada Reflexiva con preguntas encadenadas.
     q_and_a_list es una lista de tuplas: [ (pregunta, respuesta), ... ]
+    Para evitar que Word estire las palabras justificando líneas cortas,
+    la pregunta va en un párrafo alineado a la izquierda y la respuesta justificada debajo.
     """
     tbl = doc.add_table(rows=1, cols=1)
     tbl.alignment = WD_TABLE_ALIGNMENT.CENTER
@@ -210,28 +212,44 @@ def insert_reflection_box(doc, title: str, q_and_a_list: list):
     p_title = cell.paragraphs[0]
     p_title.alignment = WD_ALIGN_PARAGRAPH.LEFT
     p_title.paragraph_format.space_before = Pt(0)
-    p_title.paragraph_format.space_after = Pt(4)
-    run_icon = p_title.add_run(f"💭  PARADA REFLEXIVA: {title.upper()}\n")
+    p_title.paragraph_format.space_after = Pt(5)
+    run_icon = p_title.add_run(f"💭  PARADA REFLEXIVA: {title.upper()}")
     run_icon.font.name = FONT_HEADINGS
     run_icon.font.size = Pt(10.0)
     run_icon.font.bold = True
     run_icon.font.color.rgb = RGB_COLORS["deep_green"]
     
-    # Preguntas y respuestas
+    # Preguntas y respuestas (pregunta alineada a la izquierda, respuesta justificada)
     for i, (q, a) in enumerate(q_and_a_list):
-        p_item = cell.add_paragraph()
-        p_item.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
-        p_item.paragraph_format.space_before = Pt(4 if i > 0 else 0)
-        p_item.paragraph_format.space_after = Pt(2)
-        p_item.paragraph_format.line_spacing = 1.15
+        # 1. Párrafo de la pregunta (siempre alineado a la izquierda, sin saltos de línea \n)
+        p_q = cell.add_paragraph()
+        p_q.alignment = WD_ALIGN_PARAGRAPH.LEFT
+        p_q.paragraph_format.space_before = Pt(5 if i > 0 else 2)
+        p_q.paragraph_format.space_after = Pt(1.5)
+        p_q.paragraph_format.line_spacing = 1.15
+        p_q.paragraph_format.keep_with_next = True
         
-        run_q = p_item.add_run(f"• {q.strip()}\n")
+        run_bullet = p_q.add_run("•  ")
+        run_bullet.font.name = FONT_BODY
+        run_bullet.font.size = Pt(9.5)
+        run_bullet.font.bold = True
+        run_bullet.font.color.rgb = RGB_COLORS["sage"]
+        
+        run_q = p_q.add_run(q.strip())
         run_q.font.name = FONT_BODY
         run_q.font.size = Pt(9.5)
         run_q.font.bold = True
         run_q.font.color.rgb = RGB_COLORS["deep_green"]
         
-        run_a = p_item.add_run(f"  {a.strip()}")
+        # 2. Párrafo de la respuesta (justificado, con sutil sangría izquierda para jerarquía visual)
+        p_a = cell.add_paragraph()
+        p_a.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
+        p_a.paragraph_format.left_indent = Inches(0.18)
+        p_a.paragraph_format.space_before = Pt(0)
+        p_a.paragraph_format.space_after = Pt(4)
+        p_a.paragraph_format.line_spacing = 1.15
+        
+        run_a = p_a.add_run(a.strip())
         run_a.font.name = FONT_BODY
         run_a.font.size = Pt(9.5)
         run_a.font.color.rgb = RGB_COLORS["ink_green"]
@@ -267,7 +285,7 @@ def insert_key_concepts_box(doc, title: str, concepts_list: list, page_break_bef
     p_title.alignment = WD_ALIGN_PARAGRAPH.LEFT
     p_title.paragraph_format.space_before = Pt(0)
     p_title.paragraph_format.space_after = Pt(6)
-    run_icon = p_title.add_run(f"💡  {title.upper()}\n")
+    run_icon = p_title.add_run(f"💡  {title.upper()}")
     run_icon.font.name = FONT_HEADINGS
     run_icon.font.size = Pt(11.0)
     run_icon.font.bold = True

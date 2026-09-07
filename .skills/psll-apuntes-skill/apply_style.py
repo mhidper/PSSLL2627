@@ -435,8 +435,16 @@ def style_topic_document(input_path: str, output_path: str):
         
         # Preservar negritas básicas si el primer run original era negrita o títulos internos cortos
         first_bold = False
-        if (p.runs and p.runs[0].bold) or (len(raw_text) < 55 and not raw_text.endswith(".")):
+        is_short_heading = len(raw_text) < 55 and not raw_text.endswith((".", ":", ";"))
+        if (p.runs and p.runs[0].bold) or is_short_heading:
             first_bold = True
+            
+        # Si es un título o subtítulo corto interno, forzar alineación a la izquierda
+        if is_short_heading:
+            p_new.alignment = WD_ALIGN_PARAGRAPH.LEFT
+            p_new.paragraph_format.space_before = Pt(8)
+            p_new.paragraph_format.space_after = Pt(2)
+            p_new.paragraph_format.keep_with_next = True
             
         # Copiar texto
         run = p_new.add_run(raw_text)
@@ -445,7 +453,7 @@ def style_topic_document(input_path: str, output_path: str):
         run.font.color.rgb = RGB_COLORS["ink_green"]
         if first_bold:
             run.font.bold = True
-            if len(raw_text) < 55:
+            if is_short_heading:
                 run.font.color.rgb = RGB_COLORS["deep_green"]
 
 
