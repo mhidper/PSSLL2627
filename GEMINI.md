@@ -18,14 +18,36 @@ Este proyecto está vinculado permanentemente al cuaderno de NotebookLM:
      ```
      o que proporcione la cookie actualizada para reconectar.
 
-## Marca e Identidad Visual
+## Metodología Docente de las Sesiones Teóricas (EB): El Ciclo del Choque Cognitivo y el Reto Final
 
-Este proyecto tiene una identidad visual oficial basada en el emblema real de la asignatura (`Logos y skills/psll-presentaciones-skill/assets/psll_emblem.png`), documentada en [Logos y skills/BRAND.md](file:///c:/Users/Usuario/Dropbox/DOCENCIA%20UPO/CURSO%2026-27/PSLL/Logos%20y%20skills/BRAND.md) y en [Logos y skills/psll-presentaciones-skill/SKILL.md](file:///c:/Users/Usuario/Dropbox/DOCENCIA%20UPO/CURSO%2026-27/PSLL/Logos%20y%20skills/psll-presentaciones-skill/SKILL.md) (para presentaciones). La versión equivalente para Claude Code vive en `.claude/skills/marca-psll/SKILL.md`.
-- **Ámbito:** Aplica obligatoriamente al redactar o editar documentos (`.docx`, apuntes, lecturas), diapositivas (`.pptx`) y figuras/gráficos en Python (`matplotlib`).
-- **Paleta oficial (menta/salvia/coral, la que coincide con el emblema real):** Lienzo menta `#E1F6EA`, salvia `#76927A` (estructura y serie principal), verde profundo `#566B56` (títulos y contraste fuerte), verde tinta `#2F3A30` (texto de cuerpo — nunca negro puro), coral `#E99073` (acento puntual, nunca párrafos enteros), melocotón `#EDB090` (acento suave).
-- **Tipografías:** `Poppins` para titulares (alternativa: Century Schoolbook/Cambria), `Calibri` / `Arial` para cuerpo de texto y tablas. Nunca `Aptos`.
-- **Gráficos en Python:** usar el módulo de estilo con la paleta menta/salvia/coral y añadir siempre el pie de fuente y autoría.
-- **Nota:** existió una guía anterior con paleta crema/terracota (`Logos y skills/marca_psll/`) que no coincidía con el logo real; se eliminó del proyecto — no debe reintroducirse ni usarse como referencia.
+En el diseño de las sesiones teóricas (EB) y sus diapositivas:
+- **Apertura con Sondeo Previo (Bloque 1):** Arranca siempre con una pregunta de sondeo (en Microsoft Forms con QR institucional o Mentimeter) antes de mostrar datos, figuras o teorías, capturando los prejuicios espontáneos e intuiciones populares de los alumnos.
+- **Choque empírico posterior:** Inmediatamente después del sondeo, se proyectan las figuras y datos reales (EPA, Eurostat, OCDE) para desmentir empíricamente el prejuicio mayoritario, creando la necesidad intelectual del modelo teórico.
+- **Cierre con Reto Manuscrito y Subida Fotográfica (Bloque 5 · Regla de Oro):**
+  - Toda sesión EB concluye con un **reto o caso práctico individual de 10 minutos**.
+  - **Vinculación obligatoria:** Las preguntas deben estar **100% basadas en lo explicado en clase ese día y en el material previo** colgado en el aula virtual. No requieren memorismo enciclopédico ni fórmulas oscuras; su fin es **demostrar atención y comprensión conceptual en el aula**. El docente conoce la pregunta de antemano para asegurar que ese mecanismo se enfatiza con nitidez durante la sesión.
+  - **Mecánica:** Se redacta **a mano en papel (10 min)** en entorno controlado $\rightarrow$ A la orden del profesor, se proyecta el **Código QR de Microsoft Forms (cuenta UPO)** para subir una foto nítida de la hoja manuscrita (2 min).
+  - **Incentivo / Gamificación:** Las entregas válidas acumulan puntos en el seguimiento que desbloquean **beneficios tangibles para el examen final (70%)** (por ejemplo: comodín para descartar una pregunta en el examen o bonificación de nota), incentivando directamente la asistencia y la concentración activa en el aula.
+  - **Corrección escalable:** Las fotos subidas a OneDrive se transcriben y corrigen con IA de visión multimodal aplicando la rúbrica oficial de la sesión.
+
+## Marca e Identidad Visual Oficial
+
+Este proyecto cuenta con una identidad visual moderna y vanguardista de inspiración institucional (*Modern Labor Economics & Think Tank*), homologada con la línea gráfica de **Macroeconomía UPO**, documentada en [Logos y skills/marca/guia_de_estilo.md](file:///c:/Users/Usuario/Dropbox/DOCENCIA%20UPO/CURSO%2026-27/PSLL/Logos%20y%20skills/marca/guia_de_estilo.md) y [Logos y skills/BRAND.md](file:///c:/Users/Usuario/Dropbox/DOCENCIA%20UPO/CURSO%2026-27/PSLL/Logos%20y%20skills/BRAND.md):
+- **Símbolo Oficial:** Dos anillos entrelazados (oferta de trabajo en Verde Pino `#113927` y demanda en Verde Salvia `#76927A`) atravesados por una onda aerodinámica transversal en Coral Activo (`#E98F71`, mediación y políticas activas de empleo).
+- **Ámbito de aplicación:** Aplica obligatoriamente al redactar o editar documentos (`.docx`, apuntes, lecturas), diapositivas (`.pptx`) y figuras/gráficos en Python (`matplotlib`).
+- **Paleta oficial definitiva:**
+  - Lienzo y fondos base: Blanco puro `#FFFFFF`.
+  - Color primario y titular: Verde Pino PSLL `#113927`.
+  - Estructura y subtítulo: Verde Salvia `#76927A`.
+  - Acento dinámico: Coral Active Wave `#E98F71`.
+  - Tarjetas y callouts suaves: Verde Menta Tenue `#F4F8F5`.
+  - Texto de lectura (cuerpo): Verde Tinta `#2F3A30` (nunca negro puro).
+  - Escudo institucional: Azul Marino UPO `#0B1C36`.
+- **Tipografías oficiales:**
+  - Titulares: `Outfit` (Bold / Heavy), en sintonía con Macroeconomía. Alternativa de respaldo: `Inter` o `Segoe UI`.
+  - Cuerpo de texto en diapositivas: **16 pt Calibri obligatorio** para legibilidad completa en proyección de aula. Nunca `Aptos`.
+- **Gráficos en Python:** Usar la paleta oficial (Pino `#113927`, Salvia `#76927A`, Coral `#E98F71`) con pie de autoría y fuente institucional.
+- **Histórico:** Se eliminaron definitivamente las versiones antiguas ilustradas (libros/pluma) y terracota. La única referencia válida es la marca de anillos de emparejamiento.
 
 ## Maquetación y Formato de Apuntes (Skill de Maquetación)
 

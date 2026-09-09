@@ -1,52 +1,45 @@
-# Marca PSLL · Guía de estilo
-
-Identidad visual de la asignatura **Políticas Sociolaborales (PSLL)** — Universidad Pablo de Olavide (UPO).
-Este documento es la fuente única de verdad para colores, tipografías y uso de logos.
-
----
-
-## Paleta (muestreada del emblema)
-
-| Rol | Nombre | HEX | Uso |
-|-----|--------|-----|-----|
-| Principal | Verde menta | `#E1F6EA` | Fondos claros, lienzos |
-| Estructura | Verde salvia | `#76927A` | Volúmenes, fondos de cabecera, "PS" |
-| Contorno / texto fuerte | Verde profundo | `#566B56` | Líneas, sombras, títulos sobre claro |
-| Tinta / cuerpo | Verde tinta | `#2F3A30` | **Texto de cuerpo** sobre fondos claros |
-| Acento | Coral | `#E99073` | Resaltes, "LL", llamadas de atención |
-| Acento suave | Melocotón | `#EDB090` | Pluma, acentos secundarios |
-| Neutro cálido | Crema | `#F3EFDC` | Páginas, tarjetas, espacios claros |
-| Blanco | — | `#FFFFFF` | Fondo de diapositivas de contenido |
-
-### Reglas de contraste (importantes)
-- **No** usar salvia `#76927A` para texto de cuerpo sobre menta: contraste insuficiente.
-- Texto de cuerpo: **verde tinta `#2F3A30`** sobre claro; **blanco `#FFFFFF`** sobre salvia/verde profundo.
-- Coral solo como acento (cifras clave, una palabra, un icono). Nunca párrafos enteros en coral.
-
-### Secuencia para gráficos de datos (en orden)
-1. `#76927A` salvia · 2. `#E99073` coral · 3. `#EDB090` melocotón · 4. `#566B56` verde profundo · 5. `#9DBE8F` verde claro de apoyo.
+# Marca PSLL · Guía de estilo e Identidad Visual Oficial
+Identidad visual de la asignatura **Políticas Sociolaborales y de Empleo (PSLL)** — Universidad Pablo de Olavide (UPO).
+Este documento y la guía en `marca/guia_de_estilo.md` son la fuente única de verdad para colores, tipografías y uso de logos.
 
 ---
 
-## Tipografías
-- **Titulares:** Poppins (geométrica redondeada, coherente con el logotipo). Alternativa segura si no está instalada: **Century Schoolbook** o **Cambria**.
-- **Cuerpo:** Calibri o Arial (seguras y legibles en cualquier equipo).
-- Nunca usar Aptos como fuente por defecto.
+## 1. Filosofía del Nuevo Emblema Oficial
+El emblema oficial de la asignatura se compone de **dos anillos de emparejamiento entrelazados atravesados por una onda transversal dinámica**:
+- **Anillo Izquierdo en Verde Pino Profundo (`#113927`):** Representa la **oferta de trabajo**, la estabilidad en el empleo y la red de protección sociolaboral.
+- **Anillo Derecho en Verde Salvia (`#76927A`):** Simboliza la **demanda de trabajo**, la flexibilidad y la competitividad productiva.
+- **Onda Central en Coral Dinámico (`#E98F71`):** Simboliza la **mediación activa**, las políticas de empleo, el diálogo social y la convergencia económica.
 
 ---
 
-## Logos disponibles (carpeta `logos/`)
-- `psll_emblem.png` — **emblema principal** ilustrado (libros + pluma + "PSLL"). Portadas, primera diapositiva, pósters. No reducir por debajo de ~120 px.
-- `psll_lockup.svg` / `.png` — **logo horizontal** (símbolo + "PSLL"). Cabeceras, pies, documentos.
-- `psll_icon.svg` — **icono** sobre cuadrado menta redondeado. App / favicon / avatar.
-- `psll_icon_transparent.svg` — símbolo sin fondo, para colocar sobre cualquier color.
-- `favicon.ico`, `apple-touch-icon.png` — para web / PolicyLab.
-- `upo_logo.jpg` — **logo institucional UPO**. Debe aparecer en todo material oficial (ver abajo).
+## 2. Paleta Oficial Definitiva
 
-### Presencia de la UPO
-El escudo de la UPO es azul marino y oro: **no** integrarlo en la composición pastel. Colocarlo siempre de forma **institucional y discreta**: en un pie, contraportada o esquina, sobre fondo blanco o claro, a tamaño moderado. Respetar su área de protección (no recolorear, no deformar). Revisar el manual de identidad de la UPO para usos oficiales.
+| Rol | Nombre | HEX | RGB | Uso |
+|-----|--------|-----|-----|-----|
+| Principal / Contraste | Verde Pino PSLL | `#113927` | `17, 57, 39` | Titulares principales, anillo izquierdo, botones de acción |
+| Estructura / Serie | Verde Salvia | `#76927A` | `118, 146, 122` | Subtítulos, anillo derecho, series de datos principales |
+| Acento Dinámico | Coral Active Wave | `#E98F71` | `233, 143, 113` | Onda de políticas de empleo, resaltes, llamadas de atención |
+| Lienzo / Fondo Claro | Blanco Puro | `#FFFFFF` | `255, 255, 255` | Fondo base de diapositivas y documentos |
+| Fondo Suave Tarjetas | Verde Menta Tenue | `#F4F8F5` | `244, 248, 245` | Cajas de notas, fórmulas y tarjetas destacadas |
+| Tinta / Cuerpo | Verde Tinta | `#2F3A30` | `47, 58, 48` | **Texto de cuerpo** sobre fondos claros (nunca negro puro) |
+| Institucional UPO | Azul Marino UPO | `#0B1C36` | `11, 28, 54` | Escudo oficial de la Universidad Pablo de Olavide |
 
 ---
 
-## Motivo visual
-Líneas orgánicas, fluidas y tenues (filigranas de viento/vegetales) en un tono apenas más oscuro que el fondo. Representan los flujos del mercado de trabajo. Usar siempre **sutil**, de apoyo, nunca compitiendo con el contenido. Tarjetas y formas con **esquinas redondeadas**.
+## 3. Tipografías
+
+- **Titulares:** `Outfit` (Bold / Heavy, mayúsculas con espaciado amplio). Coincide con la identidad oficial de Macroeconomía UPO. Alternativa de respaldo: `Inter` o `Segoe UI`.
+- **Cuerpo:** `Calibri` a **16 pt obligatorio** en diapositivas `.pptx` (para garantizar máxima legibilidad en proyección de aula). En documentos `.docx`: 11 pt.
+- **Cuantitativa / Ecuaciones:** `JetBrains Mono` o `Consolas` para fórmulas de CLU y simuladores.
+- Nunca usar `Aptos` como fuente por defecto.
+
+---
+
+## 4. Catálogo de Logos Oficiales (en `Logos y skills/marca/` y `assets/`)
+
+- `logo_psll_upo.png` / `.svg` (2816 × 1536 px) — **Logotipo oficial completo** (símbolo + texto "POLÍTICAS SOCIOLABORALES · UNIVERSIDAD PABLO DE OLAVIDE"). Portadas y carátulas ejecutivas.
+- `isotipo_psll_upo.png` / `.svg` (1024 × 1024 px) — **Isotipo oficial cuadrado** (símbolo de los anillos y onda). Favicon, avatares y marcas de agua.
+- `psll_lockup.png` / `.svg` (760 × 240 px) — **Logo horizontal compacto** (símbolo + "PSLL" con PS en verde pino y LL en coral). Cabeceras de diapositivas y pies de página.
+- `psll_icon_transparent.svg` — Isotipo transparente sin fondo para integración fluida sobre cualquier color.
+- `banner_aula_virtual_psll.png` (2400 × 600 px) — **Banner panorámico del Aula Virtual** (Blackboard Ultra).
+- `upo_logo.jpg` — **Logo institucional UPO**. Presente en material oficial con su zona de protección y colores oro y azul marino.

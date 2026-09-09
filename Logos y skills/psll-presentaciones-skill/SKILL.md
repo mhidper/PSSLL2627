@@ -14,27 +14,26 @@ Genera presentaciones de la asignatura **Políticas Sociolaborales (UPO)** con i
 3. Aplicar la marca PSLL descrita aquí.
 4. **QA visual con subagente** (según la skill `pptx`) antes de entregar.
 
-## Paleta (resumen — detalle en BRAND.md)
+## Paleta oficial (resumen — detalle en BRAND.md y marca/guia_de_estilo.md)
 
-- Fondos claros: blanco `#FFFFFF` y menta `#E1F6EA`.
-- Fondos oscuros (portada, divisores, cierre): salvia `#76927A` o verde profundo `#566B56`, con texto blanco.
-- Texto de cuerpo sobre claro: verde tinta `#2F3A30` (nunca salvia, contraste insuficiente).
-- Acento: coral `#E99073`, solo para cifras clave, una palabra o un icono.
-- Series de datos, en orden: `#76927A`, `#E99073`, `#EDB090`, `#566B56`, `#9DBE8F`.
-- **No** usar fondos crema/beige a sangre completa (la skill pptx lo desaconseja). El crema `#F3EFDC` es para tarjetas/acentos, no para el fondo de la diapositiva.
+- Fondos claros: blanco puro `#FFFFFF` y menta tenue `#F4F8F5` para tarjetas.
+- Fondos oscuros / contraste: verde pino `#113927` o verde salvia `#76927A`, con texto blanco.
+- Texto de cuerpo sobre claro: verde tinta `#2F3A30` (nunca salvia sobre blanco ni negro puro).
+- Acento: coral dinámico `#E98F71`, solo para cifras clave, una palabra destacada o la onda de políticas.
+- Series de datos, en orden: `#113927` (pino), `#76927A` (salvia), `#E98F71` (coral), `#EDB090` (melocotón), `#566B56` (verde intermedio).
 
 ## Tipografías
 
-- Titulares: **Poppins** (bold). Alternativa segura: Century Schoolbook o Cambria.
-- Cuerpo: **Calibri** o Arial. Nunca Aptos.
-- Tamaños: título 36–44 pt · cabecera de sección 20–24 pt · cuerpo 14–16 pt · pie/cita 10–12 pt.
+- Titulares: **Outfit** (Bold / Heavy), en sintonía directa con Macroeconomía UPO. Alternativa de respaldo: Inter o Segoe UI.
+- Cuerpo: **16 pt Calibri obligatorio** (tamaño estándar fijado para proyección en aula; no usar tamaños inferiores en párrafos de contenido). Nunca Aptos.
+- Tamaños en diapositivas (.pptx): título 36–44 pt · cabecera de sección 20–24 pt · **cuerpo: 16 pt Calibri** · pie/cita 10–12 pt.
 
-## Logos en las diapositivas (carpeta `assets/`)
+## Logos en las diapositivas (carpeta `assets/` y `marca/`)
 
-- **Portada:** `psll_emblem.png` como protagonista. Logo **UPO** (`upo_logo.jpg`) discreto en un pie o esquina, sobre franja/fondo claro. Título de la asignatura y del tema con Poppins.
-- **Divisores de sección:** fondo salvia o verde profundo, número y título de bloque en blanco, `psll_icon_transparent.svg` pequeño como sello.
-- **Diapositivas de contenido:** `psll_lockup.png` pequeño en una esquina superior (altura ≈ 0,3"), discreto. No repetir el emblema grande en cada slide.
-- **Cierre / contraportada:** datos de contacto + logo **UPO** institucional (presencia obligatoria en material oficial) + emblema PSLL.
+- **Portada:** `logo_psll_upo.png` (o `psll_emblem.png` que ahora contiene la nueva marca) como protagonista. Logo **UPO** (`upo_logo.jpg`) discreto en un pie o esquina, sobre franja/fondo claro con su caja de protección.
+- **Divisores de sección:** fondo verde pino o salvia, número y título de bloque en blanco, `psll_icon_transparent.svg` pequeño como sello.
+- **Diapositivas de contenido:** `psll_lockup.png` (símbolo de anillos + "PSLL") pequeño en una esquina superior (altura ≈ 0,3"), discreto.
+- **Cierre / contraportada:** síntesis + datos de contacto + logo **UPO** institucional + nuevo logotipo PSLL.
 - Respetar el área de protección de la UPO: no recolorear, no deformar, no integrarlo en el pastel.
 
 ## Motivo y composición
@@ -44,14 +43,17 @@ Genera presentaciones de la asignatura **Políticas Sociolaborales (UPO)** con i
 - Iconos en círculos de color de marca junto a cabeceras de sección.
 - **Prohibido** (heredado de la skill pptx y reforzado aquí): líneas/subrayados bajo los títulos, barras o franjas de color decorativas en bordes, y diapositivas solo-texto. Cada diapositiva lleva un elemento visual.
 
-## Estructura recomendada de un deck PSLL
+## Estructura recomendada de un deck PSLL (Sesiones EB)
 
-1. **Portada** — emblema PSLL, título del tema, "Políticas Sociolaborales · UPO", logo UPO discreto.
-2. **Índice / hoja de ruta** del tema.
-3. **Divisor de bloque** (salvia/verde profundo) por cada apartado.
-4. **Contenido** — preferir párrafo desarrollado y un visual (esquema, dato grande, comparativa) frente a listas largas de viñetas (coherente con la preferencia "menos items, más texto").
-5. **Datos y Figuras Oficiales** — gráficos con la secuencia de color de marca; fuente citada al pie en 10–12 pt. Reutilizar prioritariamente las figuras oficiales generadas a 300 DPI por `psll-figuras-skill` disponibles en `Temas EB/Tema X/figuras/remasterizadas/`.
-6. **Cierre** — síntesis + contacto + logos PSLL y UPO.
+1. **Portada:** emblema PSLL, título del tema, "Políticas Sociolaborales · UPO", logo UPO discreto.
+2. **Índice / hoja de ruta** de la sesión (tiempos y bloques).
+3. **Bloque 1 (Apertura y Choque):** Sondeo previo (Microsoft Forms / Mentimeter) para capturar prejuicios populares $\rightarrow$ Choque empírico inmediato con gráficos oficiales a 300 DPI (EPA, Eurostat) que desmienten el prejuicio.
+4. **Bloques 2 y 3 (Mini-Lecciones teóricas):** Desarrollo conceptual con figuras oficiales, fórmulas clave y comparativas (párrafo desarrollado a **16 pt Calibri**, nunca solo-texto).
+5. **Bloque 4 (Taller / Simulación):** Actividad aplicada con micro-apps o datos guiados.
+6. **Bloque 5 (Reto Final de Cierre · 10 min):**
+   * **Slide de Reto:** Pregunta **100% basada en lo explicado en clase y el material previo**, redactada a mano en papel (10 min) + **Código QR de Microsoft Forms (UPO)** para subir foto (2 min). Entrega puntuable con beneficios para el examen final (70%).
+   * **Slide de Solución y Rúbrica:** Solución oficial comentada en voz alta al cerrarse la entrega.
+7. **Cierre:** síntesis de conclusiones + contacto + logos PSLL y UPO.
 
 ## Comprobaciones antes de entregar
 
