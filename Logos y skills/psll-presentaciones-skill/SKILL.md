@@ -30,10 +30,60 @@ Genera presentaciones de la asignatura **Políticas Sociolaborales (UPO)** con i
 
 ## Logos en las diapositivas (carpeta `assets/` y `marca/`)
 
-- **Portada:** `logo_psll_upo.png` (o `psll_emblem.png` que ahora contiene la nueva marca) como protagonista. Logo **UPO** (`upo_logo.jpg`) discreto en un pie o esquina, sobre franja/fondo claro con su caja de protección.
-- **Divisores de sección:** fondo verde pino o salvia, número y título de bloque en blanco, `psll_icon_transparent.svg` pequeño como sello.
-- **Diapositivas de contenido:** `psll_lockup.png` (símbolo de anillos + "PSLL") pequeño en una esquina superior (altura ≈ 0,3"), discreto.
-- **Cierre / contraportada:** síntesis + datos de contacto + logo **UPO** institucional + nuevo logotipo PSLL.
+> [!IMPORTANT]
+> **Regla de Oro: Proporciones de Imágenes y Cero Distorsión (*Aspect Ratio Lock*)**
+> Bajo ninguna circunstancia se debe estirar, encoger o deformar un logotipo o imagen insertada. Siempre debe preservarse su relación de aspecto (*aspect ratio*) nativa:
+> $$\text{Ancho} = \text{Alto} \times \text{Ratio Nativo}$$
+> 
+> **Dimensiones canónicas y ratios exactos de la marca:**
+> - **Escudo UPO (`upo_logo.jpg`):**
+>   - Ratio nativo: **0.707** (vertical/alto: $159 \times 225$ px).
+>   - Tamaño estándar: **Alto: 0.70"** ($1.78\text{ cm}$) $\times$ **Ancho: 0.495"** ($1.26\text{ cm}$). ¡Nunca fijar anchos arbitrarios como 1.5" que lo conviertan en apaisado!
+> - **Logotipo Principal PSLL (`logo_psll_upo.png`):**
+>   - Ratio nativo: **1.833** ($2816 \times 1536$ px).
+>   - Tamaño estándar portada: Si ancho = $5.00"$, alto = $2.73"$ (o en portadas grandes: ancho $5.89" \times$ alto $3.20"$). ¡Nunca usar dimensiones cuadradas como 2.6" x 2.6"!
+> - **Lockup de esquina (`psll_lockup.png`):**
+>   - Ratio nativo: **3.167** ($760 \times 240$ px).
+>   - Tamaño estándar en esquinas: Si alto = **0.32"**, ancho = **1.013"** (no 1.30").
+> - **Isotipo / Sello (`isotipo_psll_upo.png` o `psll_icon_transparent.svg`):**
+>   - Ratio nativo: **1.000** (cuadrado $1024 \times 1024$ px).
+>   - Tamaño estándar: ancho = alto.
+
+## Estructura Oficial Canónica de Portada (Modelo Sesión 1 · Obligatorio)
+
+> [!IMPORTANT]
+> **Formato Unificado de Portada para TODAS las Presentaciones:**
+> A partir de la Sesión 1, todas las presentaciones de la asignatura siguen sin excepción la misma estructura visual, jerarquía y maquetación de portada:
+> 
+> 1. **Lienzo y Fondo:**
+>    - Fondo oscuro corporativo en **Verde Pino PSLL (`#113927`)** sólido o degradado suave de marca.
+> 2. **Logotipo Principal de la Asignatura (`logo_psll_upo.png`):**
+>    - Protagonista superior centrado horizontalmente en la diapositiva (13.333" de ancho).
+>    - Coordenadas: `left = 4.267"`, `top = 0.550"`, `width = 4.800"`, `height = 2.618"` (ratio exacto 1.833).
+> 3. **Bloque Textual Central (Alineación Centrada):**
+>    - **Línea 1 (Nombre de la Asignatura / Overline):**
+>      - Texto: `POLÍTICAS SOCIOLABORALES Y DE EMPLEO`
+>      - Posición: `left = 1.000"`, `top = 3.350"`, `width = 11.333"`, `height = 0.600"`.
+>      - Estilo: 26 pt, Negrita, Color Blanco Puro `#FFFFFF`. Tipografía institucional (`Outfit` / titular).
+>    - **Línea 2 (Título de la Sesión / Tema):**
+>      - Texto: `Sesión X – [Título de la Sesión / Epígrafe]`
+>      - Posición: `left = 1.000"`, `top = 4.000"`, `width = 11.333"`, `height = 0.500"`.
+>      - Estilo: 17 pt, Color Melocotón / Coral Acento (`#EDB090` o `#E98F71`).
+>    - **Línea 3 (Metadatos / Fecha / Docencia):**
+>      - Texto: `[Día de la semana] [Fecha]  ·  Código 102023  ·  Manuel A. Hidalgo Pérez`
+>      - Posición: `left = 1.000"`, `top = 4.550"`, `width = 11.333"`, `height = 0.400"`.
+>      - Estilo: 12 pt, Color Blanco Hueso / Arena Tenue (`#F3EFDC` o `#F4F8F5`).
+> 4. **Franja Inferior Institucional (Footer Band):**
+>    - Rectángulo de fondo blanco puro (`#FFFFFF`): `left = 0.000"`, `top = 6.600"`, `width = 13.333"`, `height = 0.900"`.
+>    - **Escudo UPO (`upo_logo.jpg`):** `left = 0.500"`, `top = 6.700"`, `width = 0.495"`, `height = 0.700"` (ratio vertical 0.707).
+>    - **Texto Institucional del Título / Grado:**
+>      - Texto: `Grado en Relaciones Laborales y Recursos Humanos · Doble Grado en Derecho y RRLL-RRHH`
+>      - Posición: `left = 1.300"`, `top = 6.850"`, `width = 11.300"`, `height = 0.400"`.
+>      - Estilo: 10 pt, Color Verde Tinta `#2F3A30`.
+
+- **Divisores de sección:** fondo verde pino o salvia, número y título de bloque en blanco, `psll_icon_transparent.svg` pequeño como sello cuadrado.
+- **Diapositivas de contenido:** `psll_lockup.png` (símbolo de anillos + "PSLL") pequeño en una esquina superior (alto = 0.32", ancho = 1.01"), discreto.
+- **Cierre / contraportada:** síntesis + datos de contacto + logo **UPO** institucional vertical + logotipo PSLL en ratio 1.833.
 - Respetar el área de protección de la UPO: no recolorear, no deformar, no integrarlo en el pastel.
 
 ## Motivo y composición

@@ -47,6 +47,7 @@ Este proyecto cuenta con una identidad visual moderna y vanguardista de inspirac
   - Titulares: `Outfit` (Bold / Heavy), en sintonía con Macroeconomía. Alternativa de respaldo: `Inter` o `Segoe UI`.
   - Cuerpo de texto en diapositivas: **16 pt Calibri obligatorio** para legibilidad completa en proyección de aula. Nunca `Aptos`.
 - **Gráficos en Python:** Usar la paleta oficial (Pino `#113927`, Salvia `#76927A`, Coral `#E98F71`) con pie de autoría y fuente institucional.
+- **Proporciones e Imágenes (Aspect Ratio Lock obligatorio):** Prohibido deformar o estirar imágenes y logotipos. Todo logotipo debe conservar su ratio de aspecto nativo ($\text{ancho} = \text{alto} \times \text{ratio}$). El escudo UPO es vertical ($0.495" \times 0.700"$, ratio $0.707$), el logo PSLL es apaisado (ratio $1.833$, ej. $5.00" \times 2.73"$), el lockup de esquina es ratio $3.167$ ($1.013" \times 0.320"$) y el isotipo es cuadrado ($1.000$).
 - **Histórico:** Se eliminaron definitivamente las versiones antiguas ilustradas (libros/pluma) y terracota. La única referencia válida es la marca de anillos de emparejamiento.
 
 ## Maquetación y Formato de Apuntes (Skill de Maquetación)
