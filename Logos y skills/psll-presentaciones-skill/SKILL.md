@@ -93,17 +93,27 @@ Genera presentaciones de la asignatura **Políticas Sociolaborales (UPO)** con i
 - Iconos en círculos de color de marca junto a cabeceras de sección.
 - **Prohibido** (heredado de la skill pptx y reforzado aquí): líneas/subrayados bajo los títulos, barras o franjas de color decorativas en bordes, y diapositivas solo-texto. Cada diapositiva lleva un elemento visual.
 
-## Estructura recomendada de un deck PSLL (Sesiones EB)
+## Estructura Oficial de un Deck PSLL (Sesiones EB · Metodología en 5 Fases)
 
-1. **Portada:** emblema PSLL, título del tema, "Políticas Sociolaborales · UPO", logo UPO discreto.
-2. **Índice / hoja de ruta** de la sesión (tiempos y bloques).
-3. **Bloque 1 (Apertura y Choque):** Sondeo previo (Microsoft Forms / Mentimeter) para capturar prejuicios populares $\rightarrow$ Choque empírico inmediato con gráficos oficiales a 300 DPI (EPA, Eurostat) que desmienten el prejuicio.
-4. **Bloques 2 y 3 (Mini-Lecciones teóricas):** Desarrollo conceptual con figuras oficiales, fórmulas clave y comparativas (párrafo desarrollado a **16 pt Calibri**, nunca solo-texto).
-5. **Bloque 4 (Taller / Simulación):** Actividad aplicada con micro-apps o datos guiados.
-6. **Bloque 5 (Reto Final de Cierre · 10 min):**
-   * **Slide de Reto:** Pregunta **100% basada en lo explicado en clase y el material previo**, redactada a mano en papel (10 min) + **Código QR de Microsoft Forms (UPO)** para subir foto (2 min). Entrega puntuable con beneficios para el examen final (70%).
-   * **Slide de Solución y Rúbrica:** Solución oficial comentada en voz alta al cerrarse la entrega.
-7. **Cierre:** síntesis de conclusiones + contacto + logos PSLL y UPO.
+Todas las presentaciones de la asignatura siguen la secuencia pedagógica de innovación docente en 5 bloques:
+
+1. **Portada Oficial Unificada (Slide 1):** Lienzo Verde Pino (`#113927`), logotipo PSLL en ratio 1.833 centrado arriba, bloque tipográfico institucional (26 pt Blanco / 17 pt Melocotón / 12 pt Crema) y franja inferior blanca con escudo vertical UPO (0.707).
+2. **Hoja de Ruta de la Sesión (Slide 2):** Bloques de la sesión con sus tiempos previstos (90 o 120 min).
+3. **Bloque 1 · Apertura, Gancho y Sondeo Previo (00–20 min):**
+   - Noticia real de prensa sociolaboral / económica como disparador del choque.
+   - Código QR de **Microsoft Forms / Mentimeter** para votación diagnóstica en vivo desde el móvil.
+   - Gráficos oficiales (EPA, Eurostat, OCDE) a 300 DPI que desmienten el prejuicio popular.
+4. **Bloques 2 y 3 · Mini-Lecciones Quirúrgicas Conceptuales (20–70 min):**
+   - Desarrollo teórico con figuras oficiales numeradas, fórmulas clave y análisis institucional.
+   - Párrafos desarrollados en **16 pt Calibri obligatorio** (prohibidas las slides solo-texto).
+5. **Bloque 4 · Taller Práctico y Gamificación con Micro-Apps (70–95 min):**
+   - Actividad interactiva en parejas o individual mediante simuladores web (`Dropbox/DOCENCIA UPO/micro_apps`).
+   - Slide con **código QR de acceso directo al simulador** específico de la sesión (ej. *PIB Real vs Nominal*, *Costes Laborales Unitarios - CLU*, *Balanza de Protección Social*, etc.).
+6. **Bloque 5 · Reto Individual de Cierre y Gamificación (95–120 min · Regla de Oro):**
+   - **Slide de Reto (10 min):** Pregunta **100% basada en lo explicado en clase y el material previo**, redactada **a mano en papel** en entorno sin pantallas.
+   - **Slide de Subida con QR (2 min):** Código QR de Microsoft Forms (cuenta UPO) para fotografiar y subir la hoja manuscrita. Las entregas acumulan puntos canjeables para el examen final (70%).
+   - **Slide de Solución y Rúbrica (5 min):** Criterios de corrección proyectados para feedback formativo inmediato.
+7. **Cierre:** Conclusiones clave + adelanto de la siguiente sesión (enlace al aula invertida / píldora previa).
 
 ## Comprobaciones antes de entregar
 

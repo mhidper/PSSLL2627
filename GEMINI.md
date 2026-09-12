@@ -18,17 +18,33 @@ Este proyecto está vinculado permanentemente al cuaderno de NotebookLM:
      ```
      o que proporcione la cookie actualizada para reconectar.
 
-## Metodología Docente de las Sesiones Teóricas (EB): El Ciclo del Choque Cognitivo y el Reto Final
+## Metodología Docente de las Sesiones Teóricas (EB): El Ciclo de Innovación en 5 Fases
 
-En el diseño de las sesiones teóricas (EB) y sus diapositivas:
-- **Apertura con Sondeo Previo (Bloque 1):** Arranca siempre con una pregunta de sondeo (en Microsoft Forms con QR institucional o Mentimeter) antes de mostrar datos, figuras o teorías, capturando los prejuicios espontáneos e intuiciones populares de los alumnos.
-- **Choque empírico posterior:** Inmediatamente después del sondeo, se proyectan las figuras y datos reales (EPA, Eurostat, OCDE) para desmentir empíricamente el prejuicio mayoritario, creando la necesidad intelectual del modelo teórico.
-- **Cierre con Reto Manuscrito y Subida Fotográfica (Bloque 5 · Regla de Oro):**
-  - Toda sesión EB concluye con un **reto o caso práctico individual de 10 minutos**.
-  - **Vinculación obligatoria:** Las preguntas deben estar **100% basadas en lo explicado en clase ese día y en el material previo** colgado en el aula virtual. No requieren memorismo enciclopédico ni fórmulas oscuras; su fin es **demostrar atención y comprensión conceptual en el aula**. El docente conoce la pregunta de antemano para asegurar que ese mecanismo se enfatiza con nitidez durante la sesión.
-  - **Mecánica:** Se redacta **a mano en papel (10 min)** en entorno controlado $\rightarrow$ A la orden del profesor, se proyecta el **Código QR de Microsoft Forms (cuenta UPO)** para subir una foto nítida de la hoja manuscrita (2 min).
-  - **Incentivo / Gamificación:** Las entregas válidas acumulan puntos en el seguimiento que desbloquean **beneficios tangibles para el examen final (70%)** (por ejemplo: comodín para descartar una pregunta en el examen o bonificación de nota), incentivando directamente la asistencia y la concentración activa en el aula.
-  - **Corrección escalable:** Las fotos subidas a OneDrive se transcriben y corrigen con IA de visión multimodal aplicando la rúbrica oficial de la sesión.
+Todas las sesiones de Enseñanzas Básicas (EB) aplican de forma rigurosa la arquitectura pedagógica de innovación consolidada en el curso 2026-27:
+
+1. **Apertura con Gancho y Sondeo Previo (Fase 1 · 00–20 min):**
+   - Arranca con una **noticia real disparadora** de la prensa sociolaboral o económica reciente y un enigma del mercado de trabajo.
+   - **Sondeo en directo (Microsoft Forms / Mentimeter):** Pregunta trampa o dilema de intuición popular que los alumnos votan desde el móvil antes de ver datos o teorías para capturar sus prejuicios espontáneos.
+   - **Choque empírico inmediato:** Proyección de microdatos y figuras oficiales (EPA, Eurostat, OCDE) a 300 DPI que desmienten empíricamente el prejuicio mayoritario, creando la necesidad intelectual del modelo teórico.
+2. **Entorno de Concentración y Política de Aula:**
+   - **Aula libre de pantallas durante la explicación:** Mientras el profesor explica o se debaten mecanismos, portátiles cerrados y móviles guardados; **solo lápiz y papel**. La toma de notas manuscrita potencia la síntesis cognitiva y elimina la multitarea pasiva.
+   - Los dispositivos solo se desbloquean en los momentos pautados por el docente (sondeos iniciales, taller interactivo y subida de fotos).
+   - **Material oficial:** Apuntes completos maquetados en el Aula Virtual, que constituyen la fuente exclusiva de examen (sin manuales dispersos).
+3. **Mini-Lecciones Quirúrgicas Conceptuales (Fases 2 y 3 · 20–70 min):**
+   - Explicación de los mecanismos causales y modelos teóricos con figuras homologadas de la marca PSLL.
+   - Párrafos desarrollados en **16 pt Calibri obligatorio** (nunca diapositivas solo-texto).
+4. **Laboratorio Activo y Gamificación con Micro-Apps (Fase 4 · 70–95 min):**
+   - Rompe el ritmo pasivo en mitad de la clase con simulación aplicada en parejas o individualmente.
+   - Los alumnos escanean el código QR proyectado para abrir la micro-app correspondiente en su móvil o navegador (catálogo unificado en `https://mhidper.github.io/micro_apps/` y repositorio en `Dropbox/DOCENCIA UPO/micro_apps`):
+     - *Sesión 1:* Sondeos diagnósticos EPA y desánimo laboral.
+     - *Sesión 2 (Slide 7):* Simulador de PIB Nominal vs. PIB Real y Deflactor (economía de 2 bienes a precios constantes vs. corrientes).
+     - *Sesión 2 (Slide 11-12):* Simulador de Costes Laborales Unitarios (CLU), shocks salariales y productividad sectorial.
+     - *Sesiones posteriores:* Balanza de Protección Social, Viaje del Desempleado, Curva de Beveridge y Emparejamiento.
+5. **Cierre con Reto Manuscrito y Subida Fotográfica (Fase 5 · 95–120 min · Regla de Oro):**
+   - **Caso práctico individual de 10 minutos:** Pregunta **100% basada en lo explicado ese día en clase y en el material previo**, redactada **a mano en papel (10 min)** en entorno controlado sin pantallas ni trampas.
+   - **Subida fotográfica instantánea (2 min):** A la orden del docente, se proyecta el **Código QR de Microsoft Forms (cuenta institucional UPO)** para subir una foto nítida de la hoja manuscrita.
+   - **Gamificación / Incentivo tangible:** Las entregas continuas y válidas acumulan puntos en el **Pasaporte de Evaluación Continua**, desbloqueando **beneficios directos para el examen final (70%)** (ej. comodines para descartar preguntas del examen o bonificación neta de nota).
+   - **Corrección escalable y feedback formativo:** Proyección inmediata de la solución modelo y rúbrica oficial (5 min) + corrección multimodal con IA en OneDrive.
 
 ## Marca e Identidad Visual Oficial
 
