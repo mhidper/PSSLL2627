@@ -71,12 +71,12 @@ Este proyecto cuenta con una identidad visual moderna y vanguardista de inspirac
 Para la edición, diseño y maquetación de los documentos de apuntes (`.docx`) de la asignatura:
 - Se debe utilizar obligatoriamente la skill de maquetación ubicada en `.skills/psll-apuntes-skill/`.
 - Esta skill gobierna la aplicación sistemática de la identidad visual de PSLL:
-  - Tipografías oficiales (`Poppins` para títulos, `Calibri` para cuerpo de texto).
-  - Paleta oficial (títulos en `#566B56`, subtítulos en `#76927A`, texto en verde tinta `#2F3A30`, cajas de aviso en coral `#E99073` / melocotón `#EDB090`).
+  - Tipografías oficiales (`Outfit` para títulos, `Calibri` para cuerpo de texto).
+  - Paleta oficial (títulos en Verde Pino `#113927`, subtítulos en Verde Salvia `#76927A`, texto en verde tinta `#2F3A30`, cajas de aviso en coral `#E98F71`, fondos de tarjetas en menta tenue `#F4F8F5`).
   - Cajas destacadas (*Callout boxes*) con fondos suaves e iconos semánticos.
-  - Tablas estilizadas con cabeceras en verde profundo y alternancia de filas.
+  - Tablas estilizadas con cabeceras en verde pino y alternancia de filas.
   - Inserción de figuras de datos en alta resolución (300 DPI) generadas con el motor de gráficos `matplotlib` adaptado a la marca.
-  - Encabezados con emblema oficial (`psll_emblem.png`) y pie de página con paginación dinámica.
+  - Encabezados con el nuevo logotipo institucional oficial de anillos y onda transversal (`logo_psll_upo.png`) y pie de página con paginación dinámica.
 - Se prohíbe maquetar apuntes de forma manual o ad-hoc sin apoyarse en este motor de estilo, asegurando la reproducibilidad y homogeneidad total en todos los temas del curso.
 
 ## Remasterización Gráfica y Figuras Académicas (Skill de Figuras)

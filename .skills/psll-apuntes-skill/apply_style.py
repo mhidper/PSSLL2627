@@ -167,14 +167,14 @@ def create_institutional_cover(doc, emblem_path: str, upo_logo_path: str):
     
     # Celda derecha: Emblema oficial PSLL
     cell_r = tbl.cell(0, 1)
-    cell_r.width = Inches(1.7)
+    cell_r.width = Inches(1.8)
     p_logo = cell_r.paragraphs[0]
     p_logo.alignment = WD_ALIGN_PARAGRAPH.RIGHT
     p_logo.paragraph_format.space_before = Pt(0)
     p_logo.paragraph_format.space_after = Pt(0)
     
     if os.path.exists(emblem_path):
-        p_logo.add_run().add_picture(emblem_path, width=Inches(1.2))
+        p_logo.add_run().add_picture(emblem_path, width=Inches(1.8))
         
     # Línea separadora horizontal alineada a la izquierda
     p_div = doc.add_paragraph()
@@ -350,7 +350,13 @@ def style_topic_document(input_path: str, output_path: str):
         print(f"Nota sobre generador de figuras: {e}")
     
     # Rutas de assets oficiales
-    emblem_path = os.path.join(project_root, "Logos y skills", "psll-presentaciones-skill", "assets", "psll_emblem.png")
+    cand_emblems = [
+        os.path.join(project_root, "Logos y skills", "logo_psll_upo.png"),
+        os.path.join(project_root, "Logos y skills", "psll_emblem.png"),
+        os.path.join(project_root, "Logos y skills", "psll-presentaciones-skill", "assets", "logo_psll_upo.png"),
+        os.path.join(project_root, "Logos y skills", "psll-presentaciones-skill", "assets", "psll_emblem.png"),
+    ]
+    emblem_path = next((p for p in cand_emblems if os.path.exists(p)), cand_emblems[0])
     upo_logo_path = os.path.join(project_root, "Logos y skills", "psll-presentaciones-skill", "assets", "upo_logo.jpg")
     
     # Cabecera Institucional

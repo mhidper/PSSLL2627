@@ -1,6 +1,7 @@
 """
 brand_theme.py - Design tokens y utilidades XML para la maquetación corporativa de PSLL.
-Paleta oficial: Menta, Salvia, Verde Profundo, Verde Tinta, Coral, Melocotón.
+Paleta oficial: Verde Pino PSLL (#113927), Verde Salvia (#76927A), Coral Active Wave (#E98F71),
+Verde Menta Tenue (#F4F8F5), Verde Tinta (#2F3A30), Azul Marino UPO (#0B1C36).
 """
 
 from docx.shared import Inches, Pt, RGBColor
@@ -9,34 +10,40 @@ from docx.oxml.ns import nsdecls, qn
 
 # Paleta cromática oficial de PSLL (BRAND.md)
 HEX_COLORS = {
-    "mint": "E1F6EA",         # Lienzo, fondos suaves
-    "sage": "76927A",         # Estructura, H2, bordes concepto
-    "deep_green": "566B56",   # Títulos principales, H1, cabeceras tablas
-    "ink_green": "2F3A30",    # Texto de cuerpo (nunca negro puro)
-    "coral": "E99073",        # Acentos, llamadas de atención, alertas
+    "pine": "113927",         # Color primario titular, Verde Pino PSLL
+    "deep_green": "113927",   # Títulos principales, H1, cabeceras tablas (alias a pine)
+    "sage": "76927A",         # Estructura, H2, bordes concepto, Verde Salvia
+    "coral": "E98F71",        # Acento dinámico, alertas, llamadas de atención
+    "mint": "F4F8F5",         # Fondos suaves, tarjetas y callouts (Mint Whisper)
+    "ink_green": "2F3A30",    # Texto de cuerpo (Verde Tinta, nunca negro puro)
     "peach": "EDB090",        # Acentos secundarios
-    "warm_cream": "F3EFDC",   # Fondo de tarjetas / neutro cálido
+    "warm_cream": "F4F8F5",   # Fondo neutro tarjetas (Mint Whisper)
     "white": "FFFFFF",        # Fondos neutros y texto sobre oscuro
-    "light_gray": "D0DCD2",   # Líneas divisorias y bordes sutiles
+    "border_slate": "E2E8F0", # Retículas, bordes de tabla y separadores
+    "light_gray": "E2E8F0",   # Líneas divisorias y bordes sutiles
     "alert_bg": "FDF4F0",     # Fondo muy suave para alertas coral
+    "upo_navy": "0B1C36",     # Azul Marino UPO (presencia institucional)
 }
 
 RGB_COLORS = {
-    "mint": RGBColor(225, 246, 234),
+    "pine": RGBColor(17, 57, 39),
+    "deep_green": RGBColor(17, 57, 39),
     "sage": RGBColor(118, 146, 122),
-    "deep_green": RGBColor(86, 107, 86),
+    "coral": RGBColor(233, 143, 113),
+    "mint": RGBColor(244, 248, 245),
     "ink_green": RGBColor(47, 58, 48),
-    "coral": RGBColor(233, 144, 115),
     "peach": RGBColor(237, 176, 144),
-    "warm_cream": RGBColor(243, 239, 220),
+    "warm_cream": RGBColor(244, 248, 245),
     "white": RGBColor(255, 255, 255),
-    "light_gray": RGBColor(208, 220, 210),
+    "border_slate": RGBColor(226, 232, 240),
+    "light_gray": RGBColor(226, 232, 240),
+    "upo_navy": RGBColor(11, 28, 54),
 }
 
 # Tipografías oficiales
-FONT_HEADINGS = "Poppins"
+FONT_HEADINGS = "Outfit"
 FONT_BODY = "Calibri"
-FONT_FALLBACK = "Century Schoolbook"
+FONT_FALLBACK = "Inter"
 
 def set_cell_shading(cell, color_hex: str):
     """Aplica sombreado de fondo a una celda de tabla en Word."""

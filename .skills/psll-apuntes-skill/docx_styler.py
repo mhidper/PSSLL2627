@@ -356,4 +356,4 @@ def insert_figure(doc, image_path: str, caption_text: str, source_text: str, wid
     run_src.font.name = FONT_BODY
     run_src.font.size = Pt(8.0)
     run_src.font.italic = True
-    run_src.font.color.rgb = RGBColor(111, 128, 115)
+    run_src.font.color.rgb = RGB_COLORS["sage"]

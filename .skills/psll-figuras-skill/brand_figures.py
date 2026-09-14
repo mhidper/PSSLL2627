@@ -17,16 +17,19 @@ except Exception:
     pass
 
 PALETTE = {
+    "verde_pino": "#113927",
+    "verde_profundo": "#113927",
     "salvia": "#76927A",
-    "coral": "#E99073",
+    "coral": "#E98F71",
     "melocoton": "#EDB090",
-    "verde_profundo": "#566B56",
     "verde_tinta": "#2F3A30",
-    "menta": "#E1F6EA",
-    "crema": "#F3EFDC",
+    "menta": "#F4F8F5",
+    "crema": "#F4F8F5",
     "blanco": "#FFFFFF",
     "gris_ejes": "#A0B0A4",
     "grid_color": "#E6EBE7",
+    "border_slate": "#E2E8F0",
+    "upo_navy": "#0B1C36",
 }
 
 def setup_academic_style():

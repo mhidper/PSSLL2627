@@ -15,18 +15,18 @@ Basado estrictamente en [Logos y skills/BRAND.md](file:///c:/Users/Usuario/Dropb
 
 | Elemento | Código HEX | Rol en Gráficos |
 | :--- | :--- | :--- |
+| **Verde Pino PSLL** | `#113927` | Títulos de gráficos, etiquetas de equilibrio, contrastes fuertes, bordes principales |
 | **Verde Salvia** | `#76927A` | Serie de datos principal, curvas canónicas iniciales (ej. $BC_1$, $S_L$), cajas estructurales |
-| **Verde Profundo** | `#566B56` | Títulos de gráficos, etiquetas de equilibrio, contrastes fuertes, bordes principales |
 | **Verde Tinta** | `#2F3A30` | Texto de ejes, números y etiquetas secundarias |
-| **Coral** | `#E99073` | Serie de contraste, desplazamientos estructurales (ej. $BC_2$), alertas, choques adversos |
+| **Coral Active Wave** | `#E98F71` | Serie de contraste, desplazamientos estructurales (ej. $BC_2$), alertas, choques adversos |
 | **Melocotón** | `#EDB090` | Serie complementaria suave, áreas de dispersión, escenarios intermedios |
-| **Verde Menta** | `#E1F6EA` | Sombras, áreas bajo la curva, cajas de conceptos, fondos suaves |
-| **Crema Cálido** | `#F3EFDC` | Fondos de diagramas de bloques, cuadros de metodología |
-| **Gris Ejes** | `#A0B0A4` | Líneas de ejes cartesianos y cuadrícula discontinua tenue |
+| **Verde Menta Tenue** | `#F4F8F5` | Sombras, áreas bajo la curva, cajas de conceptos, fondos suaves (Mint Whisper) |
+| **Gris Pizarra / Ejes** | `#E2E8F0` / `#A0B0A4` | Líneas de ejes cartesianos y cuadrícula discontinua tenue |
+| **Institucional UPO** | `#0B1C36` | Escudo y menciones institucionales |
 
 ### Parámetros Técnicos Obligatorios:
 - **Resolución:** 300 DPI (`dpi=300`), ideal para impresión y maquetación editorial en Word y proyección en diapositivas PPTX.
-- **Tipografía:** `Calibri` / `Arial` para ejes y etiquetas numéricas; `Poppins` / sans-serif negrita para títulos.
+- **Tipografía:** `Calibri` / `Arial` para ejes y etiquetas numéricas; `Outfit` / sans-serif negrita para títulos.
 - **Pie de figura:** Siempre debe incluir autoría y fuente:  
   *«Fuente: Elaboración propia para Políticas Sociolaborales (UPO)...»*
 
