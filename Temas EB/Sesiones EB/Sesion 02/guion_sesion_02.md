@@ -18,28 +18,33 @@
 ### ⏱️ Dinámica de la Clase en 5 Pasos (120 minutos)
 
 ```
-[00-20 min]   BLOQUE 1: Sondeo Forms y Choque Empírico (Diapos 3-5 · Prejuicios vs. Datos · QR Sondeo)
-[20-45 min]   BLOQUE 2: Mini-Lección 1 · PIB y Valor Añadido (Diapos 6-7 · Figuras 1.3 y 1.4)
-[45-70 min]   BLOQUE 3: Mini-Lección 2 · Productividad y Salarios CLU (Diapos 8-10 · Figura 1.5)
-[70-95 min]   BLOQUE 4: Laboratorio con Micro-App en Parejas (Diapos 11-12 · QR Simulador)
-[95-120 min]  BLOQUE 5: Reto Evaluativo Anti-IA en Papel + Subida Forms (Diapos 13-15 · QR Reto y Rúbrica)
+[00-20 min]   BLOQUE 1: Noticia del Día, Sondeo y Choque Empírico (Diapos 3-6 · Prejuicios vs. Datos · QR Sondeo)
+[20-45 min]   BLOQUE 2: Mini-Lección 1 · PIB y Valor Añadido (Diapos 7-8 · Figuras 1.3 y 1.4)
+[45-70 min]   BLOQUE 3: Mini-Lección 2 · Productividad y Salarios CLU (Diapos 9-11 · Figura 1.5)
+[70-85 min]   BLOQUE 4: Laboratorio Individual con Micro-App (Diapos 12-13 · QR Simulador)
+[85-120 min]  BLOQUE 5: Reto Evaluativo Anti-IA en Papel + Subida Forms (Diapos 14-16 · QR Reto y Rúbrica)
 ```
 
 ---
 
-#### 1. El Bloque de Gancho: Sondeo de Prejuicios y Choque Empírico (00:00 – 00:20 · 20 min) · *Diapos 3, 4 y 5*
-* **Fase A · Captura de prejuicios con Microsoft Forms (5 min · Diapo 3):**
-  - El alumno entra a clase y lo primero que ve tras la portada y la hoja de ruta es la **pregunta detonante** y el **código QR oficial de Microsoft Forms** para votar con el móvil identificándose con su cuenta institucional (`@alu.upo.es`):
-    *«Si pactáramos por ley o convenio una subida general del 15% de todos los salarios en España para alcanzar a Europa, ¿qué ocurriría?»*
-  - Opciones de debate de calle: A) *Convergeríamos con Alemania porque subiría el consumo*; B) *Las empresas destruirían empleo o subirían precios*; C) *Aumentaría la productividad por mayor motivación*.
-  - Proyectar en la pestaña *Respuestas* de Forms los resultados en vivo (habitualmente votan masivamente A o C). Al mismo tiempo, queda registrado en tu Excel el nombre y voto de cada alumno.
-* **Fase B · Choque Empírico 1: La Gran Tijera Española (7 min · Diapo 4):**
-  - El profesor pasa a la Diapo 4: *«Habéis votado en su mayoría A... vamos a ver qué dicen los datos reales»*.
+#### 1. El Bloque de Gancho: Noticia del Día, Sondeo y Choque Empírico (00:00 – 00:20 · 20 min) · *Diapos 3, 4, 5 y 6*
+* **Fase A · Noticia del Día y Captura de Prejuicios con Microsoft Forms (5 min · Diapo 3):**
+  - El alumno entra a clase y lo primero que ve tras la portada es la **noticia del día en prensa (13/09/2026)** (*«Irene Montero propone 1.800 € de SMI y 30h semanales»*) junto a la **pregunta detonante** y el **código QR oficial de Microsoft Forms** para votar desde el móvil (`@alu.upo.es`):
+    *«Ante la propuesta de elevar por ley el SMI a 1.800 €/mes y reducir la jornada a 30h, ¿qué ocurriría en el mercado de trabajo si se aprobara hoy dicha medida?»*
+  - Opciones de voto en Forms:
+    * **A)** *Convergeríamos con Francia y Alemania porque la subida salarial dispararía el consumo de los hogares y el PIB.*
+    * **B)** *Las Pymes y sectores como hostelería o comercio destruirían empleo o subirían precios al no haber aumentado la productividad por hora ($VAB/H$).*
+    * **C)** *Aumentaría la productividad por hora automáticamente al estar los trabajadores más motivados.*
+  - Proyectar en la pestaña *Respuestas* de Forms los resultados en vivo (habitualmente la intuición popular apoya A o C). Al mismo tiempo, queda registrado el voto autenticado de cada estudiante en Forms.
+* **Fase B · Choque Empírico 1: El Límite Económico de la Riqueza pc vs. SMI en la UE (5 min · Diapo 4):**
+  - El profesor pasa a la **nueva Diapo 4**: *«Habéis votado en su mayoría A o C... pero fijaos en la nube de puntos oficial de la Unión Europea (Eurostat)»*.
+  - Proyectar el gráfico de **PIB Per Cápita vs. Salario Mínimo (22 países UE)**.
+  - Conclusión de choque: Ningún país de la UE tiene un SMI desconectado de su PIB por habitante ($R^2 = 0.85$). Elevar el SMI a 1.800 € sin elevar el VAB/H colocaría a España fuera del patrón estructural europeo.
+* **Fase C · Choque Empírico 2: La Gran Tijera Española (5 min · Diapo 5):**
   - Muestra el récord de **21,8 M de ocupados (EPA)** frente a la línea plana de **productividad por hora (+0,3% anual medio en 25 años)**.
-  - Conclusión de choque: Crecer sumando brazos sin más valor añadido no genera margen para repartir sueldos alemanes.
-* **Fase C · Choque Empírico 2: El Espejo Europeo (8 min · Diapo 5):**
+* **Fase D · Choque Empírico 3: El Espejo Europeo (5 min · Diapo 6):**
   - Muestra la comparativa de Eurostat: España (34 € VAB/h $\rightarrow$ 24 € salario) vs. Alemania (62 € VAB/h $\rightarrow$ 41 € salario).
-  - El salario es el reflejo directo del valor que produce cada hora de trabajo. Puente hacia el modelo: *«¿Cómo se formaliza esto matemáticamente? Entramos en el PIB y en el CLU»*.
+  - Puente hacia el modelo: *«¿Cómo se formaliza esto matemáticamente? Entramos en el PIB y en el CLU»*.
 
 #### 2. Mini-Lección 1 · El PIB y el Valor Añadido (00:20 – 00:45 · 25 min) · *Diapos 6 y 7*
 * **Proyectar Figura 1.3 (Cadena del pan · Diapo 6):** Trigo (0,30 €) $\rightarrow$ Harina (0,70 €) $\rightarrow$ Panadería (2,00 €).
@@ -52,12 +57,12 @@
 * **Proyectar Figura 1.5 (Datos OCDE · Diapo 9):** Ubicar a España en el cuadrante intermedio.
 * **Estructura productiva (Diapo 10):** Hostelería (margen estrecho) vs. TIC/Industria (salarios sostenibles).
 
-#### 4. Taller Práctico con Micro-App (01:10 – 01:35 · 25 min) · *Diapos 11 y 12*
-* **Misión:** Alumnos en parejas abren [simulador_clu.html](file:///c:/Users/Usuario/Dropbox/DOCENCIA%20UPO/CURSO%2026-27/PSLL/Temas%20EB/Sesiones%20EB/Sesion%2002/simulador_clu.html) escaneando el código QR proyectado.
-* **Secuencia guiada por el profesor:**
-  1. *Fase 1 (5 min):* Comprueban los CLU de partida (Hostelería 63,6% vs. TIC 50%).
-  2. *Fase 2 (10 min):* Pulsa en la app el botón **Shock Salarial (+8%)**: Hostelería salta a **zona roja crítica (68,2%)** y proyecta destrucción de empleo.
-  3. *Fase 3 (10 min):* Prueban el dilema de los **100 M€**: subvención temporal (parche) vs. inversión en productividad (+25% VAB, retorna a zona verde).
+#### 4. Taller Práctico Individual con Micro-App (01:10 – 01:25 · 15 min) · *Diapos 12 y 13*
+* **Misión:** Cada alumno escanea el código QR proyectado en la **Diapo 12** y entra individualmente desde su teléfono móvil a [simulador_clu.html](https://mhidper.github.io/micro_apps/simulador_clu.html) en rol de *Analista de Empleo*.
+* **Secuencia guiada individual (15 min):**
+  1. *Paso 1 · Exploración (3 min):* Comparan los márgenes de CLU de partida entre Hostelería (63,6% Ámbar) y TIC/Servicios Avanzados (50,0% Verde).
+  2. *Paso 2 · Reto Shock Salarial +8% (5 min):* Activan el botón del shock salarial y observan cómo Hostelería salta a **Zona Roja (>66%)** proyectando destrucción de empleo, mientras TIC absorbe el impacto.
+  3. *Paso 3 · Dilema de Política Pública de 100 M€ (7 min):* Evalúan la efectividad de una **subvención salarial (-3 €/h)** (parche temporal que no altera el VAB) frente a un **Plan de Productividad (+25% VAB)** (solución permanente que devuelve el sector a la zona verde de sostenibilidad).
 
 #### 5. Reto Evaluativo en Papel + Subida Forms (01:35 – 02:00 · 25 min) · *Diapos 13, 14 y 15*
 * **Fase 1: Planteamiento y Redacción Manuscrita Individual (10 min · Diapo 13):**

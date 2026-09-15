@@ -98,18 +98,18 @@ Genera presentaciones de la asignatura **Políticas Sociolaborales (UPO)** con i
 Todas las presentaciones de la asignatura siguen la secuencia pedagógica de innovación docente en 5 bloques:
 
 1. **Portada Oficial Unificada (Slide 1):** Lienzo Verde Pino (`#113927`), logotipo PSLL en ratio 1.833 centrado arriba, bloque tipográfico institucional (26 pt Blanco / 17 pt Melocotón / 12 pt Crema) y franja inferior blanca con escudo vertical UPO (0.707).
-2. **Hoja de Ruta de la Sesión (Slide 2):** Bloques de la sesión con sus tiempos previstos (90 o 120 min).
+2. **Hoja de Ruta de la Sesión (Slide 2):** Bloques de la sesión con sus tiempos previstos (120 min).
 3. **Bloque 1 · Apertura, Gancho y Sondeo Previo (00–20 min):**
-   - Noticia real de prensa sociolaboral / económica como disparador del choque.
-   - Código QR de **Microsoft Forms / Mentimeter** para votación diagnóstica en vivo desde el móvil.
-   - Gráficos oficiales (EPA, Eurostat, OCDE) a 300 DPI que desmienten el prejuicio popular.
+   - Noticia real de prensa sociolaboral / económica reciente como disparador del choque intelectual.
+   - Código QR de **Microsoft Forms** para votación diagnóstica en vivo desde el móvil.
+   - Gráficos oficiales (EPA, Eurostat, OCDE) a 300 DPI (ej. PIB pc vs SMI en la UE) que desmienten el prejuicio popular.
 4. **Bloques 2 y 3 · Mini-Lecciones Quirúrgicas Conceptuales (20–70 min):**
    - Desarrollo teórico con figuras oficiales numeradas, fórmulas clave y análisis institucional.
    - Párrafos desarrollados en **16 pt Calibri obligatorio** (prohibidas las slides solo-texto).
-5. **Bloque 4 · Taller Práctico y Gamificación con Micro-Apps (70–95 min):**
-   - Actividad interactiva en parejas o individual mediante simuladores web (`Dropbox/DOCENCIA UPO/micro_apps`).
-   - Slide con **código QR de acceso directo al simulador** específico de la sesión (ej. *PIB Real vs Nominal*, *Costes Laborales Unitarios - CLU*, *Balanza de Protección Social*, etc.).
-6. **Bloque 5 · Reto Individual de Cierre y Gamificación (95–120 min · Regla de Oro):**
+5. **Bloque 4 · Taller Práctico Individual con Micro-Apps (70–85 min · 15 min):**
+   - Actividad interactiva **individual desde el teléfono móvil** (15 min) en rol de *Analista de Empleo*, guiada paso a paso por la propia app (`https://mhidper.github.io/micro_apps/`).
+   - Slide con **código QR oficial en alta resolución (Verde Pino `#113927`) de acceso directo a la micro-app** específica de la sesión (ej. *Simulador CLU*, *PIB Real vs Nominal*, *Balanza de Protección Social*, etc.).
+6. **Bloque 5 · Reto Individual de Cierre y Gamificación (85–120 min · Regla de Oro):**
    - **Slide de Reto (10 min):** Pregunta **100% basada en lo explicado en clase y el material previo**, redactada **a mano en papel** en entorno sin pantallas.
    - **Slide de Subida con QR (2 min):** Código QR de Microsoft Forms (cuenta UPO) para fotografiar y subir la hoja manuscrita. Las entregas acumulan puntos canjeables para el examen final (70%).
    - **Slide de Solución y Rúbrica (5 min):** Criterios de corrección proyectados para feedback formativo inmediato.

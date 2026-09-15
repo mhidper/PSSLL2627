@@ -33,12 +33,12 @@ Todas las sesiones de Enseñanzas Básicas (EB) aplican de forma rigurosa la arq
 3. **Mini-Lecciones Quirúrgicas Conceptuales (Fases 2 y 3 · 20–70 min):**
    - Explicación de los mecanismos causales y modelos teóricos con figuras homologadas de la marca PSLL.
    - Párrafos desarrollados en **16 pt Calibri obligatorio** (nunca diapositivas solo-texto).
-4. **Laboratorio Activo y Gamificación con Micro-Apps (Fase 4 · 70–95 min):**
-   - Rompe el ritmo pasivo en mitad de la clase con simulación aplicada en parejas o individualmente.
-   - Los alumnos escanean el código QR proyectado para abrir la micro-app correspondiente en su móvil o navegador (catálogo unificado en `https://mhidper.github.io/micro_apps/` y repositorio en `Dropbox/DOCENCIA UPO/micro_apps`):
+4. **Laboratorio Activo y Gamificación con Micro-Apps (Fase 4 · 70–85 min · 15 min):**
+   - Rompe el ritmo pasivo con una simulación práctica **individual desde el teléfono móvil** (15 min) en rol de *Analista de Empleo*.
+   - Los alumnos escanean el código QR oficial proyectado para abrir la micro-app correspondiente en su móvil (`https://mhidper.github.io/micro_apps/`):
      - *Sesión 1:* Sondeos diagnósticos EPA y desánimo laboral.
-     - *Sesión 2 (Slide 7):* Simulador de PIB Nominal vs. PIB Real y Deflactor (economía de 2 bienes a precios constantes vs. corrientes).
-     - *Sesión 2 (Slide 11-12):* Simulador de Costes Laborales Unitarios (CLU), shocks salariales y productividad sectorial.
+     - *Sesión 2 (Slide 8):* Simulador de PIB Nominal vs. PIB Real y Deflactor (economía de 2 bienes a precios constantes vs. corrientes).
+     - *Sesión 2 (Slide 12):* Simulador de Costes Laborales Unitarios (CLU), shocks salariales y dilema de 100 M€ de política pública.
      - *Sesiones posteriores:* Balanza de Protección Social, Viaje del Desempleado, Curva de Beveridge y Emparejamiento.
 5. **Cierre con Reto Manuscrito y Subida Fotográfica (Fase 5 · 95–120 min · Regla de Oro):**
    - **Caso práctico individual de 10 minutos:** Pregunta **100% basada en lo explicado ese día en clase y en el material previo**, redactada **a mano en papel (10 min)** en entorno controlado sin pantallas ni trampas.

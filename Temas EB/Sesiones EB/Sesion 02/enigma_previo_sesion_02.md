@@ -17,11 +17,11 @@
 
 Durante el último bienio, los titulares económicos en España presentan una aparente contradicción:
 
-1. **Récord histórico de empleo:** El número de personas ocupadas y afiliadas a la Seguridad Social ha superado los **21,3 millones de trabajadores**, encadenando máximos nunca vistos en la serie histórica.
-2. **Estancamiento de la productividad:** Según los datos oficiales de Eurostat y la OCDE, la **productividad por hora trabajada en España se mantiene estancada en torno al 85% de la media de la Unión Europea**, una brecha que prácticamente no se ha reducido en los últimos quince años.
+1. **Récord histórico de empleo:** El número de personas ocupadas y afiliadas a la Seguridad Social ha superado los **21,8 millones de trabajadores**, encadenando máximos nunca vistos en la serie histórica.
+2. **Estancamiento de la productividad:** Según los datos oficiales de Eurostat y la OCDE, la **productividad por hora trabajada en España se mantiene estancada (+0,3% anual medio en 25 años)**, una brecha que sitúa a España en el 85% de la media de la UE.
 
-Al mismo tiempo, diversas organizaciones sindicales y grupos de debate plantean la siguiente propuesta:  
-> *«Para que las familias españolas alcancen el nivel de vida de Alemania o Francia, basta con decretar por ley o pactar en la negociación colectiva una subida generalizada de todos los salarios del 15%»*.
+Al mismo tiempo, la prensa económica se hace eco de la siguiente propuesta política de máxima actualidad (13/09/2026):  
+> *«Irene Montero propone elevar por ley el Salario Mínimo Interprofesional (SMI) en España a 1.800 euros mensuales y reducir la jornada laboral a 30 horas semanales para recortar distancias con Francia (1.800 €) y Alemania (>2.000 €)»*.
 
 ---
 
