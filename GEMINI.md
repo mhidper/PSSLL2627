@@ -88,3 +88,15 @@ Para la generación, vectorización y rediseño de esquemas y gráficos de la as
   - `psll-figuras-skill` genera las versiones en alta resolución (300 DPI) con la paleta oficial (menta/salvia/coral) en `Temas EB/Tema X/figuras/remasterizadas/`.
   - Al maquetar, las versiones remasterizadas sustituyen automáticamente a las originales sin pérdida de ninguna figura.
   - Las figuras remasterizadas son reutilizables transversalmente en apuntes (`.docx`), presentaciones (`.pptx`) y actividades EPD.
+
+## Presentaciones Oficiales y Diapositivas de Aula (Skill de Presentaciones)
+
+Para la creación, maquetación y ajuste de las diapositivas (`.pptx`) de la asignatura:
+- Se debe utilizar la skill especializada ubicada en `.skills/psll-presentaciones-skill/` (y `Logos y skills/psll-presentaciones-skill/`).
+- **Pautas y estándares obligatorios:**
+  - Estructura pedagógica en 5 fases con tiempos estrictos.
+  - Portada oficial unificada en Verde Pino `#113927`, ratio nativo de logo $1.833$ y franja inferior blanca con escudo UPO ($0.707$).
+  - Tipografía institucional `Outfit` en titulares y **16 pt Calibri obligatorio** en texto de cuerpo.
+  - **Formulación matemática rigurosa:** Subíndices nativos en PowerPoint (`run.font.subscript = True`) y caracteres matemáticos Unicode formales ($\ge$, $\tau$, $\partial$, $\cdot$).
+  - **Checkpoints interactivos con QR:** Integración de códigos QR cuadrados (1:1) en Verde Pino `#113927` sobre fondo blanco, con tarjeta de acento en Coral `#E98F71`, espaciado vertical ergonómico para evitar colisiones con el texto y enlace web directo en el pie.
+  - **Inspección técnica OpenXML:** Detección y limpieza obligatoria de nodos `mc:AlternateContent` o capas fantasma en `spTree` para asegurar un renderizado visual limpio sin marcas de agua.

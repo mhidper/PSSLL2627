@@ -19,6 +19,19 @@ window.DOCENCIA_APPS = {
     ],
     apps: [
       {
+        id: "psll_pib_real_sim",
+        type: "simulator",
+        category: "simuladores",
+        icon: "📈",
+        iconBg: "#EAF4EE",
+        iconColor: "#113927",
+        title: "PIB Nominal vs. PIB Real y Deflactor",
+        desc: "Economía de 2 bienes: calcula P×Q, elige precios constantes o corrientes y descompón crecimiento e inflación.",
+        meta: "Simulador interactivo · 8 min",
+        session: "Tema 1",
+        url: "simulador_pib_real.html"
+      },
+      {
         id: "psll_clu_sim",
         type: "simulator",
         category: "simuladores",
@@ -28,6 +41,7 @@ window.DOCENCIA_APPS = {
         title: "Simulador de Costes Laborales Unitarios",
         desc: "Experimenta la sensibilidad del CLU ante variaciones en salarios, cotizaciones y productividad aparente.",
         meta: "Simulador interactivo · 10 min",
+        session: "Tema 1",
         url: "simulador_clu.html"
       },
       {
@@ -100,6 +114,91 @@ window.DOCENCIA_APPS = {
             ],
             correct: 1,
             explanation: "Tasa de empleo = (Ocupados / Población de 16 o más años) × 100. Refleja la capacidad real de una sociedad para movilizar laboralmente a su población en edad de trabajar."
+          }
+        ]
+      },
+      {
+        id: "psll_salario_reserva",
+        type: "quiz",
+        category: "mercado",
+        icon: "⚖️",
+        iconBg: "#FDF0EC",
+        iconColor: "#E98F71",
+        title: "Salario de Reserva: ¿Sube o baja?",
+        desc: "Evalúa 10 situaciones del mercado de trabajo y determina si elevan o reducen el salario de reserva exigido para aceptar un empleo.",
+        meta: "10 preguntas · 5 min",
+        session: "Sesión 3",
+        noShuffleOptions: true,
+        questions: [
+          {
+            tag: "Situación 1",
+            text: "Indique si la siguiente situación hace que el salario de reserva suba o baje:\n\n«El Gobierno aprueba una reforma que incrementa un 20% la cuantía del subsidio asistencial por desempleo y prolonga su duración máxima de 6 a 18 meses.»",
+            options: ["Sube", "Baja"],
+            correct: 0,
+            explanation: "Sube el salario de reserva. Al aumentar la cuantía y el tiempo de cobertura de las rentas no salariales (Y_NS), la utilidad en desempleo aumenta. El trabajador exigirá un salario neto superior para renunciar a esa protección y aceptar un empleo."
+          },
+          {
+            tag: "Situación 2",
+            text: "Indique si la siguiente situación hace que el salario de reserva suba o baje:\n\n«Un trabajador desempleado agota el último mes de cobro de su prestación contributiva y no tiene derecho a subsidio asistencial ni ahorros familiares.»",
+            options: ["Sube", "Baja"],
+            correct: 1,
+            explanation: "Baja el salario de reserva. La caída drástica de las rentas no salariales a cero eleva la urgencia de liquidez y subsistencia económica. El individuo estará dispuesto a aceptar ofertas laborales con salarios netos más bajos."
+          },
+          {
+            tag: "Situación 3",
+            text: "Indique si la siguiente situación hace que el salario de reserva suba o baje:\n\n«Una fuerte subida en los carburantes y peajes encarece en 180 € al mes el desplazamiento diario para acudir a los polígonos industriales donde están las vacantes.»",
+            options: ["Sube", "Baja"],
+            correct: 0,
+            explanation: "Sube el salario de reserva. Los costes fijos de acudir al puesto reducen la ganancia líquida del trabajo. Para compensar ese sobrecoste ineludible y que compense trabajar frente a quedarse en casa, el salario ofrecido debe ser mayor."
+          },
+          {
+            tag: "Situación 4",
+            text: "Indique si la siguiente situación hace que el salario de reserva suba o baje:\n\n«El ayuntamiento implanta una red universal de escuelas infantiles públicas de 0 a 3 años 100% gratuitas, con plazas garantizadas y horario compatible con la jornada laboral.»",
+            options: ["Sube", "Baja"],
+            correct: 1,
+            explanation: "Baja el salario de reserva. Elimina un coste fijo monetario elevado y reduce el coste de oportunidad del tiempo dedicado a las cargas familiares, facilitando que el trabajador acepte salarios de mercado que antes no compensaban el cuidado de los hijos."
+          },
+          {
+            tag: "Situación 5",
+            text: "Indique si la siguiente situación hace que el salario de reserva suba o baje:\n\n«En un hogar de dos adultos, el cónyuge del desempleado obtiene un empleo indefinido con una remuneración de 3.500 € netos mensuales que cubre holgadamente todos los gastos familiares.»",
+            options: ["Sube", "Baja"],
+            correct: 0,
+            explanation: "Sube el salario de reserva. Genera un efecto riqueza familiar al aumentar los ingresos del hogar (Y_NS familiar). Al no existir urgencia económica, el demandante puede permitirse ser más selectivo y exigir ofertas mejor remuneradas."
+          },
+          {
+            tag: "Situación 6",
+            text: "Indique si la siguiente situación hace que el salario de reserva suba o baje:\n\n«Una persona acumula más de 24 meses buscando empleo sin éxito, agotando sus ahorros y percibiendo que sus competencias empiezan a perder valor en el mercado.»",
+            options: ["Sube", "Baja"],
+            correct: 1,
+            explanation: "Baja el salario de reserva. Con el paso del tiempo en paro, el coste del desánimo, el riesgo de estigmatización y la pérdida de capital humano empujan al desempleado a moderar a la baja sus exigencias salariales para reinsertarse."
+          },
+          {
+            tag: "Situación 7",
+            text: "Indique si la siguiente situación hace que el salario de reserva suba o baje:\n\n«Un demandante de empleo recibe una herencia que le reporta rentas pasivas regulares y seguras de 1.000 € netos al mes (por ejemplo, el alquiler de un inmueble).»",
+            options: ["Sube", "Baja"],
+            correct: 0,
+            explanation: "Sube el salario de reserva. El incremento permanente de renta no salarial (Y_NS) eleva el bienestar sin necesidad de trabajar. Como el ocio es un bien normal, demandará más tiempo libre y solo aceptará trabajar por un salario sustancialmente mayor."
+          },
+          {
+            tag: "Situación 8",
+            text: "Indique si la siguiente situación hace que el salario de reserva suba o baje:\n\n«La vacante disponible exige turnos rotatorios noche-día durante los fines de semana en un centro logístico con alta exigencia y penosidad física.»",
+            options: ["Sube", "Baja"],
+            correct: 0,
+            explanation: "Sube el salario de reserva. Las condiciones laborales penosas o los horarios atípicos incrementan la desutilidad marginal del trabajo. El individuo exige una prima salarial compensatoria mayor para estar dispuesto a colocarse en ese puesto."
+          },
+          {
+            tag: "Situación 9",
+            text: "Indique si la siguiente situación hace que el salario de reserva suba o baje:\n\n«Una reforma laboral introduce la compatibilidad del 60% del subsidio con la aceptación de contratos a tiempo parcial (incentivo al empleo / complemento salarial tipo EITC).»",
+            options: ["Sube", "Baja"],
+            correct: 1,
+            explanation: "Baja el salario de reserva. Elimina la trampa de la pobreza y el efecto precipicio (Cliff Effect). Al no perder íntegramente la ayuda al aceptar un trabajo, la ganancia neta horaria resulta atractiva incluso con salarios moderados."
+          },
+          {
+            tag: "Situación 10",
+            text: "Indique si la siguiente situación hace que el salario de reserva suba o baje:\n\n«En la ciudad donde reside el desempleado se produce una escalada del 30% en el precio del alquiler de la vivienda habitual, sin que existan opciones más asequibles.»",
+            options: ["Sube", "Baja"],
+            correct: 0,
+            explanation: "Sube el salario de reserva. Mayores costes ineludibles de subsistencia imponen un suelo de ingresos mínimo para sobrevivir, por lo que empleos con salarios que no cubran ese coste vital básico serán necesariamente rechazados."
           }
         ]
       },
@@ -178,6 +277,7 @@ window.DOCENCIA_APPS = {
       },
       {
         id: "psll_pasivas_sim",
+        interactive: false,
         type: "simulator",
         category: "pasivas",
         icon: "⚖️",
@@ -186,10 +286,12 @@ window.DOCENCIA_APPS = {
         title: "La Balanza de la Protección Social",
         desc: "Dilemas éticos y económicos: ajusta el nivel de protección y evalúa el impacto sobre el déficit y el tiempo de paro.",
         meta: "Herramienta interactiva · 8 min",
+        session: "Tema 3",
         url: "balanza_proteccion.html"
       },
       {
         id: "psll_itinerario_sim",
+        interactive: false,
         type: "simulator",
         category: "activas",
         icon: "🧭",
@@ -198,10 +300,12 @@ window.DOCENCIA_APPS = {
         title: "El Viaje del Desempleado",
         desc: "Toma de decisiones en el itinerario de inserción laboral: formación, búsqueda y ofertas de empleo.",
         meta: "Simulación de caso · 10 min",
+        session: "Tema 3",
         url: "viaje_desempleado.html"
       },
       {
         id: "psll_mitos_sim",
+        interactive: false,
         type: "simulator",
         category: "mercado",
         icon: "🔍",
@@ -210,6 +314,7 @@ window.DOCENCIA_APPS = {
         title: "Mitos y Realidades del Empleo",
         desc: "Pon a prueba tus intuiciones empíricas confrontándolas con los datos reales de la EPA y Eurostat.",
         meta: "Choque empírico · 6 min",
+        session: "Tema 3",
         url: "mitos_realidades.html"
       },
       {
@@ -228,6 +333,7 @@ window.DOCENCIA_APPS = {
       },
       {
         id: "psll_caso_despido",
+        interactive: false,
         type: "simulator",
         category: "pasivas",
         icon: "📑",
@@ -236,6 +342,7 @@ window.DOCENCIA_APPS = {
         title: "Caso Práctico: Despido y Prestaciones",
         desc: "Calcula e interpreta el derecho a prestaciones, bases de cotización e indemnizaciones de un caso real.",
         meta: "Caso práctico EPD · 10 min",
+        session: "Tema 3",
         url: "caso_1.html"
       }
     ]
@@ -267,6 +374,7 @@ window.DOCENCIA_APPS = {
         title: "Laboratorio Macroeconómico • Sesión 1",
         desc: "El Tablero del Mundo: Las 3 vías del PIB, el espejismo nominal vs. real y el impacto del petróleo (Deflactor vs IPC).",
         meta: "Laboratorio interactivo · 15 min",
+        session: "Sesión 1",
         url: "macro_simulador_sesion_01.html"
       },
       {
@@ -279,7 +387,21 @@ window.DOCENCIA_APPS = {
         title: "Simulador de la Cruz Keynesiana y el Multiplicador",
         desc: "Equilibrio en el mercado de bienes, la cascada del multiplicador del gasto y la paradoja del ahorro.",
         meta: "Simulador dinámico · 12 min",
+        session: "Sesión 2",
         url: "macro_simulador_sesion_02.html"
+      },
+      {
+        id: "macro_sim_sesion03",
+        type: "simulator",
+        category: "simuladores",
+        icon: "📉",
+        iconBg: "#F0F7FF",
+        iconColor: "#056CAA",
+        title: "Simulador de la Relación IS e Inversión",
+        desc: "Inversión endógena I(Y, i), derivación gráfica simultánea (Cruz Keynesiana e IS) y políticas fiscales.",
+        meta: "Simulador interactivo · 12 min",
+        session: "Sesión 3",
+        url: "macro_simulador_sesion_03.html"
       },
       {
         id: "macro_real_1",
