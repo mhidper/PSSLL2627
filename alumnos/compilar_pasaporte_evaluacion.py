@@ -34,18 +34,18 @@ lista_l2_path = os.path.join(BASE_DIR, "Repositorio material (no alumnos)", "Lis
 # Rutas de evaluación por sesión (se cargarán dinámicamente si existen)
 EVAL_SESIONES_CONFIG = [
     {
-        "sesion_num": 1,
-        "id": "s01",
-        "titulo_corto": "Sesión 01",
-        "titulo_completo": "Sesión 01 · Bienvenida, Marco Institucional y Desafíos del Empleo",
-        "tema": "Tema 0 / Tema 1: Fundamentos y conceptos clave del mercado laboral",
+        "sesion_num": 2,
+        "id": "s02",
+        "titulo_corto": "Sesión 02",
+        "titulo_completo": "Sesión 02 · Crecimiento Económico, Productividad y Costes Laborales Unitarios",
+        "tema": "Tema 1: Macroeconomía del Mercado de Trabajo y Dinámica Salarial",
         "fecha": "Septiembre 2026",
-        "calif_path": os.path.join(BASE_DIR, "Temas EB", "Sesiones EB", "Sesion 01", "evaluacion", "calificaciones_sesion_01.csv"),
-        "trans_path": os.path.join(BASE_DIR, "Temas EB", "Sesiones EB", "Sesion 01", "evaluacion", "transcripciones_psll_sesion_01.csv"),
-        "enunciado_p1": "Pregunta de cierre de la Sesión 1 sobre conceptos sociolaborales clave.",
-        "solucion_p1": "Solución canónica oficial de la cátedra para la Sesión 1.",
-        "enunciado_p2": "",
-        "solucion_p2": ""
+        "calif_path": os.path.join(BASE_DIR, "Temas EB", "Sesiones EB", "Sesion 02", "evaluacion", "calificaciones_sesion_02.csv"),
+        "trans_path": os.path.join(BASE_DIR, "Temas EB", "Sesiones EB", "Sesion 02", "evaluacion", "transcripciones_psll_sesion_02.csv"),
+        "enunciado_p1": "«Un sector económico incrementa sus salarios un 8% en un ejercicio en el que su productividad por hora solo creció un 2%». Razona con rigor económico:\na) Costes Laborales Unitarios (CLU): ¿Qué ocurre numéricamente con el CLU del sector? Aplica la fórmula vista en clase.",
+        "solucion_p1": "1. Definición y Fórmula Formal del CLU:\nEl Coste Laboral Unitario relaciona el coste laboral medio por hora (salario nominal por hora W/H) con la productividad media aparente del trabajo (Y/H):\nCLU = (W / H) / (Y / H) = W / Y.\n\n2. Aproximación en Tasas de Variación Porcentual:\nLa tasa de variación porcentual del CLU se obtiene como la diferencia de tasas de crecimiento:\n%ΔCLU ≈ %ΔW - %ΔProd = 8% - 2% = +6%\n(o en cálculo exacto continuo: (1 + 0,08)/(1 + 0,02) - 1 = 1,08/1,02 - 1 = +5,88%).\n\nConclusión: Numéricamente, el CLU del sector se incrementa un 6%, lo que significa que el coste en mano de obra necesario para fabricar cada unidad producida se encarece significativamente.",
+        "enunciado_p2": "b) Competitividad y Empleo: ¿Pueden trasladar el sobrecoste a precios sin consecuencias? ¿Cómo ajustará la empresa?",
+        "solucion_p2": "1. Imposibilidad de Traslación sin Consecuencias:\nNo es posible trasladar el sobrecoste a precios de forma inocua. Si las empresas aumentan sus precios de venta, sufren una pérdida inmediata de competitividad frente a competidores del sector (nacionales e internacionales) o frente a bienes sustitutivos. Esto desencadena una contracción de la demanda de mercado y una caída de las ventas.\n\n2. Vías de Ajuste Empresarial:\nAnte la imposibilidad de repercutir todo el incremento salarial en precios, la empresa debe asumir el impacto a través de:\n• Compresión de márgenes de beneficio empresarial a corto plazo.\n• Ajuste en el factor trabajo: reducción de plantilla (despidos, no renovación de contratos temporales) o reducción de horas trabajadas para contener la masa salarial.\n• Inversión tecnológica y sustitución de trabajo por capital: acelerar la mecanización o digitalización para elevar la productividad por hora y restablecer la rentabilidad a medio y largo plazo."
     }
 ]
 
@@ -343,7 +343,13 @@ window.__PSLL_EVAL_DB__ = {json.dumps(students_encrypted_db, separators=(',', ':
     with open(dest_js, "w", encoding="utf-8") as f:
         f.write(output_js)
 
-    print(f"[OK] Archivo cifrado PSLL generado en: {dest_js}")
+    dest_psll_docs = os.path.join(BASE_DIR, "docs", "data", "calificaciones_cifradas_psll.js")
+    os.makedirs(os.path.dirname(dest_psll_docs), exist_ok=True)
+    with open(dest_psll_docs, "w", encoding="utf-8") as f:
+        f.write(output_js)
+
+    print(f"[OK] Archivo cifrado PSLL generado en (micro_apps): {dest_js}")
+    print(f"[OK] Archivo cifrado PSLL generado en (docs local): {dest_psll_docs}")
     print(f"[OK] Total de alumnos procesados y cifrados: {len(students_encrypted_db)}")
     print(f"[OK] Tamaño final del fichero JS: {os.path.getsize(dest_js) / 1024:.2f} KB")
     print("=" * 75)
