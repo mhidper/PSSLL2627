@@ -20,3 +20,10 @@ __pycache__/
 scratch/
 personal/
 conversaciones/
+
+# Datos personales y listas sin anonimizar (RGPD / Protección de datos)
+alumnos/lista_alumnos.csv
+**/evaluacion/
+**/evaluación/
+calificaciones*.csv
+transcripciones*.csv

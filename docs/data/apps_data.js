@@ -12,12 +12,26 @@ window.DOCENCIA_APPS = {
     isotipo: "assets/isotipo_psll_upo.png",
     categories: [
       { id: "todas", name: "Todas" },
+      { id: "evaluacion", name: "Evaluación continua" },
       { id: "mercado", name: "Mercado de trabajo" },
       { id: "pasivas", name: "Protección social" },
       { id: "activas", name: "Políticas activas" },
       { id: "simuladores", name: "Simuladores" }
     ],
     apps: [
+      {
+        id: "psll_pasaporte_eval",
+        type: "portal",
+        category: "evaluacion",
+        icon: "🛡️",
+        iconBg: "#EAF4EE",
+        iconColor: "#113927",
+        title: "Pasaporte de Evaluación Continua",
+        desc: "Portal seguro con reto bancario aleatorio: consulta de calificaciones, respuestas manuscritas, soluciones de la cátedra y feedback formativo.",
+        meta: "Portal del estudiante · Privado y Cifrado",
+        session: "Evaluación Continua",
+        url: "pasaporte_psll.html"
+      },
       {
         id: "psll_pib_real_sim",
         type: "simulator",
@@ -358,12 +372,26 @@ window.DOCENCIA_APPS = {
     isotipo: "assets/isotipo_macro_upo.png",
     categories: [
       { id: "todas", name: "Todas" },
+      { id: "evaluacion", name: "Evaluación Continua" },
       { id: "simuladores", name: "Simuladores" },
       { id: "real", name: "Sector Real (IS)" },
       { id: "monetario", name: "Sector Monetario (LM)" },
       { id: "equilibrio", name: "Equilibrio IS-LM" }
     ],
     apps: [
+      {
+        id: "macro_pasaporte_eval",
+        type: "portal",
+        category: "evaluacion",
+        icon: "🛡️",
+        iconBg: "#FEF3C7",
+        iconColor: "#0B1C36",
+        title: "Pasaporte de Evaluación Continua",
+        desc: "Portal seguro con reto bancario aleatorio: consulta de calificaciones, respuestas manuscritas, soluciones de la cátedra y feedback formativo.",
+        meta: "Portal del estudiante · Privado y Cifrado",
+        session: "Evaluación Continua",
+        url: "pasaporte_macro.html"
+      },
       {
         id: "macro_lab_sesion01",
         type: "simulator",
@@ -389,6 +417,32 @@ window.DOCENCIA_APPS = {
         meta: "Simulador dinámico · 12 min",
         session: "Sesión 2",
         url: "macro_simulador_sesion_02.html"
+      },
+      {
+        id: "macro_sim_sesion03_lite",
+        type: "simulator",
+        category: "simuladores",
+        icon: "🧵",
+        iconBg: "#FEF3C7",
+        iconColor: "#D97706",
+        title: "Paso a Paso: El Nacimiento de la Curva IS (Efecto Cordel)",
+        desc: "Descubre cómo el tipo de interés desplaza la demanda en la Cruz Keynesiana y traza continuamente la curva IS como si tiraras de un cordel.",
+        meta: "Simulador interactivo · 5 min",
+        session: "Sesión 3",
+        url: "macro_is_cordel_lite.html"
+      },
+      {
+        id: "macro_sim_sesion03_desplazamiento_lite",
+        type: "simulator",
+        category: "simuladores",
+        icon: "↔️",
+        iconBg: "#E0F2FE",
+        iconColor: "#0284C7",
+        title: "Paso a Paso: Desplazamientos de la Curva IS (Shocks de Gasto)",
+        desc: "Comprueba cómo cualquier shock en el gasto autónomo (ΔG, -ΔT, Δc₀, Δd₀) traslada horizontalmente la IS a través del cordel de puntos.",
+        meta: "Simulador interactivo · 5 min",
+        session: "Sesión 3",
+        url: "macro_is_desplazamiento_lite.html"
       },
       {
         id: "macro_sim_sesion03",
