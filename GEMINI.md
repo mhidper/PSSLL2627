@@ -100,3 +100,13 @@ Para la creación, maquetación y ajuste de las diapositivas (`.pptx`) de la asi
   - **Formulación matemática rigurosa:** Subíndices nativos en PowerPoint (`run.font.subscript = True`) y caracteres matemáticos Unicode formales ($\ge$, $\tau$, $\partial$, $\cdot$).
   - **Checkpoints interactivos con QR:** Integración de códigos QR cuadrados (1:1) en Verde Pino `#113927` sobre fondo blanco, con tarjeta de acento en Coral `#E98F71`, espaciado vertical ergonómico para evitar colisiones con el texto y enlace web directo en el pie.
   - **Inspección técnica OpenXML:** Detección y limpieza obligatoria de nodos `mc:AlternateContent` o capas fantasma en `spTree` para asegurar un renderizado visual limpio sin marcas de agua.
+
+## Evaluación Ciega de Retos Manuscritos (Skill de Evaluación)
+
+Para la corrección de los retos manuscritos individuales de cierre de sesión (Fase 5 de cada sesión presencial):
+- Se debe utilizar la skill especializada ubicada en `.agents/skills/psll-evaluacion-ciega-skill/` (y `.skills/psll-evaluacion-ciega-skill/`).
+- **Arquitectura y flujo en 4 fases:**
+  1. **Fase 1 (Mapeo y Anonimización en Local):** Mapeo de entregas desde Microsoft Forms a tokens ciegos únicos ($\text{Token} = \text{DNI}[-5:-1]$) y enmascaramiento opaco del 14% superior de cada cuartilla para ocultar el nombre del estudiante.
+  2. **Fase 2 (Transcripción Única y Persistencia):** Un solo barrido multimodal para transcribir el texto manuscrito a `Temas EB/Sesiones EB/Sesion XX/evaluacion/transcripciones_psll_sesion_XX.csv`. **Regla de oro:** Queda terminantemente prohibido volver a abrir o procesar las imágenes en segundas vueltas; toda recalificación opera exclusivamente sobre el CSV.
+  3. **Fase 3 (Baremo Continuo 0–1.000 pts):** Desglose aditivo bimodal (P1 Conceptual 0-500 pts y P2 Aplicada/Cuantitativa 0-500 pts), gradación en 6 estados oficiales (`Apto (Sobresaliente)`, `Apto (Notable)`, `Apto (Aprobado)`, `No Apto (Mejorable)`, `No Apto (Insuficiente)`, `No Apto / No presentado`) y feedback formativo conciso (40-50 palabras) indicando acierto, deducción y recomendación.
+  4. **Fase 4 (Consolidación y Pasaporte Digital):** Exportación a `calificaciones_sesion_XX.csv` y compilación criptográfica mediante `alumnos/compilar_pasaporte_evaluacion.py` para sincronizar con la web del Pasaporte de Evaluación Continua (`pasaporte_psll.html`).
