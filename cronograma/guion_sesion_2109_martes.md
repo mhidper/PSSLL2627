@@ -89,11 +89,12 @@ flowchart LR
   - *«¿Por qué una política de estímulo de demanda agregada fracasa si el problema es estructural?»*.
   - *«¿Por qué los programas de formación para parados no resuelven una recesión cíclica por falta de demanda?»*.
 
-### Bloque 4: Taller Activo · Diagnóstico y Recomendación de Política en Parejas (01:15 – 01:45 · 30 min)
-- **Misión de Trabajo en Parejas (Rol de Analistas de la Consejería de Empleo):**
-  - Cada pareja recibe 3 fichas con casos reales/simulados de desempleo en distintas comarcas andaluzas (una zona con cierre de industria, una zona turística con estacionalidad marcada, una zona en recesión generalizada).
-  - **Reto (20 min):**
-    1. Diagnosticar el tipo de desempleo dominante en cada caso.
+### Bloque 4: Taller Activo y Laboratorio con Micro-App Móvil (01:15 – 01:45 · 30 min)
+- **Misión de Trabajo (Rol de Analistas de la Consejería de Empleo desde el Móvil):**
+  - Los alumnos escanean el código QR proyectado en la diapo 12 para abrir la micro-app oficial: [`simulador_desempleo_nairu.html`](https://mhidper.github.io/micro_apps/simulador_desempleo_nairu.html).
+  - **Experimento Macroeconómico:** Comprueban en el simulador de Phillips el efecto de un estímulo fiscal en la NAIRU (corto plazo vs. ajuste de expectativas a largo plazo).
+  - **Gabinete de Diagnóstico en Parejas (20 min):**
+    1. Diagnosticar el tipo de desempleo dominante en cada caso comarcal (Linares, Costa del Sol, Sevilla y Recesión Financiera).
     2. Asignar el instrumento de política pública correcto (intermediación / formación y reconversión / estímulo macro / diversificación estacional).
     3. Justificar por qué aplicar la política equivocada (p. ej., estímulo macro a un problema estructural) sería ineficaz o incluso inflacionario si el paro ya está cerca de la NAIRU.
 - **Puesta en común interactiva (10 min):** Dos parejas exponen su diagnóstico y se contrastan las recomendaciones.

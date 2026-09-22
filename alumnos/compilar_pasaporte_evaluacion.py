@@ -46,6 +46,20 @@ EVAL_SESIONES_CONFIG = [
         "solucion_p1": "1. Definición y Fórmula Formal del CLU:\nEl Coste Laboral Unitario relaciona el coste laboral medio por hora (salario nominal por hora W/H) con la productividad media aparente del trabajo (Y/H):\nCLU = (W / H) / (Y / H) = W / Y.\n\n2. Aproximación en Tasas de Variación Porcentual:\nLa tasa de variación porcentual del CLU se obtiene como la diferencia de tasas de crecimiento:\n%ΔCLU ≈ %ΔW - %ΔProd = 8% - 2% = +6%\n(o en cálculo exacto continuo: (1 + 0,08)/(1 + 0,02) - 1 = 1,08/1,02 - 1 = +5,88%).\n\nConclusión: Numéricamente, el CLU del sector se incrementa un 6%, lo que significa que el coste en mano de obra necesario para fabricar cada unidad producida se encarece significativamente.",
         "enunciado_p2": "b) Competitividad y Empleo: ¿Pueden trasladar el sobrecoste a precios sin consecuencias? ¿Cómo ajustará la empresa?",
         "solucion_p2": "1. Imposibilidad de Traslación sin Consecuencias:\nNo es posible trasladar el sobrecoste a precios de forma inocua. Si las empresas aumentan sus precios de venta, sufren una pérdida inmediata de competitividad frente a competidores del sector (nacionales e internacionales) o frente a bienes sustitutivos. Esto desencadena una contracción de la demanda de mercado y una caída de las ventas.\n\n2. Vías de Ajuste Empresarial:\nAnte la imposibilidad de repercutir todo el incremento salarial en precios, la empresa debe asumir el impacto a través de:\n• Compresión de márgenes de beneficio empresarial a corto plazo.\n• Ajuste en el factor trabajo: reducción de plantilla (despidos, no renovación de contratos temporales) o reducción de horas trabajadas para contener la masa salarial.\n• Inversión tecnológica y sustitución de trabajo por capital: acelerar la mecanización o digitalización para elevar la productividad por hora y restablecer la rentabilidad a medio y largo plazo."
+    },
+    {
+        "sesion_num": 3,
+        "id": "s03",
+        "titulo_corto": "Sesión 03",
+        "titulo_completo": "Sesión 03 · Oferta de Trabajo, Salario de Reserva y Trampas de Inactividad",
+        "tema": "Tema 1: Macroeconomía del Mercado de Trabajo y Dinámica Salarial",
+        "fecha": "21 de Septiembre 2026",
+        "calif_path": os.path.join(BASE_DIR, "Temas EB", "Sesiones EB", "Sesion 03", "evaluacion", "calificaciones_sesion_03.csv"),
+        "trans_path": os.path.join(BASE_DIR, "Temas EB", "Sesiones EB", "Sesion 03", "evaluacion", "transcripciones_psll_sesion_03.csv"),
+        "enunciado_p1": "«Un trabajador desempleado percibe un subsidio asistencial de 480 €/mes (Y_NS). Recibe una oferta para trabajar como operario de logística a jornada completa por 1.150 € netos mensuales. Para acudir al puesto debe gastar 180 € al mes en combustible y perdería de forma inmediata la ayuda de 480 €».\na) Calcule la ganancia neta real por hora trabajada de este operario.",
+        "solucion_p1": "1. Ingresos y Gastos Mensuales:\nSalario neto mensual ofertado: 1.150 €.\nGastos obligatorios de transporte (combustible): -180 €.\nIngreso neto efectivo disponible derivado del empleo: 1.150 € - 180 € = 970 €/mes.\n\n2. Coste de Oportunidad y Pérdida del Subsidio:\nAl aceptar el empleo pierde automáticamente el subsidio asistencial de 480 €/mes.\nGanancia neta real incremental mensual:\nΔY = 970 € - 480 € = 490 €/mes.\n\n3. Ganancia Neta Real por Hora Trabajada:\nJornada completa habitual (40 horas semanales × 4 semanas = 160 horas al mes):\nGanancia neta por hora = 490 € / 160 h ≈ 3,06 €/hora.\n(Frente a un salario contractual aparente de 1.150 € / 160 h = 7,19 €/hora, el trabajador solo percibe un incentivo real marginal de 3,06 € por cada hora que dedica a trabajar).",
+        "enunciado_p2": "b) Explique analíticamente por qué el salario ofertado se sitúa por debajo de su Salario de Reserva (w_R = 1.000 €). Indique si acepta o no el empleo.",
+        "solucion_p2": "1. Comparación Analítica con el Salario de Reserva:\nEl Salario de Reserva (w_R = 1.000 €/mes) es el umbral mínimo de remuneración neta que exige el trabajador para renunciar a su tiempo de ocio/inactividad e incorporarse al empleo.\nEl salario neto disponible que obtiene de la actividad laboral tras deducir los gastos ineludibles de transporte es:\nw_efectivo = 1.150 € - 180 € = 970 €/mes.\nDado que 970 € < 1.000 € (w_efectivo < w_R), la oferta económica se sitúa estrictamente por debajo de su salario de reserva (e incluso la ganancia adicional neta de 490 € frente a percibir la ayuda asistencial queda extraordinariamente lejos de retribuir el esfuerzo de 160 h mensuales).\n\n2. Decisión del Trabajador y Trampa del Desempleo:\nDado que w < w_R, el trabajador RECHAZA la oferta de empleo y decide permanecer en desempleo asistido. El caso ejemplifica formalmente la «trampa del desempleo» (unemployment trap), en la que la pérdida brusca del subsidio combinada con los costes fijos de inserción desincentiva la aceptación de ofertas de trabajo en bandas salariales bajas o medias."
     }
 ]
 
@@ -194,6 +208,7 @@ def compilar_pasaporte():
         })
 
     students_encrypted_db = []
+    all_students_scores = []
 
     for idx, row in df_censo.iterrows():
         dni = str(row["id_norm"]).strip()
@@ -281,6 +296,42 @@ def compilar_pasaporte():
                 "preguntas": preguntas
             })
 
+        # Historial de evolución para las 16 sesiones del curso
+        evolucion_16_sesiones = []
+        # S01: introductoria (sin reto evaluable)
+        evolucion_16_sesiones.append({
+            "sesion": 1,
+            "tag": "S01",
+            "puntos": 0,
+            "acumulado": 0,
+            "evaluada": True,
+            "max_sesion": 0
+        })
+
+        acum_calc = 0
+        for ses_item in sesiones_payload:
+            p_ob = ses_item["puntos_obtenidos"]
+            acum_calc += p_ob
+            evolucion_16_sesiones.append({
+                "sesion": ses_item["sesion_num"],
+                "tag": f"S{ses_item['sesion_num']:02d}",
+                "puntos": p_ob,
+                "acumulado": acum_calc,
+                "evaluada": True,
+                "max_sesion": ses_item["puntos_maximos"]
+            })
+
+        max_ses_num = max([s["sesion_num"] for s in sesiones_payload], default=1)
+        for s_idx in range(max_ses_num + 1, 17):
+            evolucion_16_sesiones.append({
+                "sesion": s_idx,
+                "tag": f"S{s_idx:02d}",
+                "puntos": None,
+                "acumulado": None,
+                "evaluada": False,
+                "max_sesion": 1000
+            })
+
         if puntos_totales_potenciales == 0:
             puntos_totales_potenciales = 1000
         porcentaje_global = round((puntos_totales_obtenidos / puntos_totales_potenciales) * 100, 2)
@@ -295,10 +346,15 @@ def compilar_pasaporte():
             "plan": row["plan"],
             "puntos_acumulados": puntos_totales_obtenidos,
             "puntos_potenciales": puntos_totales_potenciales,
+            "puntos_potenciales_curso": 16000,
             "porcentaje_logrado": porcentaje_global,
             "total_sesiones_evaluadas": len([s for s in sesiones_payload if s["estado"] != "En corrección"]),
+            "total_sesiones_curso": 16,
+            "evolucion_sesiones": evolucion_16_sesiones,
             "sesiones": sesiones_payload
         }
+
+        all_students_scores.append(puntos_totales_obtenidos)
 
         master_key = os.urandom(32)
         payload_nonce = os.urandom(12)
@@ -330,6 +386,9 @@ def compilar_pasaporte():
             "payload_ciphertext": base64.b64encode(encrypted_payload).decode("ascii")
         })
 
+    # Array anónimo de puntuaciones de la clase ordenadas (100% anónimo y RGPD)
+    anon_scores = sorted(all_students_scores)
+
     os.makedirs(os.path.join(MICRO_APPS_DIR, "data"), exist_ok=True)
     dest_js = os.path.join(MICRO_APPS_DIR, "data", "calificaciones_cifradas_psll.js")
 
@@ -337,6 +396,10 @@ def compilar_pasaporte():
 // Cifrado militar Zero-Knowledge AES-GCM-256 + SHA-256. Ningún dato personal legible en claro.
 window.__PSLL_GLOBAL_SALT__ = "{GLOBAL_SALT}";
 window.__PSLL_COMBOS__ = {json.dumps(ALL_COMBOS)};
+window.__PSLL_TOTAL_SESIONES__ = 16;
+window.__PSLL_PUNTOS_POTENCIALES_ACTUALES__ = {puntos_totales_potenciales};
+window.__PSLL_PUNTOS_POTENCIALES_CURSO__ = 16000;
+window.__PSLL_SCORES_ANON__ = {json.dumps(anon_scores)};
 window.__PSLL_EVAL_DB__ = {json.dumps(students_encrypted_db, separators=(',', ':'))};
 """
 
