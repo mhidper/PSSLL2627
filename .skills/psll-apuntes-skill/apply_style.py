@@ -90,6 +90,39 @@ TEMA_1_FIGURES_META = {
     },
 }
 
+TEMA_1_SESSION_BOXES = [
+    {
+        "id": "sesion_1",
+        "pattern": r"^1\.\s+FUNDAMENTOS DEL MERCADO DE TRABAJO",
+        "title": "Encuadre Docente Presencial · Sesión 1 (Semana 1 · Lunes) — Marco Analítico, Población y Flujos Laborales",
+        "text": "Desarrollo presencial de los conceptos fundamentales del mercado de trabajo: stocks poblacionales (activos, ocupados, parados, inactivos), tasas básicas EPA, matriz de flujos laborales y dinámicas de actividad y desánimo. Apertura con el enigma laboral de inicio de curso, sondeo diagnóstico interactivo y taller de análisis empírico con microdatos oficiales."
+    },
+    {
+        "id": "sesion_2",
+        "pattern": r"^2\.\s+EL PIB Y LA PRODUCTIVIDAD EN EL MERCADO LABORAL",
+        "title": "Encuadre Docente Presencial · Sesión 2 (Semana 1 · Martes/Viernes) — Macroeconomía del Trabajo, Productividad y CLU",
+        "text": "Articulación macroeconómica de la demanda de trabajo: distinción rigurosa entre PIB nominal y PIB real, deflactores, descomposición del PIB per cápita, productividad aparente del trabajo y Costes Laborales Unitarios (CLU). Incluye simulación interactiva con la Micro-App de deflactores y CLU y resolución del dilema de política salarial."
+    },
+    {
+        "id": "sesion_3",
+        "pattern": r"^(\d+\.\s+)?EQUILIBRIO EN EL MERCADO DE TRABAJO",
+        "title": "Encuadre Docente Presencial · Sesión 3 (Semana 2 · Lunes) — Microfundamentos de Oferta, Demanda y Salario de Reserva",
+        "text": "Modelización microeconómica del mercado laboral: decisiones de oferta de trabajo individual (modelo ocio-consumo, efectos renta y sustitución), salario de reserva, trampas de pobreza e inactividad, y derivación de la demanda de empleo a corto y largo plazo bajo competencia e imperfecciones."
+    },
+    {
+        "id": "sesion_4",
+        "pattern": r"^4\.\s+TIPOLOG[IÍ]A DEL DESEMPLEO",
+        "title": "Encuadre Docente Presencial · Sesión 4 (Semana 2 · Martes/Viernes) — Tipologías de Paro, NAIRU y Curva de Phillips",
+        "text": "Disección analítica del desempleo: friccional, estacional, cíclico y estructural (Epígrafes 4 y 5). Modelo de Curva de Phillips con expectativas (Friedman-Phelps), estimación de la tasa natural / NAIRU y contraste empírico de la desinflación y devaluación salarial en la economía española (2002–2024). Reto manuscrito de cálculo analítico de tipos de paro."
+    },
+    {
+        "id": "sesion_5",
+        "pattern": r"^6\.\s+LA CURVA DE BEVERIDGE",
+        "title": "Encuadre Docente Presencial · Sesión 5 (Semana 3 · Cierre Tema 1) — Emparejamiento (DMP), Curva de Beveridge y Políticas Activas",
+        "text": "Modelo de búsqueda y emparejamiento (Diamond-Mortensen-Pissarides): función de emparejamiento, tasa de paro de estado estacionario u* = s/(s+f), tensión del mercado (labor market tightness θ) y análisis comparado de la Curva de Beveridge en España. Síntesis integral de Tema 1 y lanzamiento del Caso 1 de EPD."
+    },
+]
+
 def extract_media_from_docx(docx_path: str, output_dir: str):
     """
     Extrae automáticamente todas las imágenes del archivo docx original
@@ -315,6 +348,10 @@ def clean_and_enhance_text(raw_text: str) -> str:
     if raw_text == "Fase 3 (2014-2016): Recuperación única":
         return "Fase 3 (2014–2024: Recuperación económica y récord histórico de vacantes)"
 
+    # Normalización de numeración en epígrafes principales
+    if raw_text.strip() == "EQUILIBRIO EN EL MERCADO DE TRABAJO":
+        return "3. EQUILIBRIO EN EL MERCADO DE TRABAJO"
+
     return raw_text
 
 def style_topic_document(input_path: str, output_path: str):
@@ -369,6 +406,8 @@ def style_topic_document(input_path: str, output_path: str):
     inserted_figures = set()
     fig_counter = 1
     skip_reflection_block = False
+    skip_figures_proposal = False
+    inserted_sessions = set()
     collecting_key_concepts = False
     key_concepts = []
     key_concepts_title = "Conceptos Clave del Tema"
@@ -450,6 +489,28 @@ def style_topic_document(input_path: str, output_path: str):
                             
         if not raw_text:
             continue
+
+        # 0.-1. FILTRADO DE APÉNDICE RESIDUAL DE PROPUESTAS DE FIGURAS
+        if raw_text.startswith("2. CURVAS DE OFERTA Y DEMANDA DE TRABAJO") or "GRÁFICOS COMPLEMENTARIOS" in raw_text or "TABLAS RECOMENDABLES" in raw_text or "ELEMENTOS ADICIONALES OPCIONALES" in raw_text:
+            skip_figures_proposal = True
+            
+        if skip_figures_proposal:
+            if re.match(r"^Conceptos\s+clave", raw_text, re.IGNORECASE):
+                skip_figures_proposal = False
+            else:
+                continue
+
+        # 0.-2. INSERCIÓN DE CAJAS DE SESIÓN DOCENTE (SESSION BOXES) SEGÚN CRONOGRAMA
+        for sess in TEMA_1_SESSION_BOXES:
+            if sess["id"] not in inserted_sessions and re.search(sess["pattern"], raw_text, re.IGNORECASE):
+                insert_callout_box(
+                    doc,
+                    callout_type="session",
+                    title=sess["title"],
+                    text=sess["text"]
+                )
+                inserted_sessions.add(sess["id"])
+                break
             
         # 0.0. RECOLECCIÓN Y VOLCADO DE CONCEPTOS CLAVE EN PÁGINA NUEVA
         if collecting_key_concepts:
@@ -587,67 +648,69 @@ def style_topic_document(input_path: str, output_path: str):
             run.font.color.rgb = RGB_COLORS["deep_green"]
             continue
 
-        # 5. LISTAS ITEMIZADAS CON VIÑETAS (BULLET POINTS)
-        # Patrón A: Lista numerada con título en negrita (ej. "1. Heterogeneidad del factor trabajo: ...")
+        # 5. PÁRRAFOS CONCEPTUALES CON ETIQUETA DESTACADA (PROSA ACADÉMICA CONTINUA, SIN VIÑETAS)
+        # Patrón A: Párrafo numerado con concepto clave destacado (ej. "1. Heterogeneidad del factor trabajo: ...")
         m_num_item = re.match(r"^(\d+)\.\s+([A-ZÁÉÍÓÚÑ][^:]{2,55}):\s*(.*)$", raw_text)
         if m_num_item:
             p_new = doc.add_paragraph(style='Normal')
             p_new.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
-            p_new.paragraph_format.left_indent = Inches(0.35)
-            p_new.paragraph_format.first_line_indent = Inches(-0.18)
-            p_new.paragraph_format.space_after = Pt(3.5)
+            p_new.paragraph_format.left_indent = Inches(0)
+            p_new.paragraph_format.first_line_indent = Inches(0)
+            p_new.paragraph_format.space_before = Pt(2)
+            p_new.paragraph_format.space_after = Pt(4.5)
+            p_new.paragraph_format.line_spacing = 1.15
             
-            run_b = p_new.add_run("•  ")
-            run_b.font.name = FONT_BODY
-            run_b.font.bold = True
-            run_b.font.color.rgb = RGB_COLORS["sage"]
-            
-            run_t = p_new.add_run(f"{m_num_item.group(2).strip()}: ")
+            run_t = p_new.add_run(f"{m_num_item.group(1)}. {m_num_item.group(2).strip()}: ")
             run_t.font.name = FONT_BODY
+            run_t.font.size = Pt(10.5)
             run_t.font.bold = True
             run_t.font.color.rgb = RGB_COLORS["deep_green"]
             
             if m_num_item.group(3).strip():
                 run_c = p_new.add_run(m_num_item.group(3).strip())
                 run_c.font.name = FONT_BODY
+                run_c.font.size = Pt(10.5)
                 run_c.font.color.rgb = RGB_COLORS["ink_green"]
             continue
 
-        # Patrón B: Elemento con etiqueta explicativa antes de dos puntos (ej. "Motor económico: El empleo...")
+        # Patrón B: Elemento conceptual con etiqueta explicativa antes de dos puntos (ej. "Motor económico: El empleo...")
         m_lbl_item = re.match(r"^([A-ZÁÉÍÓÚÑ][^:]{2,40}):\s+(.+)$", raw_text)
-        if m_lbl_item and not raw_text.startswith(("TEMA", "NOTA", "Figura", "Fuente", "Definición")):
+        if m_lbl_item and not raw_text.startswith(("TEMA", "NOTA", "Figura", "Fuente", "Definición", "Interpretación")):
             p_new = doc.add_paragraph(style='Normal')
             p_new.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
-            p_new.paragraph_format.left_indent = Inches(0.35)
-            p_new.paragraph_format.first_line_indent = Inches(-0.18)
-            p_new.paragraph_format.space_after = Pt(3.5)
-            
-            run_b = p_new.add_run("•  ")
-            run_b.font.name = FONT_BODY
-            run_b.font.bold = True
-            run_b.font.color.rgb = RGB_COLORS["sage"]
+            p_new.paragraph_format.left_indent = Inches(0)
+            p_new.paragraph_format.first_line_indent = Inches(0)
+            p_new.paragraph_format.space_before = Pt(2)
+            p_new.paragraph_format.space_after = Pt(4.5)
+            p_new.paragraph_format.line_spacing = 1.15
             
             run_t = p_new.add_run(f"{m_lbl_item.group(1).strip()}: ")
             run_t.font.name = FONT_BODY
+            run_t.font.size = Pt(10.5)
             run_t.font.bold = True
             run_t.font.color.rgb = RGB_COLORS["deep_green"]
             
             run_c = p_new.add_run(m_lbl_item.group(2).strip())
             run_c.font.name = FONT_BODY
+            run_c.font.size = Pt(10.5)
             run_c.font.color.rgb = RGB_COLORS["ink_green"]
             continue
 
-        # Patrón C: Viñetas preexistentes o requisitos directos de una lista
-        is_bullet_item = bool(re.match(r"^(\-|\•|\*)\s*(.+)$", raw_text)) or raw_text.startswith((
+        # Patrón C: Listas de requisitos técnicos estrictos (única excepción tasada para viñetas •)
+        is_strict_bullet = raw_text.startswith((
             "Estar sin empleo", "Haber tomado medidas concretas", "Estar disponible para trabajar"
-        ))
-        if is_bullet_item:
+        )) or (
+            bool(re.match(r"^(\-|\•|\*)\s*(.+)$", raw_text)) and len(raw_text.split()) <= 25
+        )
+        if is_strict_bullet:
             clean_item = re.sub(r"^(\-|\•|\*)\s*", "", raw_text).strip()
             p_new = doc.add_paragraph(style='Normal')
             p_new.alignment = WD_ALIGN_PARAGRAPH.JUSTIFY
             p_new.paragraph_format.left_indent = Inches(0.35)
             p_new.paragraph_format.first_line_indent = Inches(-0.18)
-            p_new.paragraph_format.space_after = Pt(3.5)
+            p_new.paragraph_format.space_before = Pt(1)
+            p_new.paragraph_format.space_after = Pt(3.0)
+            p_new.paragraph_format.line_spacing = 1.15
             
             run_b = p_new.add_run("•  ")
             run_b.font.name = FONT_BODY
@@ -656,6 +719,7 @@ def style_topic_document(input_path: str, output_path: str):
             
             run_c = p_new.add_run(clean_item)
             run_c.font.name = FONT_BODY
+            run_c.font.size = Pt(10.5)
             run_c.font.color.rgb = RGB_COLORS["ink_green"]
             continue
 
@@ -711,7 +775,10 @@ def style_topic_document(input_path: str, output_path: str):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Aplica la maquetación corporativa oficial de PSLL a un archivo .docx.")
-    parser.add_argument("--input", default=r"Temas EB\Tema 1\Apuntes\Tema 1 2627.docx", help="Ruta del documento de entrada")
+    cand_input = r"Temas EB\Tema 1\Apuntes\Tema 1 2526.docx"
+    if not os.path.exists(cand_input):
+        cand_input = r"Temas EB\Tema 1\Apuntes\Tema 1 2627.docx"
+    parser.add_argument("--input", default=cand_input, help="Ruta del documento de entrada")
     parser.add_argument("--output", default=r"Temas EB\Tema 1\Apuntes\Tema 1 2627_maquetado.docx", help="Ruta del documento de salida")
     args = parser.parse_args()
     

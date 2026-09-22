@@ -40,17 +40,14 @@ Basado estrictamente en [Logos y skills/BRAND.md](file:///c:/Users/Usuario/Dropb
      - `Heading 3`: 12 pt antes / 3 pt después (`keep_with_next = True`).
    - **Alineación Justificada Obligatoria:** Todo el texto de cuerpo, listas y cajas destacadas debe estar justificado (`WD_ALIGN_PARAGRAPH.JUSTIFY`) para garantizar un acabado editorial limpio.
 
-2. **Itemización Sistemática con Viñetas (Bullet Points):**
-   - Detección automática y conversión de listas de factores, enumeraciones de características y requisitos en listas itemizadas con viñetas reales (`• `).
-   - Formato de viñeta corporativo:
-     - Símbolo `• ` en Verde Salvia (`#76927A`) negrita.
-     - Sangría francesa / colgante: `left_indent = 0.35 pulgadas` (~0.9 cm), `first_line_indent = -0.18 pulgadas`.
-     - Término o etiqueta clave en negrita Verde Pino (`#113927`) antes de dos puntos.
-     - Texto explicativo justificado en Verde Tinta (`#2F3A30`).
+2. **Regla de Oro: Prosa Académica Continua y Restricción Estricta de Viñetas:**
+   - **Prohibición Expresa de Listas Telegráficas:** Queda terminantemente prohibido convertir explicaciones conceptuales, características, causas o factores en listas interminables de viñetas (`• `) estilo diapositiva. Los apuntes constituyen un manual universitario de estudio y deben leerse en prosa académica continua, fluida, madura y cohesionada.
+   - **Integración Natural de Términos Clave:** Cuando se desarrollen factores o dimensiones conceptuales, se redactan en párrafos completos utilizando conectores discursivos (*"En primer término...", "Asimismo...", "Por su parte...", "Desde una perspectiva analítica complementaria..."*), destacando el concepto en negrita Verde Pino (`#113927`) dentro del flujo del párrafo justificado.
+   - **Uso Excepcional y Restrictivo de Viñetas:** Las viñetas (`• `) se reservan única y exclusivamente para enumeraciones técnicas normativas o metodológicas cerradas e indispensables (por ejemplo, las 3 condiciones cumulativas de la EPA/OIT para ser clasificado como parado, o la enumeración de supuestos de un modelo formal). Fuera de estos casos tasados, todo el contenido debe presentarse en párrafos narrativos.
 
 3. **Cajas Destacadas (*Callout Boxes*):**
    - Tabla unificada de 1 celda con fondo temático, borde izquierdo grueso de 3 pt (26 dxa), padding interior calibrado y título en negrita con icono temático:
-     - 🗓️ **Caja de Sesión Docente (*Session Box*):** Fondo verde menta tenue (`#F4F8F5`), borde en Verde Pino (`#113927`). Sitúa al estudiante en el cronograma oficial de la asignatura (ej. *Sesión 1 · Semana 1*).
+     - 🗓️ **Caja de Sesión Docente (*Session Box* · Obligatoria al inicio de cada sesión):** Fondo verde menta tenue (`#F4F8F5`), borde grueso en Verde Pino (`#113927`). Debe insertarse preceptivamente al inicio de cada bloque temático que corresponda a una sesión presencial según el cronograma oficial de la asignatura (ej. *🗓️ Encuadre Docente Presencial · Sesión 1 (Semana 1) — Fundamentos del Mercado de Trabajo*), resumiendo el encuadre pedagógico y los objetivos de la sesión.
      - 💭 **Parada Reflexiva (*Reflection Box*):** Fondo verde menta tenue (`#F4F8F5`), borde en Verde Salvia (`#76927A`). Preguntas detonantes y dilemas intuitivos para que el estudiante auto-evalúe su comprensión antes de avanzar.
        - **Regla anti-estiramiento:** Las preguntas o enunciados breves van obligatoriamente en un **párrafo independiente alineado a la izquierda (`WD_ALIGN_PARAGRAPH.LEFT`)**, evitando que Word estire las palabras de margen a margen. La respuesta explicativa va en un párrafo inferior **justificado con sangría izquierda de 0.18 pulgadas**. Prohibido usar saltos de línea suaves (`\n`) en bloques justificados.
      - ⚠️ **Alerta de Examen / Trampa Habitual (*Warning Box*):** Fondo suave de alerta (`#FDF4F0`), borde en Coral Active Wave (`#E98F71`). Errores analíticos frecuentes en pruebas de evaluación.
