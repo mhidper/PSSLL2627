@@ -54,44 +54,42 @@ Criterios del reparto:
 
 ## 3. Reparto detallado a partir de la EB 6
 
-Los minutos son orientativos. Los números § remiten a los epígrafes de los apuntes vigentes: `Tema 2 2025.docx`, `TEMA 3 2025.docx`, `Tema 4 2025.docx`, `Tema 5. La negociación colectiva.docx`, `TEMA 6.docx` y `Tema 7. Las pensiones en España.docx`.
+Los minutos son orientativos. Los números § remiten a los epígrafes de los apuntes vigentes: `Tema 2 2627_maquetado.docx`, `TEMA 3 2025.docx`, `Tema 4 2025.docx`, `Tema 5. La negociación colectiva.docx`, `TEMA 6.docx` y `Tema 7. Las pensiones en España.docx`.
 
 ### EB 6 · Tema 2 (I) · Qué son las políticas activas y qué instrumentos usan
 L1 Mié 30/09 (90 min) · L2 Vie 02/10 (120 min)
 
 Núcleo común (90 min):
-- §1.1 Definición de las PAE y §1.2 diferencias con las pasivas (los seis criterios, en una tabla) · 25 min
+- §1.1 Definición de las PAE y §1.2 diferencias con las pasivas (tabla de seis criterios) · 20 min
 - §1.3 Objetivos a corto y medio plazo, colectivos prioritarios, flexibilidad y adaptación · 15 min
-- §3 Tipología, vista de conjunto: orientación laboral, formación profesional, incentivos a la contratación (solo se presentan; se desarrollan en la EB 7), fomento del emprendimiento y creación directa de empleo público · 35 min
-- Enlace con la EB 5: qué tipo de PAE actúa sobre la eficiencia del emparejamiento (A) y cuál sobre la demanda de trabajo, leído sobre la curva de Beveridge · 15 min
+- §1.4 Las PAE vistas desde la curva de Beveridge (enlace con la EB 5) · 15 min
+- §3.1-3.5 Tipología: orientación, formación, incentivos a la contratación (solo se presentan; se desarrollan en la EB 7), emprendimiento y empleo público · 40 min
 
 Ampliación L2 (30 min):
-- §2 Marco institucional: §2.1 Ley 3/2023 de Empleo y RD 438/2024; §2.2 directrices europeas; §2.3 Sistema Nacional de Empleo y gobernanza
+- §2 Marco institucional: §2.1 Ley 3/2023 y RD 438/2024; §2.2 directrices europeas; §2.3 Sistema Nacional de Empleo y Estrategia 2025-2028
 
 L1 ve el §2.3 dentro de la EB 8. Los §2.1-2.2 quedan como lectura.
 
 ### EB 7 · Tema 2 (II) · Incentivos a la contratación: diseño y efectos no deseados
 L1 Mar 06/10 (120 min) · L2 Vie 09/10 (120 min). En las dos líneas es el mismo día de la EPD 1, justo antes.
 
-- §3 Incentivos a la contratación, en profundidad: subvención a tanto alzado frente a bonificación de cuotas; colectivo diana (PLD, mayores de 45, jóvenes); condicionalidad (permanencia mínima, mantenimiento del empleo neto) · 40 min
-- Efectos no deseados: peso muerto, sustitución, desplazamiento y selección de los más empleables (*creaming*) · 30 min
-- §4.1 Sistema Nacional de Garantía Juvenil y §4.2 programas con fondos europeos · 20 min
-- Un incentivo autonómico real: la Orden de 3 de octubre de 2024 del Programa Emplea-T, leída con los conceptos del día. Enlaza con la EPD 1 · 30 min
+- §4.1 Por qué subvencionar la contratación y §4.2 instrumentos (subvención a tanto alzado frente a bonificación de cuotas) · 30 min
+- §4.3 Variables de diseño · 15 min
+- §4.4 Efectos no deseados (peso muerto, sustitución, desplazamiento, *creaming*, rotación, estigma) y coste por empleo neto (Figura 2.1) · 35 min
+- §4.5 Caso real: el Programa Emplea-T. Enlaza con la EPD 1 · 25 min
+- §5.1 Garantía Juvenil y §5.2 fondos europeos · 15 min
 
-Lectura: §4.3 Digitalización y modernización.
-
-⚠️ Falta material. Los apuntes solo mencionan de pasada el peso muerto, la sustitución y la bonificación de cuotas. Los efectos no deseados y el diseño de incentivos necesitan contenido nuevo (apunte breve o diapositivas).
+Lectura: §5.3 Digitalización y modernización.
 
 ### EB 8 · Tema 2 (III) · ¿Funcionan las políticas activas? Evaluación y cierre del tema
 L1 Mar 13/10 (120 min) · L2 Vie 16/10 (120 min)
 
-- Cómo se evalúa una política: contrafactual, sesgo de selección, experimentos y cuasiexperimentos (diferencias en diferencias), con un ejemplo gráfico · 35 min
-- §5.1 Evidencia empírica: qué funciona, a qué plazo y para quién (meta-análisis de Card, Kluve y Weber; evidencia española; evaluación intermedia de la EEAAE 2021-2024) · 35 min
-- §5.2 Comparativa internacional: gasto en PAE sobre el PIB y modelos de referencia · 20 min
-- §5.3 Desafíos pendientes y §2.3 Estrategia Española de Apoyo Activo al Empleo 2025-2028 con su gobernanza (en L2, solo repaso) · 20 min
-- Cierre del Tema 2 y puente hacia las pasivas · 10 min
-
-⚠️ Falta material. Los apuntes no desarrollan la lógica de la evaluación de impacto (contrafactual, sesgo de selección), que es la base de la EPD 3 (peso muerto y coste por empleo adicional).
+- §6.1-6.3 La pregunta contrafactual, el sesgo de selección y los métodos (experimento, diferencias en diferencias, emparejamiento, regresión discontinua; Figura 2.2) · 40 min
+- §6.4 Lo que una evaluación individual no ve y §6.5 del efecto al coste (base de la EPD 3) · 15 min
+- §7.1 Evidencia empírica (Card, Kluve y Weber; AIReF; evaluación intermedia de la EEAAE 2021-2024) · 25 min
+- §7.2 Comparativa internacional (Figura 2.3) · 15 min
+- §7.3 Desafíos pendientes y §2.3 Estrategia 2025-2028 (en L2, solo repaso) · 20 min
+- Cierre del Tema 2 y puente hacia las pasivas · 5 min
 
 ### EB 9 · Tema 3 (I) · Por qué proteger al desempleado y cómo lo hace España
 L1 Mar 20/10 (120 min) · L2 Vie 23/10 (120 min)
@@ -232,13 +230,15 @@ Consecuencias respecto al cronograma anterior:
 
 Sirve para anotar las sesiones en los apuntes. «Lect.» indica lectura autónoma.
 
-**Tema 2 · Políticas activas**
-- §1.1-1.3 → EB 6
+**Tema 2 · Políticas activas** (numeración de `Tema 2 2627_maquetado.docx`; las cajas de sesión ya están insertadas en los apuntes)
+- §1.1-1.4 → EB 6
 - §2.1-2.2 → EB 6 (ampliación L2) / Lect. (L1)
 - §2.3 → EB 6 (ampliación L2) / EB 8 (L1)
-- §3: orientación, formación, emprendimiento y empleo público → EB 6; incentivos a la contratación → EB 6 (presentación) y EB 7 (desarrollo)
-- §4.1-4.2 → EB 7; §4.3 → Lect.
-- §5.1-5.3 → EB 8
+- §3.1-3.5 → EB 6
+- §4.1-4.5 → EB 7
+- §5.1-5.2 → EB 7; §5.3 → Lect.
+- §6.1-6.5 → EB 8
+- §7.1-7.3 → EB 8
 
 **Tema 3 · Políticas pasivas**
 - §1.1-1.2 → EB 9; §1.3 → Lect.
@@ -275,9 +275,8 @@ Sirve para anotar las sesiones en los apuntes. «Lect.» indica lectura autónom
 
 ## 6. Pendientes que salen de este reparto
 
-1. **Material nuevo para la EB 7:** diseño de incentivos a la contratación y sus efectos no deseados.
-2. **Material nuevo para la EB 8:** lógica de la evaluación de impacto.
-3. **Material nuevo para la EB 11:** IMV y trampa de la pobreza / tipo marginal efectivo. Es el hueco más urgente, porque de él dependen las EPD 4 y 5.
-4. **Confirmar la recuperación del 09/12 en L1.** Si no se confirma, se aplica el plan B de la EB 16.
-5. **Tema 8 de la guía docente.** La guía 2025-26 incluye un Tema 8 («Las políticas educativas y otras políticas sociales»), sin material ni sesión en este curso. Habría que decidir si se retira de la guía o se trata como lectura.
-6. **Fichas de EPD y ponderación de la evaluación.** Siguen las del cronograma v1, con las semanas corregidas según el apartado 4. La propuesta de EPD de agosto (Caso 2 sobre mayores de 45) no coincide con el cronograma v1 (Caso 2 sobre el IMV); aquí se sigue el v1.
+1. ~~Material nuevo para las EB 7 y 8~~ → hecho en `Tema 2 2627_maquetado.docx` (epígrafes 4 y 6).
+2. **Material nuevo para la EB 11:** IMV y trampa de la pobreza / tipo marginal efectivo. Es el hueco más urgente, porque de él dependen las EPD 4 y 5.
+3. **Confirmar la recuperación del 09/12 en L1.** Si no se confirma, se aplica el plan B de la EB 16.
+4. **Tema 8 de la guía docente.** La guía 2025-26 incluye un Tema 8 («Las políticas educativas y otras políticas sociales»), sin material ni sesión en este curso. Habría que decidir si se retira de la guía o se trata como lectura.
+5. **Fichas de EPD y ponderación de la evaluación.** Siguen las del cronograma v1, con las semanas corregidas según el apartado 4. La propuesta de EPD de agosto (Caso 2 sobre mayores de 45) no coincide con el cronograma v1 (Caso 2 sobre el IMV); aquí se sigue el v1.
