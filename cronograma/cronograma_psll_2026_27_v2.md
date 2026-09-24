@@ -54,7 +54,7 @@ Criterios del reparto:
 
 ## 3. Reparto detallado a partir de la EB 6
 
-Los minutos son orientativos. Los números § remiten a los epígrafes de los apuntes vigentes: `Tema 2 2627_maquetado.docx`, `TEMA 3 2025.docx`, `Tema 4 2025.docx`, `Tema 5. La negociación colectiva.docx`, `TEMA 6.docx` y `Tema 7. Las pensiones en España.docx`.
+Los minutos son orientativos. Los números § remiten a los epígrafes de los apuntes vigentes: `Tema 2 2627_maquetado.docx`, `Tema 3 2627_maquetado.docx`, `Tema 4 2025.docx`, `Tema 5. La negociación colectiva.docx`, `TEMA 6.docx` y `Tema 7. Las pensiones en España.docx`.
 
 ### EB 6 · Tema 2 (I) · Qué son las políticas activas y qué instrumentos usan
 L1 Mié 30/09 (90 min) · L2 Vie 02/10 (120 min)
@@ -94,36 +94,33 @@ L1 Mar 13/10 (120 min) · L2 Vie 16/10 (120 min)
 ### EB 9 · Tema 3 (I) · Por qué proteger al desempleado y cómo lo hace España
 L1 Mar 20/10 (120 min) · L2 Vie 23/10 (120 min)
 
-- §1.1 Definición y §1.2 justificación: red de seguridad, estabilizador del consumo, «seguro de búsqueda» (enlaza con el emparejamiento del Tema 1) y función redistributiva · 30 min
+- §1.1-1.2 Definición y justificación: red de seguridad, estabilizador automático, seguro de búsqueda, redistribución y activación · 30 min
 - §2.1 Evolución y marco normativo · 5 min
-- §2.2 Estructura dual: §2.2.1 contributiva (requisitos, duración, cuantía, topes según el IPREM) y §2.2.2 asistencial (colectivos, tramos decrecientes, subsidio para mayores de 52) · 45 min
-- §2.3 Financiación de cada nivel · 10 min
-- §3 Generosidad y comparativa: §3.1 la paradoja del gasto, §3.2 tasas de reemplazo, §3.3 duración máxima, §3.4 conclusión · 30 min
+- §2.2 Estructura dual: contributiva (requisitos, duración, cuantía, topes con el IPREM de 2026) y asistencial (colectivos, renta, tramos, mayores de 52) · 45 min
+- §2.3 Financiación · 10 min
+- §3.1-3.4 Generosidad y comparativa: gasto por punto de paro, tasas de reemplazo, duración máxima · 30 min
 
 Lectura: §1.3.
 
 ### EB 10 · Tema 3 (II) · Activación, control y efectos sobre la búsqueda de empleo
 L1 Mar 27/10 (120 min) · L2 Vie 30/10 (120 min). Es la semana de la EPD 2.
 
-- §2.4 Reforma de 2024 y Complemento de Apoyo al Empleo (compatibilidad entre subsidio y empleo) y §2.5 vinculación con las PAE · 25 min
-- §4 Control y extinción: §4.1 causas, §4.2 colocación adecuada (con `colocacion_adecuada.html`), §4.3 compromiso de actividad y régimen sancionador · 30 min
-- §6.1-6.3 Efectos: justificación económica, liquidez frente a riesgo moral (Chetty) y efecto sobre la duración del desempleo · 45 min
-- §6.4 Calidad del emparejamiento y estabilización macroeconómica · 20 min
+- §4.1 Complemento de Apoyo al Empleo (modalidades asistencial y contributiva) y §4.2 vinculación con las PAE · 25 min
+- §4.3-4.5 Extinción, colocación adecuada y régimen sancionador · 25 min
+- §5.1-5.2 Justificación aseguradora; liquidez frente a riesgo moral (Chetty) · 35 min
+- §5.3-5.4 Duración del paro, sesgo de publicación, calidad del emparejamiento y estabilización · 35 min
 
-Lectura: §4.4.
+Lectura: §5.5.
 
 ### EB 11 · Tema 3 (III) · Los huecos de la protección y la garantía de rentas: del subsidio al IMV
 L1 Mar 03/11 (120 min) · L2 Vie 06/11 (120 min). Es la base teórica del Caso 2 de EPD.
 
-- §5.1 Cobertura insuficiente y §5.2 desempleo de larga duración y agotamiento de prestaciones · 25 min
-- §6.5 El caso español: dualidad laboral · 10 min
-- Garantía de rentas: de las rentas mínimas autonómicas al Ingreso Mínimo Vital (diseño, cuantías, cobertura y *non-take-up* según la AIReF) · 40 min
-- Trampa de la pobreza y tipo marginal efectivo: ejemplo numérico, incentivo al empleo del IMV y Complemento de Apoyo al Empleo como respuestas · 30 min
-- §7 Conclusiones del tema · 15 min
+- §6.1-6.3 Cobertura insuficiente, paro de larga duración y dualidad laboral · 25 min
+- §7.1-7.4 Garantía de rentas: último nivel de la red, de las rentas autonómicas al IMV, diseño del IMV y non-take-up (AIReF, 2025) · 40 min
+- §8.1-8.3 Trampa de la pobreza y tipo marginal efectivo: ejemplo numérico (Figura 3.3), incentivo al empleo del IMV (RD 240/2026), CAE y complementos tipo EITC · 40 min
+- §9 Conclusiones · 15 min
 
-Lectura: §5.3-5.4.
-
-⚠️ Falta material. Ni el Tema 3 ni ningún otro apunte trata el IMV ni la trampa de la pobreza, y son la base directa de las EPD 4 y 5.
+Lectura: §6.4-6.5.
 
 ### EB 12 · Tema 4 (I) · Flexibilidad externa y protección del empleo (EPL)
 L1 Mar 10/11 (120 min) · L2 Vie 13/11 (120 min). Es el día de la EPD 3.
@@ -240,15 +237,16 @@ Sirve para anotar las sesiones en los apuntes. «Lect.» indica lectura autónom
 - §6.1-6.5 → EB 8
 - §7.1-7.3 → EB 8
 
-**Tema 3 · Políticas pasivas**
+**Tema 3 · Políticas pasivas** (numeración de `Tema 3 2627_maquetado.docx`; las cajas de sesión ya están insertadas en los apuntes)
 - §1.1-1.2 → EB 9; §1.3 → Lect.
-- §2.1-2.3 → EB 9; §2.4-2.5 → EB 10
+- §2.1-2.3 → EB 9
 - §3.1-3.4 → EB 9
-- §4.1-4.3 → EB 10; §4.4 → Lect.
-- §5.1-5.2 → EB 11; §5.3-5.4 → Lect.
-- §6.1-6.4 → EB 10; §6.5 → EB 11
-- §7 → EB 11
-- Contenido nuevo sobre IMV y trampa de la pobreza → EB 11
+- §4.1-4.5 → EB 10
+- §5.1-5.4 → EB 10; §5.5 → Lect.
+- §6.1-6.3 → EB 11; §6.4-6.5 → Lect.
+- §7.1-7.4 → EB 11
+- §8.1-8.3 → EB 11
+- §9 → EB 11
 
 **Tema 4 · Protección del empleo**
 - §1, §2 (incluidos 2.3-2.4) → EB 12
@@ -276,7 +274,7 @@ Sirve para anotar las sesiones en los apuntes. «Lect.» indica lectura autónom
 ## 6. Pendientes que salen de este reparto
 
 1. ~~Material nuevo para las EB 7 y 8~~ → hecho en `Tema 2 2627_maquetado.docx` (epígrafes 4 y 6).
-2. **Material nuevo para la EB 11:** IMV y trampa de la pobreza / tipo marginal efectivo. Es el hueco más urgente, porque de él dependen las EPD 4 y 5.
+2. ~~Material nuevo para la EB 11~~ → hecho en `Tema 3 2627_maquetado.docx` (epígrafes 7 y 8).
 3. **Confirmar la recuperación del 09/12 en L1.** Si no se confirma, se aplica el plan B de la EB 16.
 4. **Tema 8 de la guía docente.** La guía 2025-26 incluye un Tema 8 («Las políticas educativas y otras políticas sociales»), sin material ni sesión en este curso. Habría que decidir si se retira de la guía o se trata como lectura.
-5. **Fichas de EPD y ponderación de la evaluación.** Siguen las del cronograma v1, con las semanas corregidas según el apartado 4. La propuesta de EPD de agosto (Caso 2 sobre mayores de 45) no coincide con el cronograma v1 (Caso 2 sobre el IMV); aquí se sigue el v1.
+5. **Fichas de EPD y ponderación de la evaluación.** Siguen las del cronograma v1, con las semanas corregidas según el apartado 4. Confirmado (24/09): el Caso 2 de EPD es el IMV; la propuesta de agosto (mayores de 45) queda descartada.
