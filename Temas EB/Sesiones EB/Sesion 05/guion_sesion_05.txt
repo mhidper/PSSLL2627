@@ -1,0 +1,188 @@
+================================================================================
+GUION EJECUTIVO · SESIÓN EB 5 (SEMANA 3)
+La Curva de Beveridge: Dinámica de Flujos, Emparejamiento Laboral y Cierre de Tema 1
+================================================================================
+Asignatura: Políticas Sociolaborales y de Empleo (Código 102023)
+Grados: Grado en RRLL y RRHH / Doble Grado en Derecho y RRLL-RRHH
+Universidad Pablo de Olavide (UPO) · Curso Académico 2026-2027
+Profesor: Manuel A. Hidalgo Pérez
+
+LÍNEA 1 (Turno de Mañana): Martes 29 de septiembre de 2026 (09:30 - 11:30 · 120 min / 2,0 h) · Aula E13A7
+LÍNEA 2 (Turno de Tarde):  Lunes 28 de septiembre de 2026 (20:00 - 21:30 · 90 min / 1,5 h) · Aula E10A3
+
+Micro-App Móvil Oficial: https://mhidper.github.io/micro_apps/simulador_curva_beveridge.html
+Presentación Oficial PPTX: Sesion 05 - La Curva de Beveridge y Emparejamiento Laboral.pptx (17 diapositivas 16:9)
+Textos de Referencia: Tema 1 (Apuntes Maquetados) — Epígrafe 6 completo (6.0 a 6.4)
+Figuras Oficiales: Figura 1.9 (Curva de Beveridge 1980-2024), Gráfico Desajuste PLD (EPA 2025T4) y Gráfico Pista de Baile y Beveridge Dual
+Hito Pedagógico: Cierre de Tema 1 y Lanzamiento del Caso 1 de EPD (Programa Emplea-T)
+
+--------------------------------------------------------------------------------
+NOTA DE COORDINACIÓN Y DURACIÓN ASIMÉTRICA (L1 = 120 min vs. L2 = 90 min)
+--------------------------------------------------------------------------------
+Esta es la única sesión de Tema 1 con duración lectiva asimétrica. Se estructura en:
+1. Núcleo Común (90 min): Impartido idénticamente en L1 y L2 (Bloques 1, 2, 3 y 4).
+2. Ampliación Exclusiva L1 (Bloque 3.5 · 30 min): Análisis empírico detallado del caso español (1980-2024), cuantificación del impacto en el empleo (-31%) y PIB (-55%), y debate de la reforma laboral de 2012. En L2 queda cubierto con una síntesis ejecutiva en el cierre y lectura guiada en apuntes.
+
+--------------------------------------------------------------------------------
+1. OBJETIVOS DE APRENDIZAJE Y COMPETENCIAS CLAVE
+--------------------------------------------------------------------------------
+1. Dinámica de Flujos y Tasa Estacionaria: Comprender el desempleo como equilibrio de flujos: entradas por separación (s) y salidas por contratación (f), derivando u* = s / (s + f) (Epígrafe 6.0).
+2. Función de Emparejamiento (Matching): Formalizar el proceso con m = A * U^alpha * V^(1-alpha), analizando la tensión de mercado (theta = V/U) y la eficiencia institucional (A) (Epígrafe 6.1).
+3. Geometría y Causalidad de Beveridge: Distinguir movimientos a lo largo de la curva (ciclo económico / demanda) frente a desplazamientos de la curva (cambios en A, desajuste de habilidades / mismatch o histéresis) (Epígrafe 6.2).
+4. Puntos Notables: Localizar en el plano (U, V) el Punto A (Tasa Natural u = v sobre bisectriz), Punto B (recesión keynesiana) y Punto C (sobrecalentamiento) (Epígrafe 6.3).
+5. Evidencia Empírica de España: Analizar el colapso de eficiencia tras 2008 (+5 p.p. de paro estructural) y la paradoja contemporánea: récord de vacantes (0,75%-0,90%) con paro rígido en 11,3% (Epígrafe 6.4).
+6. Políticas Públicas y Conexión con EPD: Adquirir el instrumental para auditar la Orden del Programa Emplea-T de la Junta de Andalucía, identificando el efecto peso muerto (deadweight) y la sustitución.
+
+--------------------------------------------------------------------------------
+2. ESTRUCTURA MINUTO A MINUTO COMPARADA
+--------------------------------------------------------------------------------
+LÍNEA 2 (Turno de Tarde · 90 minutos):
+[00:00 - 00:15 · 15 min]  BLOQUE 1: Noticia de Prensa, Enigma y Sondeo Forms en Directo
+[00:15 - 00:40 · 25 min]  BLOQUE 2: Mini-Lección 1 · Flujos (s, f) y Función de Emparejamiento
+[00:40 - 01:10 · 30 min]  BLOQUE 3: Laboratorio Activo · Micro-App Beveridge + Hoja de Trabajo
+[01:10 - 01:30 · 20 min]  BLOQUE 4: Reto Manuscrito Anti-IA en Papel + Rúbrica + Lanzamiento EPD 1
+
+LÍNEA 1 (Turno de Mañana · 120 minutos):
+[00:00 - 00:15 · 15 min]  BLOQUE 1: Noticia de Prensa, Enigma y Sondeo Forms en Directo
+[00:15 - 00:40 · 25 min]  BLOQUE 2: Mini-Lección 1 · Flujos (s, f) y Función de Emparejamiento
+[00:40 - 01:10 · 30 min]  BLOQUE 3: Laboratorio Activo · Micro-App Beveridge + Hoja de Trabajo
+[01:10 - 01:40 · 30 min]  BLOQUE 3.5 (EXCLUSIVO L1): Eficiencia del Emparejamiento y Evidencia España
+[01:40 - 02:00 · 20 min]  BLOQUE 4: Reto Manuscrito Anti-IA en Papel + Rúbrica + Lanzamiento EPD 1
+
+--------------------------------------------------------------------------------
+3. DESARROLLO DETALLADO POR BLOQUES
+--------------------------------------------------------------------------------
+
+BLOQUE 1: Noticia Disparadora, Enigma y Sondeo en Vivo (00:00 - 00:15 · 15 min)
+* Apertura y Noticia de Prensa (5 min):
+  - Titular proyectado: «Las empresas declaran más de 155.000 vacantes sin cubrir mientras el desempleo supera los 2,6 millones: hostelería, construcción, transporte y tecnología alertan de un bloqueo estructural» (Cinco Días / Expansión).
+  - Choque de datos: España lidera el desempleo de la UE (11,3% vs 6,0% media comunitaria) pero bate su récord de puestos sin cubrir (INE-ETCL).
+* Sondeo en Directo con Microsoft Forms (5 min):
+  - Escaneo del código QR oficial proyectado (qr_sondeo_sesion05.png).
+  - Pregunta: ¿Por qué coexisten 155.000 vacantes y 2,6 millones de desempleados? (Salarios bajos vs. Desajuste de habilidades vs. Ineficiencia intermediación vs. Subsidios desincentivadores).
+* Desmontaje Teórico y Pregunta Enigma (5 min):
+  - Proyección del resultado de votos.
+  - Evidencia Empírica de Microdatos EPA (Diapo 5 · INE 2025T4):
+    * De 2,77 M de desempleados, casi 1 millón (36,0%) son de larga duración (≥ 1 año) y 583.000 llevan más de 2 años.
+    * Concentración Senior: El 57,1% de los PLD tiene 45 o más años (frente a 33,8% en corta duración).
+    * Barrera Formativa: El 50,9% de los PLD tiene como titulación máxima la ESO o primaria.
+    * El Doble Cerrojo: El 29,1% reúne edad senior y baja formación, impidiendo el encaje con vacantes técnicas.
+  - Presentación del modelo de William Beveridge (1944).
+
+BLOQUE 2: Mini-Lección 1 · Flujos y Función de Emparejamiento (00:15 - 00:40 · 25 min)
+* Dinámica de Flujos (10 min · Epígrafe 6.0):
+  - El desempleo como balance de entradas y salidas: Delta U(t+1) = s * N(t) - f * U(t).
+  - En equilibrio estacionario (Delta U = 0): s * N = f * U.
+  - Como la población activa es L = N + U, dividiendo entre L se deduce: u* = s / (s + f).
+  - Vías de política: reducir separación (s) o aumentar salida/colocación (f).
+* Función de Emparejamiento Cobb-Douglas (10 min · Epígrafe 6.1):
+  - m = f(U, V, A) = A * U^alpha * V^(1-alpha).
+  - Parámetro A: Eficiencia institucional y tecnológica del emparejamiento.
+  - Tensión del mercado laboral: theta = V / U.
+* La Metáfora de la Pista de Baile y Modelo Basado en Agentes (Diapo 7 y Diapo 8 · Innovación Pedagógica):
+  - Diapo 7 (Metáfora Conceptual): Demandantes de empleo como personas buscando pareja y vacantes como huecos libres en la pista. Si no coinciden las habilidades o la música, la pista queda con huecos libres y personas solas.
+  - Diapo 8 (De la Pista de Baile a la Curva de Beveridge · ABM):
+    * Dos grupos de puntos parten de extremos separados: rojos (desempleados U) y azules (vacantes V).
+    * Al iniciar la simulación, se mueven aleatoriamente en el cuadrado (búsqueda browniana).
+    * Parámetro A (Habilidades / Cualificaciones): gobierna si al cruzarse se emparejan (parejas verdes M que bailan juntas) o rebotan por incompatibilidad (mismatch de habilidades).
+    * Shocks en la pista:
+      - En Recesión: Se retiran vacantes (desaparecen puntos azules) y los rojos quedan solos (movimiento a lo largo: u sube, v baja).
+      - En Expansión: Entran muchos puntos azules a buscar pareja (u baja, v sube).
+      - Con Desajuste (A bajo): Hay muchos rojos y muchos azules, pero rebotan sin emparejarse (desplazamiento hacia afuera de la curva).
+    * Trazado UV: Las coordenadas de la pista (U, V) mapean en vivo la Curva de Beveridge. Checkpoint con QR a la micro-app.
+
+BLOQUE 3: Laboratorio Activo · Micro-App Móvil y Hoja de Trabajo (00:40 - 01:10 · 30 min)
+* Apertura de la Micro-App Móvil (5 min):
+  - Escaneo de qr_app_sesion05.png: https://mhidper.github.io/micro_apps/simulador_curva_beveridge.html
+  - Reparto de la Hoja de Laboratorio en parejas (rol de Analistas de la Consejería de Empleo).
+* Fase A del Taller: Movimientos vs. Desplazamientos (12 min):
+  - Modificación del slider de ciclo económico: movimiento a lo largo de la curva (recesión u sube, v baja).
+  - Modificación del slider de eficiencia A y mismatch: desplazamiento hacia el exterior.
+* Fase B del Taller: Puntos Notables (8 min):
+  - Localización en la gráfica del Punto A (tasa natural sobre la bisectriz u = v), Punto B (recesión keynesiana) y Punto C (sobrecalentamiento).
+* Fase C del Taller: Auditoría de Emplea-T (5 min):
+  - Análisis del riesgo de peso muerto (deadweight loss) y cláusula de empleo neto.
+
+BLOQUE 3.5: Ampliación EXCLUSIVA Línea 1 (01:10 - 01:40 · 30 min)
+* Evidencia Empírica de España 1980-2024 (Figura 1.9 Panel B):
+  - Fase 1 (1980-2007 · Pre-crisis): Curva estable cerca del origen, anclada en Punto A.
+  - Fase 2 (2008-2013 · Gran Recesión): Desplazamiento brutal hacia la derecha (+5 p.p. de paro estructural). El colapso en A explicó el 31% de la pérdida de empleos y el 55% de la caída del PIB (modelo DGEM).
+  - Fase 3 (2014-2024 · Recuperación Parcial): España recuperó 3/4 del desplazamiento tras la reforma de 2012, pero en 2024 registra récord histórico de vacantes (0,75%-0,90%) con paro rígido en 11,3%.
+* Mini-Debate Crítico (8 min):
+  - ¿Por qué las reformas de 2012 se centraron en negociación colectiva y no en intermediación SAE/SEPE?
+
+BLOQUE 4: Reto Manuscrito Anti-IA en Papel, Rúbrica y Lanzamiento EPD (20 min)
+* Redacción Manuscrita Individual Anti-IA (10 min):
+  - Pantallas cerradas, solo papel y bolígrafo. Resolución de las dos preguntas del reto.
+* Subida Fotográfica Instantánea con QR (2 min):
+  - Escaneo de qr_reto_sesion05.png con Microsoft Forms institucional (@alu.upo.es).
+* Proyección de Rúbrica Oficial y Solución Canónica (5 min):
+  - Corrección formativa proyectada (0-1.000 pts).
+* Lanzamiento del Caso 1 de EPD (3 min):
+  - Proyección de la Orden de 3 de octubre de 2024 (Programa Emplea-T de la Junta de Andalucía).
+
+--------------------------------------------------------------------------------
+4. REACTIVOS DEL RETO MANUSCRITO DE CIERRE (EVALUACIÓN CONTINUA · 0-1.000 PTS)
+--------------------------------------------------------------------------------
+
+PREGUNTA 1 (Teórico-Conceptual · 500 puntos):
+A partir de la condición de flujo estacionario del mercado de trabajo y de la función de emparejamiento m = A * U^alpha * V^(1-alpha):
+a) Demuestre analíticamente por qué la tasa natural de desempleo de equilibrio a largo plazo puede expresarse como u* = s / (s + f) y explique qué representan las variables s y f.
+b) Utilizando la Curva de Beveridge, distinga conceptualmente entre un movimiento a lo largo de la curva y un desplazamiento de la curva hacia el exterior, indicando qué variables económicas provocan cada fenómeno.
+
+PREGUNTA 2 (Aplicada / Cuantitativa · 500 puntos):
+En la economía española coexisten actualmente más de 155.000 vacantes sin cubrir (máximo de la serie histórica con una tasa de vacantes v aprox. 0,75%) y una tasa de desempleo del 11,3%, duplicando holgadamente la media de la Unión Europea:
+a) Represente gráficamente la situación en el diagrama de Beveridge, sitúe la posición de España respecto a la bisectriz de 45° e identifique si se trata de un problema cíclico o estructural.
+b) Si el Ministerio de Economía decidiera inyectar 10.000 millones de euros en gasto público general de consumo creyendo erróneamente que el problema es de demanda agregada: ¿qué ocurrirá con las vacantes, el desempleo y la inflación?
+c) En el marco del Programa Emplea-T de la Junta de Andalucía, proponga dos medidas de política activa de empleo que permitan desplazar la curva hacia el origen incrementando el parámetro A, explicando cómo evitar el efecto de peso muerto (deadweight).
+
+--------------------------------------------------------------------------------
+5. RÚBRICA CANÓNICA OFICIAL DE CORRECCIÓN (BAREMO CONTINUO 0-1.000 PTS)
+--------------------------------------------------------------------------------
+P1.a) Derivación analítica de u* = s / (s + f):
+- Plantea entradas = salidas (s * N = f * U) y sustituye L = N + U: 200 pts.
+- Define con precisión s (tasa de separación) y f (tasa de colocación/salida): 50 pts.
+Subtotal P1.a: 250 pts.
+
+P1.b) Movimiento vs. Desplazamiento en la Curva de Beveridge:
+- Movimiento a lo largo: fluctuaciones cíclicas de demanda agregada (auge/recesión): 125 pts.
+- Desplazamiento hacia afuera: ineficiencia A, desajuste formativo (mismatch) o histéresis: 125 pts.
+Subtotal P1.b: 250 pts.
+
+P2.a) Diagnóstico y Representación Gráfica:
+- Gráfica UV con pendiente negativa, situando a España bajo la bisectriz (u > v) en curva desplazada: 100 pts.
+- Diagnóstico formal de desajuste estructural de emparejamiento: 100 pts.
+Subtotal P2.a: 200 pts.
+
+P2.b) Evaluación del Error Fatal de Demanda:
+- Explica que el gasto generalizado con desempleo estructural no genera empleo neto duradero: tensiona vacantes, genera inflación y déficit fiscal sin desplazar la curva: 150 pts.
+Subtotal P2.b: 150 pts.
+
+P2.c) Prescripción Emplea-T y Control del Peso Muerto:
+- Medidas de PAE que aumentan A (reskilling en sectores con vacantes, orientación SAE): 100 pts.
+- Definición de peso muerto (subvencionar empleo que se crearía igual) y cláusula de empleo neto: 50 pts.
+Subtotal P2.c: 150 pts.
+
+TOTAL RETO SESIÓN 05: 1.000 PUNTOS.
+
+Escala Oficial de Calificación:
+- Apto (Sobresaliente): 900 - 1.000 pts
+- Apto (Notable): 750 - 899 pts
+- Apto (Aprobado): 500 - 749 pts
+- No Apto (Mejorable): 300 - 499 pts
+- No Apto (Insuficiente): 0 - 299 pts
+
+--------------------------------------------------------------------------------
+6. MATERIALES Y ENLACES DEL REPOSITORIO
+--------------------------------------------------------------------------------
+- Carpeta oficial: Temas EB/Sesiones EB/Sesion 05/
+- Micro-App: https://mhidper.github.io/micro_apps/simulador_curva_beveridge.html
+- QR Micro-App: qr_app_sesion05.png
+- QR Sondeo Forms: qr_sondeo_sesion05.png
+- QR Reto Manuscrito: qr_reto_sesion05.png
+- QR Pasaporte Evaluación: qr_pasaporte_psll.png
+- Enigma Previo: enigma_previo_sesion_05.md
+- Hoja de Laboratorio: hoja_laboratorio_sesion_05.md
+- Guion Ejecutivo (Markdown): guion_sesion_05.md
+- Guion Ejecutivo (Texto Plano): guion_sesion_05.txt
+================================================================================

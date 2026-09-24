@@ -92,7 +92,7 @@
 
 ### 📎 4. Enlaces y Materiales del Repositorio
 
-* Presentación PPTX oficial: `Temas EB/Sesiones EB/Sesión 04/Sesion 04 - Tipología del Desempleo, NAIRU y Curva de Phillips.pptx`
+* Presentación PPTX oficial: `Temas EB/Sesiones EB/Sesion 04/Sesion 04 - Tipología del Desempleo, NAIRU y Curva de Phillips.pptx`
 * Códigos QR oficiales en alta resolución (Verde Pino `#113927`):
   - `qr_sondeo_sesion04.png`
   - `qr_reto_sesion04.png`
