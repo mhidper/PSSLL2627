@@ -35,6 +35,67 @@
 
 ---
 
+## Dirección de Arte y Estilo Visual (Brand Book EPD)
+
+### 🎨 Paleta Cromática Oficial (Homologada PSLL & Macro UPO)
+El vídeo debe respirar la identidad visual institucional de un *Think Tank* de economía laboral internacional (*Financial Times / EsadeEcPol / OCDE*):
+
+- **Verde Pino PSLL (`#113927`):** Color dominante de autoridad y titulares. Fondos de cierre y tarjetas principales.
+- **Verde Salvia (`#76927A`):** Color secundario de estructura. Rótulos de soporte, bordes y transiciones analíticas.
+- **Coral Activo (`#E98F71`):** Color dinámico de llamada a la acción (*Call to Action*). Botones interactivos, resaltados y la onda transversal de mediación.
+- **Verde Menta Suave (`#F4F8F5`):** Fondos de tarjetas, callouts de datos y áreas de confort de lectura.
+- **Verde Tinta (`#2F3A30`):** Texto de lectura y subtítulos de pantalla (prohibido utilizar negro puro `#000000`).
+- **Blanco Puro (`#FFFFFF`):** Lienzo base de los planos de pantalla, limpieza visual y respiración minimalista.
+- **Azul Marino UPO (`#0B1C36`):** Escudo y sellos institucionales de la Universidad.
+
+---
+
+### 🔤 Tipografías en Pantalla
+- **Titulares y Píldoras de Fase:** `Outfit` (Bold / Heavy, 700–800) en mayúsculas/minúsculas equilibradas, espaciado de letras limpio (`letter-spacing: -0.5px`).
+- **Cuerpo de Texto y Enunciados:** `Inter` o `Calibri` (Regular y Semi-Bold) a tamaño legible en pantallas móviles.
+- **Métricas, Códigos y Hash Criptográfico:** `JetBrains Mono` o `Consolas` monoespaciada para transmitir rigor técnico e infalsificabilidad.
+
+---
+
+## Dirección de Cámara y Tratamiento Fotográfico (Escena por Escena)
+
+### 📐 Tratamiento General de Imagen
+- **Resolución y Frame Rate:** 4K UHD o 1080p a **60 fps** (los movimientos de cursor y transiciones de pantalla deben ser ultra fluidos).
+- **Tratamiento de la captura:** No utilizar screencasts planos o estáticos. Utilizar una composición en **perspectiva isométrica suave (inclinación de 10º a 15º)** o enmarcado en dispositivo flotante (portátil de aluminio / tablet de gama alta) sobre fondo neutro en Verde Menta (`#F4F8F5`) con sombras volumétricas suaves (`rgba(17, 57, 39, 0.08)`).
+- **Iluminación:** Luz de estudio suave y difusa (5600K luz día), reflejos controlados sin brillos que deslumbren el texto. Profundidad de campo reducida (*f/2.8* o *f/4.0*) para generar un desenfoque de fondo (*bokeh*) cremoso cuando la cámara hace foco en un dato concreto.
+
+---
+
+### 🎥 Planos y Movimientos de Cámara por Escena
+
+#### Escena 1 (00''–07'' · Apertura):
+- **Tipo de Plano:** *Plano General Centrado* $\rightarrow$ *Macro Zoom-In*.
+- **Ángulo:** Frontal riguroso (90º), simetría perfecta.
+- **Movimiento:** La cámara arranca en un plano general con el lienzo blanco. El logotipo de los dos anillos entrelazados (Verde Pino y Verde Salvia) y la onda Coral se dibujan vectorialmente en pantalla. La cámara realiza un avance rápido y suave (*Push-In*) atravesando el centro de los anillos para adentrarse en la interfaz del laboratorio.
+
+#### Escena 2 (07''–18'' · Fase 0: Noticia y Sondeo):
+- **Tipo de Plano:** *Plano Medio Corto* con rotación isométrica de 12º $\rightarrow$ *Primer Plano (Close-Up)*.
+- **Ángulo:** Picado sutil (30º desde arriba) simulando la mirada del estudiante ante la pantalla.
+- **Movimiento:** *Travelling* lateral suave deslizándose por los titulares de prensa económica. Al llegar a la caja del sondeo, la cámara hace un reencuadre rápido (*Snap Zoom*) hacia las opciones de votación. El cursor pulsa la Opción C y la cámara mantiene el foco en el destello verde de revelación de los datos reales.
+
+#### Escena 3 (18''–30'' · Fase 1: Datos EPA y Taller):
+- **Tipo de Plano:** *Plano Detalle (Macro Shot)*.
+- **Ángulo:** Cenital o frontal con profundidad de campo selectiva (foco nítido en el dato que se menciona, desenfoque suave en los bordes).
+- **Movimiento:** *Dolly In* continuo muy lento (avance milimétrico hacia adelante). Los números de las tarjetas (*13,9%*, *58,2%*) realizan una animación de conteo rápido (*odometer count-up*). En el Taller de Cálculo, la cámara encuadra en plano cerrado el cajetín numérico donde se introduce el valor y la aparición del distintivo verde *“¡Correcto!”*.
+
+#### Escena 4 (30''–40'' · Fase 2: Informe y Sello PDF):
+- **Tipo de Plano:** *Over-The-Shoulder* simulado o *Primer Plano en Ángulo Isométrico*.
+- **Ángulo:** 20º de inclinación diagonal con perspectiva tridimensional elegante.
+- **Movimiento:** La cámara barre verticalmente el editor de los 4 ejes mientras el texto aparece tecleado con fluidez y el contador de palabras se tiñe de verde. Al pulsar el botón de sellado, se produce una micro-vibración cinematográfica de cámara (*camera shake* muy sutil, casi imperceptible) acompañada de un destello de luz coral que fija el sello SHA-256 y despliega el botón de descarga del PDF.
+
+#### Escena 5 (40''–45'' · Cierre y Llamada a la Acción):
+- **Tipo de Plano:** *Plano General Imponente* con alejamiento suave (*Pull-Back / Dolly Out*).
+- **Ángulo:** Frontal majestuoso y centrado.
+- **Fondo:** Lienzo envolvente en Verde Pino PSLL (`#113927`) con sutil viñeteado oscuro en las esquinas (`#0B2419`).
+- **Elementos:** Los rótulos aparecen con animación de entrada elástica y elegante: el código de ejemplo `PSLL-EPD-XXXX` enmarcado en coral, la URL web en blanco tipografía `Outfit` pesada, y los escudos de la UPO y PSLL sellando el encuadre final.
+
+---
+
 ## Indicaciones para la Producción Audiovisual (Grabación y Montaje)
 
 1. **Captura de Pantalla Real:**
