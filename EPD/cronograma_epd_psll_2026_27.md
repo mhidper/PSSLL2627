@@ -64,20 +64,22 @@ Para que el trabajo en el aula de informática sea fluido y riguroso, cada sesi�
   * EPD11: Martes 06/10/2026 (11:30–13:00) · Aula E24AINFB01
   * EPD12: Martes 06/10/2026 (13:00–14:30) · Aula E14AINF1
   * EPD21: Viernes 09/10/2026 (19:30–21:00) · Aula E10AINF6
-* **Objetivo de la sesión:** Capacitar al estudiante para dimensionar con rigor estadístico la incidencia estructural del desempleo en parados de larga duración (PLD) y mayores de 45 años, contrastando el relato mediático con microdatos oficiales en tres escalas territoriales (UE-27, España y Andalucía).
-* **Materiales de trabajo:**
-  1. *Prensa disparadora:* Artículos recientes sobre edadismo y desempleo sénior (ABC, Expansión, El País).
-  2. *Bases estadísticas:* Encuesta de Población Activa (INE) y Eurostat (*Labour Force Survey*).
-  3. *Instrumental gráfico y hoja de trabajo:* Plantilla de cálculo con series temporales armonizadas y gráficos base.
+* **Modalidad Operativa:** **Laboratorio Digital Autoguiado Anti-IA** a través de la Web App Oficial de EPD de PSLL (`https://mhidper.github.io/micro_apps/epd_laboratorio.html`). Diseñada para garantizar el 90% de autonomía del estudiante y asegurar la máxima homogeneidad y equidad formativa, especialmente ante la eventualidad de grupos en fase de asignación de profesorado.
+* **Sistema de Acceso y Trazabilidad:**
+  1. *Identificación Institucional:* El alumno accede introduciendo su **acrónimo oficial UPO** (usuario de los servicios virtuales).
+  2. *Código EPD Permanente:* La primera vez que entra, la plataforma le genera y muestra su **Código de Estación EPD**. Este código queda registrado en su perfil y será su identificador invariable durante todo el curso.
+  3. *Asignación Dinámica Individualizada:* Dicho código desbloquea de forma única su caso de trabajo (cohorte específica de edad, ámbito territorial asignado y series temporales), impidiendo la copia o el trasvase de respuestas entre compañeros.
+  4. *Telemetría y Registro Docente Activo:* El sistema registra en tiempo real las entradas, tiempo efectivo de permanencia, clics de interacción y avance por fases, ofreciendo al profesor un cuadro de mando integral de seguimiento.
+* **Barreras Tecnológicas Anti-IA Integradas:**
+  * *Explorador dinámico en DOM local:* Microdatos de la EPA y Eurostat navegables mediante filtros interactivos que la IA externa no puede consultar automáticamente.
+  * *Clipboard Trap (Detección de Pegado):* Bloqueo y registro de eventos de pegado masivo instantáneo (`paste`), exigiendo redacción progresiva en teclado con monitorización de velocidad de tecleo (WPM).
+  * *Validación Aritmética Dinámica:* La plataforma comprueba en tiempo real si los cálculos matemáticos del alumno coinciden con su caso asignado antes de permitir el paso al dictamen final, neutralizando las alucinaciones numéricas típicas de los LLMs.
 * **Estructura de la sesión (90 min):**
-  * **00–15 min · Apertura y contraste de titulares:** Lectura de las noticias de prensa. Breve sondeo guiado sobre percepciones populares vs. realidad estadística (ej. ¿qué porcentaje del total de parados en Andalucía tiene 45 o más años?).
-  * **15–45 min · Taller de datos asistido:** Manejo de las tablas de Eurostat e INE. Identificación de magnitudes clave: tasa de paro por cohortes, peso de los PLD sobre el desempleo total y tasa de paro de muy larga duración (>24 meses).
-  * **45–75 min · Trabajo en equipo:** Cálculo de variaciones interanuales y brechas territoriales (Andalucía vs. media nacional y media UE-27). Elaboración de la tabla de síntesis comparada.
-  * **75–90 min · Redacción y subida del Entregable Individual 1:** Respuesta argumentada de 250-300 palabras sintetizando:
-    1. El peso relativo y evolución de ambos colectivos en la última década.
-    2. La singularidad estructural de Andalucía frente a España y la UE.
-    3. Una conclusión sobre si el problema es de naturaleza coyuntural o estructural.
-* **Entregable y Evaluación:** **Entregable Individual 1 (0,50 puntos)**. Subida obligatoria antes de salir del aula a través del enlace del Aula Virtual / Microsoft Forms.
+  * **00–15 min · Apertura y Activación:** Acceso a la Web App, registro del código EPD y visualización de la vídeo-píldora introductoria de Manuel con el reto de la sesión.
+  * **15–50 min · Laboratorio de Microdatos:** Interacción con el visor de datos de la EPA (INE) y Eurostat (LFS). Obtención de magnitudes clave: tasa de paro por cohortes, peso de parados de larga duración (>12 meses) y de muy larga duración (>24 meses) y variación decenal.
+  * **50–70 min · Checkpoint Cuantitativo y Validación:** Introducción de los cálculos en el validador interactivo de la web para su verificación matemática en tiempo real.
+  * **70–90 min · Dictamen Técnico y Sellado Digital:** Redacción individual del dictamen socioeconómico (250-300 palabras) sobre la naturaleza estructural vs. coyuntural del problema en Andalucía y sellado criptográfico del comprobante oficial de entrega.
+* **Entregable y Evaluación:** **Entregable Individual 1 (0,50 puntos)**. Sellado y validado directamente en la Web App al término de la sesión para alimentar el Pasaporte de Evaluación Continua.
 
 ---
 
@@ -124,29 +126,29 @@ Para que el trabajo en el aula de informática sea fluido y riguroso, cada sesi�
 
 ---
 
-### Sesión EPD 4 · Incentivos a la Contratación: Análisis Técnico del Programa Emplea-T
-**Bloque 3 (Parte II) · Normativa Aplicada, Diseño de Ayudas y Evaluación Económica**
+### Sesión EPD 4 · Incentivos a la Contratación: Análisis Práctico del Programa Emplea-T
+**Bloque 3 (Parte II) · Normativa Aplicada, Decisiones Empresariales y Efectos en el Empleo**
 
 * **Fechas y grupos:** 
   * EPD12: Lunes 16/11/2026 (13:00–14:30) · Aula E14AINF1
   * EPD11: Martes 17/11/2026 (11:30–13:00) · Aula E24AINFB01
   * EPD21: Viernes 20/11/2026 (19:30–21:00) · Aula E10AINF6
-* **Objetivo de la sesión:** Realizar una autopsia técnica y cuantitativa a una política real andaluza: la Orden de 3 de octubre de 2024 (Programa Emplea-T), calculando la intensidad de la ayuda, la condicionalidad de mantenimiento del empleo y estimando los riesgos teóricos de peso muerto (*deadweight*) y efecto sustitución.
+* **Objetivo de la sesión:** Examinar de forma práctica y aplicada cómo funciona una política real de la Junta de Andalucía: la Orden de 3 de octubre de 2024 (Programa Emplea-T), simulando cuánto apoyo supone la ayuda para una empresa frente al coste salarial y valorando si las condiciones exigidas evitan la rotación indeseada de trabajadores.
 * **Materiales de trabajo:**
   1. *Texto normativo oficial:* **Orden de 3 de octubre de 2024**, por la que se aprueban las bases reguladoras del Programa Emplea-T (BOJA).
-  2. *Presentación de apoyo docente:* Esquema analítico de las líneas de subvención (Líneas 1, 2, 4 y 7) y desglose presupuestario.
-  3. *Simulador cuantitativo en Excel:* Hoja de cálculo para modelizar el coste por contratación indefinida, el subsidio efectivo mensual y la probabilidad de absorción de costes laborales.
+  2. *Presentación de apoyo docente:* Esquema visual de las líneas de subvención (Líneas 1, 2, 4 y 7) y colectivos prioritarios.
+  3. *Simulador interactivo de costes:* Herramienta visual en la Web App para calcular el porcentaje de coste de personal que cubre la subvención según el salario de convenio.
 * **Estructura de la sesión (90 min):**
-  * **00–20 min · Anatomía de la Orden:** Presentación docente del esquema de la orden: beneficiarios, cuantías fijas (a tanto alzado), suplementos por pertenencia a colectivos vulnerables y requisitos de jornada y permanencia (mínimo 12 meses).
-  * **20–55 min · Taller de cálculo y evaluación económica:**
-    1. *Cálculo del subsidio relativo:* ¿Qué porcentaje del coste salarial y de Seguridad Social anual de un trabajador en convenio representa la ayuda estándar y la ayuda incrementada para mayores de 45 años o PLD?
-    2. *Evaluación de efectos distorsionantes:* ¿Qué cláusulas de la orden intentan minimizar el efecto sustitución (destrucción de empleo previo)? ¿Es suficiente un periodo de mantenimiento de 12 meses para evitar el efecto rotación?
-  * **55–75 min · Comparativa cruzada Emplea-T vs. Talento 45+:** Ventajas y limitaciones de actuar sobre el lado de la demanda (incentivar al empleador) vs. actuar sobre el lado de la oferta (capacitar al trabajador desempleado).
-  * **75–90 min · Redacción y subida del Entregable Individual 3:** Ficha técnica estructurada donde cada estudiante formaliza:
-    1. Cuadro de correspondencia de las líneas de Emplea-T con las categorías OCDE.
-    2. Cálculo del incentivo efectivo para el colectivo de PLD / mayores de 45.
-    3. Dictamen crítico razonado: estimación cualitativa del riesgo de peso muerto y propuestas de mejora técnica de la orden.
-* **Entregable y Evaluación:** **Entregable Individual 3 (0,50 puntos)**. Subida obligatoria individual al cierre de la sesión.
+  * **00–20 min · Análisis del esquema de la Orden:** Presentación guiada de los aspectos clave: beneficiarios, cuantías fijas, suplementos por colectivos vulnerables y requisitos de mantenimiento del contrato (mínimo 12 meses).
+  * **20–55 min · Taller práctico con el simulador de costes:**
+    1. *Apoyo efectivo a la contratación:* ¿Qué proporción del coste anual de personal representa la ayuda para un contrato indefinido ordinario frente a uno de mayor de 45 años o parado de larga duración?
+    2. *Reflexión sobre decisiones de contratación:* ¿Qué garantías exige la orden para que las empresas creen empleo neto y no sustituyan a trabajadores previos? ¿Es suficiente el periodo de 12 meses para consolidar el puesto?
+  * **55–75 min · Comparativa de enfoques (Emplea-T vs. Talento 45+):** Ventajas de ayudar a la empresa en la contratación (lado de la demanda) frente a formar y orientar al trabajador desempleado (lado de la oferta).
+  * **75–90 min · Redacción y validación del Entregable Individual 3:** Breve ficha aplicada donde cada estudiante resume:
+    1. Correspondencia básica de las líneas de Emplea-T con las categorías OCDE.
+    2. Impacto de la subvención en la reducción de costes de contratación para el colectivo analizado.
+    3. Valoración laboral razonada: propuestas sencillas para mejorar la eficacia de la convocatoria.
+* **Entregable y Evaluación:** **Entregable Individual 3 (0,50 puntos)**. Cumplimentado y validado en la plataforma al cierre de la sesión.
 
 ---
 
