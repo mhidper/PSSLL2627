@@ -23,6 +23,13 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 BASE_DIR = os.path.dirname(SCRIPT_DIR)
 SCRATCH_DIR = os.path.join(BASE_DIR, "scratch")
 
+import unicodedata
+
+def strip_accents(s):
+    if not s:
+        return ""
+    return ''.join(c for c in unicodedata.normalize('NFD', str(s)) if unicodedata.category(c) != 'Mn')
+
 def calcular_token_ciego(dni):
     dni_str = str(dni).strip().zfill(8)
     return dni_str[-5:-1]
@@ -66,74 +73,96 @@ def procesar_anonimizacion(forms_dir, sesion_num=1):
     output_dir = os.path.join(SCRATCH_DIR, f"ciegas_{sesion_id}")
     os.makedirs(output_dir, exist_ok=True)
 
-    # Buscar Excel de Forms en la carpeta
-    excel_files = [f for f in os.listdir(forms_dir) if f.endswith(".xlsx") and not f.startswith("~$")]
-    fotos_dir = forms_dir
-
-    # Si hay subcarpeta 'Preguntas' o similar, o las fotos están en la raíz
-    subdirs = [os.path.join(forms_dir, d) for d in os.listdir(forms_dir) if os.path.isdir(os.path.join(forms_dir, d))]
-    
     # Recoger todas las imágenes
-    image_extensions = (".jpg", ".jpeg", ".png", ".webp")
+    image_extensions = (".jpg", ".jpeg", ".png", ".webp", ".heic")
     imagenes_encontradas = []
     
     for root, _, files in os.walk(forms_dir):
         for f in files:
             if f.lower().endswith(image_extensions):
+                # Si es HEIC y ya existe su versión JPG en la misma carpeta, omitir el HEIC
+                if f.lower().endswith(".heic") and os.path.exists(os.path.join(root, f[:-5] + ".jpg")):
+                    continue
                 imagenes_encontradas.append(os.path.join(root, f))
 
     print(f"[*] Total de imágenes encontradas en Forms: {len(imagenes_encontradas)}")
 
     mapeo_secreto = {}
+    tokens_usados = {}
     procesadas = 0
 
-    for img_path in imagenes_encontradas:
+    for img_path in sorted(imagenes_encontradas):
         filename = os.path.basename(img_path)
-        # Normalizar para buscar coincidencia por nombre o correo
-        fn_lower = filename.lower()
+        f_clean = strip_accents(filename)
         
-        # Buscar en el censo el alumno correspondiente
-        match_alumno = None
+        best_match = None
+        best_score = 0
+        
         for _, row in df_censo.iterrows():
-            nom = str(row["nombre"]).lower()
-            ape = str(row["apellidos"]).lower()
-            ape_parts = ape.split()
-            username = str(row["username"]).lower()
-            dni = str(row["id_norm"])
+            nom = strip_accents(row['nombre'])
+            ape = strip_accents(row['apellidos'])
+            nom_parts = [w for w in re.findall(r'[a-z]+', nom) if len(w) > 2]
+            ape_parts = [w for w in re.findall(r'[a-z]+', ape) if len(w) > 2]
+            
+            score = 0
+            # Primer apellido: peso 6
+            if len(ape_parts) > 0:
+                p1 = ape_parts[0]
+                if p1 in f_clean or (len(p1) >= 4 and p1[:4] in f_clean):
+                    score += 6
+            # Segundo apellido: peso 4
+            if len(ape_parts) > 1:
+                p2 = ape_parts[1]
+                if p2 in f_clean or (len(p2) >= 4 and p2[:4] in f_clean):
+                    score += 4
+            # Nombre: peso 3
+            for np in nom_parts:
+                if np in f_clean or (len(np) >= 4 and np[:4] in f_clean):
+                    score += 3
+                    
+            usr = str(row['username']).lower()
+            dni = str(row['id_norm'])
+            if usr in f_clean or dni in f_clean:
+                score += 20
+                
+            if score > best_score:
+                best_score = score
+                best_match = row
 
-            # Si el nombre de fichero contiene username, dni o apellidos
-            if username in fn_lower or dni in fn_lower:
-                match_alumno = row
-                break
-            if len(ape_parts) > 0 and len(ape_parts[0]) > 3 and ape_parts[0] in fn_lower:
-                match_alumno = row
-                break
-
-        if match_alumno is not None:
-            token = match_alumno["token"]
-            dest_img = os.path.join(output_dir, f"{token}.jpg")
+        if best_match is not None and best_score >= 6:
+            token = best_match["token"]
+            idx = tokens_usados.get(token, 0) + 1
+            tokens_usados[token] = idx
+            
+            suffix = f"_{idx}" if idx > 1 else ""
+            ciego_name = f"{token}{suffix}.jpg"
+            dest_img = os.path.join(output_dir, ciego_name)
             censurar_cabecera_imagen(img_path, dest_img, crop_pct=0.14)
-            mapeo_secreto[token] = {
+            
+            map_key = f"{token}{suffix}"
+            mapeo_secreto[map_key] = {
                 "token": token,
-                "dni": match_alumno["id_norm"],
-                "nombre_completo": match_alumno["nombre_completo"],
+                "dni": best_match["id_norm"],
+                "nombre_completo": best_match["nombre_completo"],
                 "archivo_origen": filename,
-                "archivo_ciego": f"{token}.jpg"
+                "archivo_ciego": ciego_name
             }
             procesadas += 1
+            print(f"  [+] {filename} -> {ciego_name} ({best_match['nombre_completo']}) [score:{best_score}]")
         else:
-            # Si no hace match directo, anonimizar con token hash temporal
             token_temp = f"UNK_{procesadas+1:03d}"
-            dest_img = os.path.join(output_dir, f"{token_temp}.jpg")
+            ciego_name = f"{token_temp}.jpg"
+            dest_img = os.path.join(output_dir, ciego_name)
             censurar_cabecera_imagen(img_path, dest_img, crop_pct=0.14)
             mapeo_secreto[token_temp] = {
                 "token": token_temp,
                 "dni": "DESCONOCIDO",
                 "nombre_completo": "Sin coincidencia automática",
                 "archivo_origen": filename,
-                "archivo_ciego": f"{token_temp}.jpg"
+                "archivo_ciego": ciego_name
             }
             procesadas += 1
+            print(f"  [?] {filename} -> {ciego_name} (DESCONOCIDO)")
 
     # Guardar mapeo secreto en scratch (para re-asociar en fase 4)
     mapeo_path = os.path.join(SCRATCH_DIR, f"mapeo_ciego_{sesion_id}.json")
