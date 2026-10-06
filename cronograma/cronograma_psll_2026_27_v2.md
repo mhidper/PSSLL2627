@@ -78,6 +78,7 @@ L1 Mar 06/10 (120 min) · L2 Vie 09/10 (120 min). En las dos líneas es el mismo
 - §4.4 Efectos no deseados (peso muerto, sustitución, desplazamiento, *creaming*, rotación, estigma) y coste por empleo neto (Figura 2.1) · 35 min
 - §4.5 Caso real: el Programa Emplea-T. Enlaza con la EPD 1 · 25 min
 - §5.1 Garantía Juvenil y §5.2 fondos europeos · 15 min
+*(Nota: el gasto en CEE y discapacidad de la AIReF se introduce en la Fase 1 como choque empírico; el análisis a fondo del modelo de empleo protegido vs. ordinario se emplaza a la EB 8).*
 
 Lectura: §5.3 Digitalización y modernización.
 
@@ -86,8 +87,8 @@ L1 Mar 13/10 (120 min) · L2 Vie 16/10 (120 min)
 
 - §6.1-6.3 La pregunta contrafactual, el sesgo de selección y los métodos (experimento, diferencias en diferencias, emparejamiento, regresión discontinua; Figura 2.2) · 40 min
 - §6.4 Lo que una evaluación individual no ve y §6.5 del efecto al coste (base de la EPD 3) · 15 min
-- §7.1 Evidencia empírica (Card, Kluve y Weber; AIReF; evaluación intermedia de la EEAAE 2021-2024) · 25 min
-- §7.2 Comparativa internacional (Figura 2.3) · 15 min
+- §7.1 Evidencia empírica y evaluación de la AIReF: el modelo de Centros Especiales de Empleo (CEE), bonificaciones permanentes del 100% y la baja transición a empresa ordinaria (< 1,5%) vs. Card, Kluve y Weber · 25 min
+- §7.2 Comparativa internacional (Alemania y empresas inclusivas; Figura 2.3) · 15 min
 - §7.3 Desafíos pendientes y §2.3 Estrategia 2025-2028 (en L2, solo repaso) · 20 min
 - Cierre del Tema 2 y puente hacia las pasivas · 5 min
 
