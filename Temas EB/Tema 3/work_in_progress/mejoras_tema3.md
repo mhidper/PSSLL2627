@@ -1,7 +1,7 @@
 # Tema 3 — Políticas pasivas del mercado de trabajo
 ## Plan de mejoras del material
 
-> Estado: propuesta pendiente de aplicar. Ningún archivo de `Apuntes/`, `Diapositivas/`, `Lecturas complementarias/` ni `Multimedia/` se ha modificado todavía.
+> Estado: ✅ Completado y consolidado (Octubre 2026). Todos los ajustes aplicados con éxito en `Apuntes/`, `Diapositivas/` y `Lecturas complementarias/`.
 
 ---
 
@@ -69,8 +69,8 @@ Revisadas las cinco infografías HTML interactivas (`balanza de la protección`,
 
 ## 5. Checklist priorizado
 
-- [ ] Añadir sección de "Referencias bibliográficas" al apunte de texto (9 estudios citados sin listar, ver 1.1)
-- [ ] Añadir la misma lista de referencias a `Lecturas complementarias/...Evidencia y Análisis II.docx`
-- [ ] Verificar visualmente la diapositiva 73 (imagen de cierre) y sustituirla si lleva marca de Kimi
-- [ ] Añadir el bloque "Evaluación" al índice de la diapositiva 2 (quedarían 7 bloques)
-- [ ] (Opcional, a decisión del profesor) valorar simplificar el nivel de detalle metodológico de la sección 6 de los apuntes para el nivel de 3º de grado
+- [x] Añadir sección de "Referencias bibliográficas" al apunte de texto (`Tema 3 2627_maquetado.docx` / `.pdf`)
+- [x] Añadir la misma lista de referencias a `Lecturas complementarias/Políticas Pasivas de Empleo_ Evidencia y Análisis II.docx` / `.pdf`
+- [x] Sustituir la diapositiva 73 (imagen de cierre de Kimi) por la contraportada oficial de marca PSLL (UPO)
+- [x] Añadir el bloque "Evaluación" al índice de la diapositiva 2 (actualizado a "Evaluación y Reformas")
+- [x] Maquetación oficial de apuntes 26-27 con cabecera institucional, cajas de sesión docencia EB 9-11, figuras 300 DPI (3.1, 3.2, 3.3) y exportación nativa a PDF
