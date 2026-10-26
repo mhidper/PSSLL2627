@@ -66,8 +66,10 @@
 
 ---
 
-#### Fase 5: Reto Manuscrito, Subida y Evaluación Ciega (85–120 min)
+#### Fase 5: Retos Manuscritos Diferenciados, Subida y Evaluación Ciega (85–120 min)
 * **85–95 min:** Se expone la comparativa de generosidad europea (Figura 3.2: tasas de reemplazo netas y duración máxima de la protección).
-* **95–105 min (Reto Manuscrito):** Portátiles y móviles guardados. Se reparte la cuartilla oficial. Los estudiantes disponen de **10 minutos cronometrados** para responder a mano al caso del Trabajador A (cálculo de 300 días / 10 meses y cuantías al 70% de 1.800 = 1.260 € y al 60% = 1.080 €) y a la explicación de la *Paradoja Española*.
+* **95–105 min (Retos Teóricos en Papel):** Portátiles y móviles guardados. Se reparte la cuartilla oficial. Los estudiantes disponen de **10 minutos cronometrados** para responder a mano al reto teórico correspondiente a su sesión:
+  - **Martes (Línea 1 · 20 de Octubre):** Fallo del mercado privado (selección adversa vs. riesgo covariante sistémico) y evidencia de Raj Chetty (efecto liquidez vs. riesgo moral).
+  - **Viernes (Línea 2 · 23 de Octubre):** Resolución de la Paradoja Española del gasto pasivo (% PIB vs. gasto por punto de paro) y lógica de la estructura dual del sistema (contributivo vs. asistencial).
 * **105–107 min (Subida):** Se proyecta `qr_reto_sesion09.png`. A la orden del profesor, los alumnos fotografían la cuartilla y la suben a Microsoft Forms.
-* **107–120 min (Rúbrica y Cierre):** Proyección inmediata de la solución modelo oficial (500 pts P1 + 500 pts P2) y feedback colectivo. Enlace con la Sesión 10: *Activación, control de la búsqueda, el CAE y la evidencia de Chetty*.
+* **107–120 min (Rúbrica y Cierre):** Proyección inmediata de la solución modelo oficial (500 pts P1 + 500 pts P2) del turno correspondiente y feedback colectivo. Enlace con la Sesión 10: *Activación, control de la búsqueda, el CAE y reformas pendientes*.

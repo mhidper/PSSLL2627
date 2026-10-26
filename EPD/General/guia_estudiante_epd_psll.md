@@ -57,7 +57,7 @@ Para garantizar una experiencia ágil, homogénea y tecnológicamente avanzada, 
 🌐 **Dirección de acceso:** `https://mhidper.github.io/micro_apps/epd_laboratorio.html`
 
 ### ¿Cómo te identificas?
-1. **Tu Acrónimo Institucional UPO:** En la pantalla inicial de la web, introduce tu acrónimo oficial de acceso a los servicios de la Universidad Pablo de Olavide (el mismo que utilizas en los Servicios Personales o Aula Virtual; ej. `sagudel`, `laltucl`, etc.).
+1. **Tu Acrónimo Institucional UPO:** En la pantalla inicial de la web, introduce tu acrónimo oficial de acceso a los servicios de la Universidad Pablo de Olavide (el mismo usuario que utilizas en los Servicios Personales o Aula Virtual, sin @alu.upo.es).
 2. **Generación del Código EPD Permanente:** La primera vez que entres con tu acrónimo, la plataforma te generará y mostrará tu **Código de Estación EPD** (con formato `PSLL-EPD-XXXX`).
    * **¡IMPORTANTE!** Este código es personal, intransferible y permanente. Guárdalo o anótalo en tus notas personales. A partir de esa primera sesión, podrás utilizarlo para identificarte y desbloquear tu estación de trabajo en cualquier momento.
 3. **Asignación Dinámica de Caso:** Al autenticarte, tu código desbloquea de forma automática **tu caso específico de análisis**: una cohorte sociodemográfica asignada (tramo de edad y género), un ámbito territorial de contraste (Andalucía frente a España o un estado miembro de la UE) y una ventana temporal de referencia.

@@ -1,28 +1,45 @@
 # Reto Manuscrito Individual · Sesión EB 9
-## Fase 5: Caso Práctico en Papel, Subida Fotográfica y Solución Modelo (0–1.000 pts)
+## Fase 5: Caso Teórico en Papel, Subida Fotográfica y Solución Modelo (0–1.000 pts)
 **Asignatura:** Políticas Sociolaborales y de Empleo (Código 102023) · Grado en RRLL y RRHH / Doble Grado DER-RRLL  
 **Universidad Pablo de Olavide · Curso Académico 2026-2027**  
 **Profesor:** Manuel A. Hidalgo Pérez  
 
+> **Arquitectura de Evaluación Continua Diferenciada:**  
+> A fin de garantizar la equidad evaluativa y evitar filtraciones entre turnos, se establecen **dos retos teóricos conceptualmente independientes**:  
+> - **Turno Martes (Línea 1 · 20 de Octubre):** Fallo del mercado privado de seguros y evidencia teórica de Chetty (2008).  
+> - **Turno Viernes (Línea 2 · 23 de Octubre):** La «Paradoja Española» del gasto pasivo y la arquitectura dual del sistema.
+
 ---
 
-### 📝 1. Enunciado Oficial Proyectado en Pantalla (10 minutos · Solo Lápiz y Papel)
+### 📝 1. Enunciados Oficiales Proyectados en Pantalla (10 minutos · Solo Lápiz y Papel)
 
 > **POLÍTICA DE AULA:** Portátiles cerrados y teléfonos móviles guardados. Solo papel y bolígrafo.  
 > Redacta a mano en tu cuartilla oficial de forma clara y sintética (máximo 1 cara).
 
+#### 📅 OPCIÓN A: Sesión Martes (Línea 1 · 20 de Octubre)
 ```
-CASO PRÁCTICO · RETO INDIVIDUAL SESIÓN EB 9
+RETO TEÓRICO · SESIÓN EB 9 (TURNO MARTES · LÍNEA 1)
 
-Un graduado en Relaciones Laborales y Recursos Humanos se incorpora al departamento de asesoría sociolaboral de un sindicato y atiende a dos trabajadores que acaban de perder su empleo en el sector servicios:
+Responde a mano en tu cuartilla a estas dos cuestiones teóricas fundamentales de la materia:
 
-Trabajador A (30 años): Ha trabajado de forma continuada durante los últimos 2 años y medio (900 días cotizados ininterrumpidos), con una base reguladora mensual promedio de 1.800 €. No tiene hijos a cargo.
-Trabajador B (48 años): Ha acumulado únicamente 240 días de cotización en los últimos 6 años debido a la concatenación de empleos informales y contratos de muy corta duración. Carece de rentas propias.
+1. (500 pts) Fallo del Mercado Privado de Seguros:
+   Explica por qué las compañías privadas de seguros no ofrecen pólizas contra el desempleo. En tu respuesta, diferencia con rigor el concepto de selección adversa del de riesgo covariante sistémico en una recesión macroeconómica, y argumenta por qué solo el Estado puede mutualizar este riesgo.
 
-Como titulado en Relaciones Laborales y Recursos Humanos, responde de forma sintética a mano en tu cuartilla a las siguientes dos cuestiones:
+2. (500 pts) El Dilema de Raj Chetty (2008):
+   Un analista afirma: «Si el Estado paga una prestación, el desempleado tarda más semanas en colocarse; por tanto, las prestaciones son ineficientes y solo fomentan la holgazanería». Utilizando los hallazgos de Chetty, refuta esta afirmación distinguiendo el efecto liquidez del riesgo moral. ¿Por qué el retraso observado es en su mayor parte deseable para el bienestar social?
+```
 
-1. (500 pts) Determina a qué nivel de protección (contributivo o asistencial) tiene derecho cada trabajador y por qué. Para el Trabajador A, calcula con exactitud cuántos meses de prestación contributiva le corresponden y cuál será el porcentaje y la cuantía bruta de su prestación durante los primeros 6 meses frente a los meses restantes.
-2. (500 pts) El director de la asesoría comenta en la reunión de equipo: «España tiene un sistema pasivo desorbitadamente caro porque gasta el 1,6% de su PIB en desempleo, pero paradójicamente nuestros parados sufren un nivel de desprotección relativo superior al de los alemanes o daneses». Explica con rigor técnico la «paradoja española» del gasto en pasivas distinguiendo entre gasto agregado sobre PIB y gasto por punto de paro.
+#### 📅 OPCIÓN B: Sesión Viernes (Línea 2 · 23 de Octubre)
+```
+RETO TEÓRICO · SESIÓN EB 9 (TURNO VIERNES · LÍNEA 2)
+
+Responde a mano en tu cuartilla a estas dos cuestiones teóricas fundamentales de la materia:
+
+1. (500 pts) La «Paradoja Española» del Gasto en Pasivas:
+   En un debate televisivo se afirma: «España gasta un 1,6% de su PIB en desempleo, muy por encima de la media europea; esto demuestra que nuestros parados están sobreprotegidos». Desmonta este argumento resolviendo la Paradoja Española y explicando con rigor la diferencia entre el gasto agregado sobre PIB y el gasto por punto de desempleo.
+
+2. (500 pts) Lógica de la Estructura Dual del Sistema:
+   Explica la justificación económica que fundamenta la división de la protección en dos niveles (contributivo y asistencial). ¿Por qué la prestación contributiva busca preservar el nivel de vida previo y se financia mediante cotizaciones salariales, mientras que el subsidio asistencial persigue evitar la pobreza severa y exige una estricta carencia de rentas?
 ```
 
 ---
@@ -38,35 +55,36 @@ Como titulado en Relaciones Laborales y Recursos Humanos, responde de forma sint
 
 ---
 
-### 🏆 3. Rúbrica Oficial y Solución Modelo (0–1.000 pts)
+### 🏆 3. Rúbricas Oficiales y Soluciones Modelo (0–1.000 pts)
 
-#### Pregunta 1: Niveles de Protección, Acceso y Cuantía (0 a 500 puntos)
+#### 🎯 SOLUCIÓN TURNO MARTES (LÍNEA 1)
 
-* **Respuesta Modelo Ideal (500 pts):**
-  > «**Trabajador A (Nivel Contributivo):** Cumple con holgura el requisito general del art. 266 LGSS al tener más del mínimo legal de **360 días cotizados** dentro de los últimos 6 años (acredita 900 días).  
-  > - **Duración:** Aplicando la escala del art. 269 LGSS, al tramo de cotización entre 900 y 1.079 días le corresponden exactamente **300 días de prestación (10 meses)**.  
-  > - **Cuantía:** Durante los primeros 180 días (primeros 6 meses) percibirá el **70% de la base reguladora**: $0,70 \times 1.800\text{ \euro} = \mathbf{1.260\text{ \euro/mes}}$. A partir del día 181 (los 4 meses restantes), el porcentaje se reduce al **60%**: $0,60 \times 1.800\text{ \euro} = \mathbf{1.080\text{ \euro/mes}}$. (Ambos importes se encuentran dentro de los topes legales mínimo y máximo para una persona sin hijos).  
-  > 
-  > **Trabajador B (Nivel Asistencial / Subsidio por cotización insuficiente):** Al acumular 240 días, **no alcanza el umbral de 360 días** para la prestación contributiva. Sin embargo, al acreditar al menos 6 meses de cotización (180 días) sin responsabilidades familiares (o al menos 3 meses si las tuviera) y acreditar carencia de rentas individuales inferiores al 75% del SMI, puede acceder al subsidio asistencial por cotización insuficiente, percibiendo la cuantía asistencial fijada sobre el IPREM».
+##### Cuestión 1 · Martes: Fallo del Mercado Privado de Seguros (500 pts)
+* **Respuesta Modelo Ideal:**
+  > «**1. Selección Adversa (200 pts):** Existe asimetría de información. Si el seguro fuera voluntario y privado, solo lo contratarían aquellos trabajadores que anticipan un alto riesgo inminente de despido. Esto obligaría a la aseguradora a elevar las primas, expulsando progresivamente a los trabajadores con empleos estables y provocando el colapso financiero del mercado (mercado de 'limones').  
+  > **2. Riesgo Covariante Sistémico (200 pts):** Los seguros privados se sustentan en la ley de los grandes números y la independencia de siniestros (como los accidentes de coche o incendios). El desempleo es un riesgo macroeconómico correlacionado: en una recesión severa, cientos de miles de trabajadores pierden su empleo al mismo tiempo. Ninguna aseguradora privada dispone de reservas líquidas suficientes para afrontar siniestros masivos simultáneos sin quebrar fulminantemente.  
+  > **3. Intervención Pública (100 pts):** Solo el Estado puede mutualizar este riesgo mediante la afiliación obligatoria universal (eliminando la selección adversa) y su capacidad de endeudamiento soberano intertemporal para absorber shocks agregados».
 
-* **Criterios de Puntuación:**
-  * **400 – 500 pts:** Identifica con precisión ambos niveles, aplica la escala legal de 900 días $\rightarrow$ 300 días (10 meses), calcula correctamente el 70% (1.260 €) y el 60% (1.080 €), y argumenta el acceso del Trabajador B al nivel asistencial por falta del período mínimo contributivo.
-  * **250 – 390 pts:** Aplica bien los porcentajes y los 360 días, pero comete algún error menor en la escala de meses (ej. dice 12 meses en vez de 10) o no precisa las condiciones del Trabajador B.
-  * **100 – 240 pts:** Confunde nivel contributivo con asistencial, o desconoce la escala de duración o la reducción del 70% al 60% a partir del mes 6.
-  * **0 pts:** En blanco o cálculos y conceptos totalmente erróneos.
+##### Cuestión 2 · Martes: El Dilema de Chetty y el Efecto Liquidez (500 pts)
+* **Respuesta Modelo Ideal:**
+  > «**1. Refutación y Distinción Teórica (150 pts):** La afirmación es falaz porque asume erróneamente que todo retraso en la reincorporación al empleo es coste de ineficiencia o desincentivo al esfuerzo.  
+  > **2. Efecto Liquidez vs. Riesgo Moral (200 pts):** Raj Chetty (2008) demostró empíricamente que el alargamiento del desempleo obedece a dos canales opuestos:  
+  > - *Efecto Liquidez (~60% del retraso):* Los trabajadores desempleados carecen de ahorros suficientes y tienen el crédito bancario restringido. La prestación les aporta liquidez básica para pagar la comida y la vivienda, evitando ventas forzosas o la necesidad imperiosa de aceptar cualquier empleo precario o mal pagado en 48 horas.  
+  > - *Riesgo Moral (~40% del retraso):* Reducción de la intensidad de búsqueda provocada por la subvención del ocio relativo.  
+  > **3. Implicación de Bienestar Social (150 pts):** Al dominar el efecto liquidez (60%), el alargamiento del paro permite una búsqueda más productiva y un mejor emparejamiento entre trabajador y puesto (*job-match quality*), lo cual eleva el bienestar social global en lugar de reducirlo».
 
 ---
 
-#### Pregunta 2: La «Paradoja Española» del Gasto en Pasivas (0 a 500 puntos)
+#### 🎯 SOLUCIÓN TURNO VIERNES (LÍNEA 2)
 
-* **Respuesta Modelo Ideal (500 pts):**
-  > «La aparente contradicción planteada por el director se explica mediante la **Paradoja Española de las Políticas Pasivas**.  
-  > En términos macroeconómicos agregados, España destina en torno al **1,6% de su PIB** al gasto en prestaciones por desempleo, situándose entre los países con mayor gasto aparente de la Unión Europea (superior al 1,0% de Alemania o al 1,3% de Dinamarca).  
-  > Sin embargo, este alto porcentaje no obedece a que el sistema sea generoso en exceso por perceptor, sino a la **elevada tasa de desempleo estructural (11,5%–14%)**, que duplica holgadamente la media comunitaria.  
-  > Cuando calculamos el **gasto por punto de desempleo** (dividiendo el porcentaje del PIB entre la tasa de desempleo), el indicador de generosidad real de España se sitúa en apenas el **0,12% del PIB por punto de paro**, frente al **0,27% de Dinamarca** o el **0,31% de Alemania**. Por tanto, la protección efectiva por cada persona desempleada es mucho más modesta en España: la alta factura presupuestaria es producto del volumen masivo de parados, no de una sobreprotección individual».
+##### Cuestión 1 · Viernes: La «Paradoja Española» del Gasto en Pasivas (500 pts)
+* **Respuesta Modelo Ideal:**
+  > «**1. Distinción Conceptual (200 pts):** El gasto en % del PIB mide la carga macroeconómica agregada sobre los recursos del país, mientras que el gasto por punto de desempleo (% PIB / Tasa de desempleo) mide la cobertura y generosidad real que recibe cada parado.  
+  > **2. Resolución de la Paradoja (200 pts):** España gasta un 1,6% de su PIB en pasivas (muy por encima de la media de la UE) no porque sobreproteja a cada desempleado, sino porque tiene una tasa de desempleo que prácticamente duplica el promedio europeo (11,5% en España frente al 6% en la UE). La factura global es alta por el enorme volumen de personas a proteger.  
+  > **3. Ratio de Generosidad Efectiva (100 pts):** Al normalizar el gasto por punto de paro, España gasta únicamente un **0,12% del PIB por punto de desempleo**, frente al 0,27% de Dinamarca o el 0,31% de Alemania. Por tanto, cada desempleado español recibe menos recursos efectivos que un desempleado alemán o nórdico».
 
-* **Criterios de Puntuación:**
-  * **400 – 500 pts:** Explica nítidamente la paradoja contrastando gasto sobre PIB (volumen agregado condicionado por la tasa de paro) con el gasto por punto de paro (medida real de generosidad por desempleado), citando la posición relativa frente a Dinamarca o Alemania.
-  * **250 – 390 pts:** Comprende que el alto gasto se debe a que hay muchos parados y no a que cobren mucho, pero sin formalizar con rigor el concepto de «gasto por punto de desempleo».
-  * **100 – 240 pts:** Confusión; atribuye el problema exclusivamente a la corrupción o a los impuestos, sin rigor macroeconómico ni institucional.
-  * **0 pts:** En blanco o justificación falaz.
+##### Cuestión 2 · Viernes: Lógica de la Estructura Dual del Sistema (500 pts)
+* **Respuesta Modelo Ideal:**
+  > «**1. Nivel Contributivo (Prestación por Desempleo) (250 pts):** Su objetivo económico es el *consumtion smoothing* (suavización del consumo): actúa como un seguro salarial para evitar una caída abrupta en el nivel de vida del trabajador. Por ello, es proporcional al salario previo (base reguladora) y se financia mediante cotizaciones finalistas tripartitas/bipartitas vinculadas a una trayectoria laboral previa suficiente (mínimo 360 días).  
+  > **2. Nivel Asistencial (Subsidio por Desempleo) (200 pts):** Su finalidad no es mantener el estatus salarial previo, sino actuar como una red de seguridad contra la pobreza y la exclusión social. Por esta razón, su cuantía es fija ligada a un estándar de subsistencia (IPREM) y se exige de forma inexcusable una estricta carencia de rentas individuales (< 75% SMI), financiándose mediante impuestos y transferencias del Estado.  
+  > **3. Complementariedad Institucional (50 pts):** Ambos niveles operan de forma articulada: el nivel contributivo cubre el shock transitorio inicial y, solo cuando este se agota o resulta insuficiente, entra en juego la red asistencial de último recurso».

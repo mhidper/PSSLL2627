@@ -1,0 +1,86 @@
+# Listado Oficial de Códigos de Acceso EPD (Curso 2026-27)
+
+**Asignatura:** Políticas Sociolaborales y de Empleo (PSLL) · UPO  
+**Profesor:** Manuel Alejandro Hidalgo Pérez  
+**Total Alumnos Oficiales:** 78  
+
+| Acrónimo UPO | Nombre Completo | Código EPD (Acceso) | Caso Asignado | Cohorte y Territorio |
+| :--- | :--- | :--- | :---: | :--- |
+| `ainibel` | Angeles Iniguez Belloso | **`PSLL-EPD-5737`** | Caso B | 55+ años (Andalucía vs. UE-27) |
+| `alecdie` | Alejandro Lechuga Die | **`PSLL-EPD-1450`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `amarrod9` | Abril Martin Rodriguez | **`PSLL-EPD-5262`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `amorber1` | Alejandra Morales Berlanga | **`PSLL-EPD-6852`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `amtrogar` | Ana Maria Troncoso Garcia | **`PSLL-EPD-1422`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `apensan1` | Ana Pena Sanchez | **`PSLL-EPD-7420`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `aperflo2` | Alberto Perez Flores | **`PSLL-EPD-1240`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `arfersan` | Ana Rosa Fernandez Sanchez | **`PSLL-EPD-6095`** | Caso B | 55+ años (Andalucía vs. UE-27) |
+| `aseivar` | Antia Seixo Varela | **`PSLL-EPD-3420`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `bmonruz` | Blanca Montero Ruz | **`PSLL-EPD-8792`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `bvargue` | Barbara Vargas Guerrero | **`PSLL-EPD-4171`** | Caso B | 55+ años (Andalucía vs. UE-27) |
+| `capacam` | Cristina Aparicio Camacho | **`PSLL-EPD-9099`** | Caso B | 55+ años (Andalucía vs. UE-27) |
+| `ccesbru` | Claudia Cesar Bruque | **`PSLL-EPD-1942`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `cgonsua` | Clara Gonzalez Suarez | **`PSLL-EPD-4393`** | Caso B | 55+ años (Andalucía vs. UE-27) |
+| `clangar` | Carla Lanzarote Garcia | **`PSLL-EPD-7923`** | Caso B | 55+ años (Andalucía vs. UE-27) |
+| `cmargon6` | Carlos Martin Gonzalez | **`PSLL-EPD-1322`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `cortpav` | Claudia Ortiz Pavo | **`PSLL-EPD-3922`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `crnorpus` | Cristian Raul Noretu Puscas | **`PSLL-EPD-4031`** | Caso B | 55+ años (Andalucía vs. UE-27) |
+| `cvelgal2` | Carmen Velazquez Galvan | **`PSLL-EPD-6107`** | Caso B | 55+ años (Andalucía vs. UE-27) |
+| `dfonaca` | Daniel Fontalba Acal | **`PSLL-EPD-3041`** | Caso B | 55+ años (Andalucía vs. UE-27) |
+| `ecidher` | Esther Cid Hermosin | **`PSLL-EPD-1431`** | Caso B | 55+ años (Andalucía vs. UE-27) |
+| `emoyagu` | Enrique Moya Aguera | **`PSLL-EPD-5256`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `epatmos` | Elena Paton Mosquera | **`PSLL-EPD-2162`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `equican` | Estela Quinto Cano | **`PSLL-EPD-7971`** | Caso B | 55+ años (Andalucía vs. UE-27) |
+| `erecpen` | Elena Reche Pena | **`PSLL-EPD-1127`** | Caso B | 55+ años (Andalucía vs. UE-27) |
+| `eromveg` | Emilio Romero Vega | **`PSLL-EPD-1832`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `fartde` | Francisco Arteaga De Cozar | **`PSLL-EPD-6913`** | Caso B | 55+ años (Andalucía vs. UE-27) |
+| `fdelcar` | Felipe Del Rio Carbonell | **`PSLL-EPD-8358`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `frodgar3` | Francisco Rodriguez Garces | **`PSLL-EPD-3833`** | Caso B | 55+ años (Andalucía vs. UE-27) |
+| `hcarrod` | Hugo Caridad Rodriguez | **`PSLL-EPD-5382`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `ilopchi` | Irene Lopez Chiara | **`PSLL-EPD-5669`** | Caso B | 55+ años (Andalucía vs. UE-27) |
+| `jgombev` | Jesus Gomez Bevia | **`PSLL-EPD-1851`** | Caso B | 55+ años (Andalucía vs. UE-27) |
+| `jguagal` | Jeronimo Guardiola Galan | **`PSLL-EPD-9588`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `jherand` | Julia Hernandez Anduaga | **`PSLL-EPD-3119`** | Caso B | 55+ años (Andalucía vs. UE-27) |
+| `jjarher` | Julia Jardi Hermoso | **`PSLL-EPD-1543`** | Caso B | 55+ años (Andalucía vs. UE-27) |
+| `jmespben` | Juan Manuel Espejo Benítez | **`PSLL-EPD-6047`** | Caso B | 55+ años (Andalucía vs. UE-27) |
+| `jmoncam` | Jaime Monino Campano | **`PSLL-EPD-3640`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `jrodpuy` | Julia Rodriguez Puyana | **`PSLL-EPD-8390`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `jsevmor` | Julia Sevillano Morales | **`PSLL-EPD-3119`** | Caso B | 55+ años (Andalucía vs. UE-27) |
+| `jvidgar` | Jesus Vidal Garrido | **`PSLL-EPD-4596`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `laltucl` | Lucia Altamirano Ucles | **`PSLL-EPD-1692`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `lcamtos` | Leire Camino Toscano | **`PSLL-EPD-9368`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `lgarcan1` | Lucia Garcia Cantero | **`PSLL-EPD-6920`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `lgarmej` | Loreto Garcia Mejias | **`PSLL-EPD-9263`** | Caso B | 55+ años (Andalucía vs. UE-27) |
+| `lgilmar1` | Laura Gil Martin | **`PSLL-EPD-6244`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `lgomgar` | Lucia Gomez Garcia | **`PSLL-EPD-3918`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `lgonsan5` | Lucia Gonzalez Sanchez | **`PSLL-EPD-6482`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `lmdebaz` | Luis Miguel De la Rosa Bazan | **`PSLL-EPD-6260`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `lsanrod2` | Libertad Sanchez Rodriguez | **`PSLL-EPD-9894`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `maarerot` | Maria de los Angeles Areal Rotllan | **`PSLL-EPD-3366`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `mbercam` | Miguel Bernabeu Campos | **`PSLL-EPD-1544`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `mcamfer` | Maria Campos Fernandez | **`PSLL-EPD-1900`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `mcarnie` | Marta Cardenas Nieto | **`PSLL-EPD-4902`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `mconmat` | Miguel Condeco Matusse | **`PSLL-EPD-4366`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `mdricgal` | Maria Dolores Rico Gallardo | **`PSLL-EPD-9824`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `mfernav3` | Maria Fernandez Navajas | **`PSLL-EPD-3191`** | Caso B | 55+ años (Andalucía vs. UE-27) |
+| `mgrommat` | Maria de Gracia Romero Mateo | **`PSLL-EPD-5747`** | Caso B | 55+ años (Andalucía vs. UE-27) |
+| `mhidper` | Manuel Alejandro Hidalgo Perez | **`PSLL-EPD-4458`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `mmargav1` | Manuel Martinez Gavira | **`PSLL-EPD-7671`** | Caso B | 55+ años (Andalucía vs. UE-27) |
+| `mmarpin3` | Marta Martin Pinon | **`PSLL-EPD-6446`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `mmilcac` | Margherita Millan Cacciatori | **`PSLL-EPD-7677`** | Caso B | 55+ años (Andalucía vs. UE-27) |
+| `mrabrod` | Maria Rabel Rodriguez | **`PSLL-EPD-8236`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `mrodvid1` | Marta Rodriguez Vidal de Torres | **`PSLL-EPD-5397`** | Caso B | 55+ años (Andalucía vs. UE-27) |
+| `mrueagu` | Marcos Rueda Aguayo | **`PSLL-EPD-6251`** | Caso B | 55+ años (Andalucía vs. UE-27) |
+| `pdazsan` | Pilar Daza Sanchez | **`PSLL-EPD-3186`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `pfermol` | Paula Fernandez Molina | **`PSLL-EPD-5466`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `pgarjim` | Paula Garcia Jimenez | **`PSLL-EPD-8639`** | Caso B | 55+ años (Andalucía vs. UE-27) |
+| `ppercas` | Paula Perez Castellano | **`PSLL-EPD-5781`** | Caso B | 55+ años (Andalucía vs. UE-27) |
+| `rbizrod` | Ruben Bizcocho Rodriguez | **`PSLL-EPD-4199`** | Caso B | 55+ años (Andalucía vs. UE-27) |
+| `rdomini` | Raquel Dominguez Iniguez | **`PSLL-EPD-2881`** | Caso B | 55+ años (Andalucía vs. UE-27) |
+| `resanley` | Reyna Elizabeth Sandoval Leyton | **`PSLL-EPD-3530`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `rlariba` | Raul Larios Ibanez | **`PSLL-EPD-6960`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `sagudel` | Sofia Agudo Delgado | **`PSLL-EPD-5802`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `sgonpra` | Sandra Gonzalez Prados | **`PSLL-EPD-2801`** | Caso B | 55+ años (Andalucía vs. UE-27) |
+| `slobter` | Sara Lobo Terron | **`PSLL-EPD-8368`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `smordom` | Salvador Morales Dominguez | **`PSLL-EPD-1552`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `sromros` | Sara Roman Rosa | **`PSLL-EPD-5108`** | Caso A | 45-54 años (Andalucía vs. España) |
+| `tsramde` | Tomas de Santa Maria Ramires Santana De Oliveira Viotty | **`PSLL-EPD-8077`** | Caso B | 55+ años (Andalucía vs. UE-27) |

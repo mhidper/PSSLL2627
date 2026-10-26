@@ -14,7 +14,7 @@ Todo el trabajo práctico de la asignatura se realiza a través de la **Web App 
 `https://mhidper.github.io/micro_apps/epd_laboratorio.html`
 
 ### Pasos de Identificación:
-1. **Tu Acrónimo Institucional UPO:** En la pantalla inicial, introduce tu acrónimo oficial UPO (ej. `sagudel`, `laltucl`).
+1. **Tu Acrónimo Institucional UPO:** En la pantalla inicial, introduce tu acrónimo oficial UPO (tu usuario institucional sin @alu.upo.es).
 2. **Generación del Código EPD Permanente (`PSLL-EPD-XXXX`):** La plataforma genera tu código personal e intransferible. Anótalo; te identificará en todas las sesiones del semestre.
 3. **Asignación Paramétrica de Caso:** Tu código desbloquea de forma automática tu cohorte específica (tramo de edad, género, ámbito territorial de contraste y ventana temporal).
 4. **Monitor de Sesión:** En la cabecera superior se visualiza tu código, tiempo efectivo de trabajo y el estado de guardado.

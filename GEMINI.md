@@ -110,3 +110,25 @@ Para la corrección de los retos manuscritos individuales de cierre de sesión (
   2. **Fase 2 (Transcripción Única y Persistencia):** Un solo barrido multimodal para transcribir el texto manuscrito a `Temas EB/Sesiones EB/Sesion XX/evaluacion/transcripciones_psll_sesion_XX.csv`. **Regla de oro:** Queda terminantemente prohibido volver a abrir o procesar las imágenes en segundas vueltas; toda recalificación opera exclusivamente sobre el CSV.
   3. **Fase 3 (Baremo Continuo 0–1.000 pts):** Desglose aditivo bimodal (P1 Conceptual 0-500 pts y P2 Aplicada/Cuantitativa 0-500 pts), gradación en 6 estados oficiales (`Apto (Sobresaliente)`, `Apto (Notable)`, `Apto (Aprobado)`, `No Apto (Mejorable)`, `No Apto (Insuficiente)`, `No Apto / No presentado`) y feedback formativo conciso (40-50 palabras) indicando acierto, deducción y recomendación.
   4. **Fase 4 (Consolidación y Pasaporte Digital):** Exportación a `calificaciones_sesion_XX.csv` y compilación criptográfica mediante `alumnos/compilar_pasaporte_evaluacion.py` para sincronizar con la web del Pasaporte de Evaluación Continua (`pasaporte_psll.html`).
+
+## Cortafuegos de Seguridad y Buffer de Cuarentena (Firewall Anti-Borrado)
+
+Aplica de manera estricta e inviolable a cualquier operación del asistente:
+
+1. **Principio Fundamental: «Nunca borrar, siempre trasladar al Buffer»:**
+   - Queda totalmente prohibido ejecutar comandos destructivos (`Remove-Item`, `del`, `rmdir /s /q`).
+   - Los ficheros que se vayan a descartar **se trasladan a la carpeta de cuarentena** `C:\antigravity_buffer\`, garantizando que permanezcan recuperables durante un periodo de salvaguarda de 10 días antes de su purga automática diaria.
+2. **Filtro Excluyente de Ruta (Cortafuegos `scratch`):**
+   - **Condición excluyente:** Solo se puede considerar el traslado al buffer de un archivo si en su ruta absoluta (**Path**) aparece explícitamente la palabra `scratch`.
+   - **Prohibición absoluta:** Si en el path del archivo o directorio **NO aparece la palabra `scratch`**, **QUEDA TERMINANTEMENTE PROHIBIDO TOCARLO O MOVERLO** bajo cualquier concepto, herramienta o comando.
+3. **Petición de Permiso Previo y Lista Exhaustiva:**
+   - Incluso para archivos que se encuentren dentro de rutas con `scratch`, el agente **NUNCA puede trasladar archivos de forma autónoma o desatendida**.
+   - Antes de cualquier movimiento, se debe:
+     a) Detener la ejecución y pedir permiso explícito a Manuel.
+     b) Presentar una **lista exhaustiva** de todos los archivos específicos que se propone mover con su ruta completa.
+     c) Detallar el motivo por el cual esos ficheros auxiliares ya no son necesarios en el proyecto.
+   - Solo se procederá tras la confirmación afirmativa del usuario mediante `Move-Item -LiteralPath "..." -Destination "C:\antigravity_buffer\"`.
+4. **Purga Automática Diaria:**
+   - La limpieza del buffer la realiza de forma transparente un script diario del sistema en el inicio de sesión (`C:\antigravity_buffer\purgar_buffer.ps1`), purgando únicamente los ficheros acumulados en `C:\antigravity_buffer\` que superen estrictamente los 10 días de antigüedad.
+
+
