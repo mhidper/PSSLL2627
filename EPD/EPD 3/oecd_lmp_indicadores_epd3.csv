@@ -1,0 +1,1616 @@
+﻿pais_codigo,pais_nombre,año,categoria_codigo,categoria_nombre,tipo,gasto_pct_pib
+DEU,Alemania,2004,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.224
+DEU,Alemania,2004,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,1.11
+DEU,Alemania,2004,LMP_20,2. Formación Profesional para el Empleo,Activa,0.439
+DEU,Alemania,2004,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.092
+DEU,Alemania,2004,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.127
+DEU,Alemania,2004,LMP_60,5. Creación Directa de Empleo,Activa,0.105
+DEU,Alemania,2004,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.126
+DEU,Alemania,2004,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,2.12
+DEU,Alemania,2004,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,2.16
+DEU,Alemania,2004,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.043
+DEU,Alemania,2004,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,3.28
+DEU,Alemania,2005,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.3
+DEU,Alemania,2005,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,1.1
+DEU,Alemania,2005,LMP_20,2. Formación Profesional para el Empleo,Activa,0.379
+DEU,Alemania,2005,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.061
+DEU,Alemania,2005,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.128
+DEU,Alemania,2005,LMP_60,5. Creación Directa de Empleo,Activa,0.085
+DEU,Alemania,2005,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.143
+DEU,Alemania,2005,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.85
+DEU,Alemania,2005,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.9
+DEU,Alemania,2005,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.048
+DEU,Alemania,2005,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,3.0
+DEU,Alemania,2006,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.291
+DEU,Alemania,2006,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.924
+DEU,Alemania,2006,LMP_20,2. Formación Profesional para el Empleo,Activa,0.349
+DEU,Alemania,2006,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.059
+DEU,Alemania,2006,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.021
+DEU,Alemania,2006,LMP_60,5. Creación Directa de Empleo,Activa,0.086
+DEU,Alemania,2006,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.115
+DEU,Alemania,2006,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.55
+DEU,Alemania,2006,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.6
+DEU,Alemania,2006,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.052
+DEU,Alemania,2006,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.53
+DEU,Alemania,2007,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.303
+DEU,Alemania,2007,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.837
+DEU,Alemania,2007,LMP_20,2. Formación Profesional para el Empleo,Activa,0.3
+DEU,Alemania,2007,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.068
+DEU,Alemania,2007,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.021
+DEU,Alemania,2007,LMP_60,5. Creación Directa de Empleo,Activa,0.07
+DEU,Alemania,2007,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.074
+DEU,Alemania,2007,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.12
+DEU,Alemania,2007,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.17
+DEU,Alemania,2007,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.054
+DEU,Alemania,2007,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.01
+DEU,Alemania,2008,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.324
+DEU,Alemania,2008,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.865
+DEU,Alemania,2008,LMP_20,2. Formación Profesional para el Empleo,Activa,0.3
+DEU,Alemania,2008,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.082
+DEU,Alemania,2008,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.026
+DEU,Alemania,2008,LMP_60,5. Creación Directa de Empleo,Activa,0.068
+DEU,Alemania,2008,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.064
+DEU,Alemania,2008,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.945
+DEU,Alemania,2008,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.998
+DEU,Alemania,2008,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.052
+DEU,Alemania,2008,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.87
+DEU,Alemania,2009,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.361
+DEU,Alemania,2009,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.97
+DEU,Alemania,2009,LMP_20,2. Formación Profesional para el Empleo,Activa,0.349
+DEU,Alemania,2009,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.108
+DEU,Alemania,2009,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.028
+DEU,Alemania,2009,LMP_60,5. Creación Directa de Empleo,Activa,0.057
+DEU,Alemania,2009,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.065
+DEU,Alemania,2009,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.38
+DEU,Alemania,2009,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.43
+DEU,Alemania,2009,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.052
+DEU,Alemania,2009,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.4
+DEU,Alemania,2010,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.347
+DEU,Alemania,2010,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.857
+DEU,Alemania,2010,LMP_20,2. Formación Profesional para el Empleo,Activa,0.266
+DEU,Alemania,2010,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.097
+DEU,Alemania,2010,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.027
+DEU,Alemania,2010,LMP_60,5. Creación Directa de Empleo,Activa,0.045
+DEU,Alemania,2010,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.074
+DEU,Alemania,2010,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.21
+DEU,Alemania,2010,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.26
+DEU,Alemania,2010,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.05
+DEU,Alemania,2010,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.12
+DEU,Alemania,2011,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.317
+DEU,Alemania,2011,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.742
+DEU,Alemania,2011,LMP_20,2. Formación Profesional para el Empleo,Activa,0.245
+DEU,Alemania,2011,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.059
+DEU,Alemania,2011,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.025
+DEU,Alemania,2011,LMP_60,5. Creación Directa de Empleo,Activa,0.03
+DEU,Alemania,2011,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.064
+DEU,Alemania,2011,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.924
+DEU,Alemania,2011,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.971
+DEU,Alemania,2011,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.048
+DEU,Alemania,2011,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.71
+DEU,Alemania,2012,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.314
+DEU,Alemania,2012,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.649
+DEU,Alemania,2012,LMP_20,2. Formación Profesional para el Empleo,Activa,0.214
+DEU,Alemania,2012,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.035
+DEU,Alemania,2012,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.023
+DEU,Alemania,2012,LMP_60,5. Creación Directa de Empleo,Activa,0.029
+DEU,Alemania,2012,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.032
+DEU,Alemania,2012,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.882
+DEU,Alemania,2012,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.929
+DEU,Alemania,2012,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.046
+DEU,Alemania,2012,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.58
+DEU,Alemania,2013,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.324
+DEU,Alemania,2013,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.617
+DEU,Alemania,2013,LMP_20,2. Formación Profesional para el Empleo,Activa,0.215
+DEU,Alemania,2013,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.025
+DEU,Alemania,2013,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.023
+DEU,Alemania,2013,LMP_60,5. Creación Directa de Empleo,Activa,0.02
+DEU,Alemania,2013,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.008
+DEU,Alemania,2013,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.935
+DEU,Alemania,2013,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.984
+DEU,Alemania,2013,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.048
+DEU,Alemania,2013,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.6
+DEU,Alemania,2014,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.358
+DEU,Alemania,2014,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.64
+DEU,Alemania,2014,LMP_20,2. Formación Profesional para el Empleo,Activa,0.209
+DEU,Alemania,2014,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.023
+DEU,Alemania,2014,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.021
+DEU,Alemania,2014,LMP_60,5. Creación Directa de Empleo,Activa,0.016
+DEU,Alemania,2014,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.012
+DEU,Alemania,2014,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.879
+DEU,Alemania,2014,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.916
+DEU,Alemania,2014,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.037
+DEU,Alemania,2014,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.56
+DEU,Alemania,2015,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.356
+DEU,Alemania,2015,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.628
+DEU,Alemania,2015,LMP_20,2. Formación Profesional para el Empleo,Activa,0.2
+DEU,Alemania,2015,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.025
+DEU,Alemania,2015,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.02
+DEU,Alemania,2015,LMP_60,5. Creación Directa de Empleo,Activa,0.014
+DEU,Alemania,2015,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.01
+DEU,Alemania,2015,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.842
+DEU,Alemania,2015,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.865
+DEU,Alemania,2015,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.021
+DEU,Alemania,2015,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.49
+DEU,Alemania,2016,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.356
+DEU,Alemania,2016,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.615
+DEU,Alemania,2016,LMP_20,2. Formación Profesional para el Empleo,Activa,0.186
+DEU,Alemania,2016,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.028
+DEU,Alemania,2016,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.021
+DEU,Alemania,2016,LMP_60,5. Creación Directa de Empleo,Activa,0.014
+DEU,Alemania,2016,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.009
+DEU,Alemania,2016,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.797
+DEU,Alemania,2016,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.804
+DEU,Alemania,2016,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.006
+DEU,Alemania,2016,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.42
+DEU,Alemania,2017,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.384
+DEU,Alemania,2017,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.646
+DEU,Alemania,2017,LMP_20,2. Formación Profesional para el Empleo,Activa,0.181
+DEU,Alemania,2017,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.029
+DEU,Alemania,2017,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.019
+DEU,Alemania,2017,LMP_60,5. Creación Directa de Empleo,Activa,0.018
+DEU,Alemania,2017,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.008
+DEU,Alemania,2017,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.736
+DEU,Alemania,2017,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.739
+DEU,Alemania,2017,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.001
+DEU,Alemania,2017,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.38
+DEU,Alemania,2018,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.425
+DEU,Alemania,2018,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.667
+DEU,Alemania,2018,LMP_20,2. Formación Profesional para el Empleo,Activa,0.172
+DEU,Alemania,2018,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.024
+DEU,Alemania,2018,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.019
+DEU,Alemania,2018,LMP_60,5. Creación Directa de Empleo,Activa,0.017
+DEU,Alemania,2018,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.008
+DEU,Alemania,2018,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.686
+DEU,Alemania,2018,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.686
+DEU,Alemania,2018,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+DEU,Alemania,2018,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.36
+DEU,Alemania,2019,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.331
+DEU,Alemania,2019,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.583
+DEU,Alemania,2019,LMP_20,2. Formación Profesional para el Empleo,Activa,0.178
+DEU,Alemania,2019,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.024
+DEU,Alemania,2019,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.019
+DEU,Alemania,2019,LMP_60,5. Creación Directa de Empleo,Activa,0.02
+DEU,Alemania,2019,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.008
+DEU,Alemania,2019,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.703
+DEU,Alemania,2019,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.703
+DEU,Alemania,2019,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+DEU,Alemania,2019,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.29
+DEU,Alemania,2020,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.321
+DEU,Alemania,2020,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.595
+DEU,Alemania,2020,LMP_20,2. Formación Profesional para el Empleo,Activa,0.189
+DEU,Alemania,2020,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.025
+DEU,Alemania,2020,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.019
+DEU,Alemania,2020,LMP_60,5. Creación Directa de Empleo,Activa,0.03
+DEU,Alemania,2020,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.008
+DEU,Alemania,2020,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.28
+DEU,Alemania,2020,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.28
+DEU,Alemania,2020,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+DEU,Alemania,2020,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.88
+DEU,Alemania,2021,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.3
+DEU,Alemania,2021,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.561
+DEU,Alemania,2021,LMP_20,2. Formación Profesional para el Empleo,Activa,0.18
+DEU,Alemania,2021,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.024
+DEU,Alemania,2021,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.018
+DEU,Alemania,2021,LMP_60,5. Creación Directa de Empleo,Activa,0.03
+DEU,Alemania,2021,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.007
+DEU,Alemania,2021,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.16
+DEU,Alemania,2021,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.16
+DEU,Alemania,2021,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+DEU,Alemania,2021,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.73
+DEU,Alemania,2022,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.282
+DEU,Alemania,2022,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.51
+DEU,Alemania,2022,LMP_20,2. Formación Profesional para el Empleo,Activa,0.153
+DEU,Alemania,2022,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.02
+DEU,Alemania,2022,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.017
+DEU,Alemania,2022,LMP_60,5. Creación Directa de Empleo,Activa,0.028
+DEU,Alemania,2022,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.007
+DEU,Alemania,2022,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.754
+DEU,Alemania,2022,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.754
+DEU,Alemania,2022,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+DEU,Alemania,2022,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.27
+DEU,Alemania,2023,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.289
+DEU,Alemania,2023,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.509
+DEU,Alemania,2023,LMP_20,2. Formación Profesional para el Empleo,Activa,0.15
+DEU,Alemania,2023,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.017
+DEU,Alemania,2023,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.017
+DEU,Alemania,2023,LMP_60,5. Creación Directa de Empleo,Activa,0.026
+DEU,Alemania,2023,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.007
+DEU,Alemania,2023,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.785
+DEU,Alemania,2023,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.785
+DEU,Alemania,2023,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+DEU,Alemania,2023,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.29
+DEU,Alemania,2024,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.298
+DEU,Alemania,2024,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.533
+DEU,Alemania,2024,LMP_20,2. Formación Profesional para el Empleo,Activa,0.165
+DEU,Alemania,2024,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.017
+DEU,Alemania,2024,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.019
+DEU,Alemania,2024,LMP_60,5. Creación Directa de Empleo,Activa,0.024
+DEU,Alemania,2024,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.008
+DEU,Alemania,2024,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.887
+DEU,Alemania,2024,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.887
+DEU,Alemania,2024,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+DEU,Alemania,2024,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.42
+DNK,Dinamarca,2004,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.325
+DNK,Dinamarca,2004,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,1.64
+DNK,Dinamarca,2004,LMP_20,2. Formación Profesional para el Empleo,Activa,0.523
+DNK,Dinamarca,2004,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.296
+DNK,Dinamarca,2004,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.49
+DNK,Dinamarca,2004,LMP_60,5. Creación Directa de Empleo,Activa,0.0
+DNK,Dinamarca,2004,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+DNK,Dinamarca,2004,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.88
+DNK,Dinamarca,2004,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,2.58
+DNK,Dinamarca,2004,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.699
+DNK,Dinamarca,2004,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,4.22
+DNK,Dinamarca,2005,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.306
+DNK,Dinamarca,2005,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,1.52
+DNK,Dinamarca,2005,LMP_20,2. Formación Profesional para el Empleo,Activa,0.489
+DNK,Dinamarca,2005,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.231
+DNK,Dinamarca,2005,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.495
+DNK,Dinamarca,2005,LMP_60,5. Creación Directa de Empleo,Activa,0.0
+DNK,Dinamarca,2005,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+DNK,Dinamarca,2005,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.63
+DNK,Dinamarca,2005,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,2.28
+DNK,Dinamarca,2005,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.649
+DNK,Dinamarca,2005,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,3.8
+DNK,Dinamarca,2006,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.291
+DNK,Dinamarca,2006,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,1.45
+DNK,Dinamarca,2006,LMP_20,2. Formación Profesional para el Empleo,Activa,0.416
+DNK,Dinamarca,2006,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.189
+DNK,Dinamarca,2006,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.555
+DNK,Dinamarca,2006,LMP_60,5. Creación Directa de Empleo,Activa,0.0
+DNK,Dinamarca,2006,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+DNK,Dinamarca,2006,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.25
+DNK,Dinamarca,2006,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.8
+DNK,Dinamarca,2006,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.546
+DNK,Dinamarca,2006,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,3.25
+DNK,Dinamarca,2007,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.245
+DNK,Dinamarca,2007,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,1.27
+DNK,Dinamarca,2007,LMP_20,2. Formación Profesional para el Empleo,Activa,0.365
+DNK,Dinamarca,2007,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.119
+DNK,Dinamarca,2007,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.538
+DNK,Dinamarca,2007,LMP_60,5. Creación Directa de Empleo,Activa,0.0
+DNK,Dinamarca,2007,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+DNK,Dinamarca,2007,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.949
+DNK,Dinamarca,2007,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.46
+DNK,Dinamarca,2007,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.505
+DNK,Dinamarca,2007,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.72
+DNK,Dinamarca,2008,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.278
+DNK,Dinamarca,2008,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,1.33
+DNK,Dinamarca,2008,LMP_20,2. Formación Profesional para el Empleo,Activa,0.346
+DNK,Dinamarca,2008,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.123
+DNK,Dinamarca,2008,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.587
+DNK,Dinamarca,2008,LMP_60,5. Creación Directa de Empleo,Activa,0.0
+DNK,Dinamarca,2008,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+DNK,Dinamarca,2008,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.702
+DNK,Dinamarca,2008,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.17
+DNK,Dinamarca,2008,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.465
+DNK,Dinamarca,2008,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.5
+DNK,Dinamarca,2009,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.315
+DNK,Dinamarca,2009,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,1.6
+DNK,Dinamarca,2009,LMP_20,2. Formación Profesional para el Empleo,Activa,0.455
+DNK,Dinamarca,2009,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.178
+DNK,Dinamarca,2009,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.653
+DNK,Dinamarca,2009,LMP_60,5. Creación Directa de Empleo,Activa,0.0
+DNK,Dinamarca,2009,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+DNK,Dinamarca,2009,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.23
+DNK,Dinamarca,2009,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.66
+DNK,Dinamarca,2009,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.423
+DNK,Dinamarca,2009,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,3.26
+DNK,Dinamarca,2010,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.388
+DNK,Dinamarca,2010,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,2.02
+DNK,Dinamarca,2010,LMP_20,2. Formación Profesional para el Empleo,Activa,0.681
+DNK,Dinamarca,2010,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.307
+DNK,Dinamarca,2010,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.64
+DNK,Dinamarca,2010,LMP_60,5. Creación Directa de Empleo,Activa,0.0
+DNK,Dinamarca,2010,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+DNK,Dinamarca,2010,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.37
+DNK,Dinamarca,2010,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.73
+DNK,Dinamarca,2010,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.356
+DNK,Dinamarca,2010,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,3.75
+DNK,Dinamarca,2011,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.368
+DNK,Dinamarca,2011,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,2.02
+DNK,Dinamarca,2011,LMP_20,2. Formación Profesional para el Empleo,Activa,0.638
+DNK,Dinamarca,2011,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.386
+DNK,Dinamarca,2011,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.621
+DNK,Dinamarca,2011,LMP_60,5. Creación Directa de Empleo,Activa,0.0
+DNK,Dinamarca,2011,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+DNK,Dinamarca,2011,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.29
+DNK,Dinamarca,2011,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.6
+DNK,Dinamarca,2011,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.305
+DNK,Dinamarca,2011,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,3.61
+DNK,Dinamarca,2012,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.367
+DNK,Dinamarca,2012,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,1.94
+DNK,Dinamarca,2012,LMP_20,2. Formación Profesional para el Empleo,Activa,0.606
+DNK,Dinamarca,2012,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.379
+DNK,Dinamarca,2012,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.589
+DNK,Dinamarca,2012,LMP_60,5. Creación Directa de Empleo,Activa,0.0
+DNK,Dinamarca,2012,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+DNK,Dinamarca,2012,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.38
+DNK,Dinamarca,2012,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.64
+DNK,Dinamarca,2012,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.263
+DNK,Dinamarca,2012,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,3.59
+DNK,Dinamarca,2013,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.377
+DNK,Dinamarca,2013,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,1.93
+DNK,Dinamarca,2013,LMP_20,2. Formación Profesional para el Empleo,Activa,0.602
+DNK,Dinamarca,2013,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.386
+DNK,Dinamarca,2013,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.56
+DNK,Dinamarca,2013,LMP_60,5. Creación Directa de Empleo,Activa,0.0
+DNK,Dinamarca,2013,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+DNK,Dinamarca,2013,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.38
+DNK,Dinamarca,2013,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.62
+DNK,Dinamarca,2013,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.241
+DNK,Dinamarca,2013,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,3.55
+DNK,Dinamarca,2014,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.386
+DNK,Dinamarca,2014,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,2.04
+DNK,Dinamarca,2014,LMP_20,2. Formación Profesional para el Empleo,Activa,0.586
+DNK,Dinamarca,2014,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.409
+DNK,Dinamarca,2014,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.652
+DNK,Dinamarca,2014,LMP_60,5. Creación Directa de Empleo,Activa,0.0
+DNK,Dinamarca,2014,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+DNK,Dinamarca,2014,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.17
+DNK,Dinamarca,2014,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.4
+DNK,Dinamarca,2014,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.223
+DNK,Dinamarca,2014,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,3.43
+DNK,Dinamarca,2015,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.389
+DNK,Dinamarca,2015,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,2.05
+DNK,Dinamarca,2015,LMP_20,2. Formación Profesional para el Empleo,Activa,0.601
+DNK,Dinamarca,2015,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.282
+DNK,Dinamarca,2015,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.773
+DNK,Dinamarca,2015,LMP_60,5. Creación Directa de Empleo,Activa,0.0
+DNK,Dinamarca,2015,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+DNK,Dinamarca,2015,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.08
+DNK,Dinamarca,2015,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.28
+DNK,Dinamarca,2015,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.194
+DNK,Dinamarca,2015,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,3.33
+DNK,Dinamarca,2016,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.404
+DNK,Dinamarca,2016,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,2.03
+DNK,Dinamarca,2016,LMP_20,2. Formación Profesional para el Empleo,Activa,0.523
+DNK,Dinamarca,2016,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.241
+DNK,Dinamarca,2016,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.859
+DNK,Dinamarca,2016,LMP_60,5. Creación Directa de Empleo,Activa,0.0
+DNK,Dinamarca,2016,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+DNK,Dinamarca,2016,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.959
+DNK,Dinamarca,2016,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.13
+DNK,Dinamarca,2016,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.165
+DNK,Dinamarca,2016,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,3.15
+DNK,Dinamarca,2017,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.393
+DNK,Dinamarca,2017,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,1.95
+DNK,Dinamarca,2017,LMP_20,2. Formación Profesional para el Empleo,Activa,0.46
+DNK,Dinamarca,2017,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.194
+DNK,Dinamarca,2017,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.903
+DNK,Dinamarca,2017,LMP_60,5. Creación Directa de Empleo,Activa,0.0
+DNK,Dinamarca,2017,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+DNK,Dinamarca,2017,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.954
+DNK,Dinamarca,2017,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.09
+DNK,Dinamarca,2017,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.129
+DNK,Dinamarca,2017,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,3.04
+DNK,Dinamarca,2018,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.381
+DNK,Dinamarca,2018,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,1.9
+DNK,Dinamarca,2018,LMP_20,2. Formación Profesional para el Empleo,Activa,0.388
+DNK,Dinamarca,2018,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.187
+DNK,Dinamarca,2018,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.941
+DNK,Dinamarca,2018,LMP_60,5. Creación Directa de Empleo,Activa,0.0
+DNK,Dinamarca,2018,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+DNK,Dinamarca,2018,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.888
+DNK,Dinamarca,2018,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.978
+DNK,Dinamarca,2018,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.092
+DNK,Dinamarca,2018,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.88
+DNK,Dinamarca,2019,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.377
+DNK,Dinamarca,2019,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,1.89
+DNK,Dinamarca,2019,LMP_20,2. Formación Profesional para el Empleo,Activa,0.358
+DNK,Dinamarca,2019,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.173
+DNK,Dinamarca,2019,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.981
+DNK,Dinamarca,2019,LMP_60,5. Creación Directa de Empleo,Activa,0.0
+DNK,Dinamarca,2019,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+DNK,Dinamarca,2019,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.88
+DNK,Dinamarca,2019,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.955
+DNK,Dinamarca,2019,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.074
+DNK,Dinamarca,2019,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.85
+DNK,Dinamarca,2020,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.375
+DNK,Dinamarca,2020,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,1.78
+DNK,Dinamarca,2020,LMP_20,2. Formación Profesional para el Empleo,Activa,0.305
+DNK,Dinamarca,2020,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.12
+DNK,Dinamarca,2020,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.981
+DNK,Dinamarca,2020,LMP_60,5. Creación Directa de Empleo,Activa,0.0
+DNK,Dinamarca,2020,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+DNK,Dinamarca,2020,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,2.06
+DNK,Dinamarca,2020,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,2.13
+DNK,Dinamarca,2020,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.071
+DNK,Dinamarca,2020,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,3.91
+DNK,Dinamarca,2021,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.354
+DNK,Dinamarca,2021,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,1.65
+DNK,Dinamarca,2021,LMP_20,2. Formación Profesional para el Empleo,Activa,0.293
+DNK,Dinamarca,2021,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.089
+DNK,Dinamarca,2021,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.913
+DNK,Dinamarca,2021,LMP_60,5. Creación Directa de Empleo,Activa,0.0
+DNK,Dinamarca,2021,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+DNK,Dinamarca,2021,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.34
+DNK,Dinamarca,2021,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.41
+DNK,Dinamarca,2021,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.068
+DNK,Dinamarca,2021,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,3.06
+DNK,Dinamarca,2022,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.333
+DNK,Dinamarca,2022,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,1.51
+DNK,Dinamarca,2022,LMP_20,2. Formación Profesional para el Empleo,Activa,0.231
+DNK,Dinamarca,2022,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.064
+DNK,Dinamarca,2022,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.882
+DNK,Dinamarca,2022,LMP_60,5. Creación Directa de Empleo,Activa,0.0
+DNK,Dinamarca,2022,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+DNK,Dinamarca,2022,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.587
+DNK,Dinamarca,2022,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.642
+DNK,Dinamarca,2022,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.054
+DNK,Dinamarca,2022,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.15
+DNK,Dinamarca,2023,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.333
+DNK,Dinamarca,2023,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,1.54
+DNK,Dinamarca,2023,LMP_20,2. Formación Profesional para el Empleo,Activa,0.222
+DNK,Dinamarca,2023,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.065
+DNK,Dinamarca,2023,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.922
+DNK,Dinamarca,2023,LMP_60,5. Creación Directa de Empleo,Activa,0.0
+DNK,Dinamarca,2023,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+DNK,Dinamarca,2023,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.671
+DNK,Dinamarca,2023,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.711
+DNK,Dinamarca,2023,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.039
+DNK,Dinamarca,2023,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.26
+DNK,Dinamarca,2024,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.337
+DNK,Dinamarca,2024,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,1.54
+DNK,Dinamarca,2024,LMP_20,2. Formación Profesional para el Empleo,Activa,0.224
+DNK,Dinamarca,2024,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.067
+DNK,Dinamarca,2024,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.912
+DNK,Dinamarca,2024,LMP_60,5. Creación Directa de Empleo,Activa,0.0
+DNK,Dinamarca,2024,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+DNK,Dinamarca,2024,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.702
+DNK,Dinamarca,2024,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.728
+DNK,Dinamarca,2024,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.027
+DNK,Dinamarca,2024,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.27
+ESP,España,2004,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.075
+ESP,España,2004,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.646
+ESP,España,2004,LMP_20,2. Formación Profesional para el Empleo,Activa,0.119
+ESP,España,2004,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.275
+ESP,España,2004,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.065
+ESP,España,2004,LMP_60,5. Creación Directa de Empleo,Activa,0.079
+ESP,España,2004,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.032
+ESP,España,2004,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.43
+ESP,España,2004,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.47
+ESP,España,2004,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.035
+ESP,España,2004,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.11
+ESP,España,2005,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.09
+ESP,España,2005,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.66
+ESP,España,2005,LMP_20,2. Formación Profesional para el Empleo,Activa,0.144
+ESP,España,2005,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.291
+ESP,España,2005,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.018
+ESP,España,2005,LMP_60,5. Creación Directa de Empleo,Activa,0.064
+ESP,España,2005,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.05
+ESP,España,2005,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.39
+ESP,España,2005,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.43
+ESP,España,2005,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.043
+ESP,España,2005,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.09
+ESP,España,2006,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.093
+ESP,España,2006,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.707
+ESP,España,2006,LMP_20,2. Formación Profesional para el Empleo,Activa,0.142
+ESP,España,2006,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.314
+ESP,España,2006,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.02
+ESP,España,2006,LMP_60,5. Creación Directa de Empleo,Activa,0.059
+ESP,España,2006,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.076
+ESP,España,2006,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.36
+ESP,España,2006,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.41
+ESP,España,2006,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.052
+ESP,España,2006,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.12
+ESP,España,2007,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.089
+ESP,España,2007,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.702
+ESP,España,2007,LMP_20,2. Formación Profesional para el Empleo,Activa,0.136
+ESP,España,2007,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.272
+ESP,España,2007,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.059
+ESP,España,2007,LMP_60,5. Creación Directa de Empleo,Activa,0.059
+ESP,España,2007,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.086
+ESP,España,2007,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.37
+ESP,España,2007,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.42
+ESP,España,2007,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.057
+ESP,España,2007,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.13
+ESP,España,2008,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.101
+ESP,España,2008,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.693
+ESP,España,2008,LMP_20,2. Formación Profesional para el Empleo,Activa,0.144
+ESP,España,2008,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.224
+ESP,España,2008,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.065
+ESP,España,2008,LMP_60,5. Creación Directa de Empleo,Activa,0.064
+ESP,España,2008,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.09
+ESP,España,2008,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.78
+ESP,España,2008,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.85
+ESP,España,2008,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.064
+ESP,España,2008,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.54
+ESP,España,2009,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.13
+ESP,España,2009,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.771
+ESP,España,2009,LMP_20,2. Formación Profesional para el Empleo,Activa,0.172
+ESP,España,2009,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.221
+ESP,España,2009,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.071
+ESP,España,2009,LMP_60,5. Creación Directa de Empleo,Activa,0.079
+ESP,España,2009,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.097
+ESP,España,2009,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,2.87
+ESP,España,2009,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,2.92
+ESP,España,2009,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.056
+ESP,España,2009,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,3.7
+ESP,España,2010,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.122
+ESP,España,2010,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.832
+ESP,España,2010,LMP_20,2. Formación Profesional para el Empleo,Activa,0.177
+ESP,España,2010,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.261
+ESP,España,2010,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.079
+ESP,España,2010,LMP_60,5. Creación Directa de Empleo,Activa,0.076
+ESP,España,2010,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.114
+ESP,España,2010,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,3.02
+ESP,España,2010,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,3.06
+ESP,España,2010,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.039
+ESP,España,2010,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,3.89
+ESP,España,2011,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.104
+ESP,España,2011,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.796
+ESP,España,2011,LMP_20,2. Formación Profesional para el Empleo,Activa,0.184
+ESP,España,2011,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.256
+ESP,España,2011,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.079
+ESP,España,2011,LMP_60,5. Creación Directa de Empleo,Activa,0.059
+ESP,España,2011,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.112
+ESP,España,2011,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,2.86
+ESP,España,2011,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,2.89
+ESP,España,2011,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.041
+ESP,España,2011,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,3.69
+ESP,España,2012,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.082
+ESP,España,2012,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.651
+ESP,España,2012,LMP_20,2. Formación Profesional para el Empleo,Activa,0.15
+ESP,España,2012,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.173
+ESP,España,2012,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.076
+ESP,España,2012,LMP_60,5. Creación Directa de Empleo,Activa,0.054
+ESP,España,2012,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.112
+ESP,España,2012,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,3.1
+ESP,España,2012,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,3.14
+ESP,España,2012,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.041
+ESP,España,2012,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,3.79
+ESP,España,2013,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.09
+ESP,España,2013,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.513
+ESP,España,2013,LMP_20,2. Formación Profesional para el Empleo,Activa,0.118
+ESP,España,2013,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.071
+ESP,España,2013,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.064
+ESP,España,2013,LMP_60,5. Creación Directa de Empleo,Activa,0.063
+ESP,España,2013,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.104
+ESP,España,2013,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,2.97
+ESP,España,2013,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,2.99
+ESP,España,2013,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.024
+ESP,España,2013,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,3.51
+ESP,España,2014,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.108
+ESP,España,2014,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.558
+ESP,España,2014,LMP_20,2. Formación Profesional para el Empleo,Activa,0.119
+ESP,España,2014,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.068
+ESP,España,2014,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.061
+ESP,España,2014,LMP_60,5. Creación Directa de Empleo,Activa,0.09
+ESP,España,2014,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.108
+ESP,España,2014,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,2.51
+ESP,España,2014,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,2.54
+ESP,España,2014,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.027
+ESP,España,2014,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,3.09
+ESP,España,2015,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.144
+ESP,España,2015,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.587
+ESP,España,2015,LMP_20,2. Formación Profesional para el Empleo,Activa,0.112
+ESP,España,2015,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.059
+ESP,España,2015,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.078
+ESP,España,2015,LMP_60,5. Creación Directa de Empleo,Activa,0.094
+ESP,España,2015,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.097
+ESP,España,2015,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.94
+ESP,España,2015,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.97
+ESP,España,2015,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.024
+ESP,España,2015,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.56
+ESP,España,2016,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.135
+ESP,España,2016,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.561
+ESP,España,2016,LMP_20,2. Formación Profesional para el Empleo,Activa,0.107
+ESP,España,2016,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.057
+ESP,España,2016,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.075
+ESP,España,2016,LMP_60,5. Creación Directa de Empleo,Activa,0.093
+ESP,España,2016,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.093
+ESP,España,2016,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.69
+ESP,España,2016,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.72
+ESP,España,2016,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.023
+ESP,España,2016,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.28
+ESP,España,2017,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.15
+ESP,España,2017,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.685
+ESP,España,2017,LMP_20,2. Formación Profesional para el Empleo,Activa,0.108
+ESP,España,2017,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.094
+ESP,España,2017,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.1
+ESP,España,2017,LMP_60,5. Creación Directa de Empleo,Activa,0.103
+ESP,España,2017,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.127
+ESP,España,2017,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.49
+ESP,España,2017,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.51
+ESP,España,2017,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.021
+ESP,España,2017,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.19
+ESP,España,2018,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.15
+ESP,España,2018,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.702
+ESP,España,2018,LMP_20,2. Formación Profesional para el Empleo,Activa,0.115
+ESP,España,2018,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.083
+ESP,España,2018,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.108
+ESP,España,2018,LMP_60,5. Creación Directa de Empleo,Activa,0.118
+ESP,España,2018,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.128
+ESP,España,2018,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.42
+ESP,España,2018,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.44
+ESP,España,2018,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.021
+ESP,España,2018,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.14
+ESP,España,2019,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.128
+ESP,España,2019,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.689
+ESP,España,2019,LMP_20,2. Formación Profesional para el Empleo,Activa,0.105
+ESP,España,2019,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.082
+ESP,España,2019,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.125
+ESP,España,2019,LMP_60,5. Creación Directa de Empleo,Activa,0.112
+ESP,España,2019,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.135
+ESP,España,2019,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.5
+ESP,España,2019,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.51
+ESP,España,2019,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.012
+ESP,España,2019,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.2
+ESP,España,2020,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.148
+ESP,España,2020,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,1.18
+ESP,España,2020,LMP_20,2. Formación Profesional para el Empleo,Activa,0.104
+ESP,España,2020,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.559
+ESP,España,2020,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.135
+ESP,España,2020,LMP_60,5. Creación Directa de Empleo,Activa,0.108
+ESP,España,2020,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.122
+ESP,España,2020,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,3.33
+ESP,España,2020,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,3.75
+ESP,España,2020,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.414
+ESP,España,2020,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,4.92
+ESP,España,2021,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.145
+ESP,España,2021,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.922
+ESP,España,2021,LMP_20,2. Formación Profesional para el Empleo,Activa,0.097
+ESP,España,2021,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.303
+ESP,España,2021,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.135
+ESP,España,2021,LMP_60,5. Creación Directa de Empleo,Activa,0.108
+ESP,España,2021,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.131
+ESP,España,2021,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,2.23
+ESP,España,2021,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,2.61
+ESP,España,2021,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.382
+ESP,España,2021,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,3.53
+ESP,España,2022,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.149
+ESP,España,2022,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.745
+ESP,España,2022,LMP_20,2. Formación Profesional para el Empleo,Activa,0.103
+ESP,España,2022,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.108
+ESP,España,2022,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.136
+ESP,España,2022,LMP_60,5. Creación Directa de Empleo,Activa,0.115
+ESP,España,2022,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.133
+ESP,España,2022,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.52
+ESP,España,2022,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.85
+ESP,España,2022,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.326
+ESP,España,2022,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.6
+ESP,España,2023,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.134
+ESP,España,2023,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.688
+ESP,España,2023,LMP_20,2. Formación Profesional para el Empleo,Activa,0.104
+ESP,España,2023,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.101
+ESP,España,2023,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.129
+ESP,España,2023,LMP_60,5. Creación Directa de Empleo,Activa,0.092
+ESP,España,2023,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.125
+ESP,España,2023,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.49
+ESP,España,2023,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.73
+ESP,España,2023,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.233
+ESP,España,2023,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.41
+ESP,España,2024,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.129
+ESP,España,2024,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.642
+ESP,España,2024,LMP_20,2. Formación Profesional para el Empleo,Activa,0.112
+ESP,España,2024,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.087
+ESP,España,2024,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.114
+ESP,España,2024,LMP_60,5. Creación Directa de Empleo,Activa,0.076
+ESP,España,2024,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.12
+ESP,España,2024,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.44
+ESP,España,2024,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.64
+ESP,España,2024,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.203
+ESP,España,2024,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.29
+FRA,Francia,2004,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.239
+FRA,Francia,2004,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.967
+FRA,Francia,2004,LMP_20,2. Formación Profesional para el Empleo,Activa,0.312
+FRA,Francia,2004,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.096
+FRA,Francia,2004,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.082
+FRA,Francia,2004,LMP_60,5. Creación Directa de Empleo,Activa,0.232
+FRA,Francia,2004,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.004
+FRA,Francia,2004,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,2.04
+FRA,Francia,2004,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,2.13
+FRA,Francia,2004,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.086
+FRA,Francia,2004,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,3.1
+FRA,Francia,2005,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.24
+FRA,Francia,2005,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.904
+FRA,Francia,2005,LMP_20,2. Formación Profesional para el Empleo,Activa,0.3
+FRA,Francia,2005,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.101
+FRA,Francia,2005,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.082
+FRA,Francia,2005,LMP_60,5. Creación Directa de Empleo,Activa,0.174
+FRA,Francia,2005,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.004
+FRA,Francia,2005,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.95
+FRA,Francia,2005,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,2.02
+FRA,Francia,2005,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.064
+FRA,Francia,2005,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.92
+FRA,Francia,2006,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.246
+FRA,Francia,2006,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.916
+FRA,Francia,2006,LMP_20,2. Formación Profesional para el Empleo,Activa,0.284
+FRA,Francia,2006,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.1
+FRA,Francia,2006,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.083
+FRA,Francia,2006,LMP_60,5. Creación Directa de Empleo,Activa,0.192
+FRA,Francia,2006,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.009
+FRA,Francia,2006,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.75
+FRA,Francia,2006,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.8
+FRA,Francia,2006,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.052
+FRA,Francia,2006,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.72
+FRA,Francia,2007,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.23
+FRA,Francia,2007,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.91
+FRA,Francia,2007,LMP_20,2. Formación Profesional para el Empleo,Activa,0.273
+FRA,Francia,2007,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.086
+FRA,Francia,2007,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.086
+FRA,Francia,2007,LMP_60,5. Creación Directa de Empleo,Activa,0.2
+FRA,Francia,2007,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.034
+FRA,Francia,2007,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.57
+FRA,Francia,2007,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.61
+FRA,Francia,2007,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.046
+FRA,Francia,2007,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.52
+FRA,Francia,2008,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.21
+FRA,Francia,2008,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.811
+FRA,Francia,2008,LMP_20,2. Formación Profesional para el Empleo,Activa,0.254
+FRA,Francia,2008,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.071
+FRA,Francia,2008,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.093
+FRA,Francia,2008,LMP_60,5. Creación Directa de Empleo,Activa,0.15
+FRA,Francia,2008,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.032
+FRA,Francia,2008,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.51
+FRA,Francia,2008,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.54
+FRA,Francia,2008,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.026
+FRA,Francia,2008,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.35
+FRA,Francia,2009,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.268
+FRA,Francia,2009,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.958
+FRA,Francia,2009,LMP_20,2. Formación Profesional para el Empleo,Activa,0.331
+FRA,Francia,2009,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.059
+FRA,Francia,2009,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.108
+FRA,Francia,2009,LMP_60,5. Creación Directa de Empleo,Activa,0.152
+FRA,Francia,2009,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.037
+FRA,Francia,2009,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.88
+FRA,Francia,2009,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.9
+FRA,Francia,2009,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.017
+FRA,Francia,2009,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.85
+FRA,Francia,2010,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.31
+FRA,Francia,2010,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,1.07
+FRA,Francia,2010,LMP_20,2. Formación Profesional para el Empleo,Activa,0.326
+FRA,Francia,2010,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.064
+FRA,Francia,2010,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.105
+FRA,Francia,2010,LMP_60,5. Creación Directa de Empleo,Activa,0.194
+FRA,Francia,2010,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.063
+FRA,Francia,2010,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.93
+FRA,Francia,2010,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.94
+FRA,Francia,2010,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.01
+FRA,Francia,2010,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,3.01
+FRA,Francia,2011,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.266
+FRA,Francia,2011,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.892
+FRA,Francia,2011,LMP_20,2. Formación Profesional para el Empleo,Activa,0.307
+FRA,Francia,2011,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.028
+FRA,Francia,2011,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.09
+FRA,Francia,2011,LMP_60,5. Creación Directa de Empleo,Activa,0.136
+FRA,Francia,2011,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.061
+FRA,Francia,2011,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.86
+FRA,Francia,2011,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.87
+FRA,Francia,2011,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.007
+FRA,Francia,2011,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.76
+FRA,Francia,2012,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.268
+FRA,Francia,2012,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.861
+FRA,Francia,2012,LMP_20,2. Formación Profesional para el Empleo,Activa,0.293
+FRA,Francia,2012,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.027
+FRA,Francia,2012,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.09
+FRA,Francia,2012,LMP_60,5. Creación Directa de Empleo,Activa,0.128
+FRA,Francia,2012,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.054
+FRA,Francia,2012,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.96
+FRA,Francia,2012,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.96
+FRA,Francia,2012,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.006
+FRA,Francia,2012,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.83
+FRA,Francia,2013,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.27
+FRA,Francia,2013,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.874
+FRA,Francia,2013,LMP_20,2. Formación Profesional para el Empleo,Activa,0.286
+FRA,Francia,2013,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.027
+FRA,Francia,2013,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.093
+FRA,Francia,2013,LMP_60,5. Creación Directa de Empleo,Activa,0.146
+FRA,Francia,2013,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.048
+FRA,Francia,2013,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,2.05
+FRA,Francia,2013,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,2.06
+FRA,Francia,2013,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.004
+FRA,Francia,2013,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.93
+FRA,Francia,2014,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.27
+FRA,Francia,2014,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.938
+FRA,Francia,2014,LMP_20,2. Formación Profesional para el Empleo,Activa,0.287
+FRA,Francia,2014,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.039
+FRA,Francia,2014,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.093
+FRA,Francia,2014,LMP_60,5. Creación Directa de Empleo,Activa,0.2
+FRA,Francia,2014,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.046
+FRA,Francia,2014,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,2.08
+FRA,Francia,2014,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,2.08
+FRA,Francia,2014,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.002
+FRA,Francia,2014,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,3.02
+FRA,Francia,2015,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.257
+FRA,Francia,2015,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.935
+FRA,Francia,2015,LMP_20,2. Formación Profesional para el Empleo,Activa,0.28
+FRA,Francia,2015,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.046
+FRA,Francia,2015,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.089
+FRA,Francia,2015,LMP_60,5. Creación Directa de Empleo,Activa,0.218
+FRA,Francia,2015,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.041
+FRA,Francia,2015,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,2.05
+FRA,Francia,2015,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,2.05
+FRA,Francia,2015,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.001
+FRA,Francia,2015,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.99
+FRA,Francia,2016,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.244
+FRA,Francia,2016,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.977
+FRA,Francia,2016,LMP_20,2. Formación Profesional para el Empleo,Activa,0.324
+FRA,Francia,2016,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.057
+FRA,Francia,2016,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.096
+FRA,Francia,2016,LMP_60,5. Creación Directa de Empleo,Activa,0.221
+FRA,Francia,2016,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.035
+FRA,Francia,2016,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,2.05
+FRA,Francia,2016,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,2.05
+FRA,Francia,2016,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.001
+FRA,Francia,2016,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,3.03
+FRA,Francia,2017,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.247
+FRA,Francia,2017,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.922
+FRA,Francia,2017,LMP_20,2. Formación Profesional para el Empleo,Activa,0.303
+FRA,Francia,2017,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.043
+FRA,Francia,2017,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.085
+FRA,Francia,2017,LMP_60,5. Creación Directa de Empleo,Activa,0.207
+FRA,Francia,2017,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.035
+FRA,Francia,2017,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,2.03
+FRA,Francia,2017,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,2.03
+FRA,Francia,2017,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+FRA,Francia,2017,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.95
+FRA,Francia,2018,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.234
+FRA,Francia,2018,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.763
+FRA,Francia,2018,LMP_20,2. Formación Profesional para el Empleo,Activa,0.256
+FRA,Francia,2018,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.027
+FRA,Francia,2018,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.086
+FRA,Francia,2018,LMP_60,5. Creación Directa de Empleo,Activa,0.116
+FRA,Francia,2018,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.041
+FRA,Francia,2018,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,2.0
+FRA,Francia,2018,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,2.0
+FRA,Francia,2018,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+FRA,Francia,2018,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.76
+FRA,Francia,2019,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.232
+FRA,Francia,2019,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.72
+FRA,Francia,2019,LMP_20,2. Formación Profesional para el Empleo,Activa,0.273
+FRA,Francia,2019,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.019
+FRA,Francia,2019,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.087
+FRA,Francia,2019,LMP_60,5. Creación Directa de Empleo,Activa,0.068
+FRA,Francia,2019,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.037
+FRA,Francia,2019,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.96
+FRA,Francia,2019,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.96
+FRA,Francia,2019,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+FRA,Francia,2019,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.67
+FRA,Francia,2020,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.248
+FRA,Francia,2020,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.767
+FRA,Francia,2020,LMP_20,2. Formación Profesional para el Empleo,Activa,0.305
+FRA,Francia,2020,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.024
+FRA,Francia,2020,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.093
+FRA,Francia,2020,LMP_60,5. Creación Directa de Empleo,Activa,0.059
+FRA,Francia,2020,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.035
+FRA,Francia,2020,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,3.38
+FRA,Francia,2020,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,3.38
+FRA,Francia,2020,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+FRA,Francia,2020,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,4.15
+FRA,Francia,2021,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.254
+FRA,Francia,2021,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.86
+FRA,Francia,2021,LMP_20,2. Formación Profesional para el Empleo,Activa,0.372
+FRA,Francia,2021,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.043
+FRA,Francia,2021,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.089
+FRA,Francia,2021,LMP_60,5. Creación Directa de Empleo,Activa,0.067
+FRA,Francia,2021,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.034
+FRA,Francia,2021,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,2.47
+FRA,Francia,2021,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,2.47
+FRA,Francia,2021,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+FRA,Francia,2021,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,3.33
+FRA,Francia,2022,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.247
+FRA,Francia,2022,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.847
+FRA,Francia,2022,LMP_20,2. Formación Profesional para el Empleo,Activa,0.37
+FRA,Francia,2022,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.043
+FRA,Francia,2022,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.082
+FRA,Francia,2022,LMP_60,5. Creación Directa de Empleo,Activa,0.068
+FRA,Francia,2022,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.032
+FRA,Francia,2022,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.74
+FRA,Francia,2022,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.74
+FRA,Francia,2022,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+FRA,Francia,2022,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.59
+FRA,Francia,2023,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.243
+FRA,Francia,2023,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.79
+FRA,Francia,2023,LMP_20,2. Formación Profesional para el Empleo,Activa,0.34
+FRA,Francia,2023,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.032
+FRA,Francia,2023,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.082
+FRA,Francia,2023,LMP_60,5. Creación Directa de Empleo,Activa,0.059
+FRA,Francia,2023,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.029
+FRA,Francia,2023,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.69
+FRA,Francia,2023,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.69
+FRA,Francia,2023,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+FRA,Francia,2023,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.48
+FRA,Francia,2024,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.244
+FRA,Francia,2024,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.74
+FRA,Francia,2024,LMP_20,2. Formación Profesional para el Empleo,Activa,0.298
+FRA,Francia,2024,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.024
+FRA,Francia,2024,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.081
+FRA,Francia,2024,LMP_60,5. Creación Directa de Empleo,Activa,0.057
+FRA,Francia,2024,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.035
+FRA,Francia,2024,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.71
+FRA,Francia,2024,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.71
+FRA,Francia,2024,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+FRA,Francia,2024,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.45
+ITA,Italia,2004,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.081
+ITA,Italia,2004,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.6
+ITA,Italia,2004,LMP_20,2. Formación Profesional para el Empleo,Activa,0.216
+ITA,Italia,2004,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.234
+ITA,Italia,2004,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.006
+ITA,Italia,2004,LMP_60,5. Creación Directa de Empleo,Activa,0.009
+ITA,Italia,2004,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.05
+ITA,Italia,2004,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.582
+ITA,Italia,2004,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.606
+ITA,Italia,2004,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.025
+ITA,Italia,2004,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.21
+ITA,Italia,2005,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.076
+ITA,Italia,2005,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.532
+ITA,Italia,2005,LMP_20,2. Formación Profesional para el Empleo,Activa,0.194
+ITA,Italia,2005,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.195
+ITA,Italia,2005,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.006
+ITA,Italia,2005,LMP_60,5. Creación Directa de Empleo,Activa,0.008
+ITA,Italia,2005,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.048
+ITA,Italia,2005,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.649
+ITA,Italia,2005,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.67
+ITA,Italia,2005,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.019
+ITA,Italia,2005,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.2
+ITA,Italia,2006,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.072
+ITA,Italia,2006,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.476
+ITA,Italia,2006,LMP_20,2. Formación Profesional para el Empleo,Activa,0.173
+ITA,Italia,2006,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.173
+ITA,Italia,2006,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.006
+ITA,Italia,2006,LMP_60,5. Creación Directa de Empleo,Activa,0.008
+ITA,Italia,2006,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.041
+ITA,Italia,2006,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.626
+ITA,Italia,2006,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.639
+ITA,Italia,2006,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.013
+ITA,Italia,2006,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.12
+ITA,Italia,2007,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.072
+ITA,Italia,2007,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.432
+ITA,Italia,2007,LMP_20,2. Formación Profesional para el Empleo,Activa,0.175
+ITA,Italia,2007,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.142
+ITA,Italia,2007,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.006
+ITA,Italia,2007,LMP_60,5. Creación Directa de Empleo,Activa,0.008
+ITA,Italia,2007,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.027
+ITA,Italia,2007,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.577
+ITA,Italia,2007,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.586
+ITA,Italia,2007,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.008
+ITA,Italia,2007,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.02
+ITA,Italia,2008,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.082
+ITA,Italia,2008,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.444
+ITA,Italia,2008,LMP_20,2. Formación Profesional para el Empleo,Activa,0.181
+ITA,Italia,2008,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.143
+ITA,Italia,2008,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.007
+ITA,Italia,2008,LMP_60,5. Creación Directa de Empleo,Activa,0.007
+ITA,Italia,2008,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.023
+ITA,Italia,2008,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.685
+ITA,Italia,2008,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.69
+ITA,Italia,2008,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.006
+ITA,Italia,2008,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.14
+ITA,Italia,2009,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.101
+ITA,Italia,2009,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.449
+ITA,Italia,2009,LMP_20,2. Formación Profesional para el Empleo,Activa,0.172
+ITA,Italia,2009,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.143
+ITA,Italia,2009,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.007
+ITA,Italia,2009,LMP_60,5. Creación Directa de Empleo,Activa,0.006
+ITA,Italia,2009,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.019
+ITA,Italia,2009,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.23
+ITA,Italia,2009,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.23
+ITA,Italia,2009,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.007
+ITA,Italia,2009,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.68
+ITA,Italia,2010,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.1
+ITA,Italia,2010,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.414
+ITA,Italia,2010,LMP_20,2. Formación Profesional para el Empleo,Activa,0.144
+ITA,Italia,2010,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.138
+ITA,Italia,2010,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.008
+ITA,Italia,2010,LMP_60,5. Creación Directa de Empleo,Activa,0.004
+ITA,Italia,2010,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.018
+ITA,Italia,2010,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.3
+ITA,Italia,2010,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.3
+ITA,Italia,2010,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.007
+ITA,Italia,2010,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.72
+ITA,Italia,2011,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.1
+ITA,Italia,2011,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.4
+ITA,Italia,2011,LMP_20,2. Formación Profesional para el Empleo,Activa,0.134
+ITA,Italia,2011,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.14
+ITA,Italia,2011,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.004
+ITA,Italia,2011,LMP_60,5. Creación Directa de Empleo,Activa,0.009
+ITA,Italia,2011,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.013
+ITA,Italia,2011,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.22
+ITA,Italia,2011,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.23
+ITA,Italia,2011,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.008
+ITA,Italia,2011,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.63
+ITA,Italia,2012,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.115
+ITA,Italia,2012,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.451
+ITA,Italia,2012,LMP_20,2. Formación Profesional para el Empleo,Activa,0.142
+ITA,Italia,2012,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.17
+ITA,Italia,2012,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.006
+ITA,Italia,2012,LMP_60,5. Creación Directa de Empleo,Activa,0.004
+ITA,Italia,2012,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.014
+ITA,Italia,2012,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.47
+ITA,Italia,2012,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.48
+ITA,Italia,2012,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.008
+ITA,Italia,2012,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.93
+ITA,Italia,2013,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.085
+ITA,Italia,2013,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.419
+ITA,Italia,2013,LMP_20,2. Formación Profesional para el Empleo,Activa,0.149
+ITA,Italia,2013,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.163
+ITA,Italia,2013,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.006
+ITA,Italia,2013,LMP_60,5. Creación Directa de Empleo,Activa,0.004
+ITA,Italia,2013,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.013
+ITA,Italia,2013,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.5
+ITA,Italia,2013,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.51
+ITA,Italia,2013,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.009
+ITA,Italia,2013,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.93
+ITA,Italia,2014,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.08
+ITA,Italia,2014,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.372
+ITA,Italia,2014,LMP_20,2. Formación Profesional para el Empleo,Activa,0.136
+ITA,Italia,2014,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.129
+ITA,Italia,2014,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.007
+ITA,Italia,2014,LMP_60,5. Creación Directa de Empleo,Activa,0.005
+ITA,Italia,2014,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.013
+ITA,Italia,2014,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.51
+ITA,Italia,2014,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.52
+ITA,Italia,2014,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.009
+ITA,Italia,2014,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.9
+ITA,Italia,2015,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.088
+ITA,Italia,2015,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.495
+ITA,Italia,2015,LMP_20,2. Formación Profesional para el Empleo,Activa,0.115
+ITA,Italia,2015,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.216
+ITA,Italia,2015,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.002
+ITA,Italia,2015,LMP_60,5. Creación Directa de Empleo,Activa,0.008
+ITA,Italia,2015,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.016
+ITA,Italia,2015,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.27
+ITA,Italia,2015,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.28
+ITA,Italia,2015,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.009
+ITA,Italia,2015,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.78
+ITA,Italia,2016,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.063
+ITA,Italia,2016,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.647
+ITA,Italia,2016,LMP_20,2. Formación Profesional para el Empleo,Activa,0.104
+ITA,Italia,2016,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.455
+ITA,Italia,2016,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.01
+ITA,Italia,2016,LMP_60,5. Creación Directa de Empleo,Activa,0.004
+ITA,Italia,2016,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.008
+ITA,Italia,2016,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.3
+ITA,Italia,2016,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.31
+ITA,Italia,2016,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.01
+ITA,Italia,2016,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.96
+ITA,Italia,2017,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.059
+ITA,Italia,2017,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.609
+ITA,Italia,2017,LMP_20,2. Formación Profesional para el Empleo,Activa,0.108
+ITA,Italia,2017,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.428
+ITA,Italia,2017,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.008
+ITA,Italia,2017,LMP_60,5. Creación Directa de Empleo,Activa,0.003
+ITA,Italia,2017,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.001
+ITA,Italia,2017,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.2
+ITA,Italia,2017,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.21
+ITA,Italia,2017,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.009
+ITA,Italia,2017,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.82
+ITA,Italia,2018,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.063
+ITA,Italia,2018,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.428
+ITA,Italia,2018,LMP_20,2. Formación Profesional para el Empleo,Activa,0.111
+ITA,Italia,2018,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.238
+ITA,Italia,2018,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.008
+ITA,Italia,2018,LMP_60,5. Creación Directa de Empleo,Activa,0.002
+ITA,Italia,2018,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.004
+ITA,Italia,2018,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.13
+ITA,Italia,2018,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.14
+ITA,Italia,2018,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.008
+ITA,Italia,2018,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.57
+ITA,Italia,2019,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.067
+ITA,Italia,2019,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.273
+ITA,Italia,2019,LMP_20,2. Formación Profesional para el Empleo,Activa,0.123
+ITA,Italia,2019,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.067
+ITA,Italia,2019,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.008
+ITA,Italia,2019,LMP_60,5. Creación Directa de Empleo,Activa,0.002
+ITA,Italia,2019,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.004
+ITA,Italia,2019,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.28
+ITA,Italia,2019,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.28
+ITA,Italia,2019,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.008
+ITA,Italia,2019,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.56
+ITA,Italia,2020,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.123
+ITA,Italia,2020,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.347
+ITA,Italia,2020,LMP_20,2. Formación Profesional para el Empleo,Activa,0.119
+ITA,Italia,2020,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.087
+ITA,Italia,2020,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.008
+ITA,Italia,2020,LMP_60,5. Creación Directa de Empleo,Activa,0.003
+ITA,Italia,2020,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.004
+ITA,Italia,2020,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,2.72
+ITA,Italia,2020,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,2.73
+ITA,Italia,2020,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.008
+ITA,Italia,2020,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,3.08
+ITA,Italia,2021,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.086
+ITA,Italia,2021,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.522
+ITA,Italia,2021,LMP_20,2. Formación Profesional para el Empleo,Activa,0.146
+ITA,Italia,2021,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.273
+ITA,Italia,2021,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.006
+ITA,Italia,2021,LMP_60,5. Creación Directa de Empleo,Activa,0.001
+ITA,Italia,2021,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.008
+ITA,Italia,2021,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.64
+ITA,Italia,2021,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.65
+ITA,Italia,2021,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.008
+ITA,Italia,2021,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.17
+ITA,Italia,2022,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.071
+ITA,Italia,2022,LMP_20,2. Formación Profesional para el Empleo,Activa,0.122
+ITA,Italia,2022,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.273
+ITA,Italia,2022,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.006
+ITA,Italia,2022,LMP_60,5. Creación Directa de Empleo,Activa,0.001
+ITA,Italia,2022,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.009
+ITA,Italia,2022,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.16
+ITA,Italia,2022,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.17
+ITA,Italia,2022,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.008
+ITA,Italia,2023,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.061
+ITA,Italia,2023,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.569
+ITA,Italia,2023,LMP_20,2. Formación Profesional para el Empleo,Activa,0.216
+ITA,Italia,2023,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.282
+ITA,Italia,2023,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.004
+ITA,Italia,2023,LMP_60,5. Creación Directa de Empleo,Activa,0.0
+ITA,Italia,2023,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.004
+ITA,Italia,2023,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.02
+ITA,Italia,2023,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.02
+ITA,Italia,2023,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.007
+ITA,Italia,2023,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.59
+ITA,Italia,2024,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.057
+ITA,Italia,2024,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.54
+ITA,Italia,2024,LMP_20,2. Formación Profesional para el Empleo,Activa,0.18
+ITA,Italia,2024,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.291
+ITA,Italia,2024,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.006
+ITA,Italia,2024,LMP_60,5. Creación Directa de Empleo,Activa,0.0
+ITA,Italia,2024,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.004
+ITA,Italia,2024,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.04
+ITA,Italia,2024,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.04
+ITA,Italia,2024,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.004
+ITA,Italia,2024,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.58
+NLD,Países Bajos,2004,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.384
+NLD,Países Bajos,2004,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,1.23
+NLD,Países Bajos,2004,LMP_20,2. Formación Profesional para el Empleo,Activa,0.122
+NLD,Países Bajos,2004,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.025
+NLD,Países Bajos,2004,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.513
+NLD,Países Bajos,2004,LMP_60,5. Creación Directa de Empleo,Activa,0.187
+NLD,Países Bajos,2004,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+NLD,Países Bajos,2004,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.8
+NLD,Países Bajos,2004,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.8
+NLD,Países Bajos,2004,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+NLD,Países Bajos,2004,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,3.04
+NLD,Países Bajos,2005,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.36
+NLD,Países Bajos,2005,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,1.16
+NLD,Países Bajos,2005,LMP_20,2. Formación Profesional para el Empleo,Activa,0.112
+NLD,Países Bajos,2005,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.021
+NLD,Países Bajos,2005,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.486
+NLD,Países Bajos,2005,LMP_60,5. Creación Directa de Empleo,Activa,0.174
+NLD,Países Bajos,2005,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+NLD,Países Bajos,2005,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.72
+NLD,Países Bajos,2005,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.72
+NLD,Países Bajos,2005,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+NLD,Países Bajos,2005,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.88
+NLD,Países Bajos,2006,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.347
+NLD,Países Bajos,2006,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,1.07
+NLD,Países Bajos,2006,LMP_20,2. Formación Profesional para el Empleo,Activa,0.1
+NLD,Países Bajos,2006,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.004
+NLD,Países Bajos,2006,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.453
+NLD,Países Bajos,2006,LMP_60,5. Creación Directa de Empleo,Activa,0.163
+NLD,Países Bajos,2006,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+NLD,Países Bajos,2006,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.42
+NLD,Países Bajos,2006,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.42
+NLD,Países Bajos,2006,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+NLD,Países Bajos,2006,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.49
+NLD,Países Bajos,2007,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.31
+NLD,Países Bajos,2007,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.973
+NLD,Países Bajos,2007,LMP_20,2. Formación Profesional para el Empleo,Activa,0.09
+NLD,Países Bajos,2007,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.002
+NLD,Países Bajos,2007,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.426
+NLD,Países Bajos,2007,LMP_60,5. Creación Directa de Empleo,Activa,0.146
+NLD,Países Bajos,2007,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+NLD,Países Bajos,2007,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.13
+NLD,Países Bajos,2007,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.13
+NLD,Países Bajos,2007,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+NLD,Países Bajos,2007,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.1
+NLD,Países Bajos,2008,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.275
+NLD,Países Bajos,2008,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.934
+NLD,Países Bajos,2008,LMP_20,2. Formación Profesional para el Empleo,Activa,0.093
+NLD,Países Bajos,2008,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.001
+NLD,Países Bajos,2008,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.428
+NLD,Países Bajos,2008,LMP_60,5. Creación Directa de Empleo,Activa,0.136
+NLD,Países Bajos,2008,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+NLD,Países Bajos,2008,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.01
+NLD,Países Bajos,2008,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.01
+NLD,Países Bajos,2008,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+NLD,Países Bajos,2008,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.95
+NLD,Países Bajos,2009,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.345
+NLD,Países Bajos,2009,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,1.08
+NLD,Países Bajos,2009,LMP_20,2. Formación Profesional para el Empleo,Activa,0.115
+NLD,Países Bajos,2009,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.014
+NLD,Países Bajos,2009,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.451
+NLD,Países Bajos,2009,LMP_60,5. Creación Directa de Empleo,Activa,0.151
+NLD,Países Bajos,2009,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+NLD,Países Bajos,2009,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.35
+NLD,Países Bajos,2009,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.35
+NLD,Países Bajos,2009,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+NLD,Países Bajos,2009,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.43
+NLD,Países Bajos,2010,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.358
+NLD,Países Bajos,2010,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,1.09
+NLD,Países Bajos,2010,LMP_20,2. Formación Profesional para el Empleo,Activa,0.125
+NLD,Países Bajos,2010,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.016
+NLD,Países Bajos,2010,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.437
+NLD,Países Bajos,2010,LMP_60,5. Creación Directa de Empleo,Activa,0.151
+NLD,Países Bajos,2010,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+NLD,Países Bajos,2010,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.42
+NLD,Países Bajos,2010,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.42
+NLD,Países Bajos,2010,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+NLD,Países Bajos,2010,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.51
+NLD,Países Bajos,2011,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.34
+NLD,Países Bajos,2011,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,1.0
+NLD,Países Bajos,2011,LMP_20,2. Formación Profesional para el Empleo,Activa,0.12
+NLD,Países Bajos,2011,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.029
+NLD,Países Bajos,2011,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.407
+NLD,Países Bajos,2011,LMP_60,5. Creación Directa de Empleo,Activa,0.104
+NLD,Países Bajos,2011,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+NLD,Países Bajos,2011,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.33
+NLD,Países Bajos,2011,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.33
+NLD,Países Bajos,2011,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+NLD,Países Bajos,2011,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.34
+NLD,Países Bajos,2012,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.266
+NLD,Países Bajos,2012,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.859
+NLD,Países Bajos,2012,LMP_20,2. Formación Profesional para el Empleo,Activa,0.101
+NLD,Países Bajos,2012,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.028
+NLD,Países Bajos,2012,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.412
+NLD,Países Bajos,2012,LMP_60,5. Creación Directa de Empleo,Activa,0.048
+NLD,Países Bajos,2012,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+NLD,Países Bajos,2012,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.58
+NLD,Países Bajos,2012,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.58
+NLD,Países Bajos,2012,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+NLD,Países Bajos,2012,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.44
+NLD,Países Bajos,2013,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.248
+NLD,Países Bajos,2013,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.814
+NLD,Países Bajos,2013,LMP_20,2. Formación Profesional para el Empleo,Activa,0.083
+NLD,Países Bajos,2013,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.035
+NLD,Países Bajos,2013,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.409
+NLD,Países Bajos,2013,LMP_60,5. Creación Directa de Empleo,Activa,0.035
+NLD,Países Bajos,2013,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+NLD,Países Bajos,2013,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.9
+NLD,Países Bajos,2013,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.9
+NLD,Países Bajos,2013,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+NLD,Países Bajos,2013,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.72
+NLD,Países Bajos,2014,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.27
+NLD,Países Bajos,2014,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.81
+NLD,Países Bajos,2014,LMP_20,2. Formación Profesional para el Empleo,Activa,0.065
+NLD,Países Bajos,2014,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.043
+NLD,Países Bajos,2014,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.398
+NLD,Países Bajos,2014,LMP_60,5. Creación Directa de Empleo,Activa,0.029
+NLD,Países Bajos,2014,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+NLD,Países Bajos,2014,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.93
+NLD,Países Bajos,2014,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.93
+NLD,Países Bajos,2014,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+NLD,Países Bajos,2014,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.74
+NLD,Países Bajos,2015,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.238
+NLD,Países Bajos,2015,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.745
+NLD,Países Bajos,2015,LMP_20,2. Formación Profesional para el Empleo,Activa,0.064
+NLD,Países Bajos,2015,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.046
+NLD,Países Bajos,2015,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.375
+NLD,Países Bajos,2015,LMP_60,5. Creación Directa de Empleo,Activa,0.021
+NLD,Países Bajos,2015,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+NLD,Países Bajos,2015,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.76
+NLD,Países Bajos,2015,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.76
+NLD,Países Bajos,2015,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+NLD,Países Bajos,2015,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.51
+NLD,Países Bajos,2016,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.225
+NLD,Países Bajos,2016,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.697
+NLD,Países Bajos,2016,LMP_20,2. Formación Profesional para el Empleo,Activa,0.064
+NLD,Países Bajos,2016,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.039
+NLD,Países Bajos,2016,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.351
+NLD,Países Bajos,2016,LMP_60,5. Creación Directa de Empleo,Activa,0.016
+NLD,Países Bajos,2016,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+NLD,Países Bajos,2016,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.63
+NLD,Países Bajos,2016,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.63
+NLD,Países Bajos,2016,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+NLD,Países Bajos,2016,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.32
+NLD,Países Bajos,2017,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.215
+NLD,Países Bajos,2017,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.626
+NLD,Países Bajos,2017,LMP_20,2. Formación Profesional para el Empleo,Activa,0.064
+NLD,Países Bajos,2017,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.035
+NLD,Países Bajos,2017,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.3
+NLD,Países Bajos,2017,LMP_60,5. Creación Directa de Empleo,Activa,0.013
+NLD,Países Bajos,2017,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+NLD,Países Bajos,2017,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.48
+NLD,Países Bajos,2017,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.48
+NLD,Países Bajos,2017,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+NLD,Países Bajos,2017,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.11
+NLD,Países Bajos,2018,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.195
+NLD,Países Bajos,2018,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.578
+NLD,Países Bajos,2018,LMP_20,2. Formación Profesional para el Empleo,Activa,0.057
+NLD,Países Bajos,2018,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.02
+NLD,Países Bajos,2018,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.289
+NLD,Países Bajos,2018,LMP_60,5. Creación Directa de Empleo,Activa,0.012
+NLD,Países Bajos,2018,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+NLD,Países Bajos,2018,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.35
+NLD,Países Bajos,2018,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.35
+NLD,Países Bajos,2018,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+NLD,Países Bajos,2018,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.93
+NLD,Países Bajos,2019,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.177
+NLD,Países Bajos,2019,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.552
+NLD,Países Bajos,2019,LMP_20,2. Formación Profesional para el Empleo,Activa,0.054
+NLD,Países Bajos,2019,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.019
+NLD,Países Bajos,2019,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.293
+NLD,Países Bajos,2019,LMP_60,5. Creación Directa de Empleo,Activa,0.007
+NLD,Países Bajos,2019,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+NLD,Países Bajos,2019,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.2
+NLD,Países Bajos,2019,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.2
+NLD,Países Bajos,2019,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+NLD,Países Bajos,2019,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.75
+NLD,Países Bajos,2020,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.15
+NLD,Países Bajos,2020,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,2.16
+NLD,Países Bajos,2020,LMP_20,2. Formación Profesional para el Empleo,Activa,0.059
+NLD,Países Bajos,2020,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,1.63
+NLD,Países Bajos,2020,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.31
+NLD,Países Bajos,2020,LMP_60,5. Creación Directa de Empleo,Activa,0.004
+NLD,Países Bajos,2020,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+NLD,Países Bajos,2020,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.69
+NLD,Países Bajos,2020,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.69
+NLD,Países Bajos,2020,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+NLD,Países Bajos,2020,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,3.85
+NLD,Países Bajos,2021,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.153
+NLD,Países Bajos,2021,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,1.5
+NLD,Países Bajos,2021,LMP_20,2. Formación Profesional para el Empleo,Activa,0.092
+NLD,Países Bajos,2021,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.989
+NLD,Países Bajos,2021,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.268
+NLD,Países Bajos,2021,LMP_60,5. Creación Directa de Empleo,Activa,0.002
+NLD,Países Bajos,2021,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+NLD,Países Bajos,2021,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.24
+NLD,Países Bajos,2021,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.24
+NLD,Países Bajos,2021,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+NLD,Países Bajos,2021,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.74
+NLD,Países Bajos,2022,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.123
+NLD,Países Bajos,2022,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.607
+NLD,Países Bajos,2022,LMP_20,2. Formación Profesional para el Empleo,Activa,0.07
+NLD,Países Bajos,2022,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.135
+NLD,Países Bajos,2022,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.277
+NLD,Países Bajos,2022,LMP_60,5. Creación Directa de Empleo,Activa,0.001
+NLD,Países Bajos,2022,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+NLD,Países Bajos,2022,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.859
+NLD,Países Bajos,2022,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.859
+NLD,Países Bajos,2022,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+NLD,Países Bajos,2022,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.47
+NLD,Países Bajos,2023,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.122
+NLD,Países Bajos,2023,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.49
+NLD,Países Bajos,2023,LMP_20,2. Formación Profesional para el Empleo,Activa,0.071
+NLD,Países Bajos,2023,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.013
+NLD,Países Bajos,2023,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.282
+NLD,Países Bajos,2023,LMP_60,5. Creación Directa de Empleo,Activa,0.001
+NLD,Países Bajos,2023,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+NLD,Países Bajos,2023,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.851
+NLD,Países Bajos,2023,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.851
+NLD,Países Bajos,2023,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+NLD,Países Bajos,2023,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.34
+NLD,Países Bajos,2024,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.119
+NLD,Países Bajos,2024,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.495
+NLD,Países Bajos,2024,LMP_20,2. Formación Profesional para el Empleo,Activa,0.071
+NLD,Países Bajos,2024,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.012
+NLD,Países Bajos,2024,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.293
+NLD,Países Bajos,2024,LMP_60,5. Creación Directa de Empleo,Activa,0.001
+NLD,Países Bajos,2024,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.0
+NLD,Países Bajos,2024,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.897
+NLD,Países Bajos,2024,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.897
+NLD,Países Bajos,2024,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.0
+NLD,Países Bajos,2024,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.39
+OECD,Media OCDE,2004,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.118
+OECD,Media OCDE,2004,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.46
+OECD,Media OCDE,2004,LMP_20,2. Formación Profesional para el Empleo,Activa,0.128
+OECD,Media OCDE,2004,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.082
+OECD,Media OCDE,2004,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.068
+OECD,Media OCDE,2004,LMP_60,5. Creación Directa de Empleo,Activa,0.056
+OECD,Media OCDE,2004,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.012
+OECD,Media OCDE,2004,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.741
+OECD,Media OCDE,2004,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.829
+OECD,Media OCDE,2004,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.087
+OECD,Media OCDE,2004,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.26
+OECD,Media OCDE,2005,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.118
+OECD,Media OCDE,2005,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.449
+OECD,Media OCDE,2005,LMP_20,2. Formación Profesional para el Empleo,Activa,0.125
+OECD,Media OCDE,2005,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.079
+OECD,Media OCDE,2005,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.068
+OECD,Media OCDE,2005,LMP_60,5. Creación Directa de Empleo,Activa,0.05
+OECD,Media OCDE,2005,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.013
+OECD,Media OCDE,2005,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.675
+OECD,Media OCDE,2005,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.768
+OECD,Media OCDE,2005,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.093
+OECD,Media OCDE,2005,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.19
+OECD,Media OCDE,2006,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.115
+OECD,Media OCDE,2006,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.437
+OECD,Media OCDE,2006,LMP_20,2. Formación Profesional para el Empleo,Activa,0.119
+OECD,Media OCDE,2006,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.079
+OECD,Media OCDE,2006,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.064
+OECD,Media OCDE,2006,LMP_60,5. Creación Directa de Empleo,Activa,0.05
+OECD,Media OCDE,2006,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.013
+OECD,Media OCDE,2006,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.597
+OECD,Media OCDE,2006,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.683
+OECD,Media OCDE,2006,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.086
+OECD,Media OCDE,2006,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.1
+OECD,Media OCDE,2007,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.108
+OECD,Media OCDE,2007,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.405
+OECD,Media OCDE,2007,LMP_20,2. Formación Profesional para el Empleo,Activa,0.107
+OECD,Media OCDE,2007,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.071
+OECD,Media OCDE,2007,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.067
+OECD,Media OCDE,2007,LMP_60,5. Creación Directa de Empleo,Activa,0.045
+OECD,Media OCDE,2007,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.012
+OECD,Media OCDE,2007,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.513
+OECD,Media OCDE,2007,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.595
+OECD,Media OCDE,2007,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.082
+OECD,Media OCDE,2007,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,0.987
+OECD,Media OCDE,2008,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.105
+OECD,Media OCDE,2008,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.395
+OECD,Media OCDE,2008,LMP_20,2. Formación Profesional para el Empleo,Activa,0.108
+OECD,Media OCDE,2008,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.065
+OECD,Media OCDE,2008,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.07
+OECD,Media OCDE,2008,LMP_60,5. Creación Directa de Empleo,Activa,0.046
+OECD,Media OCDE,2008,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.013
+OECD,Media OCDE,2008,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.538
+OECD,Media OCDE,2008,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.617
+OECD,Media OCDE,2008,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.079
+OECD,Media OCDE,2008,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,0.998
+OECD,Media OCDE,2009,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.123
+OECD,Media OCDE,2009,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.474
+OECD,Media OCDE,2009,LMP_20,2. Formación Profesional para el Empleo,Activa,0.131
+OECD,Media OCDE,2009,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.082
+OECD,Media OCDE,2009,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.075
+OECD,Media OCDE,2009,LMP_60,5. Creación Directa de Empleo,Activa,0.059
+OECD,Media OCDE,2009,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.017
+OECD,Media OCDE,2009,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.889
+OECD,Media OCDE,2009,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.967
+OECD,Media OCDE,2009,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.076
+OECD,Media OCDE,2009,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.42
+OECD,Media OCDE,2010,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.129
+OECD,Media OCDE,2010,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.54
+OECD,Media OCDE,2010,LMP_20,2. Formación Profesional para el Empleo,Activa,0.15
+OECD,Media OCDE,2010,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.094
+OECD,Media OCDE,2010,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.076
+OECD,Media OCDE,2010,LMP_60,5. Creación Directa de Empleo,Activa,0.067
+OECD,Media OCDE,2010,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.019
+OECD,Media OCDE,2010,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.86
+OECD,Media OCDE,2010,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.929
+OECD,Media OCDE,2010,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.07
+OECD,Media OCDE,2010,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.47
+OECD,Media OCDE,2011,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.119
+OECD,Media OCDE,2011,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.488
+OECD,Media OCDE,2011,LMP_20,2. Formación Profesional para el Empleo,Activa,0.135
+OECD,Media OCDE,2011,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.09
+OECD,Media OCDE,2011,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.074
+OECD,Media OCDE,2011,LMP_60,5. Creación Directa de Empleo,Activa,0.052
+OECD,Media OCDE,2011,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.016
+OECD,Media OCDE,2011,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.76
+OECD,Media OCDE,2011,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.82
+OECD,Media OCDE,2011,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.059
+OECD,Media OCDE,2011,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.31
+OECD,Media OCDE,2012,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.112
+OECD,Media OCDE,2012,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.474
+OECD,Media OCDE,2012,LMP_20,2. Formación Profesional para el Empleo,Activa,0.127
+OECD,Media OCDE,2012,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.09
+OECD,Media OCDE,2012,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.074
+OECD,Media OCDE,2012,LMP_60,5. Creación Directa de Empleo,Activa,0.057
+OECD,Media OCDE,2012,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.014
+OECD,Media OCDE,2012,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.778
+OECD,Media OCDE,2012,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.832
+OECD,Media OCDE,2012,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.052
+OECD,Media OCDE,2012,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.31
+OECD,Media OCDE,2013,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.111
+OECD,Media OCDE,2013,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.486
+OECD,Media OCDE,2013,LMP_20,2. Formación Profesional para el Empleo,Activa,0.13
+OECD,Media OCDE,2013,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.089
+OECD,Media OCDE,2013,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.075
+OECD,Media OCDE,2013,LMP_60,5. Creación Directa de Empleo,Activa,0.068
+OECD,Media OCDE,2013,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.013
+OECD,Media OCDE,2013,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.795
+OECD,Media OCDE,2013,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.846
+OECD,Media OCDE,2013,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.05
+OECD,Media OCDE,2013,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.33
+OECD,Media OCDE,2014,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.114
+OECD,Media OCDE,2014,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.495
+OECD,Media OCDE,2014,LMP_20,2. Formación Profesional para el Empleo,Activa,0.128
+OECD,Media OCDE,2014,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.093
+OECD,Media OCDE,2014,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.075
+OECD,Media OCDE,2014,LMP_60,5. Creación Directa de Empleo,Activa,0.071
+OECD,Media OCDE,2014,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.012
+OECD,Media OCDE,2014,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.739
+OECD,Media OCDE,2014,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.786
+OECD,Media OCDE,2014,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.046
+OECD,Media OCDE,2014,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.26
+OECD,Media OCDE,2015,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.111
+OECD,Media OCDE,2015,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.479
+OECD,Media OCDE,2015,LMP_20,2. Formación Profesional para el Empleo,Activa,0.122
+OECD,Media OCDE,2015,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.089
+OECD,Media OCDE,2015,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.078
+OECD,Media OCDE,2015,LMP_60,5. Creación Directa de Empleo,Activa,0.07
+OECD,Media OCDE,2015,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.009
+OECD,Media OCDE,2015,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.68
+OECD,Media OCDE,2015,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.726
+OECD,Media OCDE,2015,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.046
+OECD,Media OCDE,2015,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.19
+OECD,Media OCDE,2016,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.111
+OECD,Media OCDE,2016,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.485
+OECD,Media OCDE,2016,LMP_20,2. Formación Profesional para el Empleo,Activa,0.12
+OECD,Media OCDE,2016,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.093
+OECD,Media OCDE,2016,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.082
+OECD,Media OCDE,2016,LMP_60,5. Creación Directa de Empleo,Activa,0.067
+OECD,Media OCDE,2016,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.008
+OECD,Media OCDE,2016,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.651
+OECD,Media OCDE,2016,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.695
+OECD,Media OCDE,2016,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.045
+OECD,Media OCDE,2016,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.18
+OECD,Media OCDE,2017,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.109
+OECD,Media OCDE,2017,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.472
+OECD,Media OCDE,2017,LMP_20,2. Formación Profesional para el Empleo,Activa,0.112
+OECD,Media OCDE,2017,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.092
+OECD,Media OCDE,2017,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.082
+OECD,Media OCDE,2017,LMP_60,5. Creación Directa de Empleo,Activa,0.063
+OECD,Media OCDE,2017,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.009
+OECD,Media OCDE,2017,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.597
+OECD,Media OCDE,2017,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.635
+OECD,Media OCDE,2017,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.039
+OECD,Media OCDE,2017,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.11
+OECD,Media OCDE,2018,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.103
+OECD,Media OCDE,2018,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.43
+OECD,Media OCDE,2018,LMP_20,2. Formación Profesional para el Empleo,Activa,0.103
+OECD,Media OCDE,2018,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.083
+OECD,Media OCDE,2018,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.079
+OECD,Media OCDE,2018,LMP_60,5. Creación Directa de Empleo,Activa,0.048
+OECD,Media OCDE,2018,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.013
+OECD,Media OCDE,2018,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.529
+OECD,Media OCDE,2018,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.564
+OECD,Media OCDE,2018,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.034
+OECD,Media OCDE,2018,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.01
+OECD,Media OCDE,2019,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.1
+OECD,Media OCDE,2019,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.629
+OECD,Media OCDE,2019,LMP_20,2. Formación Profesional para el Empleo,Activa,0.098
+OECD,Media OCDE,2019,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.287
+OECD,Media OCDE,2019,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.082
+OECD,Media OCDE,2019,LMP_60,5. Creación Directa de Empleo,Activa,0.046
+OECD,Media OCDE,2019,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.014
+OECD,Media OCDE,2019,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.566
+OECD,Media OCDE,2019,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.596
+OECD,Media OCDE,2019,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.028
+OECD,Media OCDE,2019,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.24
+OECD,Media OCDE,2020,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.108
+OECD,Media OCDE,2020,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.795
+OECD,Media OCDE,2020,LMP_20,2. Formación Profesional para el Empleo,Activa,0.1
+OECD,Media OCDE,2020,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.439
+OECD,Media OCDE,2020,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.085
+OECD,Media OCDE,2020,LMP_60,5. Creación Directa de Empleo,Activa,0.041
+OECD,Media OCDE,2020,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.014
+OECD,Media OCDE,2020,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.49
+OECD,Media OCDE,2020,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.52
+OECD,Media OCDE,2020,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.037
+OECD,Media OCDE,2020,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,2.34
+OECD,Media OCDE,2021,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.108
+OECD,Media OCDE,2021,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.62
+OECD,Media OCDE,2021,LMP_20,2. Formación Profesional para el Empleo,Activa,0.104
+OECD,Media OCDE,2021,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.261
+OECD,Media OCDE,2021,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.082
+OECD,Media OCDE,2021,LMP_60,5. Creación Directa de Empleo,Activa,0.048
+OECD,Media OCDE,2021,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.014
+OECD,Media OCDE,2021,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,1.03
+OECD,Media OCDE,2021,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,1.06
+OECD,Media OCDE,2021,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.034
+OECD,Media OCDE,2021,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,1.7
+OECD,Media OCDE,2022,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.101
+OECD,Media OCDE,2022,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.419
+OECD,Media OCDE,2022,LMP_20,2. Formación Profesional para el Empleo,Activa,0.097
+OECD,Media OCDE,2022,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.097
+OECD,Media OCDE,2022,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.079
+OECD,Media OCDE,2022,LMP_60,5. Creación Directa de Empleo,Activa,0.035
+OECD,Media OCDE,2022,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.01
+OECD,Media OCDE,2022,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.529
+OECD,Media OCDE,2022,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.56
+OECD,Media OCDE,2022,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.028
+OECD,Media OCDE,2022,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,0.976
+OECD,Media OCDE,2023,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.103
+OECD,Media OCDE,2023,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.393
+OECD,Media OCDE,2023,LMP_20,2. Formación Profesional para el Empleo,Activa,0.101
+OECD,Media OCDE,2023,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.067
+OECD,Media OCDE,2023,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.079
+OECD,Media OCDE,2023,LMP_60,5. Creación Directa de Empleo,Activa,0.032
+OECD,Media OCDE,2023,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.01
+OECD,Media OCDE,2023,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.515
+OECD,Media OCDE,2023,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.545
+OECD,Media OCDE,2023,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.028
+OECD,Media OCDE,2023,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,0.952
+OECD,Media OCDE,2024,LMP_10,1. Servicios Públicos de Empleo (SPE) y Administración,Activa,0.104
+OECD,Media OCDE,2024,LMP_10T70,Total Políticas Activas de Empleo (PAE),Total Activa,0.386
+OECD,Media OCDE,2024,LMP_20,2. Formación Profesional para el Empleo,Activa,0.101
+OECD,Media OCDE,2024,LMP_40,3. Incentivos a la Contratación y Mantenimiento,Activa,0.061
+OECD,Media OCDE,2024,LMP_50,4. Empleo Protegido y Rehabilitación,Activa,0.079
+OECD,Media OCDE,2024,LMP_60,5. Creación Directa de Empleo,Activa,0.028
+OECD,Media OCDE,2024,LMP_70,6. Incentivos al Autoempleo y Creación de Empresas,Activa,0.012
+OECD,Media OCDE,2024,LMP_80,7. Mantenimiento de Rentas y Prestaciones por Desempleo,Pasiva,0.547
+OECD,Media OCDE,2024,LMP_80_90,Total Políticas Pasivas (PS),Total Pasiva,0.565
+OECD,Media OCDE,2024,LMP_90,8. Jubilación Anticipada por Razones de Mercado Laboral,Pasiva,0.032
+OECD,Media OCDE,2024,_T,Gasto Público Total en Políticas de Empleo (PAE + PS),Total General,0.981
