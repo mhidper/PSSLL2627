@@ -25,7 +25,8 @@ from cryptography.hazmat.primitives.ciphers.aead import AESGCM
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 BASE_DIR = os.path.dirname(SCRIPT_DIR)
-MICRO_APPS_DIR = r"C:\Users\Usuario\Dropbox\DOCENCIA UPO\micro_apps"
+MICRO_APPS_DIR = r"C:\Users\Usuario\Documents\Dropbox\DOCENCIA UPO\micro_apps"
+MICRO_APPS_ALT = r"C:\Users\Usuario\Dropbox\DOCENCIA UPO\micro_apps"
 
 # Rutas a listas oficiales de clase
 lista_l1_path = os.path.join(BASE_DIR, "Repositorio material (no alumnos)", "lista.xlsx")
@@ -335,9 +336,28 @@ def compilar_pasaporte():
                 match_c = df_calif[df_calif["id_norm"] == dni]
                 if not match_c.empty:
                     c_row = match_c.iloc[0]
-                    puntos_ses = int(c_row["Puntos"]) if pd.notna(c_row.get("Puntos")) else 0
-                    estado_ses = str(c_row.get("Estado", "Presentado"))
-                    feedback_ses = str(c_row.get("Retroalimentacion", "Sin observaciones."))
+                    # Extracción tolerante y robusta de puntos (soporta 'Puntos' clásico y 'Puntos_Total' bimodal)
+                    puntos_raw = c_row.get("Puntos")
+                    if pd.isna(puntos_raw) or puntos_raw is None or str(puntos_raw).strip() == "":
+                        puntos_raw = c_row.get("Puntos_Total")
+                    if pd.isna(puntos_raw) or puntos_raw is None or str(puntos_raw).strip() == "":
+                        puntos_raw = 0
+                    try:
+                        puntos_ses = int(float(str(puntos_raw).replace(",", ".")))
+                    except Exception:
+                        puntos_ses = 0
+
+                    estado_ses = str(c_row.get("Estado", "Presentado")).strip()
+                    if not estado_ses or estado_ses.lower() == "nan":
+                        estado_ses = "Presentado"
+
+                    # Extracción tolerante de retroalimentación (soporta 'Retroalimentacion' y 'Retroalimentacion_Formativa')
+                    feedback_raw = c_row.get("Retroalimentacion")
+                    if pd.isna(feedback_raw) or feedback_raw is None or str(feedback_raw).strip() == "":
+                        feedback_raw = c_row.get("Retroalimentacion_Formativa")
+                    if pd.isna(feedback_raw) or feedback_raw is None or str(feedback_raw).strip() == "":
+                        feedback_raw = "Sin observaciones."
+                    feedback_ses = str(feedback_raw).strip()
                 else:
                     estado_ses = "No presentado"
                     feedback_ses = "No consta entrega del reto manuscrito de cierre de sesión."
@@ -506,6 +526,16 @@ window.__PSLL_EVAL_DB__ = {json.dumps(students_encrypted_db, separators=(',', ':
 
     with open(dest_js, "w", encoding="utf-8") as f:
         f.write(output_js)
+
+    if os.path.exists(MICRO_APPS_ALT) and os.path.abspath(MICRO_APPS_ALT) != os.path.abspath(MICRO_APPS_DIR):
+        try:
+            alt_dest = os.path.join(MICRO_APPS_ALT, "data", "calificaciones_cifradas_psll.js")
+            os.makedirs(os.path.dirname(alt_dest), exist_ok=True)
+            with open(alt_dest, "w", encoding="utf-8") as f:
+                f.write(output_js)
+            print(f"[OK] Archivo cifrado PSLL replicado en (micro_apps alt): {alt_dest}")
+        except Exception:
+            pass
 
     dest_psll_docs = os.path.join(BASE_DIR, "docs", "data", "calificaciones_cifradas_psll.js")
     os.makedirs(os.path.dirname(dest_psll_docs), exist_ok=True)
