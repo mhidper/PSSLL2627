@@ -266,6 +266,65 @@ def cargar_censo_alumnos():
         })
     return pd.DataFrame(censo)
 
+def cargar_ausencias_justificadas():
+    """
+    Carga la matriz de ausencias justificadas desde 'alumnos/ausencias_justificadas.xlsx' (o .csv).
+    Estructura de matriz:
+      - Filas: Alumnos (DNI)
+      - Columnas: S02 a S16
+    Si una celda contiene 'x', 'X', 'si', '1' o similar, se registra la ausencia como justificada.
+    Devuelve un set de tuplas: {(dni_norm, sesion_num), ...}
+    """
+    ausencias_set = set()
+    xlsx_path = os.path.join(SCRIPT_DIR, "ausencias_justificadas.xlsx")
+    csv_path = os.path.join(SCRIPT_DIR, "ausencias_justificadas.csv")
+
+    target_path = None
+    if os.path.exists(xlsx_path):
+        target_path = xlsx_path
+    elif os.path.exists(csv_path):
+        target_path = csv_path
+
+    if not target_path:
+        return ausencias_set
+
+    try:
+        if target_path.endswith(".xlsx"):
+            df = pd.read_excel(target_path, dtype=str)
+        else:
+            df = pd.read_csv(target_path, sep=";", dtype=str)
+
+        dni_col = None
+        for col in df.columns:
+            if "dni" in str(col).lower():
+                dni_col = col
+                break
+        if not dni_col:
+            dni_col = df.columns[0]
+
+        ses_cols = {}
+        for col in df.columns:
+            m = re.search(r'(?:s|sesi[oó]n)?\s*0?(\d+)', str(col), re.IGNORECASE)
+            if m:
+                s_num = int(m.group(1))
+                if 2 <= s_num <= 16:
+                    ses_cols[col] = s_num
+
+        for _, row in df.iterrows():
+            dni_val = parse_dni(row.get(dni_col))
+            if not dni_val:
+                continue
+            for col_name, s_num in ses_cols.items():
+                val = str(row.get(col_name, "")).strip().lower()
+                if val in ["x", "si", "sí", "j", "justificado", "1", "true"]:
+                    ausencias_set.add((dni_val, s_num))
+
+        print(f"[OK] Matriz de ausencias justificadas cargada: {len(ausencias_set)} ausencias oficiales activas.")
+    except Exception as e:
+        print(f"[AVISO] Error al leer matriz de ausencias justificadas: {e}")
+
+    return ausencias_set
+
 def compilar_pasaporte():
     print("=" * 75)
     print("  COMPILADOR CRIPTOGRÁFICO PASAPORTE DE EVALUACIÓN CONTINUA · PSLL")
@@ -273,6 +332,8 @@ def compilar_pasaporte():
 
     df_censo = cargar_censo_alumnos()
     print(f"[*] Censo de estudiantes cargado: {len(df_censo)} alumnos únicos registrados.")
+
+    ausencias_justificadas_set = cargar_ausencias_justificadas()
 
     # Guardar censo unificado en alumnos/lista_alumnos.csv para referencia
     censo_csv_path = os.path.join(SCRIPT_DIR, "lista_alumnos.csv")
@@ -327,45 +388,53 @@ def compilar_pasaporte():
             cfg = item["config"]
             df_calif = item["df_calif"]
             df_trans = item["df_trans"]
+            s_num = cfg["sesion_num"]
 
             puntos_ses = 0
-            puntos_max = 1000
-            puntos_totales_potenciales += puntos_max
+            es_justificada = (dni, s_num) in ausencias_justificadas_set
 
-            if item["has_data"] and df_calif is not None:
-                match_c = df_calif[df_calif["id_norm"] == dni]
-                if not match_c.empty:
-                    c_row = match_c.iloc[0]
-                    # Extracción tolerante y robusta de puntos (soporta 'Puntos' clásico y 'Puntos_Total' bimodal)
-                    puntos_raw = c_row.get("Puntos")
-                    if pd.isna(puntos_raw) or puntos_raw is None or str(puntos_raw).strip() == "":
-                        puntos_raw = c_row.get("Puntos_Total")
-                    if pd.isna(puntos_raw) or puntos_raw is None or str(puntos_raw).strip() == "":
-                        puntos_raw = 0
-                    try:
-                        puntos_ses = int(float(str(puntos_raw).replace(",", ".")))
-                    except Exception:
-                        puntos_ses = 0
-
-                    estado_ses = str(c_row.get("Estado", "Presentado")).strip()
-                    if not estado_ses or estado_ses.lower() == "nan":
-                        estado_ses = "Presentado"
-
-                    # Extracción tolerante de retroalimentación (soporta 'Retroalimentacion' y 'Retroalimentacion_Formativa')
-                    feedback_raw = c_row.get("Retroalimentacion")
-                    if pd.isna(feedback_raw) or feedback_raw is None or str(feedback_raw).strip() == "":
-                        feedback_raw = c_row.get("Retroalimentacion_Formativa")
-                    if pd.isna(feedback_raw) or feedback_raw is None or str(feedback_raw).strip() == "":
-                        feedback_raw = "Sin observaciones."
-                    feedback_ses = str(feedback_raw).strip()
-                else:
-                    estado_ses = "No presentado"
-                    feedback_ses = "No consta entrega del reto manuscrito de cierre de sesión."
+            if es_justificada:
+                puntos_max = 0
+                estado_ses = "Ausencia justificada"
+                feedback_ses = "Ausencia debidamente justificada. Esta sesión no penaliza ni computa en el denominador de tu evaluación continua."
             else:
-                # Sesión en proceso de corrección o inicial
-                estado_ses = "En corrección"
-                puntos_ses = 0
-                feedback_ses = "Calificaciones en proceso de procesamiento y validación docente."
+                puntos_max = 1000
+                puntos_totales_potenciales += puntos_max
+
+                if item["has_data"] and df_calif is not None:
+                    match_c = df_calif[df_calif["id_norm"] == dni]
+                    if not match_c.empty:
+                        c_row = match_c.iloc[0]
+                        # Extracción tolerante y robusta de puntos (soporta 'Puntos' clásico y 'Puntos_Total' bimodal)
+                        puntos_raw = c_row.get("Puntos")
+                        if pd.isna(puntos_raw) or puntos_raw is None or str(puntos_raw).strip() == "":
+                            puntos_raw = c_row.get("Puntos_Total")
+                        if pd.isna(puntos_raw) or puntos_raw is None or str(puntos_raw).strip() == "":
+                            puntos_raw = 0
+                        try:
+                            puntos_ses = int(float(str(puntos_raw).replace(",", ".")))
+                        except Exception:
+                            puntos_ses = 0
+
+                        estado_ses = str(c_row.get("Estado", "Presentado")).strip()
+                        if not estado_ses or estado_ses.lower() == "nan":
+                            estado_ses = "Presentado"
+
+                        # Extracción tolerante de retroalimentación (soporta 'Retroalimentacion' y 'Retroalimentacion_Formativa')
+                        feedback_raw = c_row.get("Retroalimentacion")
+                        if pd.isna(feedback_raw) or feedback_raw is None or str(feedback_raw).strip() == "":
+                            feedback_raw = c_row.get("Retroalimentacion_Formativa")
+                        if pd.isna(feedback_raw) or feedback_raw is None or str(feedback_raw).strip() == "":
+                            feedback_raw = "Sin observaciones."
+                        feedback_ses = str(feedback_raw).strip()
+                    else:
+                        estado_ses = "No presentado"
+                        feedback_ses = "No consta entrega del reto manuscrito de cierre de sesión."
+                else:
+                    # Sesión en proceso de corrección o inicial
+                    estado_ses = "En corrección"
+                    puntos_ses = 0
+                    feedback_ses = "Calificaciones en proceso de procesamiento y validación docente."
 
             puntos_totales_obtenidos += puntos_ses
 
@@ -412,6 +481,7 @@ def compilar_pasaporte():
                 "estado": estado_ses,
                 "puntos_obtenidos": puntos_ses,
                 "puntos_maximos": puntos_max,
+                "es_justificada": es_justificada,
                 "porcentaje": round((puntos_ses / puntos_max) * 100, 1) if puntos_max > 0 else 0,
                 "feedback_general": feedback_ses,
                 "preguntas": preguntas
@@ -436,9 +506,10 @@ def compilar_pasaporte():
             evolucion_16_sesiones.append({
                 "sesion": ses_item["sesion_num"],
                 "tag": f"S{ses_item['sesion_num']:02d}",
-                "puntos": p_ob,
+                "puntos": None if ses_item.get("es_justificada") else p_ob,
                 "acumulado": acum_calc,
                 "evaluada": True,
+                "justificada": bool(ses_item.get("es_justificada")),
                 "max_sesion": ses_item["puntos_maximos"]
             })
 
@@ -454,8 +525,9 @@ def compilar_pasaporte():
             })
 
         if puntos_totales_potenciales == 0:
-            puntos_totales_potenciales = 1000
-        porcentaje_global = round((puntos_totales_obtenidos / puntos_totales_potenciales) * 100, 2)
+            porcentaje_global = 100.0 if puntos_totales_obtenidos > 0 else 0.0
+        else:
+            porcentaje_global = round((puntos_totales_obtenidos / puntos_totales_potenciales) * 100, 2)
 
         payload_data = {
             "nombre_completo": nombre_completo,
@@ -469,7 +541,8 @@ def compilar_pasaporte():
             "puntos_potenciales": puntos_totales_potenciales,
             "puntos_potenciales_curso": 16000,
             "porcentaje_logrado": porcentaje_global,
-            "total_sesiones_evaluadas": len([s for s in sesiones_payload if s["estado"] != "En corrección"]),
+            "total_sesiones_evaluadas": len([s for s in sesiones_payload if s["estado"] not in ["En corrección", "Ausencia justificada"]]),
+            "total_sesiones_justificadas": len([s for s in sesiones_payload if s.get("es_justificada")]),
             "total_sesiones_curso": 16,
             "evolucion_sesiones": evolucion_16_sesiones,
             "sesiones": sesiones_payload

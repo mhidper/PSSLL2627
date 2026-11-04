@@ -58,7 +58,7 @@ Al finalizar la sesión, el estudiante será capaz de:
 #### Protocolo Inicial · Control de Asistencia y Verificación Presencial (00–05 min)
 * **Paso de hoja oficial de firmas:** Al acceder los estudiantes al aula de informática, el docente pasa la hoja de firmas oficial.
 * **Pase de lista a voz alzada (obligatorio):** Verificación presencial de cada alumno. Recordar expresamente que la Web App registra el acrónimo UPO y que la entrega se coteja de forma cruzada con la lista física de asistencia.
-* **Regla de oro de la sesión:** Cada alumno trabaja de forma individual en su terminal informático. La plataforma detecta automáticamente pegados masivos de texto externo (*clipboard trap*), por lo que las notas y conclusiones deben redactarse progresivamente en el editor.
+* **Regla de oro de la sesión:** Trabajo en equipos de hasta 3 estudiantes (o individual). La plataforma audita la redacción e impide el pegado masivo de texto externo (*anti-paste guard*), por lo que las notas y conclusiones deben redactarse progresivamente en el editor colaborativo en el aula.
 
 #### FASE 0 · Apertura con Noticia Real y Enigma de Balanza (05–15 min · 10 min · Exposición Docente)
 * **Noticia disparadora:** El profesor proyecta el titular económico:  
@@ -83,7 +83,7 @@ Al finalizar la sesión, el estudiante será capaz de:
 
 #### FASE 2 · Laboratorio Interactivo con Microdatos OCDE (25–50 min · 25 min · Trabajo del Alumno)
 * **Entrada a la Web App:** Los alumnos abren [`https://mhidper.github.io/micro_apps/epd3_laboratorio.html`](https://mhidper.github.io/micro_apps/epd3_laboratorio.html).
-* **Asignación individualizada:** Al introducir su acrónimo UPO, la app genera el código de estación (`PSLL-EPD3-XXXX`) y les asigna su país de contraste:
+* **Configuración del equipo y asignación:** Al introducir el acrónimo del responsable y los compañeros presentes, la app genera el código de equipo (`PSLL-EPD3-XXXX`) y les asigna su país de contraste:
   - *Caso 1:* **Alemania** (Modelo de intermediación intensiva).
   - *Caso 2:* **Francia** (Modelo de cualificación continua).
   - *Caso 3:* **Dinamarca** (Modelo de flexiguridad nórdica).
@@ -101,8 +101,8 @@ Al finalizar la sesión, el estudiante será capaz de:
   3. *Pregunta 3:* Ratio de hipertrofia del autoempleo en España frente a su país asignado (ej. España tiene entre 10 y 13 veces más peso relativo en autoempleo que Alemania).
 * **Desbloqueo condicional:** El botón para pasar a la Fase 4 permanece inactivo hasta que los tres campos quedan validados en verde (`✓ Correcto`).
 
-#### FASE 4 · Dictamen Técnico de Recomendación y Sellado Digital (65–90 min · 25 min · Entrega Oficial)
-* **Consigna de redacción:** Cada estudiante debe redactar un Dictamen Técnico de entre 250 y 350 palabras estructurado obligatoriamente en tres ejes:
+#### FASE 4 · Dictamen Técnico de Recomendación y Sellado Digital (65–90 min · 25 min · Entregable de Equipo 3)
+* **Consigna de redacción:** Cada equipo debe consensuar y redactar su Dictamen Técnico de entre 250 y 350 palabras estructurado obligatoriamente en tres ejes:
   - **Eje 1 · Diagnóstico de la Balanza Macro:** Evaluar el desequilibrio entre protección pasiva y activación en España en comparación con el país asignado. Explicar por qué el gasto en pasivas se dispara en recesión sin acortar la duración del desempleo.
   - **Eje 2 · Descomposición y Sesgo del Modelo Español de PAE:** Contrastar el perfil español (concentrado en incentivos a la contratación y autoempleo refugio) frente al modelo de su país de contraste (foco en intermediación del SPE o en formación técnica).
   - **Eje 3 · Propuesta de Reforma Estructural:** Plantear dos recomendaciones operativas aplicables a España inspiradas en la experiencia de su país asignado para reorientar los recursos públicos hacia intervenciones de mayor retorno social.
