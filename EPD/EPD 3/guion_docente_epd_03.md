@@ -77,7 +77,8 @@ Al finalizar la sesión, el estudiante será capaz de:
   7. *LMP 80 · Sostenimiento de Rentas:* Prestación contributiva y subsidios asistenciales de desempleo.
   8. *LMP 90 · Jubilación Anticipada:* Retiro prematuro financiado por motivos de reconversión o mercado laboral.
 * **La Balanza de Empleo:**  
-  $$\text{Cuota de Políticas Pasivas (\%)} = \frac{\text{Gasto PS (LMP 80+90)}}{\text{Gasto Total (LMP 1 a 9)}} \times 100$$
+  > **Cuota de Políticas Pasivas (%)** = [ Gasto en Pasivas (LMP 80+90) / Gasto Total en Empleo (LMP 1 a 9) ] × 100  
+> *(En agregados OCDE: `[ LMP_80_90 / _T ] × 100`)*
   - En España, la cuota pasiva oscila entre el 67% (años expansivos) y más del 85% (años de recesión aguda).
   - En Dinamarca, la cuota activa es del 70%, invirtiendo radicalmente la prioridad.
 
@@ -96,7 +97,7 @@ Al finalizar la sesión, el estudiante será capaz de:
 
 #### FASE 3 · Checkpoint Cuantitativo Anti-IA (50–65 min · 15 min · Validación Interactiva)
 * **Dinámica:** El alumno debe introducir tres cálculos numéricos exactos de su país y año de referencia (2022) en la pestaña "Checkpoint Cuantitativo":
-  1. *Pregunta 1:* Cuota de pasivas en España 2022 ($\approx 67,1\%$).
+  1. *Pregunta 1:* Cuota de pasivas en España 2022 (≈ 71,2% oficial LMP 80+90; se admite también 67,1% si descontaron jubilación anticipada LMP 90).
   2. *Pregunta 2:* Peso del SPE (LMP 10) sobre el total de PAE en su país asignado (ej. Alemania $\approx 55,3\%$; Francia $\approx 31,5\%$; Dinamarca $\approx 22,1\%$).
   3. *Pregunta 3:* Ratio de hipertrofia del autoempleo en España frente a su país asignado (ej. España tiene entre 10 y 13 veces más peso relativo en autoempleo que Alemania).
 * **Desbloqueo condicional:** El botón para pasar a la Fase 4 permanece inactivo hasta que los tres campos quedan validados en verde (`✓ Correcto`).

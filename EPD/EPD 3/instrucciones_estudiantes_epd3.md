@@ -72,11 +72,14 @@ Al término de la sesión deberás emitir un **Dictamen Técnico de Recomendaci�
 ---
 
 #### Paso 4 · Fase 3: Checkpoint Cuantitativo Anti-IA
-Antes de acceder al editor del dictamen, la plataforma te pedirá verificar **tres cálculos cuantitativos exactos** referidos al año 2022:
-1. *Pregunta 1:* Cuota de políticas pasivas en España (% sobre el gasto total en empleo).
-2. *Pregunta 2:* Porcentaje del gasto en PAE que tu país asignado dedica a Servicios Públicos de Empleo (LMP 10).
-3. *Pregunta 3:* Ratio que indica cuántas veces es mayor el peso relativo del autoempleo en España frente a tu país asignado.
-* *Nota:* Introduce los valores con un decimal (usando punto o coma). Solo cuando las tres respuestas se marquen en verde (`✓ Correcto`) se habilitará el botón de desbloqueo de la Fase 4.
+Antes de acceder al editor del dictamen, la plataforma te pedirá verificar **tres cálculos cuantitativos exactos** referidos al año 2022.
+
+> **📍 ¿De dónde debes extraer los datos en la plataforma web?**
+> * **Pregunta 1 (Cuota de Pasivas en España):** Ve a la pestaña **Fase 1 (Balanza de Empleo)**. En el panel superior, selecciona el año **2022** y toma el gasto de España en Pasivas (`1,85%` del PIB) y Gasto Total (`2,60%` del PIB). Aplica la fórmula: `[ 1,85 / 2,60 ] × 100 = 71,2%` (también puedes consultarlo directamente en la tarjeta métrica de España: **71,2%**).
+> * **Pregunta 2 (% SPE en PAE de tu País Asignado):** Ve a la pestaña **Fase 2 (Modelos de Gasto)**. Pasa el cursor por el **Radar Polar** o el **Gráfico de Barras (% de PAE)** sobre la categoría **«1. Serv. Empleo (SPE)»** para tu país asignado en 2022 (ej. Alemania ≈ 55,3%).
+> * **Pregunta 3 (Ratio Autoempleo España vs. tu País Asignado):** En la misma pestaña **Fase 2 (Modelos de Gasto)**, observa en el gráfico de barras el porcentaje dedicado a **«6. Autoempleo (Start-ups)»** en España (≈ 17,8%) y divídelo entre el de tu país asignado (ej. Alemania ≈ 1,4% → `17,8 / 1,4 ≈ 13,0` veces superior).
+
+* *Nota de validación:* Introduce cada resultado con **un decimal** (usando punto o coma). La plataforma admite un margen de tolerancia analítica (±0,6 a ±1,0 pp). Solo cuando las tres respuestas se marquen en verde (`✓ Correcto`) se habilitará el botón de desbloqueo de la Fase 4.
 
 ---
 
