@@ -89,17 +89,34 @@ Para la generación, vectorización y rediseño de esquemas y gráficos de la as
   - Al maquetar, las versiones remasterizadas sustituyen automáticamente a las originales sin pérdida de ninguna figura.
   - Las figuras remasterizadas son reutilizables transversalmente en apuntes (`.docx`), presentaciones (`.pptx`) y actividades EPD.
 
-## Presentaciones Oficiales y Diapositivas de Aula (Skill de Presentaciones)
+## Presentaciones Oficiales y Diapositivas de Aula en Doble Formato (Skill de Presentaciones)
 
-Para la creación, maquetación y ajuste de las diapositivas (`.pptx`) de la asignatura:
-- Se debe utilizar la skill especializada ubicada en `.skills/psll-presentaciones-skill/` (y `Logos y skills/psll-presentaciones-skill/`).
+A partir de la Sesión 12, para la creación, maquetación y ajuste de las diapositivas de cada sesión de la asignatura se aplica **obligatoriamente un protocolo de Doble Formato Simultáneo** (el segundo formato complementa y duplica el trabajo sin sustituir nunca al primero, que se mantiene siempre como Plan B operativo):
+- Se debe utilizar la skill especializada ubicada en `.skills/psll-presentaciones-skill/` (espejada en `Logos y skills/psll-presentaciones-skill/` y `.agents/skills/psll-presentaciones-skill/`).
+- **Ubicación de entrega:** Ambos formatos se guardan directamente en la carpeta de la sesión correspondiente (`Temas EB/Sesiones EB/Sesion XX/`), sin generar portal externo `index.html`.
+- **Estructura pedagógica común (Las 5 Fases de PSLL):**
+  - Ambos formatos respetan íntegramente las 5 fases cronometradas de la asignatura (Fase 1: Gancho con **recorte de prensa fundamental**, enigma, sondeo en directo con QR y choque empírico; Fases 2 y 3: Mini-lecciones quirúrgicas conceptuales y cuantitativas; Fase 4: Laboratorio activo con Micro-App y QR; Fase 5: Reto manuscrito individual de 10 min, QR de subida a Forms y solución modelo con rúbrica).
+
+### Formato 1 (Clásico / Plan B): Presentación PowerPoint (`.pptx`) y Exportación PDF (`.pdf`)
 - **Pautas y estándares obligatorios:**
-  - Estructura pedagógica en 5 fases con tiempos estrictos.
   - Portada oficial unificada en Verde Pino `#113927`, ratio nativo de logo $1.833$ y franja inferior blanca con escudo UPO ($0.707$).
   - Tipografía institucional `Outfit` en titulares y **16 pt Calibri obligatorio** en texto de cuerpo.
   - **Formulación matemática rigurosa:** Subíndices nativos en PowerPoint (`run.font.subscript = True`) y caracteres matemáticos Unicode formales ($\ge$, $\tau$, $\partial$, $\cdot$).
   - **Checkpoints interactivos con QR:** Integración de códigos QR cuadrados (1:1) en Verde Pino `#113927` sobre fondo blanco, con tarjeta de acento en Coral `#E98F71`, espaciado vertical ergonómico para evitar colisiones con el texto y enlace web directo en el pie.
   - **Inspección técnica OpenXML:** Detección y limpieza obligatoria de nodos `mc:AlternateContent` o capas fantasma en `spTree` para asegurar un renderizado visual limpio sin marcas de agua.
+
+### Formato 2 (Interactivo Dinámico): Presentación Web Autocontenida (`.html`)
+- Inspirado en la arquitectura técnica del motor HTML de *Economía Aplicada*, pero **100% adaptado a la identidad visual luminosa de PSLL** y sus 5 fases:
+  - **Archivo único `.html` autocontenido** guardado en `Temas EB/Sesiones EB/Sesion XX/Sesion XX - Titulo.html`.
+  - **Escenario 16:9 fijo y autoescalable (`1600×900 px`):** Contenedor `.stage` con reescalado dinámico (`transform: scale(...)`) para ajustarse con precisión a cualquier proyector de aula sin desbordes ni solapamientos.
+  - **Paleta Oficial PSLL (Idéntica a `.pptx` / `.pdf`):**
+    - Portada unificada en Verde Pino `#113927` con textos en Blanco `#FFFFFF` y Coral `#E98F71`, y franja inferior blanca con escudo UPO.
+    - Diapositivas de contenido sobre lienzo Blanco Puro `#FFFFFF`, tarjetas en Verde Menta Tenue `#F4F8F5` (con bordes `#C2D8C9`), titulares en Verde Pino `#113927`, subtítulos y estructura en Verde Salvia `#76927A`, acentos dinámicos en Coral Active Wave `#E98F71`, y cuerpo en Verde Tinta `#2F3A30`.
+  - **Marca de Agua Fija con los Anillos Entrelazados de PSLL (`#stage > .watermark-layer`):** Filigrana vectorial permanente en `z-index: 1` con los **dos anillos entrelazados (Verde Pino `#113927` y Verde Salvia `#76927A`) atravesados por la onda transversal en Coral (`#E98F71`)** con opacidad ultra-sutil (`0.045–0.06`), mientras las diapositivas (`.slide`, `z-index: 2`) tienen fondo transparente para mantener la marca de agua viva en todo el pase.
+  - **Recorte de Prensa Fundamental (`.newspaper-card`):** En la Fase 1, la noticia disparadora se maqueta con estética de recorte de periódico/prensa económica real (cabecera editorial `.news-masthead`, titular serif, columnas periodísticas, citas y cajas de KPIs) más insignia de hilo conductor (`.news-thread-badge`) en las diapositivas teóricas.
+  - **Motor de *Beats* Reversibles y Gráficos SVG Hiper-Dinámicos:**
+    - Navegación paso a paso reversible (`fwd()` / `back()` / `prevFrag`), barra de progreso inferior, controles en pantalla, pantalla completa (`F`) y panel flotante de notas del orador (`N`).
+    - **Gráficos SVG 100% dinámicos y animados en vivo (`tween`, `stroke-dashoffset`, contadores `.bignum`):** Prohibido limitarse a insertar imágenes estáticas cuando un gráfico pueda renderizarse en SVG dinámico. Las curvas temporales, comparativas internacionales (OCDE/UE), diagramas de flujos laborales, barras de reformas y esquemas causales se dibujan y animan progresivamente por *beats* al ritmo de la explicación del profesor.
 
 ## Evaluación Ciega de Retos Manuscritos (Skill de Evaluación)
 

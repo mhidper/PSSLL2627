@@ -25,10 +25,16 @@ Basado estrictamente en [Logos y skills/BRAND.md](file:///c:/Users/Usuario/Dropb
 | **Institucional UPO** | `#0B1C36` | Escudo y menciones institucionales |
 
 ### Parámetros Técnicos Obligatorios:
-- **Resolución:** 300 DPI (`dpi=300`), ideal para impresión y maquetación editorial en Word y proyección en diapositivas PPTX.
-- **Tipografía:** `Calibri` / `Arial` para ejes y etiquetas numéricas; `Outfit` / sans-serif negrita para títulos.
-- **Pie de figura:** Siempre debe incluir autoría y fuente:  
-  *«Fuente: Elaboración propia para Políticas Sociolaborales (UPO)...»*
+- **Formato 1 (`.docx` y `.pptx`):**
+  - **Resolución:** 300 DPI (`dpi=300`), ideal para impresión y maquetación editorial en Word y proyección en diapositivas PPTX.
+  - **Tipografía:** `Calibri` / `Arial` para ejes y etiquetas numéricas; `Outfit` / sans-serif negrita para títulos.
+  - **Pie de figura:** Siempre debe incluir autoría y fuente:  
+    *«Fuente: Elaboración propia para Políticas Sociolaborales (UPO)...»*
+- **Formato 2 (Presentaciones Web `.html` · Gráficos SVG Hiper-Dinámicos):**
+  - En las presentaciones `.html`, todas las figuras de la sesión se recrean como **gráficos SVG nativos 100% dinámicos e interactivos**, secuenciados por *beats* y animados con JavaScript (`tween(duration, easingFn, delay)`):
+    1. **Curvas y series temporales animadas:** Dibujado progresivo mediante `stroke-dashoffset` desde la longitud total del `<path>` (`path.getTotalLength()`) hasta $0$, dividido por hitos históricos o reformas laborales (ej. pre-reforma vs. post-RDL 32/2021), con áreas bajo la curva (`<polygon>` / `<path>` con opacidad animada) y puntos de hito con círculos pulsantes.
+    2. **Gráficos de barras y comparativas OCDE/UE:** Animación fluida de la anchura/altura de las barras al entrar en la diapositiva o al avanzar cada *beat*, destacando a España en Coral `#E98F71` y Verde Pino `#113927` frente a los socios europeos en Verde Salvia `#76927A`.
+    3. **Diagramas institucionales y esquemas causales:** Nodos y flujos vectoriales que se iluminan secuencialmente en 2 a 4 *beats*, acompañados de conectores animados (`stroke-dasharray`) y contadores numéricos `.bignum[data-target]`.
 
 ---
 
